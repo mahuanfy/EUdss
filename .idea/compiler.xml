@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="dss-foreground" />
+        <module name="dss-manage" />
+        <module name="dss-service" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="dss-foreground" target="1.5" />
+      <module name="dss-manage" target="1.5" />
+      <module name="dss-service" target="1.5" />
+      <module name="eu-dss" target="1.5" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

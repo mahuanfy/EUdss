@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="dss-foreground:war exploded">
+    <output-path>$PROJECT_DIR$/dss-foreground/target/dss-foreground</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dss-foreground" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dss-foreground/target/dss-foreground/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="dss-foreground/web/Web" />
+    </root>
+  </artifact>
+</component>

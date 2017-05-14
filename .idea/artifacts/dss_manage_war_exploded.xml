@@ -1,0 +1,22 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="dss-manage:war exploded">
+    <output-path>$PROJECT_DIR$/dss-manage/target/dss-manage</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="dss-manage" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="archive" name="dss-service-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="dss-service" />
+          </element>
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.18" />
+        </element>
+      </element>
+      <element id="directory" name="META-INF">
+        <element id="file-copy" path="$PROJECT_DIR$/dss-manage/target/dss-manage/META-INF/MANIFEST.MF" />
+      </element>
+      <element id="javaee-facet-resources" facet="dss-manage/web/Web" />
+    </root>
+  </artifact>
+</component>

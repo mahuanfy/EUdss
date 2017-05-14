@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/dss-foreground/dss-foreground.iml" filepath="$PROJECT_DIR$/dss-foreground/dss-foreground.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dss-manage/dss-manage.iml" filepath="$PROJECT_DIR$/dss-manage/dss-manage.iml" />
+      <module fileurl="file://$PROJECT_DIR$/dss-service/dss-service.iml" filepath="$PROJECT_DIR$/dss-service/dss-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/eu-dss.iml" filepath="$PROJECT_DIR$/eu-dss.iml" />
+    </modules>
+  </component>
+</project>
