@@ -1,0 +1,63 @@
+/*主页框架背景样式*/
+.contents{
+    font-size: 20px;
+    text-align: center;
+    margin-left: 25px;
+    font-weight: bold;
+}
+.layui-layout-admin .layui-header{
+background-color: #3A445C;
+}
+.layui-bg-black{
+    background-color:#FFFFFF;
+}
+.site-demo-button{
+    margin-bottom: 0;
+}
+.layui-elem-field{
+    border: 0px;
+}
+#layui_main{
+    margin: 0;
+    padding: 0;
+}
+.layui-side-scroll{
+    background-color: #FFFFFF;
+
+}
+.layui-nav{
+    background-color: #FFFFFF;
+    color: #737373;
+}
+.layui-nav .layui-nav-item a{
+    color: #737373;
+    font-weight:bold;
+}
+.img_styte{
+    width: 40px;
+    height: 40px;
+}
+.img_styte img{
+    width: 20px;
+    height: 20px;
+    margin-right: 6px;
+}
+.img_styte2 img{
+    width: 17px;
+    height: 17px;
+    margin-left: 8px;
+    margin-right: 6px;
+}
+
+.layui-nav-tree .layui-nav-child a:hover{
+    background-color:#00BBBD ;
+}
+.layui-nav-tree .layui-nav-item a:hover{
+    background-color:#00BBBD ;
+}
+.layui-nav-tree .layui-nav-title a:hover{
+    background-color:#00BBBD ;
+}
+.index_acolor{
+    background-color:#00BBBD ;
+}
