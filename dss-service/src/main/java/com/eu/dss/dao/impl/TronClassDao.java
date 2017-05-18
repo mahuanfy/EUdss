@@ -17,7 +17,7 @@ public class TronClassDao implements ITronClassDao {
 
     public List<TronClasstype> TronClasstype() {
         Connection conn = ConnUtil.getConnextion();
-        String sql = " SELECT * FROM eu_tronclass WHERE id = 1 ; ";
+        String sql = " SELECT * FROM eu_tronclass ; ";
         try {
             PreparedStatement pstmt = conn.prepareStatement(sql);
             ResultSet rs = pstmt.executeQuery();
@@ -41,7 +41,6 @@ public class TronClassDao implements ITronClassDao {
                 list.add(tronInfo);
             }
             ConnUtil.close(rs, conn, pstmt);
-            System.out.println(list);
             return  list;
         } catch (SQLException e) {
             e.printStackTrace();
