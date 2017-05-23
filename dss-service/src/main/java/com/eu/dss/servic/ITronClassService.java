@@ -14,7 +14,7 @@ public interface ITronClassService {
      * 查询创课点击次数
      *
      */
-    List<TronClasstype> TronClasstype();
+    List<TronClasstype> TronClasstypeFind();
 
     /**
      *根据主键查询

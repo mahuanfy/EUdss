@@ -1,5 +1,6 @@
 package com.eu.dss.dao.impl;
 
+import com.eu.dss.dao.BaseDao;
 import com.eu.dss.dao.ITronClassDao;
 import com.eu.dss.entity.TronClasstype;
 import com.eu.dss.util.ConnUtil;
@@ -13,47 +14,30 @@ import java.util.List;
 /**
  * Created by pc on 2017/5/13.
  */
-public class TronClassDao implements ITronClassDao {
+public class TronClassDao extends BaseDao implements ITronClassDao  {
 
     public List<TronClasstype> TronClasstype() {
-        Connection conn = ConnUtil.getConnextion();
         String sql = " SELECT * FROM eu_tronclass ; ";
-        try {
-            PreparedStatement pstmt = conn.prepareStatement(sql);
-            ResultSet rs = pstmt.executeQuery();
-            List<TronClasstype> list = new ArrayList<TronClasstype>();
-            TronClasstype tronInfo = null;
-            while (rs.next()) {
-                tronInfo = new TronClasstype();
-                tronInfo.setId(rs.getInt("id"));
-                tronInfo.setTron_month(rs.getString("tron_month"));
-                tronInfo.setEu_rj(rs.getInt("eu_rj"));
-                tronInfo.setEu_xin(rs.getInt("eu_xin"));
-                tronInfo.setEu_rw(rs.getInt("eu_rw"));
-                tronInfo.setEu_ts(rs.getInt("eu_ts"));
-                tronInfo.setEu_xiu(rs.getInt("eu_xiu"));
-                tronInfo.setEu_gz(rs.getInt("eu_gz"));
-                tronInfo.setEu_kuai(rs.getInt("eu_kuai"));
-                tronInfo.setEu_ad(rs.getInt("eu_ad"));
-                tronInfo.setEu_wc(rs.getInt("eu_wc"));
-                tronInfo.setEu_wu(rs.getInt("eu_wu"));
-                tronInfo.setEu_jr(rs.getInt("eu_jr"));
-                list.add(tronInfo);
-            }
-            ConnUtil.close(rs, conn, pstmt);
-            return  list;
-        } catch (SQLException e) {
-            e.printStackTrace();
-        }
-        return null;
+        List <TronClasstype> list = super.query(sql,null,TronClasstype.class);
+        return list;
     }
 
     public TronClasstype findByid(int id) {
-        return null;
+        String sql = " SELECT * FROM eu_tronclass where id=? ; ";
+        List <TronClasstype> list = super.query(sql,new Object[id],TronClasstype.class);
+        return (list!=null && list.size()>0) ? list.get(0) : null;
     }
 
     public void save(TronClasstype tronClasstype) {
-
+        String sql = " INSERT INTO eu_tronclass (year,tron_month,eu_rj,eu_xin,eu_rw,eu_ts,eu_xiu,eu_gz,eu_kuai,eu_ad,eu_wc,eu_wu,eu_jr) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?); ";
+        Object[] paramsValue = {tronClasstype.getYear(),tronClasstype.getTron_month(),
+                tronClasstype.getEu_rj(),   tronClasstype.getEu_xin(),
+                tronClasstype.getEu_rw(),   tronClasstype.getEu_ts(),
+                tronClasstype.getEu_xiu(),  tronClasstype.getEu_gz(),
+                tronClasstype.getEu_kuai(), tronClasstype.getEu_ad(),
+                tronClasstype.getEu_wc(),   tronClasstype.getEu_wu(),
+                tronClasstype.getEu_jr()};
+        super.update(sql,paramsValue);
     }
 
     public void update(TronClasstype tronClassType) {
@@ -61,7 +45,9 @@ public class TronClassDao implements ITronClassDao {
     }
 
     public void delete(int id) {
-
+        String sql = " ";
+        Object[] paramsValue = {id};
+        super.update(sql,paramsValue);
     }
 }
 

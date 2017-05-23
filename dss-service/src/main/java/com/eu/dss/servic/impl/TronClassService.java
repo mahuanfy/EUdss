@@ -14,7 +14,7 @@ import java.util.List;
 public class TronClassService implements ITronClassService {
     private ITronClassDao tronClassDao = new TronClassDao();
 
-    public List<TronClasstype> TronClasstype() {
+    public List<TronClasstype> TronClasstypeFind() {
 
         try {
             return tronClassDao.TronClasstype();

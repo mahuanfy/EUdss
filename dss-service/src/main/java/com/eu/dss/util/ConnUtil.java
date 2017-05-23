@@ -45,7 +45,7 @@ public class ConnUtil {
         }
         System.out.print("关闭成功");
     }
-    public static void close(ResultSet rs,Connection conn,PreparedStatement pstmt) {
+    public static void close(ResultSet rs,PreparedStatement pstmt,Connection conn) {
         if (null!=rs){
             try {
                 rs.close();

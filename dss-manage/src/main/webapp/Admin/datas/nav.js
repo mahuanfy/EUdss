@@ -5,7 +5,7 @@ var navs = [{
 	"children": [{
 		"title": "创客系统点击量",
 		"icon": "&#xe641;",
-		"href": "button.html"
+		"href": "button.jsp"
 	}, {
 		"title": "表单",
 		"icon": "&#xe63c;",

@@ -5,6 +5,7 @@ package com.eu.dss.entity;
  */
 public class TronClasstype {
     private int id;
+    private String year;
     private String tron_month;
     private int eu_rj;
     private int eu_xin;
@@ -17,6 +18,14 @@ public class TronClasstype {
     private int eu_wc;
     private int eu_wu;
     private int eu_jr;
+
+    public String getYear() {
+        return year;
+    }
+
+    public void setYear(String year) {
+        this.year = year;
+    }
 
     public int getId() {
         return id;
