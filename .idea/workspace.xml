@@ -5,61 +5,33 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="d57b9edb-eb7d-4bd4-9bc2-a89459cf8fce" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/images/LOGO.png" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/images/back.jpg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/userBean.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/animsition.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/bootstrap-select.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/formValidation.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/site.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/web-icons.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/bootstrap-select.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/bootstrap.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/bootstrap.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/button_js.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/formValidation.min.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/hm.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/jquery.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/layui.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/login.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/BaseDao.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/login.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/action/TronClassServlet.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/action/TronClassServlet.class" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/action/TronClassServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/action/TronClassServlet.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/login.jsp" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/action/UserAction.class" afterPath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/action/UserAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/entity/userBean.class" afterPath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/entity/userBean.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/action/UserAction.class" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/action/UserAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/entity/userBean.class" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/entity/userBean.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/lib/dss-service-1.0-SNAPSHOT.jar" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/lib/dss-service-1.0-SNAPSHOT.jar" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/dao/impl/TronClassDao.class" afterPath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/dao/impl/TronClassDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/entity/TronClasstype.class" afterPath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/entity/TronClasstype.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/servic/ITronClassService.class" afterPath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/servic/ITronClassService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/servic/impl/TronClassService.class" afterPath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/servic/impl/TronClassService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/util/ConnUtil.class" afterPath="$PROJECT_DIR$/dss-service/target/classes/com/eu/dss/util/ConnUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/dao/impl/TronClassDao.class" afterPath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/dao/impl/TronClassDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/entity/TronClasstype.class" afterPath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/entity/TronClasstype.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/servic/ITronClassService.class" afterPath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/servic/ITronClassService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/servic/impl/TronClassService.class" afterPath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/servic/impl/TronClassService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/util/ConnUtil.class" afterPath="$PROJECT_DIR$/dss-service/target/service/WEB-INF/classes/com/eu/dss/util/ConnUtil.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/eu_manage.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/eu_manage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/login.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/form.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/layout.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/layout.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/button.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/button.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/eu_manage.css" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/eu_manage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/login.css" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/login.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/datas/nav.js" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/datas/nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/form.html" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/form.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/index.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/index.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/layout.html" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/layout.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/ITronClassDao.java" afterPath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/ITronClassDao.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/impl/TronClassDao.java" afterPath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/impl/TronClassDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/entity/TronClasstype.java" afterPath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/entity/TronClasstype.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/ITronClassService.java" afterPath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/ITronClassService.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/impl/TronClassService.java" afterPath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/impl/TronClassService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/util/ConnUtil.java" afterPath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/util/ConnUtil.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/action/TronClassServlet.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassServlet.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassServlet.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/userBean.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/UserBean.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index1.jsp" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -91,21 +63,32 @@
       <file leaf-file-name="TronClassDao.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/impl/TronClassDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="782">
-              <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="45" />
+            <state relative-caret-position="-382">
+              <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
               <folding>
-                <marker date="1495426050642" expanded="true" signature="525:551" ph="SELECT * FRO... eu_tronclass" />
-                <marker date="1495426050642" expanded="true" signature="525:552" ph="SELECT * FRO... eu_tronclass" />
+                <element signature="imports" expanded="true" />
+                <marker date="1495583632697" expanded="true" signature="344:370" ph="SELECT * FRO... eu_tronclass" />
+                <marker date="1495583632697" expanded="true" signature="344:371" ph="SELECT * FRO... eu_tronclass" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="BaseDao.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/BaseDao.java">
+      <file leaf-file-name="IUserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1331">
-              <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+            <state relative-caret-position="272">
+              <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -113,30 +96,46 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="nav.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/nav.html">
+      <file leaf-file-name="TronClassService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/impl/TronClassService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="233">
-              <caret line="153" column="22" lean-forward="false" selection-start-line="153" selection-start-column="22" selection-end-line="153" selection-end-column="22" />
+            <state relative-caret-position="1326">
+              <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp">
+      <file leaf-file-name="TronClassAction.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="544">
-              <caret line="52" column="96" lean-forward="false" selection-start-line="52" selection-start-column="96" selection-end-line="52" selection-end-column="96" />
+            <state relative-caret-position="447">
+              <caret line="65" column="68" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="68" />
               <folding>
-                <element signature="n#style#0;n#i#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#small#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#small#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#small#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="339">
+              <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="176" column="48" lean-forward="true" selection-start-line="176" selection-start-column="46" selection-end-line="176" selection-end-column="51" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -144,73 +143,31 @@
       <file leaf-file-name="button.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4318">
-              <caret line="140" column="20" lean-forward="false" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
+            <state relative-caret-position="213">
+              <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="aa.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/aa.jsp">
+      <file leaf-file-name="IUserServic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="65" />
+            <state relative-caret-position="115">
+              <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TronClassServlet.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassServlet.java">
+      <file leaf-file-name="Userservic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
+            <state relative-caret-position="319">
+              <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="userBean.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/userBean.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="340">
-              <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
-              <folding>
-                <element signature="e#220#221#0" expanded="true" />
-                <element signature="e#253#254#0" expanded="true" />
-                <element signature="e#281#282#0" expanded="true" />
-                <element signature="e#316#317#0" expanded="true" />
-                <element signature="e#347#348#0" expanded="true" />
-                <element signature="e#395#396#0" expanded="true" />
-                <element signature="e#435#436#0" expanded="true" />
-                <element signature="e#470#471#0" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#549#550#0" expanded="true" />
-                <element signature="e#589#590#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-service/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="816">
-              <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -222,10 +179,10 @@
       <list>
         <option value="Jsp File" />
         <option value="AnnotationType" />
-        <option value="Interface" />
         <option value="JavaScript File" />
         <option value="CSS File" />
         <option value="HTML File" />
+        <option value="Interface" />
         <option value="Class" />
       </list>
     </option>
@@ -290,11 +247,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/dss-foreground/pom.xml" />
-        <option value="$PROJECT_DIR$/dss-service/src/main/webapp/index.jsp" />
-        <option value="$PROJECT_DIR$/dss-manage/pom.xml" />
-        <option value="$PROJECT_DIR$/dss-foreground/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/admin/【开发必读】文档目录.txt" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/admin/_header.html" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/index.html" />
@@ -308,7 +260,6 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index.jsp" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/util/Connutil.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.html" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/WebServlet.java" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/entity/TronClassRecord.java" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/UserDao.java" />
@@ -319,15 +270,11 @@
         <option value="$PROJECT_DIR$/dss-service/pom.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav.js" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/util/ConnUtil.java" />
-        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/action/TronClassServlet.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/aa.html" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/button_css.css" />
-        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/impl/TronClassService.java" />
-        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/ITronClassService.java" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/entity/TronClasstype.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/eu_manage.css" />
-        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/impl/TronClassDao.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/button_js.js" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/form.html" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp" />
@@ -335,9 +282,22 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/login_files/login.css" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/login1.html" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/login.html" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassServlet.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/userBean.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassServlet.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/ITronClassDao.java" />
+        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/ITronClassService.java" />
+        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/impl/TronClassService.java" />
+        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/impl/TronClassDao.java" />
+        <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/BaseDao.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
       </list>
     </option>
   </component>
@@ -435,7 +395,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
+              <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -449,7 +409,63 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -471,37 +487,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
+              <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -535,7 +521,109 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="servic" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="impl" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="entity" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="eu-dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -572,42 +660,6 @@
               <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss-manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss-manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -622,6 +674,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="action" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1180,7 +1236,7 @@
       <workItem from="1495404705202" duration="23868000" />
       <workItem from="1495469847093" duration="22284000" />
       <workItem from="1495517810985" duration="32000" />
-      <workItem from="1495565184937" duration="11938000" />
+      <workItem from="1495565184937" duration="20710000" />
     </task>
     <servers />
   </component>
@@ -1190,7 +1246,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="147236000" />
+    <option name="totallyTimeSpent" value="156008000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1224,10 +1280,11 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2542735" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29807693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27824268" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2027897" sideWeight="0.4935484" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2027897" sideWeight="0.4935484" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23333333" sideWeight="0.5064516" order="6" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -1235,7 +1292,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1245,7 +1301,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32832617" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3297062" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295699" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1263,11 +1319,11 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35042736" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29807693" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.27824268" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2027897" sideWeight="0.4935484" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23333333" sideWeight="0.5064516" order="6" side_tool="true" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32905984" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
     </layout-to-restore>
@@ -1289,42 +1345,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="248">
-          <caret line="9" column="4" lean-forward="false" selection-start-line="9" selection-start-column="4" selection-end-line="9" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/WebServlet.java" />
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="918">
-          <caret line="27" column="24" lean-forward="false" selection-start-line="27" selection-start-column="24" selection-end-line="27" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/area.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/area_data.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1362,7 +1382,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/aa.html" />
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/button_css.css" />
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp">
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="193">
           <caret line="14" column="4" lean-forward="false" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="4" />
@@ -1380,13 +1400,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-945">
           <caret line="6" column="19" lean-forward="false" selection-start-line="6" selection-start-column="19" selection-end-line="6" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/ITronClassDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="25" column="9" lean-forward="false" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
         </state>
       </provider>
     </entry>
@@ -1460,7 +1473,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index.jsp">
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index1.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1598">
           <caret line="47" column="32" lean-forward="false" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
@@ -1489,32 +1502,11 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dss-service/commons-beanutils-1.8.0.jar/org/apache/commons/beanutils/locale/converters/ByteLocaleConverter.class" />
-    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/ITronClassService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="16" column="24" lean-forward="false" selection-start-line="16" selection-start-column="24" selection-end-line="16" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-service/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="816">
           <caret line="24" column="21" lean-forward="false" selection-start-line="24" selection-start-column="21" selection-end-line="24" selection-end-column="21" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/impl/TronClassDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="32" column="45" lean-forward="false" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="45" />
-          <folding>
-            <marker date="1495426050642" expanded="true" signature="525:551" ph="SELECT * FRO... eu_tronclass" />
-            <marker date="1495426050642" expanded="true" signature="525:552" ph="SELECT * FRO... eu_tronclass" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1530,22 +1522,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/impl/TronClassService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1139">
-          <caret line="54" column="13" lean-forward="true" selection-start-line="54" selection-start-column="13" selection-end-line="54" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -1574,44 +1550,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4318">
-          <caret line="140" column="20" lean-forward="false" selection-start-line="140" selection-start-column="20" selection-end-line="140" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="52" column="96" lean-forward="false" selection-start-line="52" selection-start-column="96" selection-end-line="52" selection-end-column="96" />
-          <folding>
-            <element signature="n#style#0;n#i#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#small#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassServlet.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="72" column="0" lean-forward="true" selection-start-line="72" selection-start-column="0" selection-end-line="72" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/userBean.java">
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/UserBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="340">
-          <caret line="10" column="24" lean-forward="true" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
+          <caret line="10" column="24" lean-forward="false" selection-start-line="10" selection-start-column="24" selection-end-line="10" selection-end-column="24" />
           <folding>
             <element signature="e#220#221#0" expanded="true" />
             <element signature="e#253#254#0" expanded="true" />
@@ -1628,10 +1570,136 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/ITronClassService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="379">
+          <caret line="39" column="0" lean-forward="false" selection-start-line="39" selection-start-column="0" selection-end-line="39" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/ITronClassDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1292">
+          <caret line="38" column="0" lean-forward="false" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/BaseDao.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1331">
-          <caret line="11" column="13" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="13" />
+        <state relative-caret-position="2856">
+          <caret line="84" column="0" lean-forward="true" selection-start-line="84" selection-start-column="0" selection-end-line="84" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="23" column="50" lean-forward="false" selection-start-line="23" selection-start-column="50" selection-end-line="23" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="115">
+          <caret line="7" column="17" lean-forward="false" selection-start-line="7" selection-start-column="17" selection-end-line="7" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/servic/impl/TronClassService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1326">
+          <caret line="61" column="0" lean-forward="true" selection-start-line="61" selection-start-column="0" selection-end-line="61" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="319">
+          <caret line="17" column="9" lean-forward="false" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="65" column="68" lean-forward="true" selection-start-line="65" selection-start-column="7" selection-end-line="65" selection-end-column="68" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="213">
+          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="56" selection-end-line="23" selection-end-column="56" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="11" column="7" lean-forward="false" selection-start-line="11" selection-start-column="7" selection-end-line="11" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/impl/TronClassDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-382">
+          <caret line="14" column="74" lean-forward="true" selection-start-line="14" selection-start-column="74" selection-end-line="14" selection-end-column="74" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <marker date="1495583632697" expanded="true" signature="344:370" ph="SELECT * FRO... eu_tronclass" />
+            <marker date="1495583632697" expanded="true" signature="344:371" ph="SELECT * FRO... eu_tronclass" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="176" column="48" lean-forward="true" selection-start-line="176" selection-start-column="46" selection-end-line="176" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="339">
+          <caret line="60" column="37" lean-forward="true" selection-start-line="60" selection-start-column="37" selection-end-line="60" selection-end-column="37" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

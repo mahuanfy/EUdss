@@ -1,7 +1,6 @@
 package com.eu.dss.dao;
 
 import com.eu.dss.entity.TronClasstype;
-
 import java.util.List;
 
 /**
@@ -37,9 +36,8 @@ public interface ITronClassDao {
      */
     void delete(int id);
 
-    /**
-     *
-     */
+
+
 
 
 }

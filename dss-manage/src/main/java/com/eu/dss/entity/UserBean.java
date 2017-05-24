@@ -3,7 +3,7 @@ package com.eu.dss.entity;
 /**
  * Created by 马欢欢 on 2017/5/24.
  */
-public class userBean {
+public class UserBean {
     private int id ;
     private String username;
     private String password;

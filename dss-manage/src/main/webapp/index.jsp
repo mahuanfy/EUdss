@@ -42,7 +42,7 @@
                 <div class="vertical-align-middle">
                     <h1 class="hidden-xs">Eurasia DSS 登陆页面</h1>
                     <p class="hidden-xs">Eurasia Decision Support System 后台系统</p>
-                    <form action="TronClassServlet?method=login"
+                    <form action="UserAction?method=login"
                           class="login-form fv-form fv-form-bootstrap" method="post" id="loginForm"
                           novalidate="novalidate">
                         <button type="submit" class="fv-hidden-submit"
@@ -92,7 +92,7 @@
                 <div class="vertical-align-middle">
                     <h1 class="hidden-xs">注册页面</h1>
                     <p class="hidden-xs">Eurasia Decision Support System </p>
-                    <form action="TronClassServlet?method=login"
+                    <form action="UserAction?method=register"
                           class="login-form fv-form fv-form-bootstrap" method="post"
                           novalidate="novalidate">
                         <button type="submit" class="fv-hidden-submit"
@@ -100,7 +100,7 @@
 
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="username">用户名</label>
-                           <input type="text" class="form-control" id="username1" name="" placeholder="请输入ID"
+                           <input type="text" class="form-control" id="username1" name="register_username" placeholder="请输入ID"
                                    data-fv-field="loginName">
                             <i class="form-control-feedback" data-fv-icon-for="loginName" style="display: none;"></i>
                             <small class="help-block" data-fv-validator="notEmpty" data-fv-for="loginName"
@@ -109,7 +109,7 @@
                         </div>
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="password">密码</label>
-                            <input type="password" class="form-control" id="password1" name="password"
+                            <input type="password" class="form-control" id="password_" name="register_password"
                                    placeholder="请输入密码" data-fv-field="password1">
                             <i class="form-control-feedback" data-fv-icon-for="password1" style="display: none;"></i>
                             <small class="help-block" data-fv-validator="notEmpty" data-fv-for="password1"
@@ -121,8 +121,8 @@
                         </div>
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="password">确认密码</label>
-                            <input type="password" class="form-control" id="password2" name="password"
-                                   placeholder="请确认输入密码" data-fv-field="password1">
+                            <input type="password" class="form-control" id="password_verify" name="register_passwordVerify"
+                                   placeholder="请确认输入密码" data-fv-field="password_verify">
                             <i class="form-control-feedback" data-fv-icon-for="password1" style="display: none;"></i>
                             <small class="help-block" data-fv-validator="notEmpty" data-fv-for="password1"
                                    data-fv-result="NOT_VALIDATED" style="display: none;">密码不能为空
@@ -132,7 +132,7 @@
                             </small>
                         </div>
                         <div class="col-sm-7">
-                            <button type="submit" class="btn btn-primary btn-block margin-top-10">立即注册</button>
+                            <button type="button" id ="button_register" class="btn btn-primary btn-block margin-top-10">立即注册</button>
                         </div>
                         <div class="col-sm-5">
                             <button id="login_go" type="button" class="btn btn-outline btn-success btn-block margin-top-10">
@@ -168,6 +168,32 @@
         $("#login_go").click(function () {
             $("#register_login").hide();
             $("#login").fadeIn("slow");
+        });
+        //验证用户是否存在
+        $(":input[name='register_username']").change(function () {
+            var name = $(this).val();
+            name = $.trim(name);//取出前后空格
+            if (name != "") {
+                var url = "/UserAction?method=check";
+                var args = {"username": name, "time": new Date()};
+                $.get(url, args, function (data) {
+                    $(".message").html(data)
+                });
+            }
+        });
+        //注册信息跳转
+        $("#button_register").click(function(){
+            alert(111);
+            alert($("input[name='register_username'] ").val());
+            alert($("input[ name='register_password'] ").val());
+            $.post("UserAction?method=register",
+                {username:$("input[name='register_username'] ").val(),
+                 password:$("input[ name='register_password'] ").val()
+                },
+                function (data,status) {
+                    alert(222);
+                }
+            );
         });
     });
 </script>

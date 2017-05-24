@@ -3,12 +3,6 @@ package com.eu.dss.dao.impl;
 import com.eu.dss.dao.BaseDao;
 import com.eu.dss.dao.ITronClassDao;
 import com.eu.dss.entity.TronClasstype;
-import com.eu.dss.util.ConnUtil;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -49,6 +43,8 @@ public class TronClassDao extends BaseDao implements ITronClassDao  {
         Object[] paramsValue = {id};
         super.update(sql,paramsValue);
     }
+
+
 }
 
 

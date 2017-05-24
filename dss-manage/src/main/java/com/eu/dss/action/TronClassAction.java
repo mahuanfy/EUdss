@@ -14,10 +14,10 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
 /**
- * Created by pc on 2017/5/16.
+ * Created 马欢欢 pc on 2017/5/20.
  */
 @WebServlet(name = "TronClassServlet" ,urlPatterns = "/TronClassServlet")
-public class TronClassServlet extends HttpServlet {
+public class TronClassAction extends HttpServlet {
    private ITronClassService tronClassService = new TronClassService();
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
@@ -35,9 +35,6 @@ public class TronClassServlet extends HttpServlet {
         }else
         if("save".equals(method)){
             save(req,resp);
-        }else
-        if("login".equals(method)){
-            login(req,resp);
         }
     }
 
@@ -68,10 +65,7 @@ public class TronClassServlet extends HttpServlet {
          tronClassService.save(tronClasstype);
         resp.sendRedirect(req.getContextPath()+"/Admin/button.jsp");
     }
-    //登陆
-    protected void login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-    }
 
 }
 
