@@ -5,8 +5,6 @@
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Eurasia DSS后台管理系统</title>
     <link rel="stylesheet" href="Admin/css/site.css" id="siteStyle">
-    <%--<script src="/public/vendor/media-match/media.match.min.js"></script>--%>
-    <%--<script src="/public/vendor/respond/respond.min.js"></script>--%>
     <link rel="stylesheet" href="Admin/css/login.css">
     <link rel="stylesheet" href="Admin/css/web-icons.css">
     <script type="text/javascript" src="Admin/js/jquery.min.js"></script>
@@ -22,12 +20,9 @@
                 </div>
                 <h3>Eurasia Decision Support System后台管理系统</h3>
                 <ul class="list-icons">
-                    <li>
-                        Eurasia Decision Support System 是帮助管理人员在教学管理上做出合理的判断与决策，在整个开发过程中起到引导的作用，以及给读者提供简要的说明。
-                    </li>
+                    <li>Eurasia Decision Support System 是帮助管理人员在教学管理上做出合理的判断与决策，在整个开发过程中起到引导的作用，以及给读者提供简要的说明。</li>
                     <li>涵盖学生全生命周期各环节教学数据，从新生入校、在校生、毕业生等数据，为学校招生计划、专业计划调整、日常教学业务、毕业生就业等提供全方位的数据支撑。</li>
-                    <li>提供分院、专业教学日常业务数据并可视化展示，为分院业务发展提供数据支撑。
-                    </li>
+                    <li>提供分院、专业教学日常业务数据并可视化展示，为分院业务发展提供数据支撑。</li>
                 </ul>
                 <div>
                     <a href="#" class="btn btn-primary btn-outline">
@@ -86,7 +81,7 @@
                 </p>
             </footer>
         </div>
-
+        <%--注册页面--%>
         <div style="display: none" id="register_login" class="page-login-main animation-fade">
             <div class="vertical-align">
                 <div class="vertical-align-middle">
@@ -97,16 +92,31 @@
                           novalidate="novalidate">
                         <button type="submit" class="fv-hidden-submit"
                                 style="display: none; width: 0px; height: 0px;"></button>
-
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="username">用户名</label>
-                           <input type="text" class="form-control" id="username1" name="register_username" placeholder="请输入ID"
+                            <input type="text" class="form-control" id="username1" name="register_username" placeholder="请输入ID"
                                    data-fv-field="loginName">
-                            <i class="form-control-feedback" data-fv-icon-for="loginName" style="display: none;"></i>
+                            <i class="form-control-feedback message"  data-fv-icon-for="loginName" style="display: none;"></i>
                             <small class="help-block" data-fv-validator="notEmpty" data-fv-for="loginName"
                                    data-fv-result="NOT_VALIDATED" style="display: none;">用户名不能为空
                             </small>
                         </div>
+                        <div class="form-group has-feedback">
+                           <input type="text" class="form-control" id="nickname" name="nickname" placeholder="请输入昵称"
+                                   data-fv-field="loginName">
+                        </div>
+                        <div class="form-group has-feedback ">
+                            <span>&nbsp;&nbsp;&nbsp;&nbsp;性别：&nbsp;</span>
+                            <label class="demo--label">
+                                <input class="demo--radio" type="radio" name="sex" value="男">
+                                <span class="demo--radioInput"></span>男
+                            </label>
+                            <label class="demo--label">
+                                <input class="demo--radio" type="radio" name="sex" value="女">
+                                <span class="demo--radioInput"></span>女
+                            </label>
+                        </div>
+
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="password">密码</label>
                             <input type="password" class="form-control" id="password_" name="register_password"
@@ -174,7 +184,7 @@
             var name = $(this).val();
             name = $.trim(name);//取出前后空格
             if (name != "") {
-                var url = "/UserAction?method=check";
+                var url = "${pageContext.request.contextPath}/UserAction?method=check";
                 var args = {"username": name, "time": new Date()};
                 $.get(url, args, function (data) {
                     $(".message").html(data)
@@ -186,7 +196,7 @@
             alert(111);
             alert($("input[name='register_username'] ").val());
             alert($("input[ name='register_password'] ").val());
-            $.post("UserAction?method=register",
+            $.post("${pageContext.request.contextPath}/UserAction?method=register",
                 {username:$("input[name='register_username'] ").val(),
                  password:$("input[ name='register_password'] ").val()
                 },

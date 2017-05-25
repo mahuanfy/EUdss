@@ -3,6 +3,7 @@ package com.eu.dss.action;
 import com.eu.dss.entity.UserBean;
 import com.eu.dss.servic.IUserServic;
 import com.eu.dss.servic.impl.Userservic;
+import net.sf.json.JSONArray;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -10,6 +11,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.List;
 
 /**
  * Created 马欢欢 pc on 2017/5/23.
@@ -44,8 +46,13 @@ public class UserAction extends HttpServlet {
         userBean.setUsername(username);
         userBean.setPassword(password);
 
-        req.setAttribute("user", userBean);
-        if (userServic.login(userBean) == 1) {
+        if (userServic.login(userBean) !=null) {
+
+            JSONArray jsonArray = JSONArray.fromObject(userServic.login(userBean));
+
+            req.getSession().setAttribute("user",jsonArray);
+            System.out.println(jsonArray.getJSONObject(0).get("nickname"));
+
             resp.sendRedirect(req.getContextPath() + "/Admin/index1.jsp");
         } else {
             resp.sendRedirect(req.getContextPath() + "/index.jsp");

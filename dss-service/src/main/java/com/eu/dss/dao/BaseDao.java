@@ -77,6 +77,9 @@ public class BaseDao {
             return list;
         } catch (Exception e) {
             e.printStackTrace();
+        }finally {
+            ConnUtil.close(null, pstmt, conn);
+
         }
         return null;
     }

@@ -1,3 +1,5 @@
+<%@ page import="com.eu.dss.entity.UserBean" %>
+<%@ page import="net.sf.json.JSONArray" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <!DOCTYPE html>
 
@@ -20,6 +22,12 @@
 	</head>
 
 	<body>
+	<%
+		JSONArray jsonArray = (JSONArray) session.getAttribute("user");
+		if(jsonArray==null){
+			response.sendRedirect(request.getContextPath() + "/index.jsp");
+		}else{
+	%>
 		<div class="layui-layout layui-layout-admin">
 			<div class="layui-header header header-demo">
 				<div class="layui-main">
@@ -44,7 +52,7 @@
 						<li class="layui-nav-item">
 							<a href="javascript:;" class="admin-header-user">
 								<img src="images/0.jpg" />
-								<span>beginner</span>
+								<span><%=jsonArray.getJSONObject(0).get("nickname")%></span>
 							</a>
 							<dl class="layui-nav-child">
 								<dd>
@@ -138,3 +146,6 @@
 	</body>
 
 </html>
+<%
+	}
+%>

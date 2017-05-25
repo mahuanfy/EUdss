@@ -23,8 +23,6 @@
         var dataLength = [];
         $.post("/TronClassServlet?method=tronClasstype",
             function (data, status) {
-
-
                 for (var i = 0; i < data.length; i++) {
                     dataLength.push(data[i]);
                     tronClasstype = data[i];

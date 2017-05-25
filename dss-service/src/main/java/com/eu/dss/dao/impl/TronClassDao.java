@@ -3,6 +3,8 @@ package com.eu.dss.dao.impl;
 import com.eu.dss.dao.BaseDao;
 import com.eu.dss.dao.ITronClassDao;
 import com.eu.dss.entity.TronClasstype;
+import net.sf.json.JSONArray;
+
 import java.util.List;
 
 /**
@@ -13,6 +15,8 @@ public class TronClassDao extends BaseDao implements ITronClassDao  {
     public List<TronClasstype> TronClasstype() {
         String sql = " SELECT * FROM eu_tronclass ; ";
         List <TronClasstype> list = super.query(sql,null,TronClasstype.class);
+        JSONArray jsonArray = JSONArray.fromObject(list);
+        System.out.println("bbbb"+jsonArray);
         return list;
     }
 

@@ -5,12 +5,14 @@ import com.eu.dss.dao.impl.UserDao;
 import com.eu.dss.entity.UserBean;
 import com.eu.dss.servic.IUserServic;
 
+import java.util.List;
+
 /**
  * Created by 马欢欢 on 2017/5/24.
  */
 public class Userservic implements IUserServic {
     private IUserDao userDao =new UserDao();
-    public int login(UserBean userBean) {
+    public List<UserBean> login(UserBean userBean) {
         try {
             return  userDao.login(userBean);
         } catch (Exception e) {
