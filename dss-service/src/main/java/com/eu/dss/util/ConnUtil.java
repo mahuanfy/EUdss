@@ -14,7 +14,7 @@ public class ConnUtil {
         try {
             Class.forName("com.mysql.jdbc.Driver");//1.加载数据库驱动
 
-            String url="jdbc:mysql://localhost:3306/eudsstest";//2.指定连接数据库的地址名称
+            String url="jdbc:mysql://localhost:3306/eudsstest?useUnicode=true&characterEncoding=utf-8";//2.指定连接数据库的地址名称
             String user="root";
             String passWord = "root";//指定用户名和密码
 
