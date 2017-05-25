@@ -37,7 +37,7 @@
                 <div class="vertical-align-middle">
                     <h1 class="hidden-xs">Eurasia DSS 登陆页面</h1>
                     <p class="hidden-xs">Eurasia Decision Support System 后台系统</p>
-                    <form action="UserAction?method=login"
+                    <form action="${pageContext.request.contextPath}/UserAction?method=login"
                           class="login-form fv-form fv-form-bootstrap" method="post" id="loginForm"
                           novalidate="novalidate">
                         <button type="submit" class="fv-hidden-submit"

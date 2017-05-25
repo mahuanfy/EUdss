@@ -21,7 +21,7 @@
         $("#refer_div").hide();
         var tronClasstype = [];
         var dataLength = [];
-        $.post("/TronClassServlet?method=tronClasstype",
+        $.post("${pageContext.request.contextPath}/TronClassServlet?method=tronClasstype",
             function (data, status) {
                 for (var i = 0; i < data.length; i++) {
                     dataLength.push(data[i]);
@@ -137,7 +137,7 @@
 </body>
 
 <div id="refer_div">
-    <form class="layui-form" action="/TronClassServlet?method=save" method="post">
+    <form class="layui-form" action="${pageContext.request.contextPath}/TronClassServlet?method=save" method="post">
         <div class="huan_a"></div>
         <div class="layui-form-item">
             <label class="layui-form-label">年份</label>
