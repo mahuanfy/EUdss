@@ -40,7 +40,7 @@ CREATE TABLE `dssuser` (
 
 LOCK TABLES `dssuser` WRITE;
 /*!40000 ALTER TABLE `dssuser` DISABLE KEYS */;
-INSERT INTO `dssuser` VALUES (1,'普通会员','admin','admin','女',19,'1365478596'),(2,'MR_欢先生','mahuan','admin','男',22,'15802953657');
+INSERT INTO `dssuser` VALUES (1,'admin','admin','女',19,'1365478596','普通用户',1),(2,'mahuan','admin','男',22,'15802953657','MR_欢先生',0),(3,'super','superadmin','女',19,'1365478596','超级用户',0);
 /*!40000 ALTER TABLE `dssuser` ENABLE KEYS */;
 UNLOCK TABLES;
 
