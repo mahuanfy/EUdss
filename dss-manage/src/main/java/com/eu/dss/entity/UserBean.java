@@ -11,6 +11,15 @@ public class UserBean {
     private String sex;
     private String age;
     private String phone;
+    private  int rank;
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
 
     public String getSex() {
         return sex;

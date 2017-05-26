@@ -21,6 +21,11 @@ public class Userservic implements IUserServic {
     }
 
     public void register(UserBean userBean) {
+            try {
+                userDao.register(userBean);
+            } catch (Exception e) {
+                throw new RuntimeException(e);
+            }
 
     }
 }

@@ -1,4 +1,5 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="false" %>
 <!DOCTYPE html>
 <html lang="zh-cn">
 <head>
@@ -68,7 +69,8 @@
                             <button type="submit" class="btn btn-primary btn-block margin-top-10">登 录</button>
                         </div>
                         <div class="col-sm-5">
-                            <button id="register" type="button" class="btn btn-outline btn-success btn-block margin-top-10">
+                            <button id="register" type="button"
+                                    class="btn btn-outline btn-success btn-block margin-top-10">
                                 注册账号
                             </button>
                         </div>
@@ -89,20 +91,17 @@
                     <p class="hidden-xs">Eurasia Decision Support System </p>
                     <form action="UserAction?method=register"
                           class="login-form fv-form fv-form-bootstrap" method="post"
-                          novalidate="novalidate">
+                          novalidate="novalidate" onsubmit="return validate_form(this)">
                         <button type="submit" class="fv-hidden-submit"
                                 style="display: none; width: 0px; height: 0px;"></button>
                         <div class="form-group has-feedback">
-                            <label class="sr-only" for="username">用户名</label>
-                            <input type="text" class="form-control" id="username1" name="register_username" placeholder="请输入ID"
+                            <label class="sr-only" for="username">用户ID</label>
+                            <input type="text" class="form-control" id="username1" name="register_username"
+                                   placeholder="请输入ID"
                                    data-fv-field="loginName">
-                            <i class="form-control-feedback message"  data-fv-icon-for="loginName" style="display: none;"></i>
-                            <small class="help-block" data-fv-validator="notEmpty" data-fv-for="loginName"
-                                   data-fv-result="NOT_VALIDATED" style="display: none;">用户名不能为空
-                            </small>
                         </div>
                         <div class="form-group has-feedback">
-                           <input type="text" class="form-control" id="nickname" name="nickname" placeholder="请输入昵称"
+                            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="请输入昵称"
                                    data-fv-field="loginName">
                         </div>
                         <div class="form-group has-feedback ">
@@ -131,10 +130,12 @@
                         </div>
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="password">确认密码</label>
-                            <input type="password" class="form-control" id="password_verify" name="register_passwordVerify"
+                            <input type="password" class="form-control" id="password_verify"
+                                   name="register_passwordVerify"
                                    placeholder="请确认输入密码" data-fv-field="password_verify">
                             <i class="form-control-feedback" data-fv-icon-for="password1" style="display: none;"></i>
-                            <small class="help-block" data-fv-validator="notEmpty" data-fv-for="password1"
+                            <small id="register_password" class="help-block" data-fv-validator="notEmpty"
+                                   data-fv-for="password1"
                                    data-fv-result="NOT_VALIDATED" style="display: none;">密码不能为空
                             </small>
                             <small class="help-block" data-fv-validator="stringLength" data-fv-for="password1"
@@ -142,10 +143,13 @@
                             </small>
                         </div>
                         <div class="col-sm-7">
-                            <button type="button" id ="button_register" class="btn btn-primary btn-block margin-top-10">立即注册</button>
+                            <button type="button" id="button_register" class="btn btn-primary btn-block margin-top-10">
+                                立即注册
+                            </button>
                         </div>
                         <div class="col-sm-5">
-                            <button id="login_go" type="button" class="btn btn-outline btn-success btn-block margin-top-10">
+                            <button id="login_go" type="button"
+                                    class="btn btn-outline btn-success btn-block margin-top-10">
                                 已有账号
                             </button>
                         </div>
@@ -184,28 +188,58 @@
             var name = $(this).val();
             name = $.trim(name);//取出前后空格
             if (name != "") {
-                var url = "${pageContext.request.contextPath}/UserAction?method=check";
-                var args = {"username": name, "time": new Date()};
-                $.get(url, args, function (data) {
-                    $(".message").html(data)
-                });
+                $.post("${pageContext.request.contextPath}/UserAction?method=check",
+                    {"username": name, "time": new Date()},
+                    function (data, status) {
+
+
+                    }
+                );
             }
         });
         //注册信息跳转
-        $("#button_register").click(function(){
-            alert(111);
-            alert($("input[name='register_username'] ").val());
-            alert($("input[ name='register_password'] ").val());
+        $("#button_register").click(function () {
+//    //验证用户名
+//    if ($("input[name='register_username'] ").val() === null ||
+//    $("input[name='register_username'] ").val() === "") {
+//    alert("不能为空");
+//    this.focus();
+//    } else
+//    //验证密码是否为空
+//    if (alert($("input[ name='register_password'] ").val() === null) ||
+//    $("input[name='register_password'] ").val() === "") {
+//    alert("不能为空");
+//    this.focus();
+//    } else if (alert($("input[ name='register_passwordVerify'] ").val() === null) ||
+//    $("input[name='register_passwordVerify'] ").val() === "") {
+//    $("#register_password").show();
+//    alert("不能为空");
+//    this.focus();
+//    } else if (alert($("input[ name='nickname'] ").val() === null) ||
+//    $("input[name='nickname'] ").val() === "") {
+//    alert("不能为空");
+//    this.focus();
+//    } else {
             $.post("${pageContext.request.contextPath}/UserAction?method=register",
-                {username:$("input[name='register_username'] ").val(),
-                 password:$("input[ name='register_password'] ").val()
+                {
+                    username: $("input[name='register_username'] ").val(),
+                    password: $("input[ name='register_password'] ").val(),
+                    nickname: $("input[ name='nickname'] ").val(),
+                    passwordVerify: $("input[ name='register_passwordVerify'] ").val(),
+                    sex: $("input[ name='sex'] ").val()
                 },
-                function (data,status) {
-                    alert(222);
+                function (data, status) {
+                    window.location.reload();
                 }
             );
+
         });
     });
+</script>
+
+<script type="text/javascript">
+
+
 </script>
 
 </html>

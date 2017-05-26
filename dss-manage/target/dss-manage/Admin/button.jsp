@@ -1,6 +1,7 @@
+<%@ page import="net.sf.json.JSONArray" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="false"%>
 <!doctype html>
-<html>
 <head>
     <meta charset="utf-8">
     <title>创课各分院每月点击次数数据统计</title>
@@ -52,39 +53,44 @@
             "json"
         );
 
-        layui.use(['laypage', 'layer'], function () {
-            var laypage = layui.laypage
-                , layer = layui.layer;
-            var nums = 5; //每页出现的数据量
-
-            //模拟渲染
-            var render = function (dataLength, curr) {
-                var arr = []
-                    , thisData = dataLength.concat().splice(curr * nums - nums, nums);
-                layui.each(thisData, function (index, item) {
-                    arr.push('<li>' + item + '</li>');
-                });
-                return arr.join('');
-            };
-
-            //调用分页
-            laypage({
-                cont: 'demo8'
-                , pages: Math.ceil(dataLength.length / nums) //得到总页数
-                , jump: function (obj) {
-                    document.getElementById('biuuu_city_list').innerHTML = render(dataLength, obj.curr);
-                }
-            });
-
-        });
-
+//        layui.use(['laypage', 'layer'], function () {
+//            var laypage = layui.laypage
+//                , layer = layui.layer;
+//            var nums = 5; //每页出现的数据量
+//
+//            //模拟渲染
+//            var render = function (dataLength, curr) {
+//                var arr = []
+//                    , thisData = dataLength.concat().splice(curr * nums - nums, nums);
+//                layui.each(thisData, function (index, item) {
+//                    arr.push('<li>' + item + '</li>');
+//                });
+//                return arr.join('');
+//            };
+//
+//            //调用分页
+//            laypage({
+//                cont: 'demo8'
+//                , pages: Math.ceil(dataLength.length / nums) //得到总页数
+//                , jump: function (obj) {
+//                    document.getElementById('biuuu_city_list').innerHTML = render(dataLength, obj.curr);
+//                }
+//            });
+//
+//        });
+//
     });
 
 
 </script>
 
 <body>
-
+<%
+    JSONArray jsonArray = (JSONArray) session.getAttribute("user");
+    if(jsonArray==null){
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
+    }else{
+%>
 <div style="margin: 15px;">
     <fieldset class="layui-elem-field site-demo-button">
         <legend>创课各分院每月点击次数数据统计</legend>
@@ -134,6 +140,38 @@
     </fieldset>
 </div>
 <script type="text/javascript" src="plugins/layui/layui.js"></script>
+<script>
+    layui.use(['form', 'layedit', 'laydate'], function() {
+        var form = layui.form(),
+            layer = layui.layer,
+            layedit = layui.layedit,
+            laydate = layui.laydate;
+
+        //创建一个编辑器
+        var editIndex = layedit.build('LAY_demo_editor');
+        //自定义验证规则
+        form.verify({
+            title: function(value) {
+                if(value.length < 5) {
+                    return '标题至少得5个字符啊';
+                }
+            },
+            pass: [/(.+){6,12}$/, '密码必须6到12位'],
+            content: function(valu0e) {
+                layedit.sync(editIndex);
+            }
+        });
+
+        //监听提交
+        form.on('submit(demo1)', function(data) {
+            layer.alert(JSON.stringify(data.field), {
+                title: '最终的提交信息'
+            })
+            return false;
+        });
+    });
+</script>
+
 </body>
 
 <div id="refer_div">
@@ -142,7 +180,7 @@
         <div class="layui-form-item">
             <label class="layui-form-label">年份</label>
             <div class="layui-input-inline">
-                <select name="year" lay-filter="" id="year_ten">
+                <select name="year" lay-filter="aihao" id="year_ten">
                 </select>
             </div>
             <label class="layui-form-label">月份</label>
@@ -165,9 +203,7 @@
             </div>
         </div>
 
-
         <div class="layui-form-item">
-
             <div class="layui-inline">
                 <label class="layui-form-label">人居环境学院</label>
                 <div class="layui-input-inline">
@@ -249,11 +285,11 @@
             </div>
             <div class="huan_a"></div>
             <div class="layui-input-block huan_center">
-                <button class="layui-btn" type="submit"  >立即提交</button>
+                <button class="layui-btn" lay-submit="" type="submit"  >立即提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>
             </div>
         </div>
     </form>
-
 </div>
+<%}%>
 </html>

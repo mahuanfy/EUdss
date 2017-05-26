@@ -1,10 +1,7 @@
 package com.eu.dss.dao.impl;
-
 import com.eu.dss.dao.BaseDao;
 import com.eu.dss.dao.IUserDao;
 import com.eu.dss.entity.UserBean;
-import net.sf.json.JSONArray;
-
 import java.util.*;
 
 
@@ -14,10 +11,6 @@ import java.util.*;
  */
 public class UserDao extends BaseDao implements IUserDao{
 
-//        List<TronClasstype> list = super.query(sql,new Object[id],TronClasstype.class);
-//        return (list!=null && list.size()>0) ? list.get(0) : null;
-//    }
-
     public List<UserBean> login(UserBean userBean) {
         String sql = " SELECT * FROM dssuser WHERE username=? AND password=? ; ";
         Object[] paramsValue = {userBean.getUsername(),userBean.getPassword()};
@@ -26,6 +19,10 @@ public class UserDao extends BaseDao implements IUserDao{
     }
 
     public void register(UserBean userBean) {
+            String sql = " INSERT INTO dssuser (username,password,nickname,sex) VALUES(?,?,?,?); ";
+            Object[] paramsValue = {userBean.getUsername(),userBean.getPassword(),
+                    userBean.getNickname(),userBean.getSex()};
+            super.update(sql,paramsValue);
+        }
 
-    }
 }
