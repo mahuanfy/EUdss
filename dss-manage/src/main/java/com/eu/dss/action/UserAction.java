@@ -54,12 +54,11 @@ public class UserAction extends HttpServlet {
             JSONArray jsonArray = JSONArray.fromObject(userServic.login(userBean));
 
             req.getSession().setAttribute("user",jsonArray);
-            if(jsonArray.getJSONObject(0).get("rank").toString().equals("1")){
-                System.out.println(1111111);
-            }else{
-                System.out.println(jsonArray.getJSONObject(0).get("rank")+"ssss");
-            }
-
+//            if(jsonArray.getJSONObject(0).get("rank").toString().equals("1")){
+//                System.out.println(1111111);
+//            }else{
+//                System.out.println(jsonArray.getJSONObject(0).get("rank")+"ssss");
+//            }
             resp.sendRedirect(req.getContextPath() + "/Admin/index1.jsp");
         } else {
             resp.sendRedirect(req.getContextPath() + "/index.jsp");
@@ -82,11 +81,12 @@ public class UserAction extends HttpServlet {
     }
 //验证用户名是否存在
     protected void check(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+            String username = req.getParameter("username");
+            resp.getWriter().print(userServic.verify(username));
 
     }
     //权限
     protected void rank(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        System.out.println(111122233);
             HttpSession session = req.getSession();
         JSONArray jsonArray = (JSONArray) session.getAttribute("user");
         resp.getWriter().print(jsonArray.getJSONObject(0).get("rank"));

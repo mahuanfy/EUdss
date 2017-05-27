@@ -103,6 +103,10 @@
                                    data-fv-for="loginName"
                                    data-fv-result="NOT_VALIDATED" style="display: none;">用户ID必须大于6且小于20个字符
                             </small>
+                            <small id="username1_verify2" class="help-block" data-fv-validator="notEmpty"
+                                   data-fv-for="loginName"
+                                   data-fv-result="NOT_VALIDATED" style="display: none; color: red">用户ID已经存在
+                            </small>
                         </div>
                         <div class="form-group has-feedback">
                             <input id="nickname" name="nickname" type="text" class="form-control" placeholder="请输入昵称"
@@ -200,19 +204,24 @@
             $("#login").fadeIn("slow");
         });
 //验证用户是否存在
-        <%--$("input[name='register_username'] ").change(function () {--%>
-            <%--var name = $(this).val();--%>
-            <%--name = $.trim(name);//取出前后空格--%>
-            <%--if (name != "") {--%>
-                <%--$.post("${pageContext.request.contextPath}/UserAction?method=check",--%>
-                    <%--{"username": name, "time": new Date()},--%>
-                    <%--function (data, status) {--%>
+        $("input[name='register_username'] ").change(function () {
+            var name = $(this).val();
+//            name = $.trim(name);//取出前后空格
+            if (name != "") {
+                $.post("${pageContext.request.contextPath}/UserAction?method=check",
+                    {"username": name, "time": new Date()},
+                    function (data, status) {
 
+                    if(data == 1){
+                        $("#username1_verify2").show();
+                    }else {
+                        $("#username1_verify2").hide();
+                    }
 
-                    <%--}--%>
-                <%--);--%>
-            <%--}--%>
-        <%--});--%>
+                    }
+                );
+            }
+        });
         /*//注册信息跳转*/
 
 //填写正确隐藏提示

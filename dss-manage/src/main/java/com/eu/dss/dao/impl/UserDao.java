@@ -25,4 +25,11 @@ public class UserDao extends BaseDao implements IUserDao{
             super.update(sql,paramsValue);
         }
 
+    public int verify(String username) {
+        String sql = " SELECT * FROM dssuser WHERE username=? ; ";
+        Object[] paramsValue = {username};
+        List<UserBean> list = super.query(sql,paramsValue,UserBean.class);
+        return (list!=null && list.size()>0 ? 1 : 0);
+    }
+
 }

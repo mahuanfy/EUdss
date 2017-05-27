@@ -2,14 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d57b9edb-eb7d-4bd4-9bc2-a89459cf8fce" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/af51462b-2696-4f87-b1d9-743d91731135.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/af51462b-2696-4f87-b1d9-743d91731135.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/aa.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/aa.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/button.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/button.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/aa.html" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/aa.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/index.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/index.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -41,6 +40,20 @@
         <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
       </PATH_ELEMENT>
     </PATH>
+    <PATH>
+      <PATH_ELEMENT>
+        <option name="myItemId" />
+        <option name="myItemType" value="com.intellij.database.view.DatabaseStructure$Root" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="eudsstest@localhost" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+      <PATH_ELEMENT>
+        <option name="myItemId" value="eudsstest" />
+        <option name="myItemType" value="com.intellij.database.view.DbNodeDescriptor" />
+      </PATH_ELEMENT>
+    </PATH>
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
@@ -68,11 +81,78 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="419">
-              <caret line="244" column="80" lean-forward="true" selection-start-line="244" selection-start-column="80" selection-end-line="244" selection-end-column="80" />
+            <state relative-caret-position="-1083">
+              <caret line="107" column="108" lean-forward="false" selection-start-line="107" selection-start-column="108" selection-end-line="107" selection-end-column="108" />
+              <folding>
+                <element signature="n#style#0;n#small#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="eudsstest.dssuser" pinned="false" current-in-tab="false">
+        <entry file="dbDummy://dbtable:/13430ee5/af51462b-2696-4f87-b1d9-743d91731135/eudsstest.dssuser">
+          <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+            <state>
+              <filtering enabled="true" />
+            </state>
+          </provider>
+          <provider editor-type-id="text-editor">
+            <state relative-caret-position="0">
+              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="395">
+              <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUserServic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="583">
+              <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Userservic.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="481">
+              <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="447">
+              <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="IUserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="413">
+              <caret line="23" column="32" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="32" />
               <folding />
             </state>
           </provider>
@@ -182,8 +262,6 @@
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/util/ConnUtil.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/magic-check.css" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/login.css" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/af51462b-2696-4f87-b1d9-743d91731135/console.sql" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/BaseDao.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web.xml" />
@@ -194,10 +272,7 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/aaa.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/UserBean.java" />
         <option value="$PROJECT_DIR$/dss-service/src/main/java/com/eu/dss/dao/impl/TronClassDao.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java" />
         <option value="dbtable:/13430ee5/af51462b-2696-4f87-b1d9-743d91731135/eudsstest.dssuser" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/index.js" />
         <option value="$PROJECT_DIR$/dss-foreground/pom.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/main.html" />
@@ -208,7 +283,12 @@
         <option value="$PROJECT_DIR$/dss-manage/pom.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/aa.html" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
       </list>
     </option>
   </component>
@@ -309,7 +389,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
+              <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -323,7 +403,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
+              <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -345,37 +425,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
+              <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -409,7 +459,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-service" />
+              <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
@@ -450,20 +500,6 @@
               <option name="myItemId" value="dss-manage" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss-manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
@@ -473,37 +509,11 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="eu-dss" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dss-manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Admin" />
+              <option name="myItemId" value="dss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -534,6 +544,10 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="dss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dao" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1152,7 +1166,7 @@
       <workItem from="1495684922331" duration="4578000" />
       <workItem from="1495689782201" duration="514000" />
       <workItem from="1495729971921" duration="31788000" />
-      <workItem from="1495817108726" duration="17564000" />
+      <workItem from="1495817108726" duration="20094000" />
     </task>
     <servers />
   </component>
@@ -1162,7 +1176,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="232259000" />
+    <option name="totallyTimeSpent" value="234789000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1174,7 +1188,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1936" height="1096" extended-state="7" />
+    <frame x="-8" y="-8" width="1936" height="1096" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1185,18 +1199,18 @@
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.13948497" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.13948497" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39957264" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23076923" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23076923" sideWeight="0.49785408" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29700854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29700854" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2767094" sideWeight="0.49785408" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22639485" sideWeight="0.4935484" order="0" side_tool="false" content_ui="combo" />
@@ -1298,20 +1312,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="420">
-          <caret line="13" column="6" lean-forward="false" selection-start-line="13" selection-start-column="6" selection-end-line="13" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="399">
-          <caret line="13" column="19" lean-forward="false" selection-start-line="13" selection-start-column="19" selection-end-line="13" selection-end-column="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="jar://$MAVEN_REPOSITORY$/commons-beanutils/commons-beanutils/1.8.0/commons-beanutils-1.8.0.jar!/org/apache/commons/beanutils/BeanUtils.class">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="198">
@@ -1370,6 +1370,11 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding>
+            <element signature="e#349#350#0" expanded="false" />
+            <element signature="e#386#387#0" expanded="false" />
+            <element signature="e#418#419#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1403,28 +1408,6 @@
         <state relative-caret-position="340">
           <caret line="29" column="20" lean-forward="true" selection-start-line="29" selection-start-column="20" selection-end-line="29" selection-end-column="20" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="19" column="59" lean-forward="false" selection-start-line="19" selection-start-column="49" selection-end-line="19" selection-end-column="59" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="20" column="45" lean-forward="true" selection-start-line="20" selection-start-column="45" selection-end-line="20" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="782">
-          <caret line="28" column="0" lean-forward="false" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
         </state>
       </provider>
     </entry>
@@ -1555,19 +1538,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="dbDummy://dbtable:/13430ee5/af51462b-2696-4f87-b1d9-743d91731135/eudsstest.dssuser">
-      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
-        <state>
-          <filtering enabled="true" />
-        </state>
-      </provider>
-      <provider editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-68">
@@ -1592,6 +1562,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="447">
+          <caret line="31" column="51" lean-forward="false" selection-start-line="31" selection-start-column="51" selection-end-line="31" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="23" column="32" lean-forward="true" selection-start-line="20" selection-start-column="4" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="583">
+          <caret line="23" column="32" lean-forward="false" selection-start-line="23" selection-start-column="32" selection-end-line="23" selection-end-column="32" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="481">
+          <caret line="33" column="18" lean-forward="false" selection-start-line="33" selection-start-column="18" selection-end-line="33" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="dbDummy://dbtable:/13430ee5/af51462b-2696-4f87-b1d9-743d91731135/eudsstest.dssuser">
+      <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
+        <state>
+          <filtering enabled="true" />
+        </state>
+      </provider>
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="306">
@@ -1602,8 +1617,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="419">
-          <caret line="244" column="80" lean-forward="true" selection-start-line="244" selection-start-column="80" selection-end-line="244" selection-end-column="80" />
+        <state relative-caret-position="-1083">
+          <caret line="107" column="108" lean-forward="false" selection-start-line="107" selection-start-column="108" selection-end-line="107" selection-end-column="108" />
+          <folding>
+            <element signature="n#style#0;n#small#1;n#div#0;n#form#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="395">
+          <caret line="85" column="0" lean-forward="true" selection-start-line="85" selection-start-column="0" selection-end-line="85" selection-end-column="0" />
           <folding />
         </state>
       </provider>

@@ -28,4 +28,12 @@ public class Userservic implements IUserServic {
             }
 
     }
+
+    public int verify(String username) {
+        try {
+            return userDao.verify(username);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
