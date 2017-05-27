@@ -21,7 +21,7 @@
                 </div>
                 <h3>Eurasia Decision Support System后台管理系统</h3>
                 <ul class="list-icons">
-                    <li>Eurasia Decision Support System 是帮助管理人员在教学管理上做出合理的判断与决策，在整个开发过程中起到引导的作用，以及给读者提供简要的说明。</li>
+                    <li>Eurasia Decision Support System 帮助管理人员在教学管理上做出合理的判断与决策。</li>
                     <li>涵盖学生全生命周期各环节教学数据，从新生入校、在校生、毕业生等数据，为学校招生计划、专业计划调整、日常教学业务、毕业生就业等提供全方位的数据支撑。</li>
                     <li>提供分院、专业教学日常业务数据并可视化展示，为分院业务发展提供数据支撑。</li>
                 </ul>
@@ -87,7 +87,7 @@
         <div style="display: none" id="register_login" class="page-login-main animation-fade">
             <div class="vertical-align">
                 <div class="vertical-align-middle">
-                    <h1 class="hidden-xs">注册页面</h1>
+                    <h1 class="hidden-xs">注册信息</h1>
                     <p class="hidden-xs">Eurasia Decision Support System </p>
                     <form action="UserAction?method=register"
                           class="login-form fv-form fv-form-bootstrap" method="post"
@@ -95,19 +95,27 @@
                         <button type="submit" class="fv-hidden-submit"
                                 style="display: none; width: 0px; height: 0px;"></button>
                         <div class="form-group has-feedback">
-                            <label class="sr-only" for="username">用户ID</label>
-                            <input type="text" class="form-control" id="username1" name="register_username"
-                                   placeholder="请输入ID"
+                            <label class="sr-only" for="username">用户ID </label>
+                            <input id="username1" name="register_username" type="text" class="form-control"
+                                   placeholder="请输入6-20位ID"
                                    data-fv-field="loginName">
+                            <small id="username1_verify" class="help-block" data-fv-validator="notEmpty"
+                                   data-fv-for="loginName"
+                                   data-fv-result="NOT_VALIDATED" style="display: none;">用户ID必须大于6且小于20个字符
+                            </small>
                         </div>
                         <div class="form-group has-feedback">
-                            <input type="text" class="form-control" id="nickname" name="nickname" placeholder="请输入昵称"
+                            <input id="nickname" name="nickname" type="text" class="form-control" placeholder="请输入昵称"
                                    data-fv-field="loginName">
+                            <small id="nickname_verify" class="help-block" data-fv-validator="notEmpty"
+                                   data-fv-for="loginName"
+                                   data-fv-result="NOT_VALIDATED" style="display: none;">昵称不能为空
+                            </small>
                         </div>
                         <div class="form-group has-feedback ">
                             <span>&nbsp;&nbsp;&nbsp;&nbsp;性别：&nbsp;</span>
                             <label class="demo--label">
-                                <input class="demo--radio" type="radio" name="sex" value="男">
+                                <input class="demo--radio" type="radio" name="sex" value="男" checked>
                                 <span class="demo--radioInput"></span>男
                             </label>
                             <label class="demo--label">
@@ -118,29 +126,25 @@
 
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="password">密码</label>
-                            <input type="password" class="form-control" id="password_" name="register_password"
-                                   placeholder="请输入密码" data-fv-field="password1">
+                            <input id="password_" name="register_password" type="password" class="form-control"
+                                   placeholder="请输入6-20位密码" data-fv-field="password1">
                             <i class="form-control-feedback" data-fv-icon-for="password1" style="display: none;"></i>
-                            <small class="help-block" data-fv-validator="notEmpty" data-fv-for="password1"
-                                   data-fv-result="NOT_VALIDATED" style="display: none;">密码不能为空
-                            </small>
-                            <small class="help-block" data-fv-validator="stringLength" data-fv-for="password1"
-                                   data-fv-result="NOT_VALIDATED" style="display: none;">密码必须大于6且小于30个字符
+                            <small id="password1_verify" class="help-block" data-fv-validator="notEmpty"
+                                   data-fv-for="password1"
+                                   data-fv-result="NOT_VALIDATED" style="display: none;">密码必须大于6且小于20个字符
                             </small>
                         </div>
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="password">确认密码</label>
-                            <input type="password" class="form-control" id="password_verify"
-                                   name="register_passwordVerify"
+                            <input id="password_verify"
+                                   name="register_passwordVerify" type="password" class="form-control"
                                    placeholder="请确认输入密码" data-fv-field="password_verify">
-                            <i class="form-control-feedback" data-fv-icon-for="password1" style="display: none;"></i>
-                            <small id="register_password" class="help-block" data-fv-validator="notEmpty"
+                            <i class="form-control-feedback" data-fv-icon-for="password2" style="display: none;"></i>
+                            <small id="password2_verify" class="help-block" data-fv-validator="notEmpty"
                                    data-fv-for="password1"
-                                   data-fv-result="NOT_VALIDATED" style="display: none;">密码不能为空
+                                   data-fv-result="NOT_VALIDATED" style="display: none;">密码必须大于6且小于20个字符
                             </small>
-                            <small class="help-block" data-fv-validator="stringLength" data-fv-for="password1"
-                                   data-fv-result="NOT_VALIDATED" style="display: none;">密码必须大于6且小于30个字符
-                            </small>
+
                         </div>
                         <div class="col-sm-7">
                             <button type="button" id="button_register" class="btn btn-primary btn-block margin-top-10">
@@ -172,6 +176,18 @@
 <script src="Admin/js/bootstrap.min.js" data-deps="formValidation"></script>
 </body>
 <script type="text/javascript">
+//取消键盘回车事件
+    $(function () {
+        $("*").each(function () {
+            $(this).keypress(function (e) {
+                var key = window.event ? e.keyCode : e.which;
+                if (key.toString() == "13") {
+                    return false;
+                }
+            });
+        });
+    });
+//切换登录和注册
     $("#register_login").hide();
     $(document).ready(function () {
         $("#register").click(function () {
@@ -183,60 +199,99 @@
             $("#register_login").hide();
             $("#login").fadeIn("slow");
         });
-        //验证用户是否存在
-        $(":input[name='register_username']").change(function () {
-            var name = $(this).val();
-            name = $.trim(name);//取出前后空格
-            if (name != "") {
-                $.post("${pageContext.request.contextPath}/UserAction?method=check",
-                    {"username": name, "time": new Date()},
+//验证用户是否存在
+        <%--$("input[name='register_username'] ").change(function () {--%>
+            <%--var name = $(this).val();--%>
+            <%--name = $.trim(name);//取出前后空格--%>
+            <%--if (name != "") {--%>
+                <%--$.post("${pageContext.request.contextPath}/UserAction?method=check",--%>
+                    <%--{"username": name, "time": new Date()},--%>
+                    <%--function (data, status) {--%>
+
+
+                    <%--}--%>
+                <%--);--%>
+            <%--}--%>
+        <%--});--%>
+        /*//注册信息跳转*/
+
+//填写正确隐藏提示
+        $("#username1").blur(function () {
+            if ($("input[name='register_username'] ").val() !== null &&
+                $("input[name='register_username'] ").val() !== "" &&
+                $("input[name='register_username'] ").val().length >=6 &&
+                $("input[name='register_username'] ").val().length <=20) {
+                $("#username1_verify").hide();
+            }
+        });
+        $("#nickname").blur(function () {
+            if ($("input[name='nickname'] ").val() !== null &&
+                $("input[name='nickname'] ").val() !== "") {
+                $("#nickname_verify").hide();
+            }
+        });
+        $("#password_").blur(function () {
+            if ($("input[name='register_password'] ").val() !== null &&
+                $("input[name='register_password'] ").val() !== "" &&
+                $("input[name='register_password'] ").val().length >=6 &&
+                $("input[name='register_password'] ").val().length <=20) {
+                $("#password1_verify").hide();
+            }
+        });
+        $("#password_verify").blur(function () {
+            if ($("input[name='register_passwordVerify'] ").val() !== null &&
+                $("input[name='register_passwordVerify'] ").val() !== "" &&
+                $("input[name='register_passwordVerify'] ").val().length >=6 &&
+                $("input[name='register_passwordVerify'] ").val().length <=20) {
+                $("#password2_verify").hide();
+            }
+        });
+
+        //判断用户ID是否为空
+        $("#button_register").click(function () {
+                if ($("input[name='register_username'] ").val() === null ||
+                    $("input[name='register_username'] ").val() === "" ||
+                    $("input[name='register_username'] ").val().length <6 ||
+                    $("input[name='register_username'] ").val().length >20) {
+                    $("#username1_verify").show();
+                    $("#username1").focus();
+                }else
+            if ($("input[name='nickname'] ").val() === null ||
+                $("input[name='nickname'] ").val() === "") {
+                $("#nickname_verify").show();
+                $("#nickname").focus();
+            }else
+            if ($("input[name='register_password'] ").val() === null ||
+                $("input[name='register_password'] ").val() === "" ||
+                $("input[name='register_password'] ").val().length <6 ||
+                $("input[name='register_password'] ").val().length >20) {
+                $("#password1_verify").show();
+                $("#password_").focus();
+            }else
+            if ($("input[name='register_passwordVerify'] ").val() === null ||
+                $("input[name='register_passwordVerify'] ").val().length <6 ||
+                $("input[name='register_passwordVerify'] ").val().length >20||
+                $("input[name='register_passwordVerify'] ").val() === "") {
+                $("#password2_verify").show();
+                $("#password_verify").focus();
+            }else {
+                $.post("${pageContext.request.contextPath}/UserAction?method=register",
+                    {
+                        username: $("input[name='register_username'] ").val(),
+                        password: $("input[ name='register_password'] ").val(),
+                        nickname: $("input[ name='nickname'] ").val(),
+                        passwordVerify: $("input[ name='register_passwordVerify'] ").val(),
+                        sex: $("input[ name='sex'] ").val()
+                    },
                     function (data, status) {
-
-
+                    alert("恭喜注册成功");
+                    window.location.reload();
                     }
                 );
             }
         });
-        //注册信息跳转
-        $("#button_register").click(function () {
-//    //验证用户名
-//    if ($("input[name='register_username'] ").val() === null ||
-//    $("input[name='register_username'] ").val() === "") {
-//    alert("不能为空");
-//    this.focus();
-//    } else
-//    //验证密码是否为空
-//    if (alert($("input[ name='register_password'] ").val() === null) ||
-//    $("input[name='register_password'] ").val() === "") {
-//    alert("不能为空");
-//    this.focus();
-//    } else if (alert($("input[ name='register_passwordVerify'] ").val() === null) ||
-//    $("input[name='register_passwordVerify'] ").val() === "") {
-//    $("#register_password").show();
-//    alert("不能为空");
-//    this.focus();
-//    } else if (alert($("input[ name='nickname'] ").val() === null) ||
-//    $("input[name='nickname'] ").val() === "") {
-//    alert("不能为空");
-//    this.focus();
-//    } else {
-            $.post("${pageContext.request.contextPath}/UserAction?method=register",
-                {
-                    username: $("input[name='register_username'] ").val(),
-                    password: $("input[ name='register_password'] ").val(),
-                    nickname: $("input[ name='nickname'] ").val(),
-                    passwordVerify: $("input[ name='register_passwordVerify'] ").val(),
-                    sex: $("input[ name='sex'] ").val()
-                },
-                function (data, status) {
-                    window.location.reload();
-                }
-            );
-
-        });
     });
 </script>
-
 <script type="text/javascript">
 
 

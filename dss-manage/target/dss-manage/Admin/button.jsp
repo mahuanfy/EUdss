@@ -16,6 +16,63 @@
     <script type="text/javascript" src="js/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="js/button_js.js" charset="utf-8"></script>
 </head>
+
+
+<body>
+<%
+    JSONArray jsonArray = (JSONArray) session.getAttribute("user");
+    if(jsonArray==null){
+        response.sendRedirect(request.getContextPath() + "/index.jsp");
+    }else{
+%>
+<div style="margin: 15px;">
+    <fieldset class="layui-elem-field site-demo-button">
+        <legend>创课各分院每月点击次数数据统计</legend>
+        <div style="">
+
+            <div class="layui-btn-group">
+                <button id="refer" class="refer layui-btn layui-btn-normal layui-btn-small"><i class="layui-icon"></i>&nbsp;增加
+                </button>
+                <button id="delete" class="layui-btn layui-btn-danger layui-btn-small"><i class="layui-icon"></i>&nbsp;删除
+                </button>
+            </div>
+
+        </div>
+        <div>
+            <table class="layui-table">
+                <colgroup>
+                    <col width="40">
+                    <col width="60">
+                </colgroup>
+                <thead>
+                <tr>
+                    <th><input type="checkbox" id="selected-all"></th>
+                    <th>编号</th>
+                    <th>年份</th>
+                    <th>月份</th>
+                    <th>人居环境学院</th>
+                    <th>信息工程学院</th>
+                    <th>人文教育学院</th>
+                    <th>通识学院</th>
+                    <th>休闲管理学院</th>
+                    <th>高职学院</th>
+                    <th>会计学院</th>
+                    <th>爱德艺术学院</th>
+                    <th>文化传媒学院</th>
+                    <th>物流贸易学院</th>
+                    <th>金融学院</th>
+                    <th>操作</th>
+                </tr>
+                </thead>
+                <tbody class="tr_1">
+
+                </tbody>
+            </table>
+        </div>
+        <div id="demo8"></div>
+        <ul id="biuuu_city_list"></ul>
+    </fieldset>
+</div>
 <script type="text/javascript">
     $(document).ready(function () {
 
@@ -83,62 +140,6 @@
 
 
 </script>
-
-<body>
-<%
-    JSONArray jsonArray = (JSONArray) session.getAttribute("user");
-    if(jsonArray==null){
-        response.sendRedirect(request.getContextPath() + "/index.jsp");
-    }else{
-%>
-<div style="margin: 15px;">
-    <fieldset class="layui-elem-field site-demo-button">
-        <legend>创课各分院每月点击次数数据统计</legend>
-        <div style="">
-
-            <div class="layui-btn-group">
-                <button id="refer" class="refer layui-btn layui-btn-normal layui-btn-small"><i class="layui-icon"></i>&nbsp;增加
-                </button>
-                <button id="delete" class="layui-btn layui-btn-danger layui-btn-small"><i class="layui-icon"></i>&nbsp;删除
-                </button>
-            </div>
-
-        </div>
-        <div>
-            <table class="layui-table">
-                <colgroup>
-                    <col width="40">
-                    <col width="60">
-                </colgroup>
-                <thead>
-                <tr>
-                    <th><input type="checkbox" id="selected-all"></th>
-                    <th>编号</th>
-                    <th>年份</th>
-                    <th>月份</th>
-                    <th>人居环境学院</th>
-                    <th>信息工程学院</th>
-                    <th>人文教育学院</th>
-                    <th>通识学院</th>
-                    <th>休闲管理学院</th>
-                    <th>高职学院</th>
-                    <th>会计学院</th>
-                    <th>爱德艺术学院</th>
-                    <th>文化传媒学院</th>
-                    <th>物流贸易学院</th>
-                    <th>金融学院</th>
-                    <th>操作</th>
-                </tr>
-                </thead>
-                <tbody class="tr_1">
-
-                </tbody>
-            </table>
-        </div>
-        <div id="demo8"></div>
-        <ul id="biuuu_city_list"></ul>
-    </fieldset>
-</div>
 <script type="text/javascript" src="plugins/layui/layui.js"></script>
 <script>
     layui.use(['form', 'layedit', 'laydate'], function() {
