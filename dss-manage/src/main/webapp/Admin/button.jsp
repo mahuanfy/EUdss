@@ -43,6 +43,20 @@
                 <colgroup>
                     <col width="40">
                     <col width="60">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="">
+                    <col width="110">
                 </colgroup>
                 <thead>
                 <tr>

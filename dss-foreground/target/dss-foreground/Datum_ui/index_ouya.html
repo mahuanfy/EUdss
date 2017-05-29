@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>欧亚学院创课统计数据</title>
+    <script src="../js/echarts.min.js"></script>
+    <script src="../js/china.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link href="../css/eurisia_echar.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<div id="Eurisia_body">
+    <!--<div id="Eurisia_top">-->
+        <!--<div class="img_eu">-->
+            <!--<span class="Eurisia_img">-->
+                <!--<img src="../img/eurasia.png">-->
+                <!--&lt;!&ndash;<span class="font_a">西安欧亚学院</span>&ndash;&gt;-->
+            <!--</span>-->
+
+        <!--</div>-->
+        <!--<div class="font_b">西安欧亚学院创课数据统计</div>-->
+    <!--</div>-->
+    <div class="main">
+        <!--<div class="main_his">-->
+            <!--<div id="main_Histogram"></div>-->
+            <!--<script type="text/javascript">-->
+                <!--// 树状图-->
+                <!--var myChart = echarts.init(document.getElementById("main_Histogram"));-->
+                <!--var option = {-->
+                    <!--title: {-->
+                        <!--text: '西安欧亚学院创课数据统计',-->
+                        <!--subtext: '每月统计量(单位/次)'-->
+                    <!--},-->
+                    <!--tooltip: {-->
+                        <!--trigger: 'axis'-->
+                    <!--},-->
+                    <!--legend: {-->
+                        <!--data: ['老师', '学生']-->
+                    <!--},-->
+                    <!--toolbox: {-->
+                        <!--show: true,-->
+                        <!--feature: {-->
+                            <!--dataView: {show: true, readOnly: false},-->
+                            <!--magicType: {show: true, type: ['line', 'bar']},-->
+                            <!--restore: {show: true},-->
+                            <!--saveAsImage: {show: true}-->
+                        <!--}-->
+                    <!--},-->
+                    <!--calculable: true,-->
+                    <!--xAxis: [-->
+                        <!--{-->
+                            <!--type: 'category',-->
+                            <!--data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']-->
+                        <!--}-->
+                    <!--],-->
+                    <!--yAxis: [-->
+                        <!--{-->
+                            <!--type: 'value'-->
+                        <!--}-->
+                    <!--],-->
+                    <!--series: [-->
+                        <!--{-->
+                            <!--name: '老师',-->
+                            <!--type: 'bar',-->
+                            <!--data: [20, 49, 70, 232, 256, 767, 1356, 1622, 326, 200, 64, 33],-->
+                            <!--markPoint: {-->
+                                <!--data: [-->
+                                    <!--{type: 'max', name: '最大值'},-->
+                                    <!--{type: 'min', name: '最小值'}-->
+                                <!--]-->
+                            <!--},-->
+                            <!--markLine: {-->
+                                <!--data: [-->
+                                    <!--{type: 'average', name: '平均值'}-->
+                                <!--]-->
+                            <!--}-->
+                        <!--},-->
+                        <!--{-->
+                            <!--name: '学生',-->
+                            <!--type: 'bar',-->
+                            <!--data: [26, 59, 90, 264, 287, 707, 1756, 1822, 487, 188, 60, 23],-->
+                            <!--markPoint: {-->
+                                <!--data: [-->
+                                    <!--{name: '年最高', value: 1822, xAxis: 7, yAxis: 1822},-->
+                                    <!--{name: '年最低', value: 23, xAxis: 11, yAxis: 3}-->
+                                <!--]-->
+                            <!--},-->
+                            <!--markLine: {-->
+                                <!--data: [-->
+                                    <!--{type: 'average', name: '平均值'}-->
+                                <!--]-->
+                            <!--}-->
+                        <!--}-->
+                    <!--]-->
+                <!--};-->
+                <!--// 使用刚指定的配置项和数据显示图表。-->
+                <!--myChart.setOption(option);-->
+            <!--</script>-->
+        <!--</div>-->
+        <div class="main_his">
+            <div id="main_chart"></div>
+            <script type="text/javascript">
+                var myChart = echarts.init(document.getElementById("main_chart"));
+                var option = {
+                    title: {
+                        text: '西安欧亚学院创课数据统计',
+                        subtext: '每月统计量(单位/次)',
+                        x: 'center'
+                    },
+                    tooltip: {
+                        trigger: 'item',
+                        formatter: "{a} <br/>{b} : {c} ({d}%)"
+                    },
+                    legend: {
+                        orient: 'vertical',
+                        left: 'left',
+                        data: ['大一学生', '大二学生', '大三学生', '大四学生', '代课老师']
+                    },
+                    series: [
+                        {
+                            name: '访问来源',
+                            type: 'pie',
+                            radius: '55%',
+                            center: ['50%', '60%'],
+                            data: [
+                                {value: 335, name: '大一学生'},
+                                {value: 310, name: '大二学生'},
+                                {value: 234, name: '大三学生'},
+                                {value: 135, name: '大四学生'},
+                                {value: 1548, name: '代课老师'}
+                            ],
+                            itemStyle: {
+                                emphasis: {
+                                    shadowBlur: 10,
+                                    shadowOffsetX: 0,
+                                    shadowColor: 'rgba(0, 0, 0, 0.5)'
+                                }
+                            }
+                        }
+                    ]
+                };
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+            </script>
+        </div>
+    </div>
+    <!--<div id="Eurisia_bottom">-->
+        <!--<span class="font_c">Copyright © 2017 Eurisia.com 保留所有权利 </span>-->
+    <!--</div>-->
+</div>
+
+
+</body>
+</html>

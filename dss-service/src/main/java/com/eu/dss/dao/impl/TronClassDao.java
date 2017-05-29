@@ -8,7 +8,7 @@ import net.sf.json.JSONArray;
 import java.util.List;
 
 /**
- * Created by pc on 2017/5/13.
+ * Created by 马欢欢 on 2017/5/23.
  */
 public class TronClassDao extends BaseDao implements ITronClassDao  {
 
@@ -26,24 +26,34 @@ public class TronClassDao extends BaseDao implements ITronClassDao  {
         return (list!=null && list.size()>0) ? list.get(0) : null;
     }
 
-    public void save(TronClasstype tronClasstype) {
+    public void save(TronClasstype tronClassType) {
         String sql = " INSERT INTO eu_tronclass (year,tron_month,eu_rj,eu_xin,eu_rw,eu_ts,eu_xiu,eu_gz,eu_kuai,eu_ad,eu_wc,eu_wu,eu_jr) VALUES(?,?,?,?,?,?,?,?,?,?,?,?,?); ";
-        Object[] paramsValue = {tronClasstype.getYear(),tronClasstype.getTron_month(),
-                tronClasstype.getEu_rj(),   tronClasstype.getEu_xin(),
-                tronClasstype.getEu_rw(),   tronClasstype.getEu_ts(),
-                tronClasstype.getEu_xiu(),  tronClasstype.getEu_gz(),
-                tronClasstype.getEu_kuai(), tronClasstype.getEu_ad(),
-                tronClasstype.getEu_wc(),   tronClasstype.getEu_wu(),
-                tronClasstype.getEu_jr()};
+        Object[] paramsValue = {tronClassType.getYear(),tronClassType.getTron_month(),
+                tronClassType.getEu_rj(),   tronClassType.getEu_xin(),
+                tronClassType.getEu_rw(),   tronClassType.getEu_ts(),
+                tronClassType.getEu_xiu(),  tronClassType.getEu_gz(),
+                tronClassType.getEu_kuai(), tronClassType.getEu_ad(),
+                tronClassType.getEu_wc(),   tronClassType.getEu_wu(),
+                tronClassType.getEu_jr()};
         super.update(sql,paramsValue);
     }
 
-    public void update(TronClasstype tronClassType) {
-
+    public void update(TronClasstype tronClassType ) {
+        String sql = " UPDATE eu_tronclass SET year = ?,tron_month =?,eu_rj =?," +
+                "eu_xin =?,eu_rw=?,eu_ts=?,eu_xiu=?,eu_gz=?,eu_kuai=?," +
+                "eu_ad=?,eu_wc=?,eu_wu=?,eu_jr=? where id=?";
+        Object[] paramsValue = {tronClassType.getYear(),tronClassType.getTron_month(),
+                tronClassType.getEu_rj(),   tronClassType.getEu_xin(),
+                tronClassType.getEu_rw(),   tronClassType.getEu_ts(),
+                tronClassType.getEu_xiu(),  tronClassType.getEu_gz(),
+                tronClassType.getEu_kuai(), tronClassType.getEu_ad(),
+                tronClassType.getEu_wc(),   tronClassType.getEu_wu(),
+                tronClassType.getEu_jr(),   tronClassType.getId()};
+        super.update(sql,paramsValue);
     }
 
     public void delete(int id) {
-        String sql = " ";
+        String sql = " delete from eu_tronclass where id =? ";
         Object[] paramsValue = {id};
         super.update(sql,paramsValue);
     }

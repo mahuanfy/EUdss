@@ -97,7 +97,7 @@
                         <div class="form-group has-feedback">
                             <label class="sr-only" for="username">用户ID </label>
                             <input id="username1" name="register_username" type="text" class="form-control"
-                                   placeholder="请输入6-20位ID"
+                                   placeholder="请输入ID 6-20位"
                                    data-fv-field="loginName">
                             <small id="username1_verify" class="help-block" data-fv-validator="notEmpty"
                                    data-fv-for="loginName"
@@ -148,6 +148,10 @@
                                    data-fv-for="password1"
                                    data-fv-result="NOT_VALIDATED" style="display: none;">密码必须大于6且小于20个字符
                             </small>
+                            <small id="password2_verify2" class="help-block" data-fv-validator="notEmpty"
+                                   data-fv-for="password1"
+                                   data-fv-result="NOT_VALIDATED" style="display: none;color:red;">两次密码输入不一致
+                            </small>
 
                         </div>
                         <div class="col-sm-7">
@@ -180,7 +184,7 @@
 <script src="Admin/js/bootstrap.min.js" data-deps="formValidation"></script>
 </body>
 <script type="text/javascript">
-//取消键盘回车事件
+    //取消键盘回车事件
     $(function () {
         $("*").each(function () {
             $(this).keypress(function (e) {
@@ -191,7 +195,7 @@
             });
         });
     });
-//切换登录和注册
+    //切换登录和注册
     $("#register_login").hide();
     $(document).ready(function () {
         $("#register").click(function () {
@@ -212,24 +216,26 @@
                     {"username": name, "time": new Date()},
                     function (data, status) {
 
-                    if(data == 1){
-                        $("#username1_verify2").show();
-                    }else {
-                        $("#username1_verify2").hide();
-                    }
+                        if (data == 1) {
+                            $("#username1_verify2").show();
+                        } else {
+                            $("#username1_verify2").hide();
+                        }
 
                     }
                 );
             }
         });
+//验证两次密码是否输入相同
+
         /*//注册信息跳转*/
 
 //填写正确隐藏提示
         $("#username1").blur(function () {
             if ($("input[name='register_username'] ").val() !== null &&
                 $("input[name='register_username'] ").val() !== "" &&
-                $("input[name='register_username'] ").val().length >=6 &&
-                $("input[name='register_username'] ").val().length <=20) {
+                $("input[name='register_username'] ").val().length >= 6 &&
+                $("input[name='register_username'] ").val().length <= 20) {
                 $("#username1_verify").hide();
             }
         });
@@ -242,48 +248,48 @@
         $("#password_").blur(function () {
             if ($("input[name='register_password'] ").val() !== null &&
                 $("input[name='register_password'] ").val() !== "" &&
-                $("input[name='register_password'] ").val().length >=6 &&
-                $("input[name='register_password'] ").val().length <=20) {
+                $("input[name='register_password'] ").val().length >= 6 &&
+                $("input[name='register_password'] ").val().length <= 20) {
                 $("#password1_verify").hide();
             }
         });
         $("#password_verify").blur(function () {
             if ($("input[name='register_passwordVerify'] ").val() !== null &&
                 $("input[name='register_passwordVerify'] ").val() !== "" &&
-                $("input[name='register_passwordVerify'] ").val().length >=6 &&
-                $("input[name='register_passwordVerify'] ").val().length <=20) {
+                $("input[name='register_passwordVerify'] ").val().length >= 6 &&
+                $("input[name='register_passwordVerify'] ").val().length <= 20) {
                 $("#password2_verify").hide();
             }
         });
 
-        //判断用户ID是否为空
+//判断用户ID是否为空
         $("#button_register").click(function () {
-                if ($("input[name='register_username'] ").val() === null ||
-                    $("input[name='register_username'] ").val() === "" ||
-                    $("input[name='register_username'] ").val().length <6 ||
-                    $("input[name='register_username'] ").val().length >20) {
-                    $("#username1_verify").show();
-                    $("#username1").focus();
-                }else
-            if ($("input[name='nickname'] ").val() === null ||
+
+
+            if ($("input[name='register_username'] ").val() === null ||
+                $("input[name='register_username'] ").val() === "" ||
+                $("input[name='register_username'] ").val().length < 6 ||
+                $("input[name='register_username'] ").val().length > 20) {
+                $("#username1_verify").show();
+                $("#username1").focus();
+            } else if ($("input[name='nickname'] ").val() === null ||
                 $("input[name='nickname'] ").val() === "") {
                 $("#nickname_verify").show();
                 $("#nickname").focus();
-            }else
-            if ($("input[name='register_password'] ").val() === null ||
+            } else if ($("input[name='register_password'] ").val() === null ||
                 $("input[name='register_password'] ").val() === "" ||
-                $("input[name='register_password'] ").val().length <6 ||
-                $("input[name='register_password'] ").val().length >20) {
+                $("input[name='register_password'] ").val().length < 6 ||
+                $("input[name='register_password'] ").val().length > 20) {
                 $("#password1_verify").show();
                 $("#password_").focus();
-            }else
-            if ($("input[name='register_passwordVerify'] ").val() === null ||
-                $("input[name='register_passwordVerify'] ").val().length <6 ||
-                $("input[name='register_passwordVerify'] ").val().length >20||
-                $("input[name='register_passwordVerify'] ").val() === "") {
-                $("#password2_verify").show();
+            } else
+            if ($("input[name='register_password'] ").val() !==
+                $("input[name='register_passwordVerify'] ").val()) {
+                $("#password2_verify2").show();
                 $("#password_verify").focus();
-            }else {
+            } else {
+//提交注册信息
+                $("#password2_verify2").hide();
                 $.post("${pageContext.request.contextPath}/UserAction?method=register",
                     {
                         username: $("input[name='register_username'] ").val(),
@@ -293,8 +299,8 @@
                         sex: $("input[ name='sex'] ").val()
                     },
                     function (data, status) {
-                    alert("恭喜注册成功");
-                    window.location.reload();
+                        alert("恭喜注册成功");
+                        window.location.reload();
                     }
                 );
             }

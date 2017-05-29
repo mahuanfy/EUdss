@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>欧亚决策中心</title>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/index_js.js"></script>
+    <link rel="stylesheet" href="./css/layui.css" media="all">
+    <link rel="stylesheet" href="./css/global.css" media="all">
+    <link rel="stylesheet" href="./css/index_css.css" media="all">
+</head>
+<body>
+<div class="layui-layout layui-layout-admin ">
+    <!--头部导航-->
+    <div class="layui-header header header-demo">
+        <div class="layui-main">
+            <a class="logo" href="#">
+                <img src="./img/eurasia.png" alt="西安欧亚学院">
+            </a>
+        </div>
+    </div>
+
+    <!--左侧导航-->
+    <div class="layui-side layui-bg-black">
+        <div class="layui-side-scroll">
+            <ul class="layui-nav layui-nav-tree site-demo-nav ">
+                <div class=" layui-nav-item layui-nav-itemed">
+                    <span class="contents"></span>
+                </div>
+                <div class=" layui-nav-item layui-nav-itemed">
+                    <span class="contents">目录</span>
+                </div>
+                <li class=" layui-nav-item a_click a_click2">
+                    <a class="javascript:;" href="Datum_ui/idex_pageView.html" target="index_conter"><span
+                            class="img_styte"><img src="img/index_1.png" target="index_conter"></span> 决策中心概况</a>
+                </li>
+                <li class="layui-nav-item a_click">
+                    <a class="javascript:;" href="Datum_ui/index_TronClass.html" target="index_conter"> <span class="img_styte"><img src="img/index_21.png"></span>专业与学科情况分析</a>
+                </li>
+                <li class="layui-nav-item a_click huan">
+                    <a class="javascript:; " id="secondary" href="javascript:;"><span class="img_styte"> <img
+                            src="img/index_jao.png"></span>教学情况分析
+                        <span class="layui-nav-more"></span>
+                    </a>
+                    <dl id="secondary_menu" class="layui-nav-child">
+
+                        <dd class="a_click1">
+                            <a href="Datum_ui/index_ouya.html" target="index_conter">
+                                <cite> <span class="img_styte2"> <img src="img/index_kejian.png"></span>课程建设</cite>
+                            </a>
+                        </dd>
+                        <dd class="a_click1">
+                            <a href="Datum_ui/idex_pageView.html" target="index_conter">
+                                <cite><span class="img_styte2"> <img src="img/index_keli.png"></span>课程历年情况</cite>
+                            </a>
+                        </dd>
+                        <dd class="a_click1">
+                            <a href="Datum_ui/index_TronClass.html" target="index_conter">
+                                <cite> <span class="img_styte2"> <img src="img/index_ping.png"></span>教学评价</cite>
+                            </a>
+                        </dd>
+
+                        <dd class="a_click1">
+                            <a href="Datum_ui/idex_pageView.html" target="index_conter">
+                                <cite><span class="img_styte2"> <img src="img/index_xiang.png"></span>教学项目</cite>
+                            </a>
+                        </dd>
+
+                    </dl>
+                </li>
+                <li class="layui-nav-item a_click" >
+                    <a class="javascript:;" href="Datum_ui/index_ouya.html" target="index_conter"> <span class="img_styte"><img src="img/index_shizi.png"></span>师资情况分析</a>
+                </li>
+                <li class="layui-nav-item a_click">
+                    <a class="javascript:;" href="Datum_ui/idex_pageView.html" target="index_conter"> <span class="img_styte"><img src="img/index_zhao1.png"></span>招生情况分析</a>
+                </li>
+                <li class="layui-nav-item a_click">
+                    <a class="javascript:;" href="Datum_ui/index_ouya.html" target="index_conter"> <span class="img_styte"><img src="img/index_zhao.png"></span>学生情况分析</a>
+                </li>
+                <li class="layui-nav-item a_click">
+                    <a class="javascript:;" href="Datum_ui/idex_pageView.html" target="index_conter"><span class="img_styte"><img
+                            src="img/index_bi.png"></span>毕业情况分析</a>
+                </li>
+                <li class="layui-nav-item a_click">
+                    <a class="javascript:;" href="Datum_ui/index_ouya.html" target="index_conter"> <span class="img_styte"><img src="img/index_ka.png"></span>一卡通情况分析</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--中间内容-->
+    <div class="layui-tab layui-tab-brief" lay-filter="demoTitle">
+        <ul class="layui-tab-title site-demo-title">
+            <li class="layui-this">数据显示</li>
+
+
+        </ul>
+        <div class="layui-body layui-tab-content site-demo site-demo-body">
+
+
+            <div class="layui-tab-item layui-show">
+                <div class="layui-main" id="layui_main">
+                    <div id="LAY_preview">
+                        <div class="layui-elem-field site-demo-button">
+                            <iframe src="Datum_ui/idex_pageView.html " name="index_conter" width="100%" height="850px;"
+                                    scrolling="no" frameborder="0"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="layui-footer footer footer-demo">
+        <div class="layui-main">
+            <p><a href="./index.html">eurasia.edu</a>Eurasia © 2017</p>
+            <p>
+                <a href="http://www.eurasia.edu/" target="_blank">西安欧亚学院</a>
+                <a href="#">联系我们</a>
+                <a href="http://jpkc.eurasia.edu/xxgc/" target="_blank">信息工程学院</a>
+                <a href="http://home.eurasia.edu/" target="_blank">校园内网</a>
+            </p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
