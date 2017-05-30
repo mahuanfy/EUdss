@@ -20,6 +20,7 @@
           <element id="library" level="project" name="Maven: net.sf.ezmorph:ezmorph:1.0.6" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.18" />
           <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.6" />
+          <element id="library" level="project" name="Maven: junit:junit:4.8" />
         </element>
       </element>
       <element id="directory" name="META-INF">

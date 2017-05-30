@@ -4,6 +4,8 @@ import com.eu.dss.dao.ITronClassDao;
 import com.eu.dss.dao.impl.TronClassDao;
 import com.eu.dss.entity.TronClasstype;
 import com.eu.dss.servic.ITronClassService;
+import com.eu.dss.util.PageBean;
+
 import java.util.List;
 
 /**
@@ -57,6 +59,15 @@ public class TronClassService implements ITronClassService {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    public void getAll(PageBean pageBean) {
+        try {
+            tronClassDao.getAll(pageBean);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
     }
 
 

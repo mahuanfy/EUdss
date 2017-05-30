@@ -184,6 +184,12 @@
 <script src="Admin/js/bootstrap.min.js" data-deps="formValidation"></script>
 </body>
 <script type="text/javascript">
+    $.post("${pageContext.request.contextPath}/TronClassServlet?method=pages",
+        function (data, status) {
+
+        }
+    );
+
     //取消键盘回车事件
     $(function () {
         $("*").each(function () {

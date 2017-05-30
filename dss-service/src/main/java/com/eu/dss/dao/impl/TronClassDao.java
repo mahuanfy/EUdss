@@ -3,8 +3,16 @@ package com.eu.dss.dao.impl;
 import com.eu.dss.dao.BaseDao;
 import com.eu.dss.dao.ITronClassDao;
 import com.eu.dss.entity.TronClasstype;
+import com.eu.dss.util.ConnUtil;
+import com.eu.dss.util.PageBean;
 import net.sf.json.JSONArray;
+import org.junit.Test;
 
+import java.awt.print.Pageable;
+import java.sql.Connection;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -13,8 +21,9 @@ import java.util.List;
 public class TronClassDao extends BaseDao implements ITronClassDao  {
 
     public List<TronClasstype> TronClasstype() {
-        String sql = " SELECT * FROM eu_tronclass ; ";
-        List <TronClasstype> list = super.query(sql,null,TronClasstype.class);
+        String sql = " SELECT * FROM eu_tronclass limit ?,?; ";
+        Object[] paramsValue ={0,10};
+        List <TronClasstype> list = super.query(sql,paramsValue,TronClasstype.class);
         JSONArray jsonArray = JSONArray.fromObject(list);
         System.out.println("bbbb"+jsonArray);
         return list;
@@ -58,6 +67,60 @@ public class TronClassDao extends BaseDao implements ITronClassDao  {
         super.update(sql,paramsValue);
     }
 
+    public int getTotalCount() throws Exception {
+    PreparedStatement pstmt = null;
+    Connection conn = null;
+    conn = ConnUtil.getConnextion();
+    String sql = " SELECT count(*) FROM eu_tronclass  ; ";
+
+        pstmt = conn.prepareStatement(sql);
+        ResultSet rs = pstmt.executeQuery();
+        while(rs.next()) {
+            return rs.getInt(1);
+        }
+        ConnUtil.close(rs, pstmt, conn);
+
+        return 0;
+}
+//@Test
+//public void aaa(){
+//    PageBean pageBean = new PageBean();
+//    pageBean.setPageCurrent(2);
+//    try {
+//        getAll(pageBean);
+//    } catch (Exception e) {
+//        e.printStackTrace();
+//    }
+//}
+
+    public void getAll(PageBean pageBean) throws Exception {
+        int totalCount = this.getTotalCount();//总记录数
+        pageBean.setTotalCount(totalCount);//填充总记录数
+
+        /*
+		 * 问题： jsp页面，如果当前页为首页，再点击上一页报错！
+		 *              如果当前页为末页，再点下一页显示有问题！
+		 * 解决：
+		 * 	   1. 如果当前页 <= 0;       当前页设置当前页为1;
+		 * 	   2. 如果当前页 > 最大页数；  当前页设置为最大页数
+		 */
+         // 判断
+        if (pageBean.getPageCurrent() <=0) {
+            pageBean.setPageCurrent(1);					    // 把当前页设置为1
+        } else if (pageBean.getPageCurrent() > pageBean.getTotalPage()){
+            pageBean.setPageCurrent(pageBean.getTotalPage());		// 把当前页设置为最大页数
+        }
+
+        int pageCurrent = pageBean.getPageCurrent();//当前页
+        int index = (pageCurrent -1)*pageBean.getPageCount();//起始查询位置
+        int count = pageBean.getPageCount();//每页显示的数量
+        String sql = "select * from eu_tronclass limit ?,?";
+        Object[] paramsValue = {index,count};
+        List <TronClasstype> list = super.query(sql,paramsValue,TronClasstype.class);
+        pageBean.setPageData(list);
+        JSONArray jsonArray = JSONArray.fromObject(list);
+        System.out.println("getAll"+jsonArray);
+    }
 
 }
 

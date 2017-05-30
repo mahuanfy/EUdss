@@ -4,7 +4,10 @@ package com.eu.dss.action;
 import com.eu.dss.entity.TronClasstype;
 import com.eu.dss.servic.ITronClassService;
 import com.eu.dss.servic.impl.TronClassService;
+import com.eu.dss.util.PageBean;
 import net.sf.json.JSONArray;
+import net.sf.json.JSONObject;
+import org.junit.Test;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -13,12 +16,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.List;
+
 /**
  * Created 马欢欢 pc on 2017/5/20.
  */
-@WebServlet(name = "TronClassServlet" ,urlPatterns = "/TronClassServlet")
+@WebServlet(name = "TronClassServlet", urlPatterns = "/TronClassServlet")
 public class TronClassAction extends HttpServlet {
-   private ITronClassService tronClassService = new TronClassService();
+    private ITronClassService tronClassService = new TronClassService();
+
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         doGet(req, resp);
@@ -30,23 +35,42 @@ public class TronClassAction extends HttpServlet {
         req.setCharacterEncoding("utf-8");
         String method = req.getParameter("method");
 
-        if("tronClasstype".equals(method)){
-            tronClasstypeFind(req,resp);
-        }else
-        if("save".equals(method)){
-            save(req,resp);
+        if ("tronClasstype".equals(method)) {
+            tronClasstypeFind(req, resp);
+        } else if ("save".equals(method)) {
+            save(req, resp);
+        } else if ("pool".equals(method)) {
+            pool(req, resp);
+        } else if ("pages".equals(method)) {
+            pages(req, resp);
         }
+
     }
 
 
-    //查询
+    /**
+     * 查出创课信息
+     *
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void tronClasstypeFind(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
         List<TronClasstype> tronClasstype = tronClassService.TronClasstypeFind();
         JSONArray jsonArray = JSONArray.fromObject(tronClasstype);
         resp.getWriter().print(jsonArray);
     }
-    //保存
+
+    /**
+     * 保存创客信息
+     *
+     * @param req
+     * @param resp
+     * @throws ServletException
+     * @throws IOException
+     */
     protected void save(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         TronClasstype tronClasstype = new TronClasstype();
         tronClasstype.setYear(req.getParameter("year"));
@@ -62,11 +86,38 @@ public class TronClassAction extends HttpServlet {
         tronClasstype.setEu_wc(Integer.parseInt(req.getParameter("eu_wc")));
         tronClasstype.setEu_wu(Integer.parseInt(req.getParameter("eu_wu")));
         tronClasstype.setEu_jr(Integer.parseInt(req.getParameter("eu_jr")));
-         tronClassService.save(tronClasstype);
-        resp.sendRedirect(req.getContextPath()+"/Admin/button.jsp");
+        tronClassService.save(tronClasstype);
+        resp.sendRedirect(req.getContextPath() + "/Admin/button.jsp");
     }
 
+    /**
+     * 查询分页显示
+     */
+    protected void pool(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        PageBean pageBean = new PageBean();
+        int pageCurrent = Integer.parseInt(req.getParameter("curr"));
+//        int pageCurrent=1;
+        pageBean.setPageCurrent(pageCurrent);
+        tronClassService.getAll(pageBean);
+        List<TronClasstype> TronClasstypelist = pageBean.getPageData();
+        JSONArray jsonArray = JSONArray.fromObject(TronClasstypelist);
+        resp.getWriter().print(jsonArray);
+        System.out.println("servlet" + jsonArray);
+    }
 
+    protected void pages(HttpServletRequest req, HttpServletResponse resp) {
+        PageBean pageBean = new PageBean();
+        tronClassService.getAll(pageBean);
+        System.out.println("99999:"+pageBean.getTotalPage());
+        req.getSession().setAttribute("pages",pageBean.getTotalPage());
+
+        try {
+            resp.getWriter().print(pageBean.getTotalPage());
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
+    }
 }
 
 

@@ -1,6 +1,9 @@
 package com.eu.dss.dao;
 
 import com.eu.dss.entity.TronClasstype;
+import com.eu.dss.util.PageBean;
+
+import java.sql.SQLException;
 import java.util.List;
 
 /**
@@ -36,7 +39,15 @@ public interface ITronClassDao {
      */
     void delete(int id);
 
+    /**
+     * 总记录数
+     */
+    int getTotalCount() throws SQLException, Exception;
 
+    /**
+     * 分页查询数据
+     */
+    void getAll(PageBean pageBean) throws Exception;
 
 
 

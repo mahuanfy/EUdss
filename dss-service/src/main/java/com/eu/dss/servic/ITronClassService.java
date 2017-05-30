@@ -1,6 +1,7 @@
 package com.eu.dss.servic;
 
 import com.eu.dss.entity.TronClasstype;
+import com.eu.dss.util.PageBean;
 
 import java.util.List;
 
@@ -36,6 +37,11 @@ public interface ITronClassService {
      *删除
      */
     void delete(int id);
+
+    /**
+     * 分页查询数据
+     */
+    void getAll(PageBean pageBean);
 
 
 }

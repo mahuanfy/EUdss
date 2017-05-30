@@ -44,7 +44,7 @@
                     <col width="40">
                     <col width="60">
                     <col width="">
-                    <col width="">
+                    <col width="100">
                     <col width="">
                     <col width="">
                     <col width="">
@@ -83,46 +83,72 @@
                 </tbody>
             </table>
         </div>
-        <div id="demo8"></div>
+        <div id="demo1"></div>
         <ul id="biuuu_city_list"></ul>
     </fieldset>
 </div>
 <script type="text/javascript">
+
+
     $(document).ready(function () {
 
+        //总页数
         $("#refer_div").hide();
         var tronClasstype = [];
         var dataLength = [];
-        $.post("${pageContext.request.contextPath}/TronClassServlet?method=tronClasstype",
-            function (data, status) {
-                for (var i = 0; i < data.length; i++) {
-                    dataLength.push(data[i]);
-                    tronClasstype = data[i];
-                    $(".tr_1").append("<tr> <td><input type='checkbox'></td>" +
-                        "<td>" + (i + 1) + "</td>" +
-                        "<td>" + tronClasstype['year'] + "</td>" +
-                        "<td>" + tronClasstype['tron_month'] + "</td>" +
-                        "<td>" + tronClasstype['eu_rj'] + "</td>" +
-                        "<td>" + tronClasstype['eu_xin'] + "</td>" +
-                        "<td>" + tronClasstype['eu_rw'] + "</td>" +
-                        "<td>" + tronClasstype['eu_ts'] + "</td>" +
-                        "<td>" + tronClasstype['eu_xiu'] + "</td>" +
-                        "<td>" + tronClasstype['eu_gz'] + "</td>" +
-                        "<td>" + tronClasstype['eu_kuai'] + "</td>" +
-                        "<td>" + tronClasstype['eu_ad'] + "</td>" +
-                        "<td>" + tronClasstype['eu_wc'] + "</td>" +
-                        "<td>" + tronClasstype['eu_wu'] + "</td>" +
-                        "<td>" + tronClasstype['eu_jr'] + "</td>" +
-                        "<td>" +
-                        "<a href='/manage/article_edit_1' class='layui-btn layui-btn-mini'>编辑</a>" +
-                        "<a href='javascript:;' data-id='1' data-opt='del' class='layui-btn layui-btn-danger layui-btn-mini'>删除</a>" +
-                        "</td> </tr>"
-                    );
-                }
 
-            },
-            "json"
-        );
+        <%--var a =${.getAttribute("pages")};--%>
+        //分页代码
+        layui.use(['laypage', 'layer'], function() {
+            var laypage = layui.laypage
+//                , layer = layui.layer;
+            laypage({
+                cont: 'demo1'
+                , groups: 5, //连续显示分页数
+                jump: function(obj, first){
+                    //得到了当前页，用于向服务端请求对应数据
+                     var curr = obj.curr;
+                    $.post("${pageContext.request.contextPath}/TronClassServlet?method=pool",
+                        {
+                            curr:curr
+                        },
+                        function (data, status) {
+                            $(".tr_1").html("");
+                            for (var i = 0; i < data.length; i++) {
+                                dataLength.push(data[i]);
+                                tronClasstype = data[i];
+                                $(".tr_1").append("<tr> <td><input type='checkbox'></td>" +
+                                    "<td>" + (i + 1) + "</td>" +
+                                    "<td>" + tronClasstype['year'] + "</td>" +
+                                    "<td>" + tronClasstype['tron_month'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_rj'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_xin'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_rw'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_ts'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_xiu'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_gz'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_kuai'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_ad'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_wc'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_wu'] + "</td>" +
+                                    "<td>" + tronClasstype['eu_jr'] + "</td>" +
+                                    "<td>" +
+                                    "<a href='/manage/article_edit_1' class='layui-btn layui-btn-mini'>编辑</a>" +
+                                    "<a href='javascript:;' data-id='1' data-opt='del' class='layui-btn layui-btn-danger layui-btn-mini'>删除</a>" +
+                                    "</td> </tr>"
+                                );
+                            }
+
+                        },
+                        "json"
+                    );
+
+                }
+                , pages: <%=session.getAttribute("pages") %>//总页数
+            });
+        });
+//
+//        alert(111);
 
 //        layui.use(['laypage', 'layer'], function () {
 //            var laypage = layui.laypage
@@ -147,9 +173,10 @@
 //                    document.getElementById('biuuu_city_list').innerHTML = render(dataLength, obj.curr);
 //                }
 //            });
-//
+////
 //        });
 //
+
     });
 
 

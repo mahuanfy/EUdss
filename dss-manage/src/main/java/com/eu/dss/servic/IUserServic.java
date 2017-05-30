@@ -22,4 +22,6 @@ public interface IUserServic {
      * 校验用户名手否存在
      */
     int verify(String username);
+
+
 }
