@@ -1,5 +1,5 @@
 package com.eu.dss.dao.impl;
-import com.eu.dss.dao.BaseDao;
+import com.eu.dss.utils.BaseDaoUtil;
 import com.eu.dss.dao.IUserDao;
 import com.eu.dss.entity.UserBean;
 import java.util.*;
@@ -9,7 +9,7 @@ import java.util.*;
  * 登录页面dao层
  * Created by 马欢欢 on 2017/5/24.
  */
-public class UserDao extends BaseDao implements IUserDao{
+public class UserDao extends BaseDaoUtil implements IUserDao{
 
     public List<UserBean> login(UserBean userBean) {
         String sql = " SELECT * FROM dssuser WHERE username=? AND password=? ; ";

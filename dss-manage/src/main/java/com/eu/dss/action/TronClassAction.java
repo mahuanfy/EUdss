@@ -1,13 +1,11 @@
 package com.eu.dss.action;
 
 
-import com.eu.dss.entity.TronClasstype;
+import com.eu.dss.entity.TronClassBean;
 import com.eu.dss.servic.ITronClassService;
 import com.eu.dss.servic.impl.TronClassService;
-import com.eu.dss.util.PageBean;
+import com.eu.dss.utils.PageBean;
 import net.sf.json.JSONArray;
-import net.sf.json.JSONObject;
-import org.junit.Test;
 
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -58,7 +56,7 @@ public class TronClassAction extends HttpServlet {
      */
     protected void tronClasstypeFind(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<TronClasstype> tronClasstype = tronClassService.TronClasstypeFind();
+        List<TronClassBean> tronClasstype = tronClassService.TronClasstypeFind();
         JSONArray jsonArray = JSONArray.fromObject(tronClasstype);
         resp.getWriter().print(jsonArray);
     }
@@ -72,7 +70,7 @@ public class TronClassAction extends HttpServlet {
      * @throws IOException
      */
     protected void save(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        TronClasstype tronClasstype = new TronClasstype();
+        TronClassBean tronClasstype = new TronClassBean();
         tronClasstype.setYear(req.getParameter("year"));
         tronClasstype.setTron_month(req.getParameter("tron_month"));
         tronClasstype.setEu_rj(Integer.parseInt(req.getParameter("eu_rj")));
@@ -99,7 +97,7 @@ public class TronClassAction extends HttpServlet {
 //        int pageCurrent=1;
         pageBean.setPageCurrent(pageCurrent);
         tronClassService.getAll(pageBean);
-        List<TronClasstype> TronClasstypelist = pageBean.getPageData();
+        List<TronClassBean> TronClasstypelist = pageBean.getPageData();
         JSONArray jsonArray = JSONArray.fromObject(TronClasstypelist);
         resp.getWriter().print(jsonArray);
         System.out.println("servlet" + jsonArray);

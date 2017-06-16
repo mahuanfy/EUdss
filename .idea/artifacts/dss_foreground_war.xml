@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="war" name="dss-foreground:war">
-    <output-path>$PROJECT_DIR$/dss-foreground/target</output-path>
-    <root id="archive" name="dss-foreground.war">
-      <element id="artifact" artifact-name="dss-foreground:war exploded" />
-    </root>
-  </artifact>
-</component>
