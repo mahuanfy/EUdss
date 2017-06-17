@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>近三学期课程访问量</title>
+    <script src="../js/echarts.min.js"></script>
+    <script src="../js/china.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link href="../css/eurisia_echar.css" rel="stylesheet" type="text/css"/>
+
+</head>
+<body>
+<div id="Eurisia_body">
+        <div class="main">
+        <div class="main_his">
+            <div id="main_Histogram"></div>
+            <script type="text/javascript">
+                // 树状图
+                var myChart = echarts.init(document.getElementById("main_Histogram"));
+                var option = {
+                    title: {
+                        text: '近三学期课程访问量'
+                    },
+                    tooltip : {
+                        trigger: 'axis',
+                        axisPointer: {
+                            type: 'cross',
+                            label: {
+                                backgroundColor: '#6a7985'
+                            }
+                        }
+                    },
+                    legend: {
+
+                        data:['课程总访问量','移动端访问量']
+                    },
+                    toolbox: {
+                        feature: {
+                            saveAsImage: {}
+                        }
+                    },
+
+                    grid: {
+                        left: '3%',
+                        right: '4%',
+                        bottom: '3%',
+                        containLabel: true
+                    },
+                    xAxis : [
+                        {
+                            type : 'category',
+                            boundaryGap : false,
+                            data : ['2015年下半年','2016年上半年','2016年下半年'],
+                        }],
+                    yAxis : [
+                        {
+                            type : 'value'
+                        }
+                    ],
+                    series : [
+                        {
+                            name:'课程总访问量',
+                            type:'line',
+                            label: {
+                                normal: {
+                                    show: true,
+                                    position: 'top'
+                                }
+                            },
+                            itemStyle:{
+                                normal:{
+                                    barBorderColor:'#32446b',
+                                    color:'#162436'
+                                },
+                                emphasis:{
+                                    color:'#32446b'
+                                },
+                            },
+
+                            areaStyle: {normal: {}},
+                            data:[11.9, 131, 158]
+                        },
+                        {
+                            name:'移动端访问量',
+                            type:'line',
+                            areaStyle: {normal: {}},
+                            label: {
+                                normal: {
+                                    show: true,
+                                    position: 'top'
+                                }
+                            },
+                            data:[1.5, 31, 45]
+                        }
+                    ]
+
+                };
+
+                // 使用刚指定的配置项和数据显示图表。
+                myChart.setOption(option);
+            </script>
+        </div>
+</div>
+</div>
+</body>
+</html>
