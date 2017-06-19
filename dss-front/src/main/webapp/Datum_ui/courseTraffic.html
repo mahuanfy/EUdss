@@ -19,7 +19,7 @@
                 var myChart = echarts.init(document.getElementById("main_Histogram"));
                 var option = {
                     title: {
-                        text: '近三学期课程访问量'
+                        text: '近四学期课程访问量(万次)'
                     },
                     tooltip : {
                         trigger: 'axis',
@@ -50,7 +50,7 @@
                         {
                             type : 'category',
                             boundaryGap : false,
-                            data : ['2015年下半年','2016年上半年','2016年下半年'],
+                            data : ['2015年下半年','2016年上半年','2016年下半年','2017年上半年']
                         }],
                     yAxis : [
                         {
@@ -78,7 +78,7 @@
                             },
 
                             areaStyle: {normal: {}},
-                            data:[11.9, 131, 158]
+                            data:[11.9, 131, 158,991.35]
                         },
                         {
                             name:'移动端访问量',
@@ -90,7 +90,7 @@
                                     position: 'top'
                                 }
                             },
-                            data:[1.5, 31, 45]
+                            data:[1.5, 31, 45,153.13]
                         }
                     ]
 
