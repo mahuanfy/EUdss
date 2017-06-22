@@ -7,6 +7,7 @@
           <element id="module-output" name="dss-manage" />
         </element>
         <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: junit:junit:4.8" />
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.0.5" />
           <element id="library" level="project" name="Maven: commons-dbutils:commons-dbutils:1.6" />
           <element id="library" level="project" name="Maven: jstl:jstl:1.2" />

@@ -1,7 +1,7 @@
 package com.eu.dss.utils;
 
 import java.sql.*;
-
+import java.util.ResourceBundle;
 /**
  * 数据库连接类
  * 马欢欢
@@ -10,18 +10,15 @@ import java.sql.*;
 public class ConnUtil {
 
     public static Connection getConnextion() {
-         Connection conn=null;
+        ResourceBundle bundle=ResourceBundle.getBundle("DbConfig");
+        String driver=bundle.getString("driver");
+        String url=bundle.getString("url");
+        String user=bundle.getString("user");
+        String password=bundle.getString("password");
+        Connection conn=null;
         try {
-            Class.forName("com.mysql.jdbc.Driver");//1.加载数据库驱动
-
-//            String url="jdbc:mysql://localhost:3306/eudsstest?useUnicode=true&characterEncoding=utf-8";//2.指定连接数据库的地址名称
-//            String url="jdbc:mysql://39.108.72.222:3306/eudsstest?useUnicode=true&characterEncoding=utf-8";//远程数据库
-            String url="jdbc:mysql://192.168.1.112:3306/eudsstest?useUnicode=true&characterEncoding=utf-8";//远程数据库
-            String user="root";
-            String passWord = "root";//指定用户名和密码
-
-            conn= (Connection) DriverManager.getConnection(url,user,passWord);//3获取数据库连接
-
+            Class.forName(driver);//1.加载数据库驱动
+            conn= (Connection) DriverManager.getConnection(url,user,password);//3获取数据库连接
             if(null!=conn){//判断是否连接成功！
                 System.out.println("恭喜！数据库连接成功！");
             }
