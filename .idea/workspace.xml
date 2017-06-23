@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fadf81-242e-425a-bd35-7b9b5b951c45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/classroomUtilizationRatio.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/majorStudent_Distribute.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_Pandect.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_cause.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_grasp.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/css/mycss/eurisia_echar.css" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/css/mycss/eurisia_echar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/datas/nav.js" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/datas/nav.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/page/courseTraffic.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/courseTraffic.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/page/classroomUtilizationRatio.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/classroomUtilizationRatio.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/page/idex_pageView.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/idex_pageView.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/page/index_TronClass.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/index_TronClass.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/page/index_ouya.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/index_ouya.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/target/dss-front/css/mycss/eurisia_echar.css" afterPath="$PROJECT_DIR$/dss-front/target/dss-front/css/mycss/eurisia_echar.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/target/dss-front/datas/nav.js" afterPath="$PROJECT_DIR$/dss-front/target/dss-front/datas/nav.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/page/majorStudent_Distribute.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/majorStudent_Distribute.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_Pandect.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_Pandect.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_cause.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_cause.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -64,104 +57,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file leaf-file-name="classroomUtilizationRatio.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/classroomUtilizationRatio.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4964">
-              <caret line="146" column="75" lean-forward="false" selection-start-line="146" selection-start-column="69" selection-end-line="146" selection-end-column="75" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1428">
-              <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quitSchool_grasp.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_grasp.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-408">
-              <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quitSchool_cause.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_cause.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="65" column="42" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="65" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="quitSchool_Pandect.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_Pandect.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
-              <caret line="69" column="53" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="69" selection-end-column="53" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="majorStudent_Distribute.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/majorStudent_Distribute.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="idex_pageView.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/idex_pageView.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="courseTraffic.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/courseTraffic.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="17" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_ouya.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/index_ouya.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_TronClass.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/index_TronClass.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+            <state relative-caret-position="68">
+              <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
               <folding />
             </state>
           </provider>
@@ -199,18 +99,18 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/main.html" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/css/mycss/global.css" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/css/mycss/layui1.css" />
-        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/index.html" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/css/mycss/eurisia_echar.css" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/datas/nav.js" />
-        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_cause.html" />
-        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/majorStudent_Distribute.html" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_grasp.html" />
-        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_Pandect.html" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/index_TronClass.html" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/index_ouya.html" />
-        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/idex_pageView.html" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/courseTraffic.html" />
         <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/classroomUtilizationRatio.html" />
+        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/majorStudent_Distribute.html" />
+        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_Pandect.html" />
+        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_cause.html" />
+        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/idex_pageView.html" />
+        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/index.html" />
       </list>
     </option>
   </component>
@@ -428,7 +328,7 @@
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../EUTWStudio" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
@@ -1048,7 +948,7 @@
       <workItem from="1497877001710" duration="2112000" />
       <workItem from="1497903770233" duration="18000" />
       <workItem from="1498085211487" duration="18609000" />
-      <workItem from="1498179512355" duration="12556000" />
+      <workItem from="1498179512355" duration="14590000" />
     </task>
     <servers />
   </component>
@@ -1061,7 +961,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="46571000" />
+    <option name="totallyTimeSpent" value="48605000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1932" height="1092" extended-state="0" />
@@ -1088,7 +988,7 @@
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33798283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33798283" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2763441" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1386,34 +1286,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/majorStudent_Distribute.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="15" lean-forward="false" selection-start-line="0" selection-start-column="15" selection-end-line="0" selection-end-column="15" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/index_TronClass.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/index_ouya.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/idex_pageView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="4" selection-end-line="0" selection-end-column="23" />
           <folding />
         </state>
       </provider>
@@ -1426,25 +1302,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_cause.html">
+    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/classroomUtilizationRatio.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="65" column="42" lean-forward="false" selection-start-line="63" selection-start-column="40" selection-end-line="65" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1428">
-          <caret line="6" column="29" lean-forward="true" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        <state relative-caret-position="2516">
+          <caret line="90" column="66" lean-forward="false" selection-start-line="90" selection-start-column="66" selection-end-line="90" selection-end-column="66" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_grasp.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-408">
+        <state relative-caret-position="-1530">
           <caret line="33" column="34" lean-forward="true" selection-start-line="33" selection-start-column="34" selection-end-line="33" selection-end-column="34" />
           <folding />
         </state>
@@ -1452,8 +1320,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_Pandect.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="69" column="53" lean-forward="true" selection-start-line="68" selection-start-column="40" selection-end-line="69" selection-end-column="53" />
+        <state relative-caret-position="646">
+          <caret line="100" column="0" lean-forward="false" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
           <folding>
             <element signature="n#style#0;n#div#0;n#div#0;n#fieldset#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
             <element signature="n#style#0;n#div#1;n#div#0;n#fieldset#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
@@ -1461,10 +1329,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/classroomUtilizationRatio.html">
+    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/majorStudent_Distribute.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4964">
-          <caret line="146" column="75" lean-forward="false" selection-start-line="146" selection-start-column="69" selection-end-line="146" selection-end-column="75" />
+        <state relative-caret-position="374">
+          <caret line="68" column="66" lean-forward="false" selection-start-line="68" selection-start-column="66" selection-end-line="68" selection-end-column="66" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/quitSchool_cause.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="46" column="34" lean-forward="true" selection-start-line="46" selection-start-column="34" selection-end-line="46" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/index_TronClass.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3060">
+          <caret line="0" column="4" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/page/idex_pageView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="47" column="37" lean-forward="true" selection-start-line="47" selection-start-column="37" selection-end-line="47" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-front/src/main/webapp/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="7" column="8" lean-forward="false" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="8" />
           <folding />
         </state>
       </provider>
