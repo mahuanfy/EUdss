@@ -59,4 +59,39 @@ var navs = [{
     "icon": "fa fa-area-chart",
     "href": "page/courseTraffic.html",
     "spread": false
+},{
+    "title": "学籍异动情况",
+    "icon": "fa fa-fax",
+    "spread": false,
+    "children": [{
+        "title": "近四年退学人数总览",
+        "icon": "fa fa-book",
+        "href": "page/quitSchool_Pandect.html"
+    }, {
+        "title": "退学原因分析",
+        "icon": "&#xe63c;",
+        "href": "page/quitSchool_cause.html"
+    }, {
+        "title": "流失学生数据掌握情况",
+        "icon": " fa fa-pencil",
+        "href": "page/quitSchool_grasp.html"
+    }]
+},{
+    "title": "分院专业及学生分布",
+    "icon": "fa fa-fax",
+    "spread": false,
+    "children": [{
+        "title": "物流贸易学院分布情况",
+        "icon": "fa fa-book",
+        "href": "page/majorStudent_Distribute.html"
+    }]
+},{
+    "title": "教学空间利用率",
+    "icon": "fa fa-fax",
+    "spread": false,
+    "children": [{
+        "title": "前三周教学空间利用率",
+        "icon": "fa fa-book",
+        "href": "page/classroomUtilizationRatio.html"
+    }]
 }];

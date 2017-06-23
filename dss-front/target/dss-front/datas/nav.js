@@ -59,4 +59,21 @@ var navs = [{
     "icon": "fa fa-area-chart",
     "href": "page/courseTraffic.html",
     "spread": false
+},{
+    "title": "学籍异动情况",
+    "icon": "fa fa-fax",
+    "spread": false,
+    "children": [{
+        "title": "近四年退学人数总览",
+        "icon": "fa fa-book",
+        "href": "page/quitSchool_Pandect.html"
+    }, {
+        "title": "退学原因分析",
+        "icon": "&#xe63c;",
+        "href": "page/quitSchool_cause.html"
+    }, {
+        "title": "流失学生数据掌握情况",
+        "icon": " fa fa-pencil",
+        "href": "page/index_ouya.html"
+    }]
 }];

@@ -1,0 +1,168 @@
+<!--前三周教学空间利用率-->
+<!doctype html>
+<html>
+
+
+	<head>
+		<meta charset="utf-8">
+		<title>前三周教学空间利用率</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="stylesheet" href="../plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../css/global.css" media="all">
+
+		<link href="../css/mycss/eurisia_echar.css" rel="stylesheet" type="text/css"/>
+		<script src="../js/myjs/jquery.min.js"></script>
+		<script src="../js/myjs/echarts.min.js"></script>
+	</head>
+
+	<body>
+	<div style="margin: 15px;">
+			<fieldset class="layui-elem-field site-demo-button">
+				<legend>图表</legend>
+
+					<div class="main_his">
+						<div id="main_Histogram" style="width: 43%;float: left"></div>
+						<script type="text/javascript">
+                            // 树状图
+                            var myChart = echarts.init(document.getElementById("main_Histogram"));
+
+                            var option = {
+                                title : {
+                                    text: '周教室利用率'
+                                },
+                                tooltip : {
+                                    trigger: 'axis'
+                                },
+
+                                toolbox: {
+                                    show : true,
+                                    feature : {
+                                        mark : {show: true},
+                                        dataView : {show: true, readOnly: false},
+                                        magicType : {show: true, type: ['line', 'bar']},
+                                        restore : {show: true},
+                                        saveAsImage : {show: true}
+                                    }
+                                },
+                                calculable : true,
+                                xAxis : [
+                                    {
+                                        type : 'category',
+                                        data : ['周30','周40','周50']
+                                    }
+                                ],
+                                yAxis : [
+                                    {
+                                        type : 'value',
+                                        axisLabel: {
+                                            formatter: '{value} %'
+                                        }
+                                    }
+                                ],
+                                series : [
+                                    {
+                                        name:'蒸发量',
+                                        type:'bar',
+                                        data:[87.8, 65.8, 52.7],
+                                        itemStyle: {
+                                            normal: {
+                                                color: function(params) {
+                                                    // build a color map as your need.
+                                                    var colorList = [
+                                                        '#27727B',
+                                                        '#F3A43B',
+                                                        '#D7504B'
+                                                    ];
+                                                    return colorList[params.dataIndex]
+                                                },label: {
+                                                    show: true,
+                                                    position: 'top',
+                                                    formatter: '{b}\n{c}'
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            };
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart.setOption(option);
+						</script>
+						<div id="main_Histogram1" style="width: 49%;float: left"></div>
+						<script type="text/javascript">
+                            // 树状图
+                            var myChart = echarts.init(document.getElementById("main_Histogram1"));
+
+                            var option = {
+                                title : {
+                                    text: '工作室利用率'
+                                },
+                                tooltip : {
+                                    trigger: 'axis'
+                                },
+
+                                toolbox: {
+                                    show : true,
+                                    feature : {
+                                        mark : {show: true},
+                                        dataView : {show: true, readOnly: false},
+                                        magicType : {show: true, type: ['line', 'bar']},
+                                        restore : {show: true},
+                                        saveAsImage : {show: true}
+                                    }
+                                },
+                                calculable : true,
+                                xAxis : [
+                                    {
+                                        type : 'category',
+                                        data : ['周30','周40','周50']
+                                    }
+                                ],
+                                yAxis : [
+                                    {
+                                        type : 'value',
+                                        max: 100,
+                                        interval: 20,
+                                        axisLabel: {
+                                            formatter: '{value} %'
+                                        }
+                                    }
+                                ],
+                                series : [
+                                    {
+                                        name:'蒸发量',
+                                        type:'bar',
+                                        data:[75, 56.2, 37.5],
+                                        itemStyle: {
+                                            normal: {
+                                                color: function(params) {
+                                                    // build a color map as your need.
+                                                    var colorList = [
+                                                        '#27727B',
+                                                        '#F3A43B',
+                                                        '#D7504B'
+                                                    ];
+                                                    return colorList[params.dataIndex]
+                                                },label: {
+                                                    show: true,
+                                                    position: 'top',
+                                                    formatter: '{b}\n{c}'
+                                                }
+                                            }
+                                        }
+                                    }
+                                ]
+                            };
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart.setOption(option);
+						</script>
+					</div>
+
+			</fieldset>
+
+		</div>
+	</body>
+
+</html>
