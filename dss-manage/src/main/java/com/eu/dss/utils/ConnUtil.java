@@ -11,10 +11,10 @@ public class ConnUtil {
 
     public static Connection getConnextion() {
         ResourceBundle bundle=ResourceBundle.getBundle("DbConfig");
-        String driver=bundle.getString("driver");
-        String url=bundle.getString("url");
-        String user=bundle.getString("user");
-        String password=bundle.getString("password");
+        String driver=bundle.getString("jdbc.driver");
+        String url=bundle.getString("jdbc.url");
+        String user=bundle.getString("jdbc.user");
+        String password=bundle.getString("jdbc.password");
         Connection conn=null;
         try {
             Class.forName(driver);//1.加载数据库驱动
