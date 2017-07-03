@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/EUdss.iml" filepath="$PROJECT_DIR$/EUdss.iml" />
       <module fileurl="file://$PROJECT_DIR$/dss-front/dss-front.iml" filepath="$PROJECT_DIR$/dss-front/dss-front.iml" />
       <module fileurl="file://$PROJECT_DIR$/dss-manage/dss-manage.iml" filepath="$PROJECT_DIR$/dss-manage/dss-manage.iml" />
-      <module fileurl="file://$PROJECT_DIR$/eudss.iml" filepath="$PROJECT_DIR$/eudss.iml" />
     </modules>
   </component>
 </project>

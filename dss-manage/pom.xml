@@ -18,6 +18,12 @@
             <artifactId>mysql-connector-java</artifactId>
             <version>5.1.18</version>
         </dependency>
+        <!--c3p0数据包-->
+        <dependency>
+            <groupId>c3p0</groupId>
+            <artifactId>c3p0</artifactId>
+            <version>0.9.1.2</version>
+        </dependency>
 
         <!--servlet包-->
         <dependency>
