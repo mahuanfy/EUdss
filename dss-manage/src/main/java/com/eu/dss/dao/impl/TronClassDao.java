@@ -4,7 +4,7 @@ import com.eu.dss.dao.ITronClassDao;
 import com.eu.dss.entity.TronClassBean;
 import com.eu.dss.utils.BaseDaoUtil;
 import com.eu.dss.utils.ConnUtil;
-import com.eu.dss.utils.PageBean;
+import com.eu.dss.entity.PageBean;
 import net.sf.json.JSONArray;
 
 import java.sql.Connection;

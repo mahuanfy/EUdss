@@ -1,7 +1,7 @@
 package com.eu.dss.dao;
 
 import com.eu.dss.entity.TronClassBean;
-import com.eu.dss.utils.PageBean;
+import com.eu.dss.entity.PageBean;
 
 import java.sql.SQLException;
 import java.util.List;

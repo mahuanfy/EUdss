@@ -4,7 +4,7 @@ package com.eu.dss.action;
 import com.eu.dss.entity.TronClassBean;
 import com.eu.dss.servic.ITronClassService;
 import com.eu.dss.servic.impl.TronClassService;
-import com.eu.dss.utils.PageBean;
+import com.eu.dss.entity.PageBean;
 import net.sf.json.JSONArray;
 
 import javax.servlet.ServletException;
@@ -33,9 +33,7 @@ public class TronClassAction extends HttpServlet {
         req.setCharacterEncoding("utf-8");
         String method = req.getParameter("method");
 
-        if ("tronClasstype".equals(method)) {
-            tronClasstypeFind(req, resp);
-        } else if ("save".equals(method)) {
+        if ("save".equals(method)) {
             save(req, resp);
         } else if ("pool".equals(method)) {
             pool(req, resp);
@@ -85,7 +83,7 @@ public class TronClassAction extends HttpServlet {
         tronClasstype.setEu_wu(Integer.parseInt(req.getParameter("eu_wu")));
         tronClasstype.setEu_jr(Integer.parseInt(req.getParameter("eu_jr")));
         tronClassService.save(tronClasstype);
-        resp.sendRedirect(req.getContextPath() + "/Admin/button.jsp");
+        resp.sendRedirect(req.getContextPath() + "/Admin/web/TronClass/tronClass.jsp");
     }
 
     /**
@@ -96,8 +94,8 @@ public class TronClassAction extends HttpServlet {
         int pageCurrent = Integer.parseInt(req.getParameter("curr"));
 //        int pageCurrent=1;
         pageBean.setPageCurrent(pageCurrent);
-        tronClassService.getAll(pageBean);
-        List<TronClassBean> TronClasstypelist = pageBean.getPageData();
+
+        List<TronClassBean> TronClasstypelist = tronClassService.getAll(pageBean);
         JSONArray jsonArray = JSONArray.fromObject(TronClasstypelist);
         resp.getWriter().print(jsonArray);
         System.out.println("servlet" + jsonArray);

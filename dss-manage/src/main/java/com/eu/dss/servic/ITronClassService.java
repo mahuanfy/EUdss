@@ -1,7 +1,7 @@
 package com.eu.dss.servic;
 
 import com.eu.dss.entity.TronClassBean;
-import com.eu.dss.utils.PageBean;
+import com.eu.dss.entity.PageBean;
 
 import java.util.List;
 
@@ -41,7 +41,7 @@ public interface ITronClassService {
     /**
      * 分页查询数据
      */
-    void getAll(PageBean pageBean);
+    List<TronClassBean> getAll(PageBean pageBean);
 
 
 }
