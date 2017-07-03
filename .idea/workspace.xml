@@ -1,53 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="65fadf81-242e-425a-bd35-7b9b5b951c45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__junit_junit_4_10.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hamcrest_hamcrest_core_1_1.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-front/src/main/resources/rebel.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/Test/Testspring.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/TronClassDao.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/mapperTemplate.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/rebel.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/rank/nav2.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/web/UserInfo/userInfo.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/index_fu.jsp" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/resources/rebel.xml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__commons_dbutils_commons_dbutils_1_6.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/UserDao.java" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/IUserDao.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/UserDao.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/UserService.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/utils/PageBean.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/PageBean.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mapperTemplate.xml" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/TronClassDao.xml" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/button.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/web/TronClass/tronClass.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/rank/nav1.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dss_manage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dss_manage_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/f7deaf95-e849-413e-8e24-4ff636792610.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/f7deaf95-e849-413e-8e24-4ff636792610.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EUdss.iml" afterPath="$PROJECT_DIR$/EUdss.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/dss-front.iml" afterPath="$PROJECT_DIR$/dss-front/dss-front.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/target/dss-front/META-INF/MANIFEST.MF" afterPath="$PROJECT_DIR$/dss-front/target/dss-front/META-INF/MANIFEST.MF" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/target/dss-front/index.html" afterPath="$PROJECT_DIR$/dss-front/target/dss-front/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/dss-manage.iml" afterPath="$PROJECT_DIR$/dss-manage/dss-manage.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/pom.xml" afterPath="$PROJECT_DIR$/dss-manage/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/ITronClassDao.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/ITronClassDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/TronClassDao.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/TronClassDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/UserBean.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/UserBean.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/ITronClassService.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/ITronClassService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/TronClassService.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/TronClassService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/resources/DbConfig.properties" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/DbConfig.properties" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mybatis-config.xml" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mybatis-config.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/resources/spring/applicationContext.xml" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/spring/applicationContext.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index1.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index1.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/index.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" />
-    </list>
+    <list default="true" id="65fadf81-242e-425a-bd35-7b9b5b951c45" name="Default" comment="" />
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
     <ignored path="$PROJECT_DIR$/dss-front/target/" />
@@ -219,20 +173,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="tronClass.jsp" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/web/TronClass/tronClass.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="36">
-              <caret line="119" column="32" lean-forward="false" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mybatis-config.xml" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mybatis-config.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
+            <state relative-caret-position="480">
               <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
               <folding />
             </state>
@@ -272,6 +216,7 @@
       <find>&quot;</find>
       <find>?</find>
       <find>tronClasstype</find>
+      <find>curr</find>
     </findStrings>
     <replaceStrings>
       <replace>false</replace>
@@ -332,7 +277,6 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/Test/Testspring.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/UserService.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/resources/spring/applicationContext.xml" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/resources/DbConfig.properties" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/PageBean.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/TronClassDao.xml" />
@@ -341,6 +285,7 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/TronClassService.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/web/TronClass/tronClass.jsp" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mybatis-config.xml" />
       </list>
     </option>
   </component>
@@ -1573,7 +1518,7 @@
       <workItem from="1498997029797" duration="3546000" />
       <workItem from="1499056516134" duration="23302000" />
       <workItem from="1499083001689" duration="4119000" />
-      <workItem from="1499087492442" duration="3548000" />
+      <workItem from="1499087492442" duration="3976000" />
     </task>
     <servers />
   </component>
@@ -1610,7 +1555,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="85314000" />
+    <option name="totallyTimeSpent" value="85742000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
@@ -1618,7 +1563,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087913" sideWeight="0.50213903" order="12" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527474" sideWeight="0.5064171" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886267" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1640,7 +1585,7 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67362636" sideWeight="0.49786097" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087913" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087913" sideWeight="0.49786097" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29786095" sideWeight="0.4923077" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29411766" sideWeight="0.50769234" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29037434" sideWeight="0.50666666" order="9" side_tool="true" content_ui="tabs" />
@@ -2102,14 +2047,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mybatis-config.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mapper/TronClassDao.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="216">
@@ -2178,6 +2115,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/web/TronClass/tronClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="119" column="0" lean-forward="false" selection-start-line="119" selection-start-column="0" selection-end-line="119" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="108">
@@ -2186,10 +2131,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/web/TronClass/tronClass.jsp">
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mybatis-config.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="119" column="32" lean-forward="false" selection-start-line="119" selection-start-column="32" selection-end-line="119" selection-end-column="32" />
+        <state relative-caret-position="480">
+          <caret line="15" column="21" lean-forward="false" selection-start-line="15" selection-start-column="21" selection-end-line="15" selection-end-column="21" />
           <folding />
         </state>
       </provider>

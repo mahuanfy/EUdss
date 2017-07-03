@@ -117,7 +117,7 @@
                             for (var i = 0; i < data.length; i++) {
                                 dataLength.push(data[i]);
                                 tronClasstype = data[i];
-                                
+
                                 $(".tr_1").append("<tr> <td><input type='checkbox'></td>" +
                                     "<td>" + (i + 1) + "</td>" +
                                     "<td>" + tronClasstype['year'] + "</td>" +
