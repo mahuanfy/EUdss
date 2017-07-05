@@ -11,11 +11,11 @@
 		</dir>
 	</classpath>
 
-	<web>
+	<com.eu.dss.web>
 		<link target="/">
 			<dir name="/home/pc/IDEA/EUdss/dss-front/src/main/webapp">
 			</dir>
 		</link>
-	</web>
+	</com.eu.dss.web>
 
 </application>

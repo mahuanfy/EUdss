@@ -89,11 +89,16 @@ var navs = [{
     }, {
         "title": "设置用户权限",
         "icon": "&#xe63c;",
-        "href": "weiwancheng.html"
+        "href": "../web/UserInfo/userInfo.jsp"
     }, {
         "title": "删除用户",
         "icon": "&#xe60c;",
         "href": "weiwancheng.html"
     }]
-}
+}, {
+    "title": "开发按钮样式统一",
+    "icon": "fa-stop-circle",
+    "href": "button.html",
+    "spread": false
+},
 ];

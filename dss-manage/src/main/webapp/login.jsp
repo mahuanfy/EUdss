@@ -5,11 +5,11 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Eurasia DSS后台管理系统</title>
-    <link rel="stylesheet" href="Admin/css/site.css" id="siteStyle">
-    <link rel="stylesheet" href="Admin/css/login.css">
-    <link rel="stylesheet" href="Admin/css/web-icons.css">
-    <link rel="stylesheet" href="Admin/plugins/font-awesome/css/font-awesome.min.css">
-    <script type="text/javascript" src="Admin/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="public/css/site.css" id="siteStyle">
+    <link rel="stylesheet" href="public/css/login.css">
+    <link rel="stylesheet" href="public/css/web-icons.css">
+    <link rel="stylesheet" href="public/plugins/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="public/js/jquery.min.js"></script>
 </head>
 <body class="page-login  layout-full page-dark  " id="page_background">
 <div class="page  height-full">
@@ -17,7 +17,7 @@
         <div class="page-brand-info vertical-align animation-slide-left hidden-xs">
             <div class="page-brand vertical-align-middle">
                 <div class="brand">
-                    <img class="brand-img" src="Admin/images/LOGO.png" height="50" alt="Eurasia DSS">
+                    <img class="brand-img" src="public/images/LOGO.png" height="50" alt="Eurasia DSS">
                     <span class="logo">Eurasia DSS</span>
                 </div>
                 <h3>Eurasia Decision Support System后台管理系统</h3>
@@ -85,11 +85,11 @@
     </div>
 </div>
 <!-- JS -->
-<script src="Admin/js/jquery.js"></script>
-<script src="Admin/js/bootstrap.js"></script>
-<script src="Admin/js/bootstrap-select.min.js"></script>
-<script src="Admin/js/formValidation.min.js" data-name="formValidation"></script>
-<script src="Admin/js/bootstrap.min.js" data-deps="formValidation"></script>
+<script src="public/js/jquery.js"></script>
+<script src="public/js/bootstrap.js"></script>
+<script src="public/js/bootstrap-select.min.js"></script>
+<script src="public/js/formValidation.min.js" data-name="formValidation"></script>
+<script src="public/js/bootstrap.min.js" data-deps="formValidation"></script>
 </body>
 
 </html>

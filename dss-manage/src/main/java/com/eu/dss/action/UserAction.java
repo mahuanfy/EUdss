@@ -50,9 +50,7 @@ public class UserAction extends HttpServlet {
             req.getSession().setAttribute("user",jsonArray);
             resp.sendRedirect(req.getContextPath() + "/public/index.jsp");
         } else {
-
             resp.sendRedirect(req.getContextPath() + "/login.jsp");
-
         }
     }
     //权限

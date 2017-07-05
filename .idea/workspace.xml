@@ -2,594 +2,41 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fadf81-242e-425a-bd35-7b9b5b951c45" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/auxiliar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/begtable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/city.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav11.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/icheck.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/tab.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/.project" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/LICENSE" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/README.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/TronClass/tronClass.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/UserInfo/userInfo.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/auxiliar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/begtable.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/city.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/animsition.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/begtable.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/bootstrap-select.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/eu_manage.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/formValidation.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/global.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/layout.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/login.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/main.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/site.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/table.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/web-icons.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/datas/area_data.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/datas/laytpl_laypage_data.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/datas/nav11.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/datas/nav_content.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/datas/nav_member.json" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/form.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/icheck.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/images/0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/images/01.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/images/LOGO.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/images/back.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/images/logo-1.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/index1.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/area.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/begtable.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/bootstrap-select.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/bootstrap.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/bootstrap.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/button_js.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/city.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/common.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/formValidation.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/hm.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/index.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/layout.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/layui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/login.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/navbar.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/paging.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/tab.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/js/validator.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/layout.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/main.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/nav.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/navbar.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/paging.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/font-awesome/css/font-awesome.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/font-awesome/css/font-awesome.min.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/font-awesome/fonts/FontAwesome.otf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/layui.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/code.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/flat.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/flat.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/flat@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/flat/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/futurico/futurico.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/futurico/futurico.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/futurico/futurico@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/icheck.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/line.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/line.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/line@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/line/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/minimal.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/minimal.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/minimal@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/minimal/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/polaris/polaris.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/polaris/polaris.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/polaris/polaris@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/_all.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/aero.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/aero.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/aero@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/blue.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/blue.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/blue@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/green.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/green.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/green@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/grey.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/grey.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/grey@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/orange.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/orange.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/orange@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/pink.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/pink.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/pink@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/purple.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/purple.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/purple@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/red.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/red.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/red@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/square.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/square.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/square@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/yellow.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/yellow.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/icheck/square/yellow@2x.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/laydate/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/laydate/laydate.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/layer/default/icon-ext.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/layer/default/icon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/layer/default/layer.css" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/layer/default/loading-0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/layer/default/loading-1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/css/modules/layer/default/loading-2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/font/iconfont.eot" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/font/iconfont.svg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/font/iconfont.ttf" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/font/iconfont.woff" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/0.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/1.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/10.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/11.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/12.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/13.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/14.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/15.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/16.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/17.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/18.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/19.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/2.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/20.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/21.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/22.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/23.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/24.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/25.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/26.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/27.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/28.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/29.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/3.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/30.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/31.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/32.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/33.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/34.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/35.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/36.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/37.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/38.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/39.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/4.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/40.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/41.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/42.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/43.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/44.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/45.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/46.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/47.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/48.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/49.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/5.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/50.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/51.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/52.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/53.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/54.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/55.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/56.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/57.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/58.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/59.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/6.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/60.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/61.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/62.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/63.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/64.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/65.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/66.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/67.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/68.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/69.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/7.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/70.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/71.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/8.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/images/face/9.gif" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/dest/layui.all.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/dest/layui.mod.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/lib/jquery.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/code.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/element.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/flow.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/form.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/laydate.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/layedit.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/layer.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/laypage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/laytpl.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/tree.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/upload.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/lay/modules/util.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/layui.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/modules/icheck.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/plugins/layui/modules/pjax.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/rank/nav1.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/rank/nav2.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/tab.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/table.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/temp/edit-form.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/video.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/weiwancheng.html" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/index.jsp" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/.project" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/.project" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/TronClass/tronClass.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/web/TronClass/tronClass.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/UserInfo/userInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/animsition.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/animsition.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/begtable.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/begtable.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/bootstrap-select.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/bootstrap-select.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/eu_manage.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/eu_manage.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/formValidation.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/formValidation.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/global.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/global.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/layout.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/layout.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/login.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/login.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/main.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/main.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/site.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/site.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/table.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/table.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/css/web-icons.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/css/web-icons.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/area_data.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/datas/area_data.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/laytpl_laypage_data.json" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/datas/laytpl_laypage_data.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav_content.json" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/datas/nav_content.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav_member.json" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/datas/nav_member.json" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/form.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/form.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/images/0.jpg" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/images/0.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/images/01.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/images/01.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/images/LOGO.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/images/LOGO.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/images/back.jpg" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/images/back.jpg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/images/logo-1.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/images/logo-1.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index1.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/index.jsp" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/area.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/area.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/begtable.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/begtable.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/bootstrap-select.min.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/bootstrap-select.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/bootstrap.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/bootstrap.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/bootstrap.min.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/bootstrap.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/button_js.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/button_js.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/city.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/city.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/common.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/common.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/formValidation.min.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/formValidation.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/hm.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/hm.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/index.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/index.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/jquery.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/jquery.min.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/jquery.min.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/layout.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/layout.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/layui.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/layui.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/login.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/login.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/navbar.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/navbar.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/paging.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/paging.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/tab.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/tab.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/validator.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/validator.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/main.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/main.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/paging.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/paging.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/font-awesome/css/font-awesome.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/font-awesome/css/font-awesome.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/font-awesome/css/font-awesome.min.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/font-awesome/css/font-awesome.min.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/font-awesome/fonts/FontAwesome.otf" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/font-awesome/fonts/FontAwesome.otf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/font-awesome/fonts/fontawesome-webfont.eot" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/font-awesome/fonts/fontawesome-webfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/font-awesome/fonts/fontawesome-webfont.svg" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/font-awesome/fonts/fontawesome-webfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/font-awesome/fonts/fontawesome-webfont.ttf" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/font-awesome/fonts/fontawesome-webfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/font-awesome/fonts/fontawesome-webfont.woff" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/font-awesome/fonts/fontawesome-webfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/font-awesome/fonts/fontawesome-webfont.woff2" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/font-awesome/fonts/fontawesome-webfont.woff2" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/layui.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/layui.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/code.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/code.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/_all.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/_all.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/aero.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/aero.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/aero.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/aero.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/aero@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/aero@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/blue.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/blue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/blue.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/blue.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/blue@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/blue@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/flat.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/flat.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/flat.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/flat.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/flat@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/flat@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/green.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/green.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/green.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/green.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/green@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/green@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/grey.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/grey.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/grey.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/grey.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/grey@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/grey@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/orange.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/orange.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/orange.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/orange.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/orange@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/orange@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/pink.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/pink.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/pink.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/pink.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/pink@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/pink@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/purple.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/purple.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/purple.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/purple.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/purple@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/purple@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/red.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/red.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/red.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/red.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/red@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/red@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/yellow.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/yellow.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/yellow.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/yellow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/flat/yellow@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/flat/yellow@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/futurico/futurico.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/futurico/futurico.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/futurico/futurico.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/futurico/futurico.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/futurico/futurico@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/futurico/futurico@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/icheck.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/icheck.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/_all.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/_all.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/aero.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/aero.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/blue.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/blue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/green.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/green.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/grey.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/grey.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/line.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/line.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/line.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/line.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/line@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/line@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/orange.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/orange.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/pink.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/pink.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/purple.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/purple.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/red.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/red.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/line/yellow.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/line/yellow.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/_all.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/_all.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/aero.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/aero.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/aero.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/aero.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/aero@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/aero@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/blue.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/blue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/blue.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/blue.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/blue@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/blue@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/green.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/green.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/green.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/green.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/green@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/green@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/grey.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/grey.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/grey.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/grey.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/grey@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/grey@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/minimal.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/minimal.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/minimal.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/minimal.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/minimal@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/minimal@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/orange.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/orange.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/orange.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/orange.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/orange@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/orange@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/pink.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/pink.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/pink.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/pink.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/pink@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/pink@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/purple.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/purple.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/purple.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/purple.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/purple@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/purple@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/red.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/red.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/red.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/red.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/red@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/red@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/yellow.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/yellow.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/yellow.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/yellow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/minimal/yellow@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/minimal/yellow@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/polaris/polaris.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/polaris/polaris.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/polaris/polaris.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/polaris/polaris.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/polaris/polaris@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/polaris/polaris@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/_all.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/_all.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/aero.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/aero.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/aero.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/aero.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/aero@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/aero@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/blue.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/blue.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/blue.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/blue.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/blue@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/blue@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/green.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/green.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/green.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/green.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/green@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/green@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/grey.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/grey.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/grey.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/grey.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/grey@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/grey@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/orange.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/orange.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/orange.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/orange.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/orange@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/orange@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/pink.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/pink.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/pink.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/pink.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/pink@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/pink@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/purple.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/purple.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/purple.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/purple.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/purple@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/purple@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/red.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/red.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/red.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/red.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/red@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/red@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/square.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/square.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/square.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/square.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/square@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/square@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/yellow.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/yellow.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/yellow.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/yellow.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/icheck/square/yellow@2x.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/icheck/square/yellow@2x.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/laydate/icon.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/laydate/icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/laydate/laydate.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/laydate/laydate.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/layer/default/icon-ext.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/layer/default/icon-ext.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/layer/default/icon.png" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/layer/default/icon.png" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/layer/default/layer.css" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/layer/default/layer.css" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/layer/default/loading-0.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/layer/default/loading-0.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/layer/default/loading-1.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/layer/default/loading-1.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/css/modules/layer/default/loading-2.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/css/modules/layer/default/loading-2.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/font/iconfont.eot" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/font/iconfont.eot" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/font/iconfont.svg" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/font/iconfont.svg" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/font/iconfont.ttf" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/font/iconfont.ttf" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/font/iconfont.woff" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/font/iconfont.woff" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/0.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/0.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/1.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/1.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/10.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/10.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/11.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/11.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/12.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/12.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/13.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/13.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/14.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/14.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/15.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/15.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/16.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/16.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/17.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/17.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/18.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/18.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/19.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/19.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/2.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/2.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/20.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/20.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/21.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/21.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/22.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/22.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/23.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/23.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/24.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/24.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/25.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/25.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/26.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/26.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/27.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/27.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/28.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/28.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/29.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/29.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/3.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/3.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/30.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/30.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/31.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/31.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/32.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/32.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/33.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/33.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/34.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/34.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/35.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/35.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/36.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/36.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/37.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/37.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/38.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/38.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/39.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/39.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/4.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/4.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/40.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/40.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/41.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/41.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/42.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/42.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/43.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/43.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/44.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/44.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/45.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/45.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/46.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/46.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/47.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/47.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/48.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/48.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/49.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/49.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/5.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/5.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/50.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/50.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/51.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/51.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/52.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/52.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/53.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/53.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/54.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/54.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/55.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/55.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/56.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/56.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/57.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/57.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/58.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/58.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/59.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/59.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/6.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/6.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/60.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/60.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/61.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/61.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/62.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/62.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/63.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/63.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/64.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/64.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/65.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/65.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/66.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/66.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/67.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/67.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/68.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/68.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/69.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/69.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/7.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/7.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/70.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/70.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/71.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/71.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/8.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/8.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/images/face/9.gif" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/images/face/9.gif" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/dest/layui.all.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/dest/layui.all.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/dest/layui.mod.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/dest/layui.mod.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/lib/jquery.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/lib/jquery.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/code.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/code.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/element.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/element.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/flow.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/flow.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/form.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/form.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/laydate.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/laydate.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/layedit.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/layedit.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/layer.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/layer.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/laypage.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/laypage.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/laytpl.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/laytpl.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/tree.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/tree.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/upload.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/upload.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/lay/modules/util.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/lay/modules/util.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/layui.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/layui.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/modules/icheck.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/modules/icheck.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/plugins/layui/modules/pjax.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/plugins/layui/modules/pjax.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/rank/nav1.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/rank/nav1.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/rank/nav2.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/rank/nav2.js" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/table.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/table.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/temp/edit-form.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/temp/edit-form.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/video.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/video.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/weiwancheng.html" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/weiwancheng.html" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/web/TronClass/TronClassController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/web/UserInfo/UserInfoController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/button.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/test.html" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/ITronClassDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/impl/TronClassDao.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/dao/ITronClassDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/dao/impl/TronClassDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/dao/ITronClassDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/dao/impl/TronClassDao.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/public/video.html" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/action/TronClassAction.class" afterPath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/action/TronClassAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/action/UserAction.class" afterPath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/dss/action/UserAction.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/action/TronClassAction.class" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/action/TronClassAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/action/UserAction.class" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/dss/action/UserAction.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/resources/rebel.xml" afterPath="$PROJECT_DIR$/dss-front/src/main/resources/rebel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/src/main/webapp/index.html" afterPath="$PROJECT_DIR$/dss-front/src/main/webapp/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/target/classes/rebel.xml" afterPath="$PROJECT_DIR$/dss-front/target/classes/rebel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/target/dss-front/WEB-INF/classes/rebel.xml" afterPath="$PROJECT_DIR$/dss-front/target/dss-front/WEB-INF/classes/rebel.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/target/dss-front/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/dss-front/target/dss-front/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/target/dss-front/index.html" afterPath="$PROJECT_DIR$/dss-front/target/dss-front/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/hm.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/hm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/rank/nav1.js" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/public/rank/nav1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/web/TronClass/tronClass.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/web/TronClass/tronClass.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/login.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/login.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/public/js/hm.js" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/public/js/hm.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/public/rank/nav1.js" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/public/rank/nav1.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/web/TronClass/tronClass.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/web/TronClass/tronClass.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/web/UserInfo/userInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/web/UserInfo/userInfo.jsp" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -683,97 +130,41 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/UserDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="216">
+              <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
       <file leaf-file-name="tronClass.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/web/TronClass/tronClass.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3852">
-              <caret line="107" column="42" lean-forward="false" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
+            <state relative-caret-position="-3184">
+              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="userInfo.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.jsp">
+      <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/web/UserInfo/UserInfoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-648">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding>
-                <marker date="1497315716000" expanded="true" signature="1611:1617" ph="&amp;nbsp;" />
-                <marker date="1497315716000" expanded="true" signature="1617:1623" ph="&amp;nbsp;" />
-                <marker date="1497315716000" expanded="true" signature="1623:1629" ph="&amp;nbsp;" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="UserAction.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
+            <state relative-caret-position="900">
+              <caret line="25" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="paging.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/paging.html">
+      <file leaf-file-name="button.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/button.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="72">
-              <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="table.html" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/table.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="main.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/main.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-108">
-              <caret line="3" column="10" lean-forward="false" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="6" column="21" lean-forward="false" selection-start-line="6" selection-start-column="21" selection-end-line="6" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/index.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="684">
-              <caret line="98" column="35" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
-              <folding>
-                <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index_fu.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/index_fu.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="446">
-              <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
+            <state relative-caret-position="556">
+              <caret line="54" column="36" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="54" selection-end-column="36" />
               <folding />
             </state>
           </provider>
@@ -782,9 +173,66 @@
       <file leaf-file-name="nav1.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/rank/nav1.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
-              <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
+            <state relative-caret-position="520">
+              <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
               <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserAction.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1440">
+              <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="userInfo.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="504">
+              <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TronClassDao.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/TronClassDao.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="281">
+              <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="login.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="410">
+              <caret line="91" column="19" lean-forward="false" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="19" />
+              <folding>
+                <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#small#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#i#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#small#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#small#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -814,12 +262,20 @@
       <find>tronClasstype</find>
       <find>../../</find>
       <find>favicon.ico</find>
+      <find>selected-all</find>
+      <find>ifChanged</find>
+      <find>import</find>
+      <find>TronClassServlet</find>
+      <find>UserAction</find>
+      <find>Admin</find>
     </findStrings>
     <replaceStrings>
       <replace>false</replace>
       <replace>'</replace>
       <replace>#{}</replace>
       <replace>data[i]</replace>
+      <replace>TronClassController</replace>
+      <replace>public</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -833,20 +289,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/page/idex_pageView.html" />
-        <option value="$PROJECT_DIR$/dss-front/src/main/webapp/index.html" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/mapperTemplate.xml" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/utils/ConnUtil.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mybatis-config.xml" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/UserDao.xml" />
-        <option value="$PROJECT_DIR$/dss-manage/pom.xml" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/Test/Test.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/UserBean.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservic.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/IUserServic.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/index_fu.jsp" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav.js" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/datas/nav1.js" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/js/index.js" />
@@ -858,31 +302,43 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/utils/PageBean.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/Userservice.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/Test/Testspring.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/UserService.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/resources/spring/applicationContext.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/resources/DbConfig.properties" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/TronClassDao.xml" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/TronClassDao.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/ITronClassService.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/TronClassService.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mybatis/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/form.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/PageBean.java" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/web/TronClass/tronClass.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/rank/nav1.js" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/index.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/layout.html" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/public/index1.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/TronClass/tronClass.jsp" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/web/TronClass/tronClass.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web.xml" />
         <option value="$PROJECT_DIR$/dss-manage/target/dss-manage/web/public/index.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/web/public/index.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/index.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/index.jsp" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/public/table.html" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/public/test.html" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/web/TronClassController/TronClassAction.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/web/TronClass/TronClassContr.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/web/UserInfo/UserAction.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/public/index.jsp" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/web/TronClass/TronClassController.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/web/UserInfo/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/TronClassService.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/UserService.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/TronClassDao.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/UserDao.java" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/web/TronClass/tronClass.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/public/rank/nav1.js" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/public/button.html" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java" />
       </list>
     </option>
@@ -1068,6 +524,74 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="UserInfo" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EUdss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EUdss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TronClass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EUdss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EUdss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="public" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -1102,7 +626,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="datas" />
+              <option name="myItemId" value="rank" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1125,6 +649,40 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EUdss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EUdss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="spring" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1151,74 +709,18 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="web" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="EUdss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EUdss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss-manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="utils" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EUdss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="EUdss" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss-manage" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="dss" />
+              <option name="myItemId" value="UserInfo" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1252,7 +754,41 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="action" />
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TronClass" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EUdss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="EUdss" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss-manage" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="dss" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1273,13 +809,15 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/dss-manage/src/main/webapp/public" />
+      <recent name="$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo" />
       <recent name="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF" />
       <recent name="$PROJECT_DIR$/dss-manage/src/main/java/web" />
       <recent name="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/web/UserInfo" />
-      <recent name="$PROJECT_DIR$/dss-manage/src/main/resources/mapper" />
-      <recent name="$PROJECT_DIR$/dss-manage/src/main/webapp/Admin/rank" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="web.UserInfo" />
+      <recent name="web.TronClass" />
       <recent name="com.eu.dss.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -1903,7 +1441,7 @@
       <workItem from="1499083001689" duration="4119000" />
       <workItem from="1499087492442" duration="4200000" />
       <workItem from="1499138796354" duration="3046000" />
-      <workItem from="1499224431015" duration="17523000" />
+      <workItem from="1499224431015" duration="28490000" />
     </task>
     <servers />
   </component>
@@ -1940,11 +1478,10 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="106535000" />
+    <option name="totallyTimeSpent" value="117502000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="25" width="1920" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1952,7 +1489,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527474" sideWeight="0.5064171" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886267" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3978022" sideWeight="0.49786097" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4021978" sideWeight="0.49786097" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1971,7 +1508,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67362636" sideWeight="0.49786097" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="15" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32087913" sideWeight="0.49786097" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2053476" sideWeight="0.4923077" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2053476" sideWeight="0.4923077" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29411766" sideWeight="0.50769234" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.29037434" sideWeight="0.50666666" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32967034" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1994,7 +1531,7 @@
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JRebel Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32527474" sideWeight="0.5064171" order="13" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32886267" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
-      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3978022" sideWeight="0.49786097" order="14" side_tool="false" content_ui="tabs" />
+      <window_info id="JRebel Executor" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4021978" sideWeight="0.49786097" order="14" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -2032,7 +1569,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="3" />
+      <option name="time" value="4" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -2041,169 +1578,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/TronClassBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="13" lean-forward="false" selection-start-line="5" selection-start-column="13" selection-end-line="5" selection-end-column="13" />
-          <folding>
-            <element signature="e#458#459#0" expanded="false" />
-            <element signature="e#485#486#0" expanded="false" />
-            <element signature="e#525#526#0" expanded="false" />
-            <element signature="e#557#558#0" expanded="false" />
-            <element signature="e#583#584#0" expanded="false" />
-            <element signature="e#608#609#0" expanded="false" />
-            <element signature="e#641#642#0" expanded="false" />
-            <element signature="e#669#670#0" expanded="false" />
-            <element signature="e#706#707#0" expanded="false" />
-            <element signature="e#739#740#0" expanded="false" />
-            <element signature="e#791#792#0" expanded="false" />
-            <element signature="e#835#836#0" expanded="false" />
-            <element signature="e#864#865#0" expanded="false" />
-            <element signature="e#892#893#0" expanded="false" />
-            <element signature="e#931#932#0" expanded="false" />
-            <element signature="e#965#966#0" expanded="false" />
-            <element signature="e#995#996#0" expanded="false" />
-            <element signature="e#1024#1025#0" expanded="false" />
-            <element signature="e#1065#1066#0" expanded="false" />
-            <element signature="e#1101#1102#0" expanded="false" />
-            <element signature="e#1130#1131#0" expanded="false" />
-            <element signature="e#1158#1159#0" expanded="false" />
-            <element signature="e#1197#1198#0" expanded="false" />
-            <element signature="e#1231#1232#0" expanded="false" />
-            <element signature="e#1260#1261#0" expanded="false" />
-            <element signature="e#1288#1289#0" expanded="false" />
-            <element signature="e#1327#1328#0" expanded="false" />
-            <element signature="e#1361#1362#0" expanded="false" />
-            <element signature="e#1391#1392#0" expanded="false" />
-            <element signature="e#1420#1421#0" expanded="false" />
-            <element signature="e#1461#1462#0" expanded="false" />
-            <element signature="e#1497#1498#0" expanded="false" />
-            <element signature="e#1526#1527#0" expanded="false" />
-            <element signature="e#1554#1555#0" expanded="false" />
-            <element signature="e#1593#1594#0" expanded="false" />
-            <element signature="e#1627#1628#0" expanded="false" />
-            <element signature="e#1658#1659#0" expanded="false" />
-            <element signature="e#1688#1689#0" expanded="false" />
-            <element signature="e#1731#1732#0" expanded="false" />
-            <element signature="e#1769#1770#0" expanded="false" />
-            <element signature="e#1798#1799#0" expanded="false" />
-            <element signature="e#1826#1827#0" expanded="false" />
-            <element signature="e#1865#1866#0" expanded="false" />
-            <element signature="e#1899#1900#0" expanded="false" />
-            <element signature="e#1928#1929#0" expanded="false" />
-            <element signature="e#1956#1957#0" expanded="false" />
-            <element signature="e#1995#1996#0" expanded="false" />
-            <element signature="e#2029#2030#0" expanded="false" />
-            <element signature="e#2058#2059#0" expanded="false" />
-            <element signature="e#2086#2087#0" expanded="false" />
-            <element signature="e#2125#2126#0" expanded="false" />
-            <element signature="e#2159#2160#0" expanded="false" />
-            <element signature="e#2188#2189#0" expanded="false" />
-            <element signature="e#2216#2217#0" expanded="false" />
-            <element signature="e#2255#2256#0" expanded="false" />
-            <element signature="e#2289#2290#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/UserBean.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="281">
-          <caret line="80" column="18" lean-forward="false" selection-start-line="80" selection-start-column="18" selection-end-line="80" selection-end-column="18" />
-          <folding>
-            <element signature="e#322#323#0" expanded="false" />
-            <element signature="e#349#350#0" expanded="false" />
-            <element signature="e#386#387#0" expanded="false" />
-            <element signature="e#418#419#0" expanded="false" />
-            <element signature="e#448#449#0" expanded="false" />
-            <element signature="e#474#475#0" expanded="false" />
-            <element signature="e#512#513#0" expanded="false" />
-            <element signature="e#542#543#0" expanded="false" />
-            <element signature="e#572#573#0" expanded="false" />
-            <element signature="e#598#599#0" expanded="false" />
-            <element signature="e#636#637#0" expanded="false" />
-            <element signature="e#666#667#0" expanded="false" />
-            <element signature="e#698#699#0" expanded="false" />
-            <element signature="e#726#727#0" expanded="false" />
-            <element signature="e#768#769#0" expanded="false" />
-            <element signature="e#802#803#0" expanded="false" />
-            <element signature="e#837#838#0" expanded="false" />
-            <element signature="e#868#869#0" expanded="false" />
-            <element signature="e#916#917#0" expanded="false" />
-            <element signature="e#956#957#0" expanded="false" />
-            <element signature="e#982#983#0" expanded="false" />
-            <element signature="e#1007#1008#0" expanded="false" />
-            <element signature="e#1040#1041#0" expanded="false" />
-            <element signature="e#1068#1069#0" expanded="false" />
-            <element signature="e#1103#1104#0" expanded="false" />
-            <element signature="e#1134#1135#0" expanded="false" />
-            <element signature="e#1182#1183#0" expanded="false" />
-            <element signature="e#1222#1223#0" expanded="false" />
-            <element signature="e#1257#1258#0" expanded="false" />
-            <element signature="e#1288#1289#0" expanded="false" />
-            <element signature="e#1336#1337#0" expanded="false" />
-            <element signature="e#1376#1377#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/ITronClassDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-571">
-          <caret line="13" column="17" lean-forward="false" selection-start-line="13" selection-start-column="17" selection-end-line="13" selection-end-column="17" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mapper/mapperTemplate.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="5" column="0" lean-forward="false" selection-start-line="5" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="758">
-          <caret line="171" column="29" lean-forward="false" selection-start-line="171" selection-start-column="29" selection-end-line="171" selection-end-column="29" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-beans/4.1.7.RELEASE/spring-beans-4.1.7.RELEASE.jar!/org/springframework/beans/factory/support/AbstractAutowireCapableBeanFactory.class">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="345" column="0" lean-forward="false" selection-start-line="345" selection-start-column="0" selection-end-line="345" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/UserService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="139">
-          <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="3" selection-end-column="54" />
-          <folding>
-            <marker date="1499082511469" expanded="true" signature="302:375" ph="SELECT * FRO... dssuser" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/spring/applicationContext.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="47" column="75" lean-forward="false" selection-start-line="47" selection-start-column="75" selection-end-line="47" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/Test/Testspring.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="196">
@@ -2248,40 +1622,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/UserDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="468">
-          <caret line="15" column="4" lean-forward="false" selection-start-line="15" selection-start-column="4" selection-end-line="15" selection-end-column="4" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/TronClassDao.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1620">
-          <caret line="49" column="24" lean-forward="false" selection-start-line="49" selection-start-column="24" selection-end-line="49" selection-end-column="24" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/ITronClassService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1440">
           <caret line="43" column="23" lean-forward="false" selection-start-line="43" selection-start-column="23" selection-end-line="43" selection-end-column="23" />
-          <folding>
-            <element signature="imports" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/TronClassService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3528">
-          <caret line="105" column="15" lean-forward="false" selection-start-line="105" selection-start-column="15" selection-end-line="105" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="false" />
           </folding>
@@ -2300,9 +1644,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="36">
           <caret line="66" column="28" lean-forward="false" selection-start-line="66" selection-start-column="15" selection-end-line="66" selection-end-column="28" />
-          <folding>
-            <marker date="1499086064235" expanded="true" signature="3043:3076" ph="SELECT count... eu_tronclass" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -2343,16 +1685,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/jquery.min.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="n#!!doc" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/target/dss-manage/Admin/css/site.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -2385,26 +1717,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="41" column="75" lean-forward="false" selection-start-line="41" selection-start-column="75" selection-end-line="41" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="5" column="64" lean-forward="false" selection-start-line="5" selection-start-column="64" selection-end-line="5" selection-end-column="64" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="21" column="71" lean-forward="false" selection-start-line="21" selection-start-column="54" selection-end-line="21" selection-end-column="71" />
           <folding />
         </state>
       </provider>
@@ -2430,52 +1746,6 @@
         <state relative-caret-position="216">
           <caret line="111" column="52" lean-forward="false" selection-start-line="111" selection-start-column="52" selection-end-line="111" selection-end-column="52" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/index_fu.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="446">
-          <caret line="72" column="28" lean-forward="false" selection-start-line="72" selection-start-column="28" selection-end-line="72" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="98" column="35" lean-forward="false" selection-start-line="98" selection-start-column="35" selection-end-line="98" selection-end-column="35" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/rank/nav1.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="9" column="20" lean-forward="false" selection-start-line="9" selection-start-column="20" selection-end-line="9" selection-end-column="20" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/web/TronClass/tronClass.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3852">
-          <caret line="107" column="42" lean-forward="false" selection-start-line="107" selection-start-column="42" selection-end-line="107" selection-end-column="42" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-648">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1497315716000" expanded="true" signature="1611:1617" ph="&amp;nbsp;" />
-            <marker date="1497315716000" expanded="true" signature="1617:1623" ph="&amp;nbsp;" />
-            <marker date="1497315716000" expanded="true" signature="1623:1629" ph="&amp;nbsp;" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -2527,14 +1797,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="684">
-          <caret line="52" column="0" lean-forward="false" selection-start-line="52" selection-start-column="0" selection-end-line="52" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/nav.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1944">
@@ -2567,10 +1829,201 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/video.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/weiwancheng.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="252">
+          <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/js/jquery.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="366" column="13" lean-forward="true" selection-start-line="366" selection-start-column="13" selection-end-line="366" selection-end-column="29" />
+          <folding>
+            <element signature="n#style#0;n#fieldset#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#6;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#6;n#form#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#fieldset#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#div#0;n#div#4;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#div#4;n#form#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/index_fu.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="10" column="73" lean-forward="true" selection-start-line="10" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/table.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-108">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="-14891">
+          <caret line="35" column="55" lean-forward="true" selection-start-line="35" selection-start-column="55" selection-end-line="35" selection-end-column="55" />
+          <folding>
+            <element signature="n#style#0;n#i#0;n#td#8;n#tr#18;n#tbody#0;n#table#0;n#div#0;n#fieldset#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/spring/applicationContext.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="628">
+          <caret line="52" column="4" lean-forward="false" selection-start-line="52" selection-start-column="4" selection-end-line="52" selection-end-column="4" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/index.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="29" column="65" lean-forward="false" selection-start-line="29" selection-start-column="65" selection-end-line="29" selection-end-column="65" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/web/TronClass/TronClassController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="24" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="129" selection-end-column="0" />
+          <folding>
+            <marker date="1499260481441" expanded="false" signature="4127:4135" ph="&lt;~&gt;" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/TronClassAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="185">
+          <caret line="22" column="13" lean-forward="false" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#3791#3799#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/TronClassService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="21" column="0" lean-forward="false" selection-start-line="21" selection-start-column="0" selection-end-line="21" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/servic/impl/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="281">
+          <caret line="14" column="50" lean-forward="false" selection-start-line="14" selection-start-column="50" selection-end-line="14" selection-end-column="50" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/TronClassDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="9" column="9" lean-forward="false" selection-start-line="9" selection-start-column="9" selection-end-line="9" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/UserDao.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="8" column="3" lean-forward="true" selection-start-line="8" selection-start-column="3" selection-end-line="8" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/login.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="410">
+          <caret line="91" column="19" lean-forward="false" selection-start-line="91" selection-start-column="13" selection-end-line="91" selection-end-column="19" />
+          <folding>
+            <element signature="n#style#0;n#button#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#0;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#i#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#0;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#small#1;n#div#1;n#form#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/rank/nav1.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="100" column="24" lean-forward="false" selection-start-line="100" selection-start-column="24" selection-end-line="100" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/public/button.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="556">
+          <caret line="54" column="36" lean-forward="true" selection-start-line="43" selection-start-column="32" selection-end-line="54" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/web/UserInfo/userInfo.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="504">
+          <caret line="107" column="0" lean-forward="false" selection-start-line="107" selection-start-column="0" selection-end-line="107" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/web/TronClass/tronClass.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3184">
+          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/web/UserInfo/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="25" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="67" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/action/UserAction.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1440">
+          <caret line="52" column="67" lean-forward="false" selection-start-line="52" selection-start-column="67" selection-end-line="52" selection-end-column="67" />
           <folding />
         </state>
       </provider>

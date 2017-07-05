@@ -8,13 +8,13 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../../Admin/css/global.css" media="all">
-    <link rel="stylesheet" href="../../Admin/plugins/layui/css/layui.css" media="all"/>
-    <link rel="stylesheet" href="../../Admin/css/eu_manage.css" media="all">
-    <link rel="stylesheet" href="../../Admin/plugins/font-awesome/css/font-awesome.min.css">
-    <script type="text/javascript" src="../../Admin/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../Admin/js/layui.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../../Admin/js/button_js.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../../public/css/global.css" media="all">
+    <link rel="stylesheet" href="../../public/plugins/layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="../../public/css/eu_manage.css" media="all">
+    <link rel="stylesheet" href="../../public/plugins/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="../../public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../public/js/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../public/js/button_js.js" charset="utf-8"></script>
 </head>
 
 
@@ -30,8 +30,9 @@
         <legend>创课各分院每月点击次数数据统计</legend>
         <div style="">
             <blockquote class="layui-elem-quote ">
-                <button id="refer" class="refer layui-btn layui-btn-normal "><i class="layui-icon">&#xe61f;</i>&nbsp;增加
-                </button>
+                <a id="refer" class="refer layui-btn layui-btn-normal ">
+                    <i class="layui-icon">&#xe61f;</i>&nbsp;添加
+                </a>
             </blockquote>
         </div>
         <div>
@@ -105,7 +106,7 @@
     </tr>
     {{# }); }}
 </script>
-<script type="text/javascript" src="../../Admin/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="../../public/plugins/layui/layui.js"></script>
 <script type="text/javascript">
     var cl;
     var pageCurrent = 0;//当前页数

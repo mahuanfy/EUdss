@@ -84,7 +84,7 @@ public class TronClassAction extends HttpServlet {
         tronClasstype.setEu_wu(Integer.parseInt(req.getParameter("eu_wu")));
         tronClasstype.setEu_jr(Integer.parseInt(req.getParameter("eu_jr")));
         tronClassService.save(tronClasstype);
-        resp.sendRedirect(req.getContextPath() + "/Admin/web/TronClass/tronClass.jsp");
+        resp.sendRedirect(req.getContextPath() + "/Admin/com.eu.dss.web/TronClass/tronClass.jsp");
     }
 
     /**
