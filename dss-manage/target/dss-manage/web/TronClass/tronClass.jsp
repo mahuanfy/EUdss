@@ -8,13 +8,13 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../css/global.css" media="all">
-    <link rel="stylesheet" href="../plugins/layui/css/layui.css" media="all"/>
-    <link rel="stylesheet" href="../css/eu_manage.css" media="all">
-    <link rel="stylesheet" href="../plugins/font-awesome/css/font-awesome.min.css">
-    <script type="text/javascript" src="../js/jquery.min.js"></script>
-    <script type="text/javascript" src="../js/layui.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../js/button_js.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../../Admin/css/global.css" media="all">
+    <link rel="stylesheet" href="../../Admin/plugins/layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="../../Admin/css/eu_manage.css" media="all">
+    <link rel="stylesheet" href="../../Admin/plugins/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="../../Admin/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../Admin/js/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="../../Admin/js/button_js.js" charset="utf-8"></script>
 </head>
 
 
@@ -22,7 +22,7 @@
 <%
     JSONArray jsonArray = (JSONArray) session.getAttribute("user");
     if (jsonArray == null) {
-        response.sendRedirect(request.getContextPath() + "/index.jsp");
+        response.sendRedirect(request.getContextPath() + "/login.jsp");
     }
 %>
 <div style="margin: 15px;">
@@ -105,7 +105,7 @@
     </tr>
     {{# }); }}
 </script>
-<script type="text/javascript" src="../plugins/layui/layui.js"></script>
+<script type="text/javascript" src="../../Admin/plugins/layui/layui.js"></script>
 <script type="text/javascript">
     var cl;
     var pageCurrent = 0;//当前页数

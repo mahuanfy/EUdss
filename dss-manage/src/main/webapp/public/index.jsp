@@ -42,8 +42,8 @@
 <%
     JSONArray jsonArray = (JSONArray) session.getAttribute("user");
     if (jsonArray == null) {
-        response.sendRedirect(request.getContextPath() + "/index.jsp");
-    } else {
+        response.sendRedirect(request.getContextPath() + "/login.jsp");
+    }
 %>
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header header header-demo">
@@ -76,14 +76,14 @@
                             </a>
                         </dd>
                         <dd>
-                            <a href="../index.jsp"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+                            <a href="../login.jsp"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
                         </dd>
                     </dl>
                 </li>
             </ul>
             <ul class="layui-nav admin-header-item-mobile">
                 <li class="layui-nav-item">
-                    <a href="../index.jsp"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+                    <a href="../login.jsp"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
                 </li>
             </ul>
         </div>
@@ -133,6 +133,3 @@
 </body>
 
 </html>
-<%
-    }
-%>

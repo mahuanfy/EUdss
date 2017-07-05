@@ -48,9 +48,10 @@ public class UserAction extends HttpServlet {
         if (userServic.login(userBean) !=null) {
             JSONArray jsonArray = JSONArray.fromObject(userServic.login(userBean));
             req.getSession().setAttribute("user",jsonArray);
-            resp.sendRedirect(req.getContextPath() + "/Admin/index1.jsp");
+            resp.sendRedirect(req.getContextPath() + "/public/index.jsp");
         } else {
-            resp.sendRedirect(req.getContextPath() + "/index.jsp");
+
+            resp.sendRedirect(req.getContextPath() + "/login.jsp");
 
         }
     }
