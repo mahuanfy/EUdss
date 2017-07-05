@@ -26,9 +26,9 @@ public class PageBean {
 
     public int getPageCurrent() {
         if(totalCount % pageCount == 0){
-            totalPage = totalCount / pageCount;
+            this.totalPage = totalCount / pageCount;
         }else {
-            totalPage = totalCount / pageCount +1;
+            this.totalPage = totalCount / pageCount +1;
         }
         return pageCurrent;
     }

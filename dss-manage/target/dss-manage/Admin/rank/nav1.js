@@ -7,7 +7,7 @@ var navs = [{
 	"children": [{
 		"title": "创客系统点击量",
 		"icon": "&#xe641;",
-		"href": "web/TronClass/tronClass.jsp"
+		"href": "TronClass/tronClass.jsp"
 	}, {
 		"title": "教务处信息",
 		"icon": "&#xe63c;",

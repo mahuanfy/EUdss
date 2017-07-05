@@ -13,6 +13,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -96,7 +97,11 @@ public class TronClassAction extends HttpServlet {
         pageBean.setPageCurrent(pageCurrent);
 
         List<TronClassBean> TronClasstypelist = tronClassService.getAll(pageBean);
-        JSONArray jsonArray = JSONArray.fromObject(TronClasstypelist);
+
+        List<Object> list = new ArrayList<Object>();
+        list.add(TronClasstypelist);
+        list.add(pageBean);
+        JSONArray jsonArray = JSONArray.fromObject(list);
         resp.getWriter().print(jsonArray);
         System.out.println("servlet" + jsonArray);
     }
