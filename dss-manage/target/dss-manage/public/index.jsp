@@ -27,11 +27,10 @@
 //---------------------权限设置----------------------------------------
         var rank = 0;
         $(function () {
-            $.post("${pageContext.request.contextPath}/UserInfo/rank",
+            $.post("${pageContext.request.contextPath}/login/rank",
                 function (data) {
                 console.log(data)
                     rank = data.rank;
-                alert(rank  )
                     var src = "/public/rank/nav" + rank + ".js"
                     $(".nav_script").attr({src: src});
                 }
@@ -56,7 +55,7 @@
                 <li class="layui-nav-item">
                     <a href="javascript:;" class="admin-header-user">
                         <img src="${baseurl}/public/images/0.jpg"/>
-                        ${sessionScope.user.username}
+                        ${sessionScope.user.nickname}
                     </a>
                     <dl class="layui-nav-child">
                         <dd>

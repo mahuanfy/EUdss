@@ -1,6 +1,6 @@
-<%@ page import="net.sf.json.JSONArray" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page isELIgnored="false" %>
+<%@ include file="../../../public/tag.jsp" %>
 <!doctype html>
 <head>
     <meta charset="utf-8">
@@ -8,13 +8,13 @@
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-    <link rel="stylesheet" href="../../../public/css/global.css" media="all">
-    <link rel="stylesheet" href="../../../public/plugins/layui/css/layui.css" media="all"/>
-    <link rel="stylesheet" href="../../../public/css/eu_manage.css" media="all">
-    <link rel="stylesheet" href="../../../public/plugins/font-awesome/css/font-awesome.min.css">
-    <script type="text/javascript" src="../../../public/js/jquery.min.js"></script>
-    <script type="text/javascript" src="../../../public/js/layui.js" charset="utf-8"></script>
-    <script type="text/javascript" src="../../../public/js/button_js.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="${baseurl}/public/css/global.css" media="all">
+    <link rel="stylesheet" href="${baseurl}/public/plugins/layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="${baseurl}/public/css/eu_manage.css" media="all">
+    <link rel="stylesheet" href="${baseurl}/public/plugins/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="${baseurl}/public/js/jquery.min.js"></script>
+    <script type="text/javascript" src="${baseurl}/public/js/layui.js" charset="utf-8"></script>
+    <script type="text/javascript" src="${baseurl}/public/js/button_js.js" charset="utf-8"></script>
 </head>
 
 
@@ -101,7 +101,7 @@
     </tr>
     {{# }); }}
 </script>
-<script type="text/javascript" src="../../../public/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="${baseurl}/public/plugins/layui/layui.js"></script>
 <script type="text/javascript">
     var cl;
     var pageCurrent = 0;//当前页数
@@ -129,8 +129,9 @@
                 });
             },
             list: function () {
-                $.post("${pageContext.request.contextPath}/TronClassServlet?method=pool", { curr:pageCurrent}, function (data) {
-                        totalPage=data[1]["totalPage"];//总页数
+                $.post("${pageContext.request.contextPath}/tronClass/insertProfession", { pageCurrent:pageCurrent},
+                    function (data) {
+                        totalPage=data.totalPage;//总页数
                         cl.page();
                         laytpl($("#list-tpl").text()).render(data[0], function (html) {
                             $(".tr_1").html(html);

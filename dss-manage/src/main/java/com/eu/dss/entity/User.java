@@ -3,7 +3,7 @@ package com.eu.dss.entity;
 /**
  * Created by 马欢欢 on 2017/5/24.
  */
-public class UserBean {
+public class User {
     private int id;
     private String username;
     private String password;
@@ -12,6 +12,15 @@ public class UserBean {
     private String age;
     private String phone;
     private  int rank;
+    private String date;
+
+    public String getDate() {
+        return date;
+    }
+
+    public void setDate(String date) {
+        this.date = date;
+    }
 
     public int getRank() {
         return rank;

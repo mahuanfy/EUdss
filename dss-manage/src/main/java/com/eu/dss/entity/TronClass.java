@@ -3,7 +3,7 @@ package com.eu.dss.entity;
 /**
  * Created by pc on 2017/5/16.
  */
-public class TronClassBean {
+public class TronClass {
     private int id;
     private String year;
     private String tron_month;

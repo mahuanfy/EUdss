@@ -1,8 +1,6 @@
 package com.eu.dss.entity;
 
 
-import com.eu.dss.entity.TronClassBean;
-
 import java.util.*;
 
 /**封装分页的参数
@@ -14,13 +12,15 @@ public class PageBean {
     private int index;//起始查询位置
     private int totalCount;//总记录数
     private int totalPage;//总页数=总记录数、每页显示的行数（有余数+1）
-    private List<TronClassBean> pageData;//分页查询到的数据
+    private List<TronClass> pageData;//分页查询到的数据
 
     public int getIndex() {
+
         return index;
     }
 
     public void setIndex(int index) {
+
         this.index = index;
     }
 
@@ -61,11 +61,11 @@ public class PageBean {
         this.totalPage = totalPage;
     }
 
-    public List<TronClassBean> getPageData() {
+    public List<TronClass> getPageData() {
         return pageData;
     }
 
-    public void setPageData(List<TronClassBean> pageData) {
+    public void setPageData(List<TronClass> pageData) {
         this.pageData = pageData;
     }
 

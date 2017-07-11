@@ -69,7 +69,7 @@
                             <i class="form-control-feedback" data-fv-icon-for="password" style="display: none;"></i>
                             <small class="help-block" data-fv-validator="notEmpty" data-fv-for="password"
                                    data-fv-result="NOT_VALIDATED" style="display: none;">密码不能为空
-                            </small>
+                        </small>~
                         </div>
                         <div class="col-sm-7">
                             <button type="submit" class="btn btn-primary btn-block margin-top-10" onclick="login()">登
@@ -101,12 +101,12 @@
     function login() {
         let username = $("#username").val();
         let password = $("#password").val();
-        $.post("${pageContext.request.contextPath}/UserInfo/login",
+        $.post("${pageContext.request.contextPath}/login/login",
             {username: username, password: password},
             function (data) {
 
                 if (data.success) {
-                    location.href = "${baseurl}/UserInfo/index"
+                    location.href = "${baseurl}/login/index"
                 } else {
                     layui.use('layer', function () {
                         var layer = layui.layer;

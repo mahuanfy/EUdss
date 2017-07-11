@@ -1,62 +1,53 @@
 package com.eu.dss.web.UserInfo;
 
-import com.eu.dss.entity.UserBean;
-import com.eu.dss.service.IUserService;
+import com.eu.dss.entity.PageBean;
+import com.eu.dss.entity.User;
+import com.eu.dss.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
-import javax.servlet.http.HttpServlet;
-import javax.servlet.http.HttpSession;
-import java.util.ArrayList;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
- * Created 马欢欢 pc on 2017/5/23.
+ * Created by 马欢欢 on 17-7-11.
  */
 @Controller
-@RequestMapping("/UserInfo")
-public class UserInfoController extends HttpServlet {
+@RequestMapping("UserInfo")
+public class UserInfoController {
     @Autowired
-    private IUserService userService;
-    @RequestMapping("/index")
-    public String index() {
-        return "redirect:/public/index.jsp";
-    }
-    @RequestMapping("/login")
+    private UserService userService;
+
+    @RequestMapping("/findUser")
     @ResponseBody
-    public  Map<String ,Object> login( HttpSession session, UserBean userBean) {
-        Map<String ,Object> result = new HashMap<String, Object>();
+    public Map<String, Object> findUser(PageBean pageBean) {
+        System.out.println("=================="+pageBean);
+        Map<String, Object> result = new HashMap<String, Object>();
+        result.put("UserInfo",userService.findUser(pageBean));
+        result.put("totalPage",pageBean.getTotalPage());
 
-        UserBean user = userService.login(userBean);
-        if (user !=null) {
+        System.out.println("-----------------------"+pageBean);
 
-            session.setAttribute("user", user);
-            result.put("success",true);
-
-        }else {
-            result.put("success",false);
-        }
         return result;
+
     }
 
-    //权限
-    @RequestMapping("/rank")
+
+
+    @RequestMapping("/insertUser")
     @ResponseBody
-    public Map<String ,Object> rank(HttpSession session) {
-        Map<String ,Object> result = new HashMap<String, Object>();
-        try {
-            UserBean userBean = (UserBean) session.getAttribute("user");
+    public Map<String, Object> insertUser(User user) {
+        Map<String, Object> result = new HashMap<String, Object>();
+        Date now = new Date();
+        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd ");//可以方便地修改日期格式
+        String date = dateFormat.format( now );
+        System.out.println("++++++++++++++++++++"+date);
+        return result;
 
-            result.put("rank",userBean.getRank());
-        }catch (Exception e){
-            e.printStackTrace();
-        }
-
-    return result;
     }
 
 
