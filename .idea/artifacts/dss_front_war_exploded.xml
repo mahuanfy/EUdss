@@ -1,14 +1,11 @@
 <component name="ArtifactManager">
   <artifact type="exploded-war" name="dss-front:war exploded">
-    <output-path>$PROJECT_DIR$/dss-front/target/dss-front</output-path>
+    <output-path>$PROJECT_DIR$/out/artifacts/dss_front_war_exploded</output-path>
     <root id="root">
       <element id="directory" name="WEB-INF">
         <element id="directory" name="classes">
           <element id="module-output" name="dss-front" />
         </element>
-      </element>
-      <element id="directory" name="META-INF">
-        <element id="file-copy" path="$PROJECT_DIR$/dss-front/target/dss-front/META-INF/MANIFEST.MF" />
       </element>
       <element id="javaee-facet-resources" facet="dss-front/web/Web" />
     </root>

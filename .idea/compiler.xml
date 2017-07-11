@@ -12,7 +12,7 @@
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="dss-front" target="1.5" />
-      <module name="dss-manage" target="1.5" />
+      <module name="dss-manage" target="1.6" />
       <module name="EUdss" target="1.5" />
       <module name="eudss" target="1.5" />
     </bytecodeTargetLevel>

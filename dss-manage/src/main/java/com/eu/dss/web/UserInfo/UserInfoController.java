@@ -1,67 +1,63 @@
-//package com.eu.dss.web.UserInfo;
-//
-//import com.eu.dss.entity.UserBean;
-//import com.eu.dss.servic.IUserService;
-//import com.eu.dss.servic.impl.UserService;
-//import net.sf.json.JSONArray;
-//import org.springframework.stereotype.Controller;
-//
-//import javax.annotation.Resource;
-//import javax.servlet.ServletException;
-//import javax.servlet.annotation.WebServlet;
-//import javax.servlet.http.HttpServlet;
-//import javax.servlet.http.HttpServletRequest;
-//import javax.servlet.http.HttpServletResponse;
-//import javax.servlet.http.HttpSession;
-//import java.io.IOException;
-//
-///**
-// * Created 马欢欢 pc on 2017/5/23.
-// */
-//@WebServlet(name = "UserInfoController" ,urlPatterns = "/UserInfoController")
-//@Controller
-//public class UserInfoController extends HttpServlet {
-//    @Resource
-//    private IUserService userServic ;
-//
-//    @Override
-//    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        doPost(req, resp);
-//    }
-//
-//    @Override
-//    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        resp.setContentType("text/html;charset=utf-8");
-//        req.setCharacterEncoding("utf-8");
-//        String method = req.getParameter("method");
-//        if ("login".equals(method)) {
-//            System.out.println(121212);
-//            login(req, resp);
-//        } else if ("rank".equals(method)) {
-//            rank(req, resp);
-//        }
-//    }
-//
-//    protected void login(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//        UserBean userBean = new UserBean();
-//        String username = req.getParameter("username");
-//        String password = req.getParameter("password");
-//        userBean.setUsername(username);
-//        userBean.setPassword(password);
-//        if (userServic.login(userBean) !=null) {
-//            JSONArray jsonArray = JSONArray.fromObject(userServic.login(userBean));
-//            req.getSession().setAttribute("user",jsonArray);
-//            resp.sendRedirect(req.getContextPath() + "/public/index.jsp");
-//        } else {
-//
-//            resp.sendRedirect(req.getContextPath() + "/login.jsp");
-//
-//        }
-//    }
-//    //权限
-//    protected void rank(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-//            HttpSession session = req.getSession();
-//        JSONArray jsonArray = (JSONArray) session.getAttribute("user");
-//        resp.getWriter().print(jsonArray.getJSONObject(0).get("rank"));
-//    }
-//}
+package com.eu.dss.web.UserInfo;
+
+import com.eu.dss.entity.UserBean;
+import com.eu.dss.service.IUserService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
+
+import javax.servlet.http.HttpServlet;
+import javax.servlet.http.HttpSession;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+/**
+ * Created 马欢欢 pc on 2017/5/23.
+ */
+@Controller
+@RequestMapping("/UserInfo")
+public class UserInfoController extends HttpServlet {
+    @Autowired
+    private IUserService userService;
+    @RequestMapping("/index")
+    public String index() {
+        return "redirect:/public/index.jsp";
+    }
+    @RequestMapping("/login")
+    @ResponseBody
+    public  Map<String ,Object> login( HttpSession session, UserBean userBean) {
+        Map<String ,Object> result = new HashMap<String, Object>();
+
+        UserBean user = userService.login(userBean);
+        if (user !=null) {
+
+            session.setAttribute("user", user);
+            result.put("success",true);
+
+        }else {
+            result.put("success",false);
+        }
+        return result;
+    }
+
+    //权限
+    @RequestMapping("/rank")
+    @ResponseBody
+    public Map<String ,Object> rank(HttpSession session) {
+        Map<String ,Object> result = new HashMap<String, Object>();
+        try {
+            UserBean userBean = (UserBean) session.getAttribute("user");
+
+            result.put("rank",userBean.getRank());
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+    return result;
+    }
+
+
+}

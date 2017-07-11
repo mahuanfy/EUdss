@@ -1,6 +1,6 @@
-<%@ page import="net.sf.json.JSONArray" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page isELIgnored="false" %>
+<%@ include file="../public/tag.jsp" %>
 
 <!DOCTYPE html>
 
@@ -16,21 +16,23 @@
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
 
-    <link rel="stylesheet" href="plugins/layui/css/layui.css" media="all"/>
-    <link rel="stylesheet" href="css/global.css" media="all">
-    <link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
-    <script type="text/javascript" src="js/jquery.js"></script>
-    <script type="text/javascript" src="plugins/layui/layui.js"></script>
-    <script class="nav_script" type="text/javascript"></script>
-    <script src="js/index.js"></script>
+    <link rel="stylesheet" href="${baseurl}/public/plugins/layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="${baseurl}/public/css/global.css" media="all">
+    <link rel="stylesheet" href="${baseurl}/public/plugins/font-awesome/css/font-awesome.min.css">
+    <script type="text/javascript" src="${baseurl}/public/js/jquery.js"></script>
+    <script type="text/javascript" src="${baseurl}/public/plugins/layui/layui.js"></script>
+    <script class="nav_script" type="text/javascript" ></script>
+    <script src="${baseurl}/public/js/index.js"></script>
     <script type="text/javascript">
-        //------------权限设置----------------------------------------
+//---------------------权限设置----------------------------------------
         var rank = 0;
         $(function () {
-            $.post("${pageContext.request.contextPath}/UserAction?method=rank",
-                function (data, status) {
-                    rank = data;
-                    var src = "rank/nav" + rank + ".js"
+            $.post("${pageContext.request.contextPath}/UserInfo/rank",
+                function (data) {
+                console.log(data)
+                    rank = data.rank;
+                alert(rank  )
+                    var src = "/public/rank/nav" + rank + ".js"
                     $(".nav_script").attr({src: src});
                 }
             )
@@ -39,12 +41,6 @@
 </head>
 
 <body>
-<%
-    JSONArray jsonArray = (JSONArray) session.getAttribute("user");
-    if (jsonArray == null) {
-        response.sendRedirect(request.getContextPath() + "/login.jsp");
-    }
-%>
 <div class="layui-layout layui-layout-admin">
     <div class="layui-header header header-demo">
         <div class="layui-main">
@@ -59,8 +55,8 @@
             <ul class="layui-nav admin-header-item">
                 <li class="layui-nav-item">
                     <a href="javascript:;" class="admin-header-user">
-                        <img src="images/0.jpg"/>
-                        <span><%=jsonArray.getJSONObject(0).get("nickname")%></span>
+                        <img src="${baseurl}/public/images/0.jpg"/>
+                        ${sessionScope.user.username}
                     </a>
                     <dl class="layui-nav-child">
                         <dd>
@@ -76,14 +72,14 @@
                             </a>
                         </dd>
                         <dd>
-                            <a href="../login.jsp"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+                            <a href="../WEB-INF/login.jsp"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
                         </dd>
                     </dl>
                 </li>
             </ul>
             <ul class="layui-nav admin-header-item-mobile">
                 <li class="layui-nav-item">
-                    <a href="../login.jsp"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+                    <a href="${baseurl}/login"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
                 </li>
             </ul>
         </div>
@@ -101,7 +97,7 @@
             </ul>
             <div class="layui-tab-content" style="min-height: 150px; padding: 5px 0 0 0;">
                 <div class="layui-tab-item layui-show">
-                    <iframe src="main.html"></iframe>
+                    <iframe src="${baseurl}/public/main.html"></iframe>
                 </div>
             </div>
         </div>

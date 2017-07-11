@@ -1,8 +1,8 @@
 package com.eu.dss.action;
 
 import com.eu.dss.entity.UserBean;
-import com.eu.dss.servic.IUserService;
-import com.eu.dss.servic.impl.UserService;
+import com.eu.dss.service.IUserService;
+import com.eu.dss.service.impl.UserService;
 import net.sf.json.JSONArray;
 
 import javax.servlet.ServletException;
@@ -12,7 +12,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
 import java.io.IOException;
-import java.util.List;
 
 /**
  * Created 马欢欢 pc on 2017/5/23.
