@@ -5,7 +5,7 @@
 <mapper namespace="com.eu.dss.dao.UserDao">
     <!--所有用户信息-->
     <select id="findUser" parameterType="PageBean"  resultType="User">
-        SELECT * FROM dssuser where rank=#{rank} limit #{index},#{pageCount}
+        SELECT * FROM dssuser where rank=#{rank} order by id desc limit #{index},#{pageCount}
     </select>
     <!--所有用户信息-->
     <select id="getTotalCount"  parameterType="PageBean"   resultType="int">

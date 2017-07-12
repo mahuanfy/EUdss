@@ -2,15 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="65fadf81-242e-425a-bd35-7b9b5b951c45" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/firstUserInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/firstUserInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/secondUserInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/secondUserInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/superUserInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/superUserInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/thirdUserInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/thirdUserInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/UserInfo/firstUserInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/UserInfo/firstUserInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/UserInfo/secondUserInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/UserInfo/secondUserInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/UserInfo/superUserInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/UserInfo/superUserInfo.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/UserInfo/thirdUserInfo.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/UserInfo/thirdUserInfo.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -166,13 +158,29 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="secondUserInfo.jsp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="secondUserInfo.jsp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/secondUserInfo.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="395">
-              <caret line="88" column="89" lean-forward="false" selection-start-line="88" selection-start-column="89" selection-end-line="88" selection-end-column="89" />
+            <state relative-caret-position="-1191">
+              <caret line="92" column="46" lean-forward="false" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
               <folding>
                 <element signature="n#style#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserDao.xml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="182">
+              <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+              <folding>
+                <marker date="1499874329955" expanded="true" signature="304:325" ph="SELECT * FRO... dssuser" />
+                <marker date="1499874329955" expanded="true" signature="304:389" ph="SELECT * FRO... dssuser" />
+                <marker date="1499874329955" expanded="true" signature="507:535" ph="SELECT count... dssuser" />
+                <marker date="1499874329955" expanded="true" signature="507:554" ph="SELECT count... dssuser" />
+                <marker date="1499874329955" expanded="true" signature="627:774" ph="INSERT INTO dssuser... " />
               </folding>
             </state>
           </provider>
@@ -321,7 +329,6 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/utils/Constant.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/public/index.jsp" />
         <option value="$APPLICATION_CONFIG_DIR$/consoles/db/f7deaf95-e849-413e-8e24-4ff636792610/console.sql" />
-        <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/PageBean.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/dao/UserDao.java" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/service/impl/UserServiceImpl.java" />
@@ -331,6 +338,7 @@
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/superUserInfo.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/thirdUserInfo.jsp" />
         <option value="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/secondUserInfo.jsp" />
+        <option value="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml" />
       </list>
     </option>
   </component>
@@ -1803,7 +1811,7 @@
       <workItem from="1499740949540" duration="39170000" />
       <workItem from="1499787131651" duration="137000" />
       <workItem from="1499820432972" duration="19221000" />
-      <workItem from="1499865890191" duration="7747000" />
+      <workItem from="1499865890191" duration="8795000" />
     </task>
     <servers />
   </component>
@@ -1840,10 +1848,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="196355000" />
+    <option name="totallyTimeSpent" value="197403000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="-11" width="1922" height="1092" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -1869,9 +1878,9 @@
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.67362636" sideWeight="0.49786097" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="16" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3197425" sideWeight="0.4924812" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3197425" sideWeight="0.4924812" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.22824919" sideWeight="0.46995708" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22824919" sideWeight="0.46995708" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2244898" sideWeight="0.53004295" order="6" side_tool="true" content_ui="tabs" />
       <window_info id="JRebel" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2244898" sideWeight="0.53004295" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -2245,20 +2254,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="11" column="54" lean-forward="false" selection-start-line="11" selection-start-column="54" selection-end-line="11" selection-end-column="54" />
-          <folding>
-            <marker date="1499871570752" expanded="true" signature="304:325" ph="SELECT * FRO... dssuser" />
-            <marker date="1499871570752" expanded="true" signature="304:372" ph="SELECT * FRO... dssuser" />
-            <marker date="1499871570752" expanded="true" signature="490:518" ph="SELECT count... dssuser" />
-            <marker date="1499871570752" expanded="true" signature="490:537" ph="SELECT count... dssuser" />
-            <marker date="1499871570752" expanded="true" signature="610:757" ph="INSERT INTO dssuser... " />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/java/com/eu/dss/entity/PageBean.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
@@ -2369,10 +2364,24 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/UserInfo/secondUserInfo.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="395">
-          <caret line="88" column="89" lean-forward="false" selection-start-line="88" selection-start-column="89" selection-end-line="88" selection-end-column="89" />
+        <state relative-caret-position="-1191">
+          <caret line="92" column="46" lean-forward="false" selection-start-line="92" selection-start-column="46" selection-end-line="92" selection-end-column="46" />
           <folding>
             <element signature="n#style#0;n#form#0;n#div#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dss-manage/src/main/resources/mapper/UserDao.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="182">
+          <caret line="7" column="65" lean-forward="false" selection-start-line="7" selection-start-column="65" selection-end-line="7" selection-end-column="65" />
+          <folding>
+            <marker date="1499874329955" expanded="true" signature="304:325" ph="SELECT * FRO... dssuser" />
+            <marker date="1499874329955" expanded="true" signature="304:389" ph="SELECT * FRO... dssuser" />
+            <marker date="1499874329955" expanded="true" signature="507:535" ph="SELECT count... dssuser" />
+            <marker date="1499874329955" expanded="true" signature="507:554" ph="SELECT count... dssuser" />
+            <marker date="1499874329955" expanded="true" signature="627:774" ph="INSERT INTO dssuser... " />
           </folding>
         </state>
       </provider>
