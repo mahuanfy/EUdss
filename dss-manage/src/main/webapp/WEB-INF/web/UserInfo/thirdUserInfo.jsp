@@ -86,7 +86,7 @@
 
 </body>
 <div id="refer_div" style="display: none">
-    <form class="layui-form" id="update-form">
+    <form class="layui-form" id="update-form" style="padding-left: 25%;padding-top: 10%;">
 
         <div class="layui-form-item">
             <div class="layui-inline">
