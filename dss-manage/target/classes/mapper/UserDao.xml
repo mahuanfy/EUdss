@@ -5,11 +5,16 @@
 <mapper namespace="com.eu.dss.dao.UserDao">
     <!--所有用户信息-->
     <select id="findUser" parameterType="PageBean"  resultType="User">
-        SELECT * FROM dssuser limit #{index},#{pageCount}
+        SELECT * FROM dssuser where rank=#{rank} limit #{index},#{pageCount}
     </select>
     <!--所有用户信息-->
-    <select id="getTotalCount"   resultType="int">
-        SELECT count(*) FROM dssuser
+    <select id="getTotalCount"  parameterType="PageBean"   resultType="int">
+        SELECT count(*) FROM dssuser WHERE rank=#{rank}
+    </select>
+
+    <select id="insertUser"  parameterType="User">
+      INSERT INTO dssuser(nickname,username,password,rank,rankValue,date)
+      VALUES (#{nickname},#{username},#{password},#{rank},#{rankValue},#{date})
     </select>
 
 </mapper>

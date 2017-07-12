@@ -21,6 +21,12 @@ public interface UserService {
      * 总页数
      * @return：总页数
      */
-    int getTotalCount();
+    int getTotalCount(PageBean pageBean);
+
+    /**
+     * 插入管理员
+     * @param user
+     */
+    void insertUser(User user);
 
 }

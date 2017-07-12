@@ -29,7 +29,6 @@
         $(function () {
             $.post("${pageContext.request.contextPath}/login/rank",
                 function (data) {
-                console.log(data)
                     rank = data.rank;
                     var src = "/public/rank/nav" + rank + ".js"
                     $(".nav_script").attr({src: src});

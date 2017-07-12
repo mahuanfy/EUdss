@@ -10,132 +10,143 @@
     <schema id="4" parent="1" name="mysql"/>
     <schema id="5" parent="1" name="performance_schema"/>
     <schema id="6" parent="1" name="test"/>
-    <table id="7" parent="2" name="dssuser"/>
-    <table id="8" parent="2" name="eu_tronclass"/>
-    <column id="9" parent="7" name="id">
+    <schema id="7" parent="1" name="mybatis"/>
+    <schema id="8" parent="1" name="sams"/>
+    <schema id="9" parent="1" name="ssm"/>
+    <schema id="10" parent="1" name="stuinfo"/>
+    <table id="11" parent="2" name="dssuser"/>
+    <table id="12" parent="2" name="eu_tronclass"/>
+    <column id="13" parent="11" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="10" parent="7" name="nickname">
+    <column id="14" parent="11" name="nickname">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
-      <NotNull>1</NotNull>
     </column>
-    <column id="11" parent="7" name="username">
+    <column id="15" parent="11" name="username">
       <Position>3</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="12" parent="7" name="password">
+    <column id="16" parent="11" name="password">
       <Position>4</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="13" parent="7" name="sex">
+    <column id="17" parent="11" name="sex">
       <Position>5</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="14" parent="7" name="age">
+    <column id="18" parent="11" name="age">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
     </column>
-    <column id="15" parent="7" name="phone">
+    <column id="19" parent="11" name="phone">
       <Position>7</Position>
       <DataType>varchar(20)|0</DataType>
     </column>
-    <column id="16" parent="7" name="rank">
+    <column id="20" parent="11" name="rank">
       <Position>8</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
       <DefaultExpression>&apos;1&apos;</DefaultExpression>
     </column>
-    <index id="17" parent="7" name="username">
+    <column id="21" parent="11" name="date">
+      <Position>9</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <column id="22" parent="11" name="rankValue">
+      <Position>10</Position>
+      <DataType>varchar(20)|0</DataType>
+    </column>
+    <index id="23" parent="11" name="username">
       <ColNames>username</ColNames>
       <Unique>1</Unique>
     </index>
-    <key id="18" parent="7" name="PRIMARY">
+    <key id="24" parent="11" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>
     </key>
-    <key id="19" parent="7" name="username">
+    <key id="25" parent="11" name="username">
       <ColNames>username</ColNames>
       <UnderlyingIndexName>username</UnderlyingIndexName>
     </key>
-    <column id="20" parent="8" name="id">
+    <column id="26" parent="12" name="id">
       <Position>1</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
       <SequenceIdentity>1</SequenceIdentity>
     </column>
-    <column id="21" parent="8" name="tron_month">
+    <column id="27" parent="12" name="tron_month">
       <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="22" parent="8" name="eu_rj">
+    <column id="28" parent="12" name="eu_rj">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="23" parent="8" name="eu_xin">
+    <column id="29" parent="12" name="eu_xin">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="24" parent="8" name="eu_rw">
+    <column id="30" parent="12" name="eu_rw">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="25" parent="8" name="eu_ts">
+    <column id="31" parent="12" name="eu_ts">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="26" parent="8" name="eu_xiu">
+    <column id="32" parent="12" name="eu_xiu">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="27" parent="8" name="eu_gz">
+    <column id="33" parent="12" name="eu_gz">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="28" parent="8" name="eu_kuai">
+    <column id="34" parent="12" name="eu_kuai">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="8" name="eu_ad">
+    <column id="35" parent="12" name="eu_ad">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="30" parent="8" name="eu_wc">
+    <column id="36" parent="12" name="eu_wc">
       <Position>11</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="31" parent="8" name="eu_wu">
+    <column id="37" parent="12" name="eu_wu">
       <Position>12</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="32" parent="8" name="eu_jr">
+    <column id="38" parent="12" name="eu_jr">
       <Position>13</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="33" parent="8" name="year">
+    <column id="39" parent="12" name="year">
       <Position>14</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <key id="34" parent="8" name="PRIMARY">
+    <key id="40" parent="12" name="PRIMARY">
       <NameSurrogate>1</NameSurrogate>
       <ColNames>id</ColNames>
       <Primary>1</Primary>

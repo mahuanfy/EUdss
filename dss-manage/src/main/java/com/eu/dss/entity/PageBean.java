@@ -13,6 +13,15 @@ public class PageBean {
     private int totalCount;//总记录数
     private int totalPage;//总页数=总记录数、每页显示的行数（有余数+1）
     private List<TronClass> pageData;//分页查询到的数据
+    private int rank;//权限查询时的判断条件
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
 
     public int getIndex() {
 

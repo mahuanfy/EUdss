@@ -1,8 +1,10 @@
 package com.eu.dss.web.UserInfo;
 
+import com.eu.dss.dto.Result;
 import com.eu.dss.entity.PageBean;
 import com.eu.dss.entity.User;
 import com.eu.dss.service.UserService;
+import com.eu.dss.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -22,32 +24,59 @@ public class UserInfoController {
     @Autowired
     private UserService userService;
 
-    @RequestMapping("/findUser")
+    @RequestMapping("/findSuperUser")
     @ResponseBody
-    public Map<String, Object> findUser(PageBean pageBean) {
-        System.out.println("=================="+pageBean);
+    public Map<String, Object> findSuperUser(PageBean pageBean) {
         Map<String, Object> result = new HashMap<String, Object>();
         result.put("UserInfo",userService.findUser(pageBean));
         result.put("totalPage",pageBean.getTotalPage());
 
-        System.out.println("-----------------------"+pageBean);
-
         return result;
-
     }
 
+
+    @RequestMapping("/findFirstUser")
+    @ResponseBody
+    public Map<String, Object> findFirstUser(PageBean pageBean) {
+        Map<String, Object> result = new HashMap<String, Object>();
+        result.put("UserInfo",userService.findUser(pageBean));
+        result.put("totalPage",pageBean.getTotalPage());
+
+        return result;
+    }
+
+    @RequestMapping("/findSecondUser")
+    @ResponseBody
+    public Map<String, Object> findSecondUser( PageBean pageBean) {
+
+        Map<String, Object> result = new HashMap<String, Object>();
+        result.put("UserInfo",userService.findUser(pageBean));
+        result.put("totalPage",pageBean.getTotalPage());
+
+        return result;
+    }
+    @RequestMapping("/findThirdUser")
+    @ResponseBody
+    public Map<String, Object> findThirdUser(PageBean pageBean) {
+        Map<String, Object> result = new HashMap<String, Object>();
+        result.put("UserInfo",userService.findUser(pageBean));
+        result.put("totalPage",pageBean.getTotalPage());
+
+        return result;
+    }
 
 
     @RequestMapping("/insertUser")
     @ResponseBody
-    public Map<String, Object> insertUser(User user) {
-        Map<String, Object> result = new HashMap<String, Object>();
-        Date now = new Date();
-        SimpleDateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd ");//可以方便地修改日期格式
-        String date = dateFormat.format( now );
-        System.out.println("++++++++++++++++++++"+date);
-        return result;
+    public Result insertUser(User user) {
+        try {
+            userService.insertUser(user);
+            return Result.success(null, Constant.UPDATE_SUCCESS);
+        }catch (Exception e){
+            new  RuntimeException(e);
+        }
 
+        return Result.failure(null, Constant.UPDATE_FAILURE);
     }
 
 

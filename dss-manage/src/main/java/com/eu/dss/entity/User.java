@@ -13,6 +13,15 @@ public class User {
     private String phone;
     private  int rank;
     private String date;
+    private  String rankValue;
+
+    public String getRankValue() {
+        return rankValue;
+    }
+
+    public void setRankValue(String rankValue) {
+        this.rankValue = rankValue;
+    }
 
     public String getDate() {
         return date;

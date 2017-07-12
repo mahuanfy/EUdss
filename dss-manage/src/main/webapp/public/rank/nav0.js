@@ -103,19 +103,19 @@ var navs = [{
         "children": [{
             "title": "超级管理员",
             "icon": " fa fa-user-circle",
-            "href": "/menu/userInfo"
+            "href": "/menu/superUserInfo"
         },{
             "title": "一级管理员",
             "icon": " fa fa-user-circle",
-            "href": "/menu/userInfo"
+            "href": "/menu/firstUserInfo"
         },{
             "title": "二级管理员",
             "icon": " fa fa-user-circle",
-            "href": "/menu/userInfo"
+            "href": "/menu/secondUserInfo"
         },{
             "title": "三级管理员",
             "icon": " fa fa-user-circle",
-            "href": "/menu/userInfo"
+            "href": "/menu/thirdUserInfo"
         }]
     }, {
         "title": "开发按钮样式统一",
