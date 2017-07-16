@@ -4,17 +4,27 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.eu.dss.dao.UserDao">
     <!--所有用户信息-->
-    <select id="findUser" parameterType="PageBean"  resultType="User">
-        SELECT * FROM dssuser where rank=#{rank} order by id desc limit #{index},#{pageCount}
+    <select id="findUser"   resultType="User">
+        SELECT * FROM dssuser where rank=#{pageBean.rank}
+          and nickname like #{username}
+        order by id desc limit #{pageBean.index},#{pageBean.pageCount}
     </select>
     <!--所有用户信息-->
-    <select id="getTotalCount"  parameterType="PageBean"   resultType="int">
-        SELECT count(*) FROM dssuser WHERE rank=#{rank}
+    <select id="getTotalCount"     resultType="int">
+        SELECT count(*) FROM dssuser WHERE rank=#{pageBean.rank} AND nickname LIKE #{username}
     </select>
 
     <select id="insertUser"  parameterType="User">
-      INSERT INTO dssuser(nickname,username,password,rank,rankValue,date)
-      VALUES (#{nickname},#{username},#{password},#{rank},#{rankValue},#{date})
+      INSERT INTO dssuser(nickname,username,password,rank,rankValue,date,sex)
+      VALUES (#{nickname},#{username},#{password},#{rank},#{rankValue},#{date},#{sex})
     </select>
-
+    <select id="findById" parameterType="int" resultType="User">
+      SELECT * from dssuser where id=#{id}
+    </select>
+    <delete id="deleteById" parameterType="int">
+        delete  from dssuser where id =#{id}
+    </delete>
+    <select id="searchUserByName" resultType="User" parameterType="String">
+        select * from dssuser where nickname like #{username}
+    </select>
 </mapper>

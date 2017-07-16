@@ -23,13 +23,14 @@ public class UserServiceImpl implements UserService {
     @Autowired
     private UserDao userDao;
 
-    public int getTotalCount(PageBean pageBean)  {
-        return userDao.getTotalCount(pageBean);
+    public int getTotalCount(PageBean pageBean,String username)  throws Exception{
+        return userDao.getTotalCount(pageBean,username);
     }
 
     @Override
-    public List<User> findUser(PageBean pageBean) {
-        int totalCount = this.getTotalCount(pageBean);//总记录数
+    public List<User> findUser(PageBean pageBean,String username) throws Exception{
+        String user="%"+username+"%";
+        int totalCount = this.getTotalCount(pageBean,user);//总记录数
         pageBean.setTotalCount(totalCount);//填充总记录数
         // 判断
         if (pageBean.getPageCurrent() <=0) {
@@ -39,10 +40,10 @@ public class UserServiceImpl implements UserService {
         }
         int pageCurrent = pageBean.getPageCurrent();//当前页
         pageBean.setIndex((pageCurrent -1)*pageBean.getPageCount()); //起始查询位置
-        return userDao.findUser(pageBean);
+        return userDao.findUser(pageBean,user);
     }
     @Override
-    public void insertUser(User user) {
+    public void insertUser(User user) throws Exception{
 
         int rank = user.getRank();
         String rankValue = "";
@@ -61,5 +62,22 @@ public class UserServiceImpl implements UserService {
 
         userDao.insertUser(user);
 
+    }
+
+    @Override
+    public List<User> findById(int id)throws Exception {
+        return userDao.findById(id);
+    }
+
+    @Override
+    public void deleteById(int id) throws Exception{
+        userDao.deleteById(id);
+    }
+
+    @Override
+    public List<User> searchUserByName(String username) throws Exception{
+        String name ="%"+username+"%";
+
+        return userDao.searchUserByName(name);
     }
 }
