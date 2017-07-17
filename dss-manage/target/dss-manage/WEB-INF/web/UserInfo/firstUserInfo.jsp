@@ -71,7 +71,7 @@
             <a class="layui-btn layui-btn-small layui-btn-normal  layui-icon " onclick="cl.preview('{{item.id}}')">
                 &#xe60a; 预览
             </a>
-            <button class='layui-btn layui-btn-small layui-icon'>&#xe642;编辑</button>
+            <button class='layui-btn layui-btn-small layui-icon' onclick="cl.updateUser('{{item.id}}')">&#xe642;编辑</button>
             <button data-id='1' data-opt='del' class='layui-btn layui-btn-danger layui-btn-small layui-icon'
                     onclick="cl.delete('{{item.id}}')">
                 &#xe640;删除
@@ -83,7 +83,7 @@
 
 </body>
 <div id="refer_div" style="display: none">
-    <form class="layui-form" id="update-form" style="padding-left: 25%;padding-top: 10%;">
+    <form class="layui-form layui-form-pane" id="update-form" style="padding-left: 25%;padding-top: 10%;">
 
         <div class="layui-form-item">
             <div class="layui-inline">
@@ -105,7 +105,7 @@
             <div class="layui-inline">
                 <label class="layui-form-label">密码：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="password" autocomplete="off" class="layui-input" placeholder="登录密码">
+                    <input type="password" name="password" autocomplete="off" class="layui-input" placeholder="登录密码">
                 </div>
             </div>
         </div>
@@ -189,6 +189,61 @@
         </fieldset>
     </div>
 </div>
+<div id="update_div" style="display: none">
+    <form class="layui-form layui-form-pane"  style="padding-left: 30%;padding-top: 40px;">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">用户姓名：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="update_nickname" name="nickname" autocomplete="off" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">用户ID：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="update_username" name="username" autocomplete="off" class="layui-input" >
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">密码：</label>
+                <div class="layui-input-inline">
+                    <input type="password" id="update_password"  name="password" autocomplete="off" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">手机号码：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="update_phone" name="phone" autocomplete="off" class="layui-input" >
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别：</label>
+            <div class="layui-input-block">
+                <input type="radio" name="sex" value="男" title="男" checked>
+                <input type="radio" name="sex" value="女" title="女">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">账户权限：</label>
+            <div class="layui-input-inline">
+                <select name="rank">
+                    <option value="0">超级管理员</option>
+                    <option value="1" selected="">一级管理员</option>
+                    <option value="2">二级管理员</option>
+                    <option value="3">三级管理员</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-input-block huan_center">
+            <button class="layui-btn" lay-submit="" type="submit" onclick="cl.updateAjax()">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+
+    </form>
+</div>
 <script type="text/javascript" src="../../../public/plugins/layui/layui.js"></script>
 <script>
     var cl;
@@ -220,7 +275,7 @@
                 let username = $("#name_search").val();
                 $.post(baseUrl + "/UserInfo/findFirstUser", {pageCurrent: pageCurrent, rank: 1, username: username},
                     function (data) {
-
+                        layer.msg('查询成功',{time:500});
                         totalPage = data.totalPage;//总页数
 
                         cl.page();
@@ -239,6 +294,25 @@
                     , content: $("#preview_div"),
                     area: ['100%', '100%']
                 });
+
+            },
+            updateUser: function (id) {
+                $.post(baseUrl + "/UserInfo/findById", {id: id},
+                    function (data) {
+                        console.log(data.user)
+                        $("#update_nickname").val(data.user[0].nickname);
+                        $("#update_username").val(data.user[0].username);
+                        $("#update_password").val(data.user[0].password);
+                        $("#update_phone").val(data.user[0].phone);
+                        layer.open({
+                            type: 1,
+                            title: '编辑管理员信息'
+                            ,content: $("#update_div"),
+                            area: ['100%', '100%']
+                        });
+                    }
+                );
+
 
             },
             findById: function (id) {
@@ -274,14 +348,6 @@
                             }
                         });
                 });
-            },
-            searchUserByName: function () {
-                let username = $("#name_search").val()
-                $.post(baseUrl + "/UserInfo/searchUserByName", {username: username},
-                    function (data) {
-                        console.log(data)
-                    }
-                );
             }
         }
         $(function () {

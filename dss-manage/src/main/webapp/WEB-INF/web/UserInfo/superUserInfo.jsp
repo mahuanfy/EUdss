@@ -76,7 +76,7 @@
 
 </body>
 <div id="refer_div" style="display: none">
-    <form class="layui-form" id="update-form" style="padding-left: 25%;padding-top: 10%;">
+    <form class="layui-form layui-form-pane" id="update-form" style="padding-left: 25%;padding-top: 10%;">
 
         <div class="layui-form-item">
             <div class="layui-inline">
@@ -98,7 +98,7 @@
             <div class="layui-inline">
                 <label class="layui-form-label">密码：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="password"  autocomplete="off" class="layui-input" placeholder="登录密码">
+                    <input type="password" name="password"  autocomplete="off" class="layui-input" placeholder="登录密码">
                 </div>
             </div>
         </div>
@@ -191,6 +191,7 @@
                 $.post("${pageContext.request.contextPath}/UserInfo/findSuperUser",
                     {pageCurrent: pageCurrent, rank: 0,username:username},
                     function (data) {
+                        layer.msg('查询成功',{time:500});
                         totalPage = data.totalPage;//总页数
                         cl.page();
                         laytpl($("#list-tpl").text()).render(data.UserInfo, function (html) {

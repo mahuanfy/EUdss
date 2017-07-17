@@ -82,7 +82,7 @@
 
 </body>
 <div id="refer_div" style="display: none">
-    <form class="layui-form" id="update-form" style="padding-left: 25%;padding-top: 10%;">
+    <form class="layui-form layui-form-pane" id="update-form" style="padding-left: 25%;padding-top: 10%;">
 
         <div class="layui-form-item">
             <div class="layui-inline">
@@ -104,7 +104,7 @@
             <div class="layui-inline">
                 <label class="layui-form-label">密码：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="password" autocomplete="off" class="layui-input" placeholder="登录密码">
+                    <input type="password" name="password" autocomplete="off" class="layui-input" placeholder="登录密码">
                 </div>
             </div>
         </div>
@@ -188,74 +188,6 @@
     </div>
 </div>
 
-<div id="editor" style="display: none">
-    <form class="layui-form" id="editor-form" style="padding-left: 25%;padding-top: 10%;">
-<input type="hidden" name="id"/>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">用户姓名：</label>
-                <div class="layui-input-inline">
-                    <input type="text" id="nickname" name="nickname" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">用户ID：</label>
-                <div class="layui-input-inline">
-                    <input type="text" id="username" name="username" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">密码：</label>
-                <div class="layui-input-inline">
-                    <input type="password" id="password" name="password" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">性别：</label>
-            <div class="layui-input-block">
-                <input type="radio" name="sex" value="男" title="男" checked>
-                <input type="radio" name="sex" value="女" title="女">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">年龄：</label>
-                <div class="layui-input-inline">
-                    <input type="text"  id="age" name="age" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">手机号：</label>
-                <div class="layui-input-inline">
-                    <input type="tel" id="phone" name="phone" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">账户权限：</label>
-            <div class="layui-input-inline">
-                <select name="rank">
-                    <option value="0">超级管理员</option>
-                    <option value="1">一级管理员</option>
-                    <option value="2" selected="">二级管理员</option>
-                    <option value="3">三级管理员</option>
-                </select>
-            </div>
-        </div>
-        <div class="layui-input-block huan_center">
-            <button class="layui-btn" lay-submit="" type="submit" onclick="cl.editorUpdate()">立即提交</button>
-            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-        </div>
-
-    </form>
-</div>
 <script type="text/javascript" src="../../../public/plugins/layui/layui.js"></script>
 <script>
     var cl;
@@ -291,6 +223,7 @@
                         username: username
                     },
                     function (data) {
+                        layer.msg('查询成功', {time: 500});
                         totalPage = data.totalPage;//总页数
                         cl.page();
                         laytpl($("#list-tpl").text()).render(data.UserInfo, function (html) {
@@ -365,7 +298,7 @@
                     }
                 )
             },
-            editorUpdate:function (id) {
+            editorUpdate: function (id) {
                 let data = $("#editor").serialize();
                 $.post(baseUrl + "/UserInfo/insertUserById", data, function (data) {
                     layer.msg(data.msg);
@@ -375,7 +308,7 @@
 
                 })
             }
-            
+
         }
         $(function () {
             cl.list();
