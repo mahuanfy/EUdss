@@ -1,0 +1,116 @@
+<!--退学原因分析-->
+<!doctype html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>退学原因分析</title>
+		<meta name="renderer" content="webkit">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+		<link rel="stylesheet" href="../plugins/layui/css/layui.css" media="all" />
+		<link rel="stylesheet" href="../css/global.css" media="all">
+
+		<link href="../css/mycss/eurisia_echar.css" rel="stylesheet" type="text/css"/>
+		<script src="../js/myjs/jquery.min.js"></script>
+		<script src="../js/myjs/echarts.min.js"></script>
+	</head>
+
+	<body>
+	<div style="margin: 15px;">
+			<fieldset class="layui-elem-field site-demo-button">
+				<legend>图表</legend>
+
+					<div class="main_his">
+						<div id="main_Histogram" ></div>
+						<script type="text/javascript">
+                            // 树状图
+                            var myChart = echarts.init(document.getElementById("main_Histogram"));
+
+                            var option = {
+                                title: {
+                                    text: '退学原因分析'
+                                },
+                                color: ['#3398DB'],
+                                tooltip : {
+                                    trigger: 'axis',
+                                    axisPointer : {            // 坐标轴指示器，坐标轴触发有效
+                                        type : 'shadow'        // 默认为直线，可选为：'line' | 'shadow'
+                                    }
+                                },
+                                grid: {
+                                    left: '3%',
+                                    right: '4%',
+                                    bottom: '3%',
+                                    containLabel: true
+                                },
+                                xAxis : [
+                                    {
+                                        type : 'category',
+                                        data : ['欠学分\n强制退学', '工作\n实践', '逾期\n未注册', '学习\n成绩差', '生活\n不适应', '志趣\n不合', '家庭\n原因','经济\n原因','出国','生病\n身体原因','入伍','复读'],
+                                        axisTick: {
+                                            alignWithLabel: true
+                                        }
+                                    }
+                                ],
+                                yAxis : [
+                                    {
+                                        type: 'value',
+                                        name: '比例',
+                                        min: 0,
+                                        max: 30.00,
+                                        interval: 5.00,
+                                        axisLabel: {
+                                            formatter: '{value} %'
+                                        },
+                                        axisTick: {
+                                            alignWithLabel: true
+                                        }
+                                    }
+                                ],
+                                series : [
+                                    {
+                                        name:'百分比',
+                                        type:'bar',
+                                        barWidth: '40%',
+
+                                        data:[26.12, 11.94, 10.14, 8.94, 7.18, 6.72,6.23, 5.74,4.56,4.47,4.21,3.75]
+                                    },
+
+                                ],
+                                label: {
+                                    normal: {
+                                        show: true,
+                                        position: 'top',
+                                        formatter: '{c}'
+                                    }
+                                },
+                                itemStyle: {
+                                    normal: {
+
+                                        color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [{
+                                            offset: 0,
+                                            color: 'rgba(17, 168,171, 1)'
+                                        }, {
+                                            offset: 1,
+                                            color: 'rgba(17, 168,171, 0.1)'
+                                        }]),
+                                        shadowColor: 'rgba(0, 0, 0, 0.1)',
+                                        shadowBlur: 10
+                                    }
+                                }
+                            };
+
+                            // 使用刚指定的配置项和数据显示图表。
+                            myChart.setOption(option);
+						</script>
+
+					</div>
+
+			</fieldset>
+
+		</div>
+	</body>
+
+</html>

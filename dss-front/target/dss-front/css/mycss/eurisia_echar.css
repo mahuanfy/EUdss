@@ -1,0 +1,29 @@
+/*图标页面样式*/
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#main_Histogram{
+
+    width: 95%;
+    height: 97%;
+}
+#main_Histogram1{
+
+    width: 95%;
+    height: 97%;
+}
+.main_his{
+    width: 90%;
+    height:500px;
+    margin: 0 auto;
+}
+
+.font_c{
+    line-height: 50px;
+    font-size: 12px;
+    color: #8991A3;
+}
+
+/**/

@@ -1,0 +1,107 @@
+<!--西安欧亚学院创课师生点击量统计-->
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>西安欧亚学院创课师生点击量统计</title>
+	<meta name="renderer" content="webkit">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<link rel="stylesheet" href="../plugins/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="../css/global.css" media="all">
+
+	<link href="../css/mycss/eurisia_echar.css" rel="stylesheet" type="text/css"/>
+	<script src="../js/myjs/jquery.min.js"></script>
+	<script src="../js/myjs/echarts.min.js"></script>
+</head>
+
+<body>
+<div style="margin: 15px;">
+	<fieldset class="layui-elem-field site-demo-button">
+		<legend>图表</legend>
+		<div>
+			<div class="main_his">
+				<div id="main_Histogram"></div>
+				<script type="text/javascript">
+                    // 树状图
+                    var myChart = echarts.init(document.getElementById("main_Histogram"));
+                    var option = {
+                        title: {
+                            text: '西安欧亚学院创课师生点击量统计',
+                            subtext: '每月统计量(单位/次)'
+                        },
+                        tooltip: {
+                            trigger: 'axis'
+                        },
+                        legend: {
+                            data: ['老师', '学生']
+                        },
+                        toolbox: {
+                            show: true,
+                            feature: {
+                                dataView: {show: true, readOnly: false},
+                                magicType: {show: true, type: ['line', 'bar']},
+                                restore: {show: true},
+                                saveAsImage: {show: true}
+                            }
+                        },
+                        calculable: true,
+                        xAxis: [
+                            {
+                                type: 'category',
+                                data: ['1月', '2月', '3月', '4月', '5月', '6月', '7月', '8月', '9月', '10月', '11月', '12月']
+                            }
+                        ],
+                        yAxis: [
+                            {
+                                type: 'value'
+                            }
+                        ],
+                        series: [
+                            {
+                                name: '老师',
+                                type: 'bar',
+                                data: [20, 49, 70, 232, 256, 767, 1356, 1622, 326, 200, 64, 33],
+                                markPoint: {
+                                    data: [
+                                        {type: 'max', name: '最大值'},
+                                        {type: 'min', name: '最小值'}
+                                    ]
+                                },
+                                markLine: {
+                                    data: [
+                                        {type: 'average', name: '平均值'}
+                                    ]
+                                }
+                            },
+                            {
+                                name: '学生',
+                                type: 'bar',
+                                data: [26, 59, 90, 264, 287, 707, 1756, 1822, 487, 188, 60, 23],
+                                markPoint: {
+                                    data: [
+                                        {name: '年最高', value: 1822, xAxis: 7, yAxis: 1822},
+                                        {name: '年最低', value: 23, xAxis: 11, yAxis: 3}
+                                    ]
+                                },
+                                markLine: {
+                                    data: [
+                                        {type: 'average', name: '平均值'}
+                                    ]
+                                }
+                            }
+                        ]
+                    };
+                    // 使用刚指定的配置项和数据显示图表。
+                    myChart.setOption(option);
+				</script>
+			</div>
+		</div>
+	</fieldset>
+
+</div>
+</body>
+
+</html>
