@@ -83,7 +83,7 @@
     </column>
     <column id="27" parent="12" name="tron_month">
       <Position>2</Position>
-      <DataType>varchar(20)|0</DataType>
+      <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
     <column id="28" parent="12" name="eu_rj">

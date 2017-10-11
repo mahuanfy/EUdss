@@ -2,6 +2,7 @@ package com.eu.front.web.TronClass;
 
 import com.eu.front.entity.TronClass;
 import com.eu.front.service.TronClassService;
+import com.eu.front.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -24,11 +25,19 @@ public class TronClassController {
     @RequestMapping("/tronClass")
     @ResponseBody
     public Map<String, Object> tronClass(){
-        Map<String, Object> result = new HashMap<String, Object>();
-        List<TronClass> TronClass = tronClassService.tronClass();
-        result.put("TronClass",TronClass);
+        Map<String, Object> data = new HashMap<String, Object>();
+        List<Map<String,String>> TronClass;
+        try {
+            TronClass = tronClassService.tronClass();
+            data.put("TronClass", TronClass);
+            data.put("result", true);
+            data.put("msg", Constant.SEARCH_SUCCESS);
+        } catch (Exception e) {
+            data.put("msg", Constant.SEARCH_FAILURE);
+            e.printStackTrace();
+        }
 
-        return result;
+        return data;
     }
 
 }

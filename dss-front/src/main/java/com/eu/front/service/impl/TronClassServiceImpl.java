@@ -7,6 +7,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * Created by 马欢欢 on 17-7-11.
@@ -16,7 +17,7 @@ public class TronClassServiceImpl implements TronClassService{
     @Autowired
     private TronClassDao tronClassDao;
 
-    public List<TronClass> tronClass() {
+    public List<Map<String,String>> tronClass() {
         return tronClassDao.tronClass();
     }
 

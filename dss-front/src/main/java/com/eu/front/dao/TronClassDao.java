@@ -1,8 +1,8 @@
 package com.eu.front.dao;
 
-import com.eu.front.entity.TronClass;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 创课点击次数
@@ -14,6 +14,6 @@ public interface TronClassDao {
      * 查询创课点击次数
      *
      */
-    List<TronClass> tronClass();
+    List<Map<String,String>> tronClass();
 
 }
