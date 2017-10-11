@@ -1,12 +1,12 @@
 var navs = [{
     "title": "欧亚创客访问量",
     "icon": "fa fa-bar-chart-o",
-    "href": "page/idex_pageView.html",
+    "href": "menuFront/tronClass",
     "spread": false
 },{
     "title": "专业与学科情况分析",
     "icon": "fa fa-newspaper-o",
-    "href": "page/index_ouya.html",
+    "href": "menuFront/professionalDiscipline",
     "spread": false
 },{
 	"title": "教学情况分析",
@@ -23,7 +23,7 @@ var navs = [{
 	}, {
 		"title": "教学评价",
 		"icon": " fa fa-pencil",
-		"href": "page/index_ouya.html"
+		"href": "page/index_ouya1.html"
 	}, {
 		"title": "教学项目",
 		"icon": " fa fa-map-o",
@@ -37,7 +37,7 @@ var navs = [{
 }, {
     "title": "招生情况分析",
     "icon": "fa fa-user-plus",
-    "href": "page/index_ouya.html",
+    "href": "page/index_ouya1.html",
     "spread": false
 },{
     "title": "学生情况分析",
@@ -52,7 +52,7 @@ var navs = [{
 },{
     "title": "一卡通情况分析",
     "icon": "fa fa-credit-card-alt",
-    "href": "page/index_ouya.html",
+    "href": "page/index_ouya1.html",
     "spread": false
 },{
     "title": "近四学期课程访问量",

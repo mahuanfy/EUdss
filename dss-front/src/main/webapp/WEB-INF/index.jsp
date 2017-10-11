@@ -1,4 +1,7 @@
-﻿<!DOCTYPE html>
+﻿<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="false" %>
+<%@ include file="../page/tag.jsp" %>
+<!DOCTYPE html>
 
 <html>
 
@@ -13,12 +16,12 @@
 		<meta name="apple-mobile-com.eu.dss.web-app-capable" content="yes">
 		<meta name="format-detection" content="telephone=no">
 
-		<link rel="stylesheet" href="css/mycss/layui1.css" media="all" />
-		<link rel="stylesheet" href="css/global.css" media="all">
-		<link rel="stylesheet" href="plugins/font-awesome/css/font-awesome.min.css">
-		<script type="text/javascript" src="plugins/layui/layui.js"></script>
-		<script type="text/javascript" src="datas/nav.js"></script>
-		<script src="js/index.js"></script>
+		<link rel="stylesheet" href="${baseurl}/css/mycss/layui1.css" media="all" />
+		<link rel="stylesheet" href="${baseurl}/css/global.css" media="all">
+		<link rel="stylesheet" href="${baseurl}/plugins/font-awesome/css/font-awesome.min.css">
+		<script type="text/javascript" src="${baseurl}/plugins/layui/layui.js"></script>
+		<script type="text/javascript" src="${baseurl}/datas/nav.js"></script>
+		<script src="${baseurl}/js/index.js"></script>
 
 	</head>
 	<body>
@@ -27,7 +30,7 @@
 				<div class="layui-main" style=" background-color: #3A445C;height: 60px;">
 					<div class="admin-login-box">
 						<a class="logo" href="#">
-							<img src="./img/eurasia.png" alt="西安欧亚学院">
+							<img src="${baseurl}/img/eurasia.png" alt="西安欧亚学院">
 						</a>
 						<div class="admin-side-toggle">
 							<i class="fa fa-bars" aria-hidden="true"></i>
@@ -48,14 +51,14 @@
 					</ul>
 					<div class="layui-tab-content" style="min-height: 150px; padding: 5px 0 0 0;">
 						<div class="layui-tab-item layui-show">
-							<iframe src="page/main.html"></iframe>
+							<iframe src="${baseurl}/page/main.html"></iframe>
 						</div>
 					</div>
 				</div>
 			</div>
 			<div class="layui-footer footer footer-demo" style="background-color: #F2F2F2">
 				<div class="layui-main">
-					<p><a href="./index.html">eurasia.edu</a>Eurasia © 2017</p>
+					<p><a href="index.jsp">eurasia.edu</a>Eurasia © 2017</p>
 					<p>
 						<a href="http://www.eurasia.edu/" target="_blank">西安欧亚学院</a>
 						<a href="#">联系我们</a>

@@ -43,7 +43,7 @@
     </servlet-mapping>
 
     <welcome-file-list>
-        <welcome-file>/WEB-INF/login.jsp</welcome-file>
+        <welcome-file>/WEB-INF/index.jsp</welcome-file>
         <welcome-file>index.html</welcome-file>
         <welcome-file>index.jsp</welcome-file>
         <welcome-file>default.html</welcome-file>

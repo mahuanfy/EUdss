@@ -1,3 +1,6 @@
+<%@ page contentType="text/html;charset=UTF-8" language="java" %>
+<%@page isELIgnored="false" %>
+<%@ include file="../../../page/tag.jsp" %>
 <!--西安欧亚学院创课师生点击量统计-->
 <!doctype html>
 <html>
