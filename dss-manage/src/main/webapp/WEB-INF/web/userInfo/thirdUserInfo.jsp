@@ -32,12 +32,13 @@
         </a>
     </blockquote>
     <fieldset class="layui-elem-field">
-        <legend>二级管理员</legend>
+        <legend>三级管理员</legend>
         <div>
 
             <table class="site-table table-hover ">
                 <thead>
                 <tr>
+                    <%--<th><input type="checkbox" lay-skin="primary" onclick="check(this)" lay-filter="checkedAll"></th>--%>
                     <th>编号</th>
                     <th>管理级别</th>
                     <th>用户姓名</th>
@@ -70,7 +71,7 @@
             <a class="layui-btn layui-btn-small layui-btn-normal  layui-icon " onclick="cl.preview('{{item.id}}')">
                 &#xe60a; 预览
             </a>
-            <button class='layui-btn layui-btn-small layui-icon' onclick="cl.editor('{{item.id}}')">&#xe642;编辑</button>
+            <button class='layui-btn layui-btn-small layui-icon'>&#xe642;编辑</button>
             <button data-id='1' data-opt='del' class='layui-btn layui-btn-danger layui-btn-small layui-icon'
                     onclick="cl.delete('{{item.id}}')">
                 &#xe640;删除
@@ -121,8 +122,8 @@
                 <select name="rank">
                     <option value="0">超级管理员</option>
                     <option value="1">一级管理员</option>
-                    <option value="2" selected="">二级管理员</option>
-                    <option value="3">三级管理员</option>
+                    <option value="2">二级管理员</option>
+                    <option value="3" selected="">三级管理员</option>
                 </select>
             </div>
         </div>
@@ -178,6 +179,7 @@
                 <tr>
                     <th>信息</th>
                     <th>详情</th>
+
                 </tr>
                 </thead>
                 <tbody id="userInfo">
@@ -187,7 +189,6 @@
         </fieldset>
     </div>
 </div>
-
 <script type="text/javascript" src="../../../public/plugins/layui/layui.js"></script>
 <script>
     var cl;
@@ -217,14 +218,12 @@
             },
             list: function () {
                 let username = $("#name_search").val();
-                $.post("${pageContext.request.contextPath}/UserInfo/findSecondUser", {
-                        pageCurrent: pageCurrent,
-                        rank: 2,
-                        username: username
-                    },
+                $.post("${pageContext.request.contextPath}/userInfo/findThirdUser",
+                    {pageCurrent: pageCurrent, rank: 3, username: username},
                     function (data) {
-                        layer.msg('查询成功', {time: 500});
+                        layer.msg('查询成功',{time:500});
                         totalPage = data.totalPage;//总页数
+
                         cl.page();
                         laytpl($("#list-tpl").text()).render(data.UserInfo, function (html) {
                             $(".tr_1").html(html);
@@ -244,7 +243,7 @@
 
             },
             findById: function (id) {
-                $.post("${pageContext.request.contextPath}/UserInfo/findById", {id: id},
+                $.post("${pageContext.request.contextPath}/userInfo/findById", {id: id},
                     function (data) {
                         laytpl($("#list-userInfo").text()).render(data.user, function (html) {
                             $("#userInfo").html(html);
@@ -257,7 +256,7 @@
             },
             updateAjax: function () {
                 let data = $("#update-form").serialize();
-                $.post(baseUrl + "/UserInfo/insertUser", data, function (data) {
+                $.post(baseUrl + "/userInfo/insertUser", data, function (data) {
                     layer.msg(data.msg);
                     if (data.result) {
                         setTimeout("location.reload()", 500);
@@ -268,7 +267,7 @@
             delete: function (id) {
                 layer.confirm('确定删除？', {icon: 3, title: '提示'}, function (index) {
                     layer.close(index);
-                    $.post("${pageContext.request.contextPath}/UserInfo/deleteById", {id: id},
+                    $.post("${pageContext.request.contextPath}/userInfo/deleteById", {id: id},
                         function (data) {
                             layer.msg(data.msg, {time: 500});
                             if (data.result) {
@@ -276,39 +275,7 @@
                             }
                         });
                 });
-            },
-            editor: function (id) {
-                cl.editorFindById(id)
-                layer.open({
-                    type: 1,
-                    title: '编辑信息'
-                    , content: $("#editor"),
-                    area: ['100%', '100%']
-                });
-            },
-            editorFindById: function (id) {
-                $.post("${pageContext.request.contextPath}/UserInfo/findById", {id: id},
-                    function (data) {
-                        $("#id").val(data.user[0]["id"]);
-                        $("#nickname").val(data.user[0]["nickname"]);
-                        $("#username").val(data.user[0]["username"]);
-                        $("#password").val(data.user[0]["password"]);
-                        $("#age").val(data.user[0]["age"]);
-                        $("#phone").val(data.user[0]["phone"]);
-                    }
-                )
-            },
-            editorUpdate: function (id) {
-                let data = $("#editor").serialize();
-                $.post(baseUrl + "/UserInfo/insertUserById", data, function (data) {
-                    layer.msg(data.msg);
-                    if (data.result) {
-                        setTimeout("location.reload()", 500);
-                    }
-
-                })
             }
-
         }
         $(function () {
             cl.list();
@@ -325,8 +292,8 @@
             });
         });
 
+
     });
 
 </script>
-
 </html>

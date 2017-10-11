@@ -32,7 +32,7 @@
         </a>
     </blockquote>
     <fieldset class="layui-elem-field">
-        <legend>三级管理员</legend>
+        <legend>一级管理员</legend>
         <div>
 
             <table class="site-table table-hover ">
@@ -44,7 +44,7 @@
                     <th>用户姓名</th>
                     <th>用户ID</th>
                     <th>性别</th>
-                    <th>创建时间</th>
+                    <th>手机号</th>
                     <th>操作</th>
                 </tr>
                 </thead>
@@ -71,7 +71,7 @@
             <a class="layui-btn layui-btn-small layui-btn-normal  layui-icon " onclick="cl.preview('{{item.id}}')">
                 &#xe60a; 预览
             </a>
-            <button class='layui-btn layui-btn-small layui-icon'>&#xe642;编辑</button>
+            <button class='layui-btn layui-btn-small layui-icon' onclick="cl.updateUser('{{item.id}}')">&#xe642;编辑</button>
             <button data-id='1' data-opt='del' class='layui-btn layui-btn-danger layui-btn-small layui-icon'
                     onclick="cl.delete('{{item.id}}')">
                 &#xe640;删除
@@ -121,9 +121,9 @@
             <div class="layui-input-inline">
                 <select name="rank">
                     <option value="0">超级管理员</option>
-                    <option value="1">一级管理员</option>
+                    <option value="1" selected="">一级管理员</option>
                     <option value="2">二级管理员</option>
-                    <option value="3" selected="">三级管理员</option>
+                    <option value="3">三级管理员</option>
                 </select>
             </div>
         </div>
@@ -189,6 +189,61 @@
         </fieldset>
     </div>
 </div>
+<div id="update_div" style="display: none">
+    <form class="layui-form layui-form-pane"  style="padding-left: 30%;padding-top: 40px;">
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">用户姓名：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="update_nickname" name="nickname" autocomplete="off" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">用户ID：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="update_username" name="username" autocomplete="off" class="layui-input" >
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">密码：</label>
+                <div class="layui-input-inline">
+                    <input type="password" id="update_password"  name="password" autocomplete="off" class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-inline">
+                <label class="layui-form-label">手机号码：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="update_phone" name="phone" autocomplete="off" class="layui-input" >
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">性别：</label>
+            <div class="layui-input-block">
+                <input type="radio" name="sex" value="男" title="男" checked>
+                <input type="radio" name="sex" value="女" title="女">
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">账户权限：</label>
+            <div class="layui-input-inline">
+                <select name="rank">
+                    <option value="0">超级管理员</option>
+                    <option value="1" selected="">一级管理员</option>
+                    <option value="2">二级管理员</option>
+                    <option value="3">三级管理员</option>
+                </select>
+            </div>
+        </div>
+        <div class="layui-input-block huan_center">
+            <button class="layui-btn" lay-submit="" type="submit" onclick="cl.updateAjax()">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
+
+    </form>
+</div>
 <script type="text/javascript" src="../../../public/plugins/layui/layui.js"></script>
 <script>
     var cl;
@@ -218,8 +273,7 @@
             },
             list: function () {
                 let username = $("#name_search").val();
-                $.post("${pageContext.request.contextPath}/UserInfo/findThirdUser",
-                    {pageCurrent: pageCurrent, rank: 3, username: username},
+                $.post(baseUrl + "/userInfo/findFirstUser", {pageCurrent: pageCurrent, rank: 1, username: username},
                     function (data) {
                         layer.msg('查询成功',{time:500});
                         totalPage = data.totalPage;//总页数
@@ -242,8 +296,27 @@
                 });
 
             },
+            updateUser: function (id) {
+                $.post(baseUrl + "/userInfo/findById", {id: id},
+                    function (data) {
+                        console.log(data.user)
+                        $("#update_nickname").val(data.user[0].nickname);
+                        $("#update_username").val(data.user[0].username);
+                        $("#update_password").val(data.user[0].password);
+                        $("#update_phone").val(data.user[0].phone);
+                        layer.open({
+                            type: 1,
+                            title: '编辑管理员信息'
+                            ,content: $("#update_div"),
+                            area: ['100%', '100%']
+                        });
+                    }
+                );
+
+
+            },
             findById: function (id) {
-                $.post("${pageContext.request.contextPath}/UserInfo/findById", {id: id},
+                $.post(baseUrl + "/userInfo/findById", {id: id},
                     function (data) {
                         laytpl($("#list-userInfo").text()).render(data.user, function (html) {
                             $("#userInfo").html(html);
@@ -256,8 +329,8 @@
             },
             updateAjax: function () {
                 let data = $("#update-form").serialize();
-                $.post(baseUrl + "/UserInfo/insertUser", data, function (data) {
-                    layer.msg(data.msg);
+                $.post(baseUrl + "/userInfo/insertUser", data, function (data) {
+                    layer.msg(data.msg, {time: 500});
                     if (data.result) {
                         setTimeout("location.reload()", 500);
                     }
@@ -267,7 +340,7 @@
             delete: function (id) {
                 layer.confirm('确定删除？', {icon: 3, title: '提示'}, function (index) {
                     layer.close(index);
-                    $.post("${pageContext.request.contextPath}/UserInfo/deleteById", {id: id},
+                    $.post(baseUrl + "/userInfo/deleteById", {id: id},
                         function (data) {
                             layer.msg(data.msg, {time: 500});
                             if (data.result) {
@@ -283,7 +356,6 @@
 
 
         $("#add").click(function () {
-
             layer.open({
                 type: 1,
                 title: '添加用户'
@@ -292,8 +364,8 @@
             });
         });
 
-
     });
 
 </script>
+
 </html>

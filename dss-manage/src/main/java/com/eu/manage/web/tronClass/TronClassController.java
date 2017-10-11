@@ -1,6 +1,5 @@
-package com.eu.manage.web.TronClass;
+package com.eu.manage.web.tronClass;
 
-import com.eu.manage.entity.PageBean;
 import com.eu.manage.entity.TronClass;
 import com.eu.manage.service.TronClassService;
 import com.eu.manage.utils.Constant;

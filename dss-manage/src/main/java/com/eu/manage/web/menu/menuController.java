@@ -14,19 +14,19 @@ public class menuController extends HttpServlet {
 
     @RequestMapping("/tronClass")
     public String tronClass() {
-        return "TronClass/tronClass";
+        return "tronClass/tronClass";
     }
     @RequestMapping("/superUserInfo")
     public String superUserInfo() {
-        return "UserInfo/superUserInfo";
+        return "userInfo/superUserInfo";
     }
     @RequestMapping("/firstUserInfo")
     public String firstUserInfo() {
-        return "UserInfo/firstUserInfo";
+        return "userInfo/firstUserInfo";
     }
     @RequestMapping("/secondUserInfo")
     public String secondUserInfo() {
-        return "UserInfo/secondUserInfo";
+        return "userInfo/secondUserInfo";
     }
     @RequestMapping("/thirdUserInfo")
     public String thirdUserInfo() {

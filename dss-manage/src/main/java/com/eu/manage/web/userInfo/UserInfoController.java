@@ -1,4 +1,4 @@
-package com.eu.manage.web.UserInfo;
+package com.eu.manage.web.userInfo;
 
 import com.eu.manage.dto.Result;
 import com.eu.manage.entity.PageBean;

@@ -217,7 +217,7 @@
             },
             list: function () {
                 let username = $("#name_search").val();
-                $.post("${pageContext.request.contextPath}/UserInfo/findSecondUser", {
+                $.post("${pageContext.request.contextPath}/userInfo/findSecondUser", {
                         pageCurrent: pageCurrent,
                         rank: 2,
                         username: username
@@ -244,7 +244,7 @@
 
             },
             findById: function (id) {
-                $.post("${pageContext.request.contextPath}/UserInfo/findById", {id: id},
+                $.post("${pageContext.request.contextPath}/userInfo/findById", {id: id},
                     function (data) {
                         laytpl($("#list-userInfo").text()).render(data.user, function (html) {
                             $("#userInfo").html(html);
@@ -257,7 +257,7 @@
             },
             updateAjax: function () {
                 let data = $("#update-form").serialize();
-                $.post(baseUrl + "/UserInfo/insertUser", data, function (data) {
+                $.post(baseUrl + "/userInfo/insertUser", data, function (data) {
                     layer.msg(data.msg);
                     if (data.result) {
                         setTimeout("location.reload()", 500);
@@ -268,7 +268,7 @@
             delete: function (id) {
                 layer.confirm('确定删除？', {icon: 3, title: '提示'}, function (index) {
                     layer.close(index);
-                    $.post("${pageContext.request.contextPath}/UserInfo/deleteById", {id: id},
+                    $.post("${pageContext.request.contextPath}/userInfo/deleteById", {id: id},
                         function (data) {
                             layer.msg(data.msg, {time: 500});
                             if (data.result) {
@@ -287,7 +287,7 @@
                 });
             },
             editorFindById: function (id) {
-                $.post("${pageContext.request.contextPath}/UserInfo/findById", {id: id},
+                $.post("${pageContext.request.contextPath}/userInfo/findById", {id: id},
                     function (data) {
                         $("#id").val(data.user[0]["id"]);
                         $("#nickname").val(data.user[0]["nickname"]);
@@ -300,7 +300,7 @@
             },
             editorUpdate: function (id) {
                 let data = $("#editor").serialize();
-                $.post(baseUrl + "/UserInfo/insertUserById", data, function (data) {
+                $.post(baseUrl + "/userInfo/insertUserById", data, function (data) {
                     layer.msg(data.msg);
                     if (data.result) {
                         setTimeout("location.reload()", 500);
