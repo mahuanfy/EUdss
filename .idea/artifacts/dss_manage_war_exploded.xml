@@ -7,14 +7,14 @@
           <element id="module-output" name="dss-manage" />
         </element>
         <element id="directory" name="lib">
+          <element id="archive" name="eu-dss-1.0-SNAPSHOT.jar">
+            <element id="module-output" name="EUdss" />
+          </element>
           <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.18" />
           <element id="library" level="project" name="Maven: c3p0:c3p0:0.9.1.2" />
-          <element id="library" level="project" name="Maven: jstl:jstl:1.2" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-mapper-asl:1.9.12" />
           <element id="library" level="project" name="Maven: org.codehaus.jackson:jackson-core-asl:1.9.10" />
           <element id="library" level="project" name="Maven: taglibs:standard:1.1.2" />
-          <element id="library" level="project" name="Maven: junit:junit:4.10" />
-          <element id="library" level="project" name="Maven: org.hamcrest:hamcrest-core:1.1" />
           <element id="library" level="project" name="Maven: net.sf.json-lib:json-lib:jdk15:2.4" />
           <element id="library" level="project" name="Maven: commons-beanutils:commons-beanutils:1.8.0" />
           <element id="library" level="project" name="Maven: commons-collections:commons-collections:3.2.1" />

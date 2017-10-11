@@ -2,7 +2,7 @@
 <!DOCTYPE mapper
         PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="com.eu.dss.dao.TronClassDao">
+<mapper namespace="com.eu.manage.dao.TronClassDao">
 
     <select id="tronClass"  resultType="TronClass">
         SELECT * FROM eu_tronclass

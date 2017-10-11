@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="dss-public:war">
+    <output-path>$PROJECT_DIR$/dss-public/target</output-path>
+    <root id="archive" name="dss-public.war">
+      <element id="artifact" artifact-name="dss-public:war exploded" />
+    </root>
+  </artifact>
+</component>

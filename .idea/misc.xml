@@ -3,6 +3,7 @@
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/dss-front" />
     <file type="web" url="file://$PROJECT_DIR$/dss-manage" />
+    <file type="web" url="file://$PROJECT_DIR$/dss-public" />
   </component>
   <component name="JavaScriptSettings">
     <option name="languageLevel" value="ES6" />
@@ -12,6 +13,11 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
       </list>
+    </option>
+    <option name="ignoredFiles">
+      <set>
+        <option value="$PROJECT_DIR$/dss-public/pom.xml" />
+      </set>
     </option>
   </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_1_3" project-jdk-name="1.8" project-jdk-type="JavaSDK">
