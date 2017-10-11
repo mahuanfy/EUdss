@@ -1,9 +1,9 @@
 /target/
 *.iml
 .idea/
-target/
+*/target/
 out/
 *.war
 jdbc.properties
 rebel.xml
-rebble-remote.xml
+rebel-remote.xml
