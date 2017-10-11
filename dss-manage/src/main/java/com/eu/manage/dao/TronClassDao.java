@@ -4,6 +4,7 @@ import com.eu.manage.entity.PageBean;
 import com.eu.manage.entity.TronClass;
 
 import java.util.List;
+import java.util.Map;
 
 /**
  * 创课点击次数
@@ -20,7 +21,11 @@ public interface TronClassDao {
     /**
      * 分页查询数据
      */
-    List<TronClass> insertProfession(PageBean pageBean) throws Exception;
+    List<Map<String,String>> queryProfession(Map<String, Object> data) throws Exception;
+
+    Long queryProfessionCount() throws Exception;
+
+
 
 
 

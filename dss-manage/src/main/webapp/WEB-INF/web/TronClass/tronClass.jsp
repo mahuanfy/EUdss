@@ -78,7 +78,7 @@
     </fieldset>
 </div>
 <script id="list-tpl" type="text/html">
-    {{# layui.each(d, function(index, item){ }}
+    {{# layui.each(d.TronClass, function(index, item){ }}
     <tr>
         <td>{{ index+1}}</td>
         <td>{{item.year}}</td>
@@ -103,25 +103,27 @@
 </script>
 <script type="text/javascript" src="${baseurl}/public/plugins/layui/layui.js"></script>
 <script type="text/javascript">
-    var cl;
-    var pageCurrent = 0;//当前页数
-    var totalPage=10;//总页数
-    layui.use(['laypage', 'layer', 'laytpl', 'form'], function () {
-        var laypage = layui.laypage
-            , layer = layui.layer,
+    let totalSize = 10;
+    let currentIndex = 1;
+    let pageSize = 10;
+    let classes;
+    layui.use(['jquery', 'layer', 'element', 'laypage', 'form', 'laytpl', 'tree'], function () {
+        window.jQuery = window.$ = layui.jquery;
+        window.layer = layui.layer;
+        var element = layui.element(),
             form = layui.form(),
             laytpl = layui.laytpl;
 
         cl = {
             page: function () {
-                laypage({
-                    cont: 'demo1'
-                    , pages: totalPage //总页数
-                    , groups: 5 //连续显示分页数
-                    , curr:pageCurrent
-                    , jump: function (obj, first) {
-                        //得到了当前页，用于向服务端请求对应数据
-                        pageCurrent = obj.curr;
+                layui.laypage({
+                    cont: 'demo1',
+                    pages: totalSize, //总页数
+                    curr: currentIndex,
+                    groups: 5,//连续显示分页数
+                    skin: '#1E9FFF',
+                    jump: function (obj, first) {
+                        currentIndex = obj.curr;
                         if (!first) {
                             cl.list();
                         }
@@ -129,14 +131,20 @@
                 });
             },
             list: function () {
-                $.post("${pageContext.request.contextPath}/tronClass/insertProfession", { pageCurrent:pageCurrent},
+                $.post("${pageContext.request.contextPath}/tronClass/insertProfession", {currentIndex: currentIndex, pageSize: pageSize},
                     function (data) {
-                        totalPage=data.totalPage;//总页数
-                        cl.page();
-                        laytpl($("#list-tpl").text()).render(data[0], function (html) {
-                            $(".tr_1").html(html);
-                        });
-                        form.render();
+                    console.log(data)
+
+                        if (data.result) {
+                            currentIndex = data.page.currentIndex;
+                            totalSize = data.page.totalSize;
+//                            showTotalCount(data.page.totalCount);
+                            cl.page();
+                            laytpl($("#list-tpl").text()).render(data, function (html) {
+                                $(".tr_1").html(html);
+                            });
+                            form.render();
+                        }
                     },
                     "json"
                 );

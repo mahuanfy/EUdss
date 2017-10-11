@@ -3,6 +3,8 @@ package com.eu.manage.web.TronClass;
 import com.eu.manage.entity.PageBean;
 import com.eu.manage.entity.TronClass;
 import com.eu.manage.service.TronClassService;
+import com.eu.manage.utils.Constant;
+import com.eu.manage.utils.PageUtil;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -34,17 +36,21 @@ public class TronClassController {
 
     @RequestMapping("/insertProfession")
     @ResponseBody
-    public Map<String, Object> insertProfession(PageBean pageBean){
-        Map<String, Object> result = new HashMap<String, Object>();
-        List<TronClass> TronClass = null;
+    public Map<String, Object> insertProfession(PageUtil page){
+        Map<String, Object> data = new HashMap<String, Object>();
+        List<Map<String,String>> TronClass;
         try {
-            TronClass = tronClassService.insertProfession(pageBean);
+            TronClass = tronClassService.insertProfession(page);
+            data.put("TronClass", TronClass);
+            data.put("page", page);
+            data.put("result", true);
+            data.put("msg", Constant.SEARCH_SUCCESS);
         } catch (Exception e) {
+            data.put("msg", Constant.SEARCH_FAILURE);
             e.printStackTrace();
         }
-        result.put("TronClass",TronClass);
 
-        return result;
+        return data;
     }
 
 }

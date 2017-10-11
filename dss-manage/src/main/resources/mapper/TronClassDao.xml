@@ -8,8 +8,13 @@
         SELECT * FROM eu_tronclass
     </select>
 
-    <select id="tronClassPaging" parameterType="PageBean"  resultType="TronClass">
-        SELECT * FROM eu_tronclass limit #{index},#{PageCount}
+    <select id="queryProfession"   resultType="map">
+        SELECT * FROM eu_tronclass LIMIT #{start}, #{end}
+    </select>
+
+ <select id="queryProfessionCount"   resultType="long">
+        SELECT count(1)
+        FROM eu_tronclass
     </select>
 
 
