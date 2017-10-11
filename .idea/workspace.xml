@@ -8,33 +8,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="65fadf81-242e-425a-bd35-7b9b5b951c45" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/utils/PageUtil.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/manage/dao/TronClassDao.class" afterPath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/manage/dao/TronClassDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/manage/service/TronClassService.class" afterPath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/manage/service/TronClassService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/manage/service/impl/TronClassServiceImpl.class" afterPath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/manage/service/impl/TronClassServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/manage/web/TronClass/TronClassController.class" afterPath="$PROJECT_DIR$/dss-manage/target/classes/com/eu/manage/web/TronClass/TronClassController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/manage/dao/TronClassDao.class" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/manage/dao/TronClassDao.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/manage/service/TronClassService.class" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/manage/service/TronClassService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/manage/service/impl/TronClassServiceImpl.class" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/manage/service/impl/TronClassServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/manage/web/TronClass/TronClassController.class" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/com/eu/manage/web/TronClass/TronClassController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dss_front_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dss_front_war_exploded.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/dss_manage_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/dss_manage_war_exploded.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/EUdss.iml" afterPath="$PROJECT_DIR$/EUdss.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/dss-front.iml" afterPath="$PROJECT_DIR$/dss-front/dss-front.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-front/pom.xml" afterPath="$PROJECT_DIR$/dss-front/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/dss-manage.iml" afterPath="$PROJECT_DIR$/dss-manage/dss-manage.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/pom.xml" afterPath="$PROJECT_DIR$/dss-manage/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/dao/TronClassDao.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/dao/TronClassDao.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/service/TronClassService.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/service/TronClassService.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/service/impl/TronClassServiceImpl.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/service/impl/TronClassServiceImpl.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/web/TronClass/TronClassController.java" afterPath="$PROJECT_DIR$/dss-manage/src/main/java/com/eu/manage/web/TronClass/TronClassController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/TronClassDao.xml" afterPath="$PROJECT_DIR$/dss-manage/src/main/resources/mapper/TronClassDao.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/TronClass/tronClass.jsp" afterPath="$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/TronClass/tronClass.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/classes/mapper/TronClassDao.xml" afterPath="$PROJECT_DIR$/dss-manage/target/classes/mapper/TronClassDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/mapper/TronClassDao.xml" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/classes/mapper/TronClassDao.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/TronClass/tronClass.jsp" afterPath="$PROJECT_DIR$/dss-manage/target/dss-manage/WEB-INF/web/TronClass/tronClass.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -111,8 +86,8 @@
       <file leaf-file-name="tronClass.jsp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/TronClass/tronClass.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="127" column="30" lean-forward="false" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+            <state relative-caret-position="424">
+              <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -1573,7 +1548,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="260434000" />
+    <option name="totallyTimeSpent" value="261152000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
@@ -1603,7 +1578,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33333334" sideWeight="0.49786097" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3251073" sideWeight="0.48657358" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3251073" sideWeight="0.48657358" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Database Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32939914" sideWeight="0.5" order="17" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2867884" sideWeight="0.46422893" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.2244898" sideWeight="0.53004295" order="6" side_tool="true" content_ui="tabs" />
@@ -2068,8 +2043,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/dss-manage/src/main/webapp/WEB-INF/web/TronClass/tronClass.jsp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="127" column="30" lean-forward="false" selection-start-line="127" selection-start-column="30" selection-end-line="127" selection-end-column="30" />
+        <state relative-caret-position="424">
+          <caret line="21" column="27" lean-forward="true" selection-start-line="21" selection-start-column="27" selection-end-line="21" selection-end-column="27" />
           <folding />
         </state>
       </provider>

@@ -16,7 +16,12 @@
     <script type="text/javascript" src="${baseurl}/public/js/layui.js" charset="utf-8"></script>
     <script type="text/javascript" src="${baseurl}/public/js/button_js.js" charset="utf-8"></script>
 </head>
-
+<style>
+    .layui-table td{
+        padding: 4px 5px;
+        text-align: center;
+    }
+</style>
 
 <body>
 
@@ -74,7 +79,6 @@
             </table>
         </div>
         <div id="demo1"></div>
-        <ul id="biuuu_city_list"></ul>
     </fieldset>
 </div>
 <script id="list-tpl" type="text/html">
