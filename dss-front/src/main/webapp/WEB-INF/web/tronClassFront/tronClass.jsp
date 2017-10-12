@@ -33,7 +33,6 @@
                 let yearTwo = "";
                 let subtext = "";
                 $.post("${pageContext.request.contextPath}/TronClassFront/tronClass", function (data) {
-                    console.log(data);
                     let valueOne = data.TronClass[1];
                     let valueTwo = data.TronClass[0];
                     dateOne[0] = valueOne.eu_rj;
