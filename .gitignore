@@ -8,3 +8,5 @@ jdbc.properties
 rebel.xml
 rebel-remote.xml
 EUdss.iml
+/dss-front/dss-front.xml
+/dss-manage/dss-manage.xml
