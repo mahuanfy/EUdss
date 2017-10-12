@@ -47,7 +47,7 @@
 
             <div class="vertical-align">
                 <div class="vertical-align-middle">
-                    <h2 class="hidden-xs" style="font-size: 24px;">Eurasia DSS 登陆页面</h2>
+                    <h2 class="hidden-xs" style="font-size: 24px;">Eurasia DSS 登录页面</h2>
                     <p class="hidden-xs">Eurasia Decision Support System 后台系统</p>
                     <div class="login-form fv-form fv-form-bootstrap" id="loginForm" novalidate="novalidate">
                         <button type="submit" class="fv-hidden-submit"

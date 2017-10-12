@@ -28,6 +28,7 @@
             <div id="main_Histogram"></div>
             <script type="text/javascript">
                 var dateOne = new Array(11);
+                var dateTwo = new Array(11);
                 let yearOne = "";
                 let yearTwo = "";
                 let subtext = "";
@@ -35,7 +36,29 @@
                     console.log(data);
                     let valueOne = data.TronClass[1];
                     let valueTwo = data.TronClass[0];
-                        dateOne[0] = valueOne.eu_ad;
+                    dateOne[0] = valueOne.eu_rj;
+                    dateOne[1] = valueOne.eu_xin;
+                    dateOne[2] = valueOne.eu_rw;
+                    dateOne[3] = valueOne.eu_ts;
+                    dateOne[4] = valueOne.eu_xiu;
+                    dateOne[5] = valueOne.eu_gz;
+                    dateOne[6] = valueOne.eu_kuai;
+                    dateOne[7] = valueOne.eu_ad;
+                    dateOne[8] = valueOne.eu_wc;
+                    dateOne[9] = valueOne.eu_wu;
+                    dateOne[10] = valueOne.eu_jr;
+                    dateTwo[0] = valueTwo.eu_rj;
+                    dateTwo[1] = valueTwo.eu_xin;
+                    dateTwo[2] = valueTwo.eu_rw;
+                    dateTwo[3] = valueTwo.eu_ts;
+                    dateTwo[4] = valueTwo.eu_xiu;
+                    dateTwo[5] = valueTwo.eu_gz;
+                    dateTwo[6] = valueTwo.eu_kuai;
+                    dateTwo[7] = valueTwo.eu_ad;
+                    dateTwo[8] = valueTwo.eu_wc;
+                    dateTwo[9] = valueTwo.eu_wu;
+                    dateTwo[10] = valueTwo.eu_jr;
+
                     subtext =valueOne.tron_month+"、"+valueTwo.tron_month+"月份统计量(学院)";
                     yearOne = valueOne.year+"年 "+valueOne.tron_month+"月份";
                     yearTwo = valueTwo.year+"年 "+valueTwo.tron_month+"月份";
@@ -65,7 +88,6 @@
                     xAxis: [
                         {
                             type: 'category',
-//                                        data: ['人居环境', '信息工程', '人文教育', '通识教育', '休闲管理', '高职', '会计', '艾德艺术', '文化传媒', '物流贸易', '金融']
                             data: ['人居环境\n学院', '信息工程\n学院', '人文教育\n学院', '通识教育\n学院', '休闲管理\n学院', '高职\n学院', '会计\n学院', '艾德艺术\n设计学院', '文化传媒\n学院', '物流贸易\n学院', '金融\n学院']
                         }
                     ],
@@ -78,7 +100,6 @@
                         {
                             name: yearOne,
                             type: 'bar',
-                            //  data: [20, 49, 70, 232, 256, 767, 1356, 1622, 326, 200, 64, 33],
                             data: dateOne,
                             markPoint: {
                                 data: [
@@ -95,11 +116,9 @@
                         {
                             name: yearTwo,
                             type: 'bar',
-                            data: [2303, 1394, 1654, 1561, 1712, 1706, 966, 866, 1133, 1127, 755],
+                            data: dateTwo,
                             markPoint: {
                                 data: [
-//                                    {name: '年最高', value: 1822, xAxis: 7, yAxis: 1822},
-//                                    {name: '年最低', value: 23, xAxis: 11, yAxis: 23}
                                     {type: 'max', name: '最大值'},
                                     {type: 'min', name: '最小值'}
                                 ]

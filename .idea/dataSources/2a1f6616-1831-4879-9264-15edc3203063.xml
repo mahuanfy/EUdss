@@ -82,67 +82,67 @@
       <SequenceIdentity>1</SequenceIdentity>
     </column>
     <column id="27" parent="12" name="tron_month">
-      <Position>2</Position>
-      <DataType>int(11)|0</DataType>
-      <NotNull>1</NotNull>
-    </column>
-    <column id="28" parent="12" name="eu_rj">
       <Position>3</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="29" parent="12" name="eu_xin">
+    <column id="28" parent="12" name="eu_rj">
       <Position>4</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="30" parent="12" name="eu_rw">
+    <column id="29" parent="12" name="eu_xin">
       <Position>5</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="31" parent="12" name="eu_ts">
+    <column id="30" parent="12" name="eu_rw">
       <Position>6</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="32" parent="12" name="eu_xiu">
+    <column id="31" parent="12" name="eu_ts">
       <Position>7</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="33" parent="12" name="eu_gz">
+    <column id="32" parent="12" name="eu_xiu">
       <Position>8</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="34" parent="12" name="eu_kuai">
+    <column id="33" parent="12" name="eu_gz">
       <Position>9</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="35" parent="12" name="eu_ad">
+    <column id="34" parent="12" name="eu_kuai">
       <Position>10</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="36" parent="12" name="eu_wc">
+    <column id="35" parent="12" name="eu_ad">
       <Position>11</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="37" parent="12" name="eu_wu">
+    <column id="36" parent="12" name="eu_wc">
       <Position>12</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="38" parent="12" name="eu_jr">
+    <column id="37" parent="12" name="eu_wu">
       <Position>13</Position>
       <DataType>int(11)|0</DataType>
       <NotNull>1</NotNull>
     </column>
-    <column id="39" parent="12" name="year">
+    <column id="38" parent="12" name="eu_jr">
       <Position>14</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="39" parent="12" name="year">
+      <Position>2</Position>
       <DataType>varchar(20)|0</DataType>
       <NotNull>1</NotNull>
     </column>

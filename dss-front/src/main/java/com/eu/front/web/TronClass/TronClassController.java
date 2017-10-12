@@ -1,6 +1,5 @@
 package com.eu.front.web.TronClass;
 
-import com.eu.front.entity.TronClass;
 import com.eu.front.service.TronClassService;
 import com.eu.front.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;

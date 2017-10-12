@@ -9,7 +9,7 @@
     </select>
 
     <select id="queryProfession"   resultType="map">
-        SELECT * FROM eu_tronclass LIMIT #{start}, #{end}
+        SELECT * FROM eu_tronclass order by year desc,tron_month DESC LIMIT #{start}, #{end}
     </select>
 
  <select id="queryProfessionCount"   resultType="long">
