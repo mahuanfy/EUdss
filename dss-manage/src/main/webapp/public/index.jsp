@@ -21,10 +21,10 @@
     <link rel="stylesheet" href="${baseurl}/public/plugins/font-awesome/css/font-awesome.min.css">
     <script type="text/javascript" src="${baseurl}/public/js/jquery.js"></script>
     <script type="text/javascript" src="${baseurl}/public/plugins/layui/layui.js"></script>
-    <script class="nav_script" type="text/javascript" ></script>
+    <script class="nav_script" type="text/javascript"></script>
     <script src="${baseurl}/public/js/index.js"></script>
     <script type="text/javascript">
-//---------------------权限设置----------------------------------------
+        //---------------------权限设置----------------------------------------
         var rank = 0;
         $(function () {
             $.post("${pageContext.request.contextPath}/login/rank",
@@ -35,6 +35,19 @@
                 }
             )
         });
+        function out() {
+            $.post("${pageContext.request.contextPath}/login/out",
+                function (data) {
+
+                    layer.msg(data.msg, {
+                        time: 1000
+                    }, function(){
+                        window.location.href="${baseurl}";
+                    });
+
+                }
+            )
+        }
     </script>
 </head>
 
@@ -70,16 +83,12 @@
                             </a>
                         </dd>
                         <dd>
-                            <a href="../WEB-INF/login.jsp"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+                            <a onclick="out()"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
                         </dd>
                     </dl>
                 </li>
             </ul>
-            <ul class="layui-nav admin-header-item-mobile">
-                <li class="layui-nav-item">
-                    <a href="${baseurl}/login"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
-                </li>
-            </ul>
+
         </div>
     </div>
     <div class="layui-side layui-bg-black" id="admin-side">

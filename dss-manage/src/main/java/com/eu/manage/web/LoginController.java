@@ -2,6 +2,7 @@ package com.eu.manage.web;
 
 import com.eu.manage.entity.User;
 import com.eu.manage.service.LoginService;
+import com.eu.manage.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -52,6 +53,21 @@ public class LoginController extends HttpServlet {
             User user = (User) session.getAttribute("user");
 
             result.put("rank", user.getRank());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+    //登出
+    @RequestMapping("/out")
+    @ResponseBody
+    public Map<String, Object> out(HttpSession session) {
+        Map<String, Object> result = new HashMap<String, Object>();
+        try {
+            session.removeAttribute("user");
+            result.put("msg", Constant.ACCOUNT_OUT);
+
         } catch (Exception e) {
             e.printStackTrace();
         }
