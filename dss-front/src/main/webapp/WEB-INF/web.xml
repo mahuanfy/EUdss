@@ -42,6 +42,27 @@
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
+    <!-- shiro 安全过滤器滤器  start-->
+    <!-- The filter-name matches name of a 'shiroFilter' bean inside applicationContext.xml -->
+    <!-- 这个拦截器的filter-name：shiroFilter 要在spring配置文件中有配置-->
+    <filter>
+        <filter-name>shiroFilter</filter-name>
+        <filter-class>org.springframework.web.filter.DelegatingFilterProxy</filter-class>
+        <async-supported>true</async-supported>
+        <init-param>
+            <param-name>targetFilterLifecycle</param-name>
+            <param-value>true</param-value>
+        </init-param>
+    </filter>
+    <!-- Make sure any request you want accessible to Shiro is filtered. /* catches all -->
+    <!-- requests.  Usually this filter mapping is defined first (before all others) to -->
+    <!-- ensure that Shiro works in subsequent filters in the filter chain:             -->
+    <filter-mapping>
+        <filter-name>shiroFilter</filter-name>
+        <url-pattern>/</url-pattern>
+    </filter-mapping>
+    <!-- shiro 安全过滤器滤器  end-->
+
     <welcome-file-list>
         <welcome-file>/WEB-INF/index.jsp</welcome-file>
         <welcome-file>index.html</welcome-file>

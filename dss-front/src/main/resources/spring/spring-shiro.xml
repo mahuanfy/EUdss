@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:mvc="http://www.springframework.org/schema/mvc"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:aop="http://www.springframework.org/schema/aop" xmlns:tx="http://www.springframework.org/schema/tx"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+		http://www.springframework.org/schema/beans/spring-beans-4.0.xsd
+		http://www.springframework.org/schema/mvc
+		http://www.springframework.org/schema/mvc/spring-mvc-4.0.xsd
+		http://www.springframework.org/schema/context
+		http://www.springframework.org/schema/context/spring-context-4.0.xsd
+		http://www.springframework.org/schema/aop
+		http://www.springframework.org/schema/aop/spring-aop-4.0.xsd
+		http://www.springframework.org/schema/tx
+		http://www.springframework.org/schema/tx/spring-tx-4.0.xsd">
+    <!-- Shiro 的Web过滤器 -->
+    <!--1、与web.xml对应的bean-->
+    <bean id="shiroFilter" class="org.apache.shiro.spring.web.ShiroFilterFactoryBean">
+        <property name="securityManager" ref="securityManager" />
+        <!-- 如果没有认证将要跳转的登陆地址，http可访问的url，如果不在表单认证过虑器FormAuthenticationFilter中指定此地址就为身份认证地址 -->
+        <property name="loginUrl" value="/toLogin" />
+        <!--登录成功的地址-->
+        <property name="successUrl" value="/index"/>
+        <!-- 没有权限跳转的地址 -->
+        <property name="unauthorizedUrl" value="/pages/jsp/refuse.jsp"/><!--暂时发现没有用  使用spring的异常处理-->
+        <!--过滤定义，从上而下，蒋匿名的anon放最下面-->
+        <property name="filterChainDefinitions">
+            <value>
+                <!--静态资源通过-->
+                /login = anon
+                /getValidateCode = anon  <!--验证码-->
+                /js/** = anon
+                /images/** = anon
+                /styles/** = anon
+                /public/** = anon
+                /toLogin = anon   <!--登录页面的地址-->
+                /noPermission/** = anon <!--跳转没有权限的页面-->
+                <!--表示所有请求url必须通过认证-->
+                /**=  authc
+                <!--请求logout，shrio擦除sssion-->
+                /logout=logout
+
+            </value>
+        </property>
+
+    </bean>
+    <!-- ==============================================2、安全管理器============================================== -->
+    <bean id="securityManager" class="org.apache.shiro.web.mgt.DefaultWebSecurityManager">
+        <property name="realm" ref="userRealm" />
+    </bean>
+
+    <!-- 会话管理器 -->
+    <bean id="sessionManager" class="org.apache.shiro.web.session.mgt.DefaultWebSessionManager">
+        <!-- session的失效时长，单位毫秒 -->
+        <property name="globalSessionTimeout" value="600000"/>
+        <!-- 删除失效的session -->
+        <property name="deleteInvalidSessions" value="true"/>
+    </bean>
+
+    <!--==============================================3、realm===================================================-->
+    <!-- Shiro配置,继承自AuthorizingRealm的自定义Realm (解决初始化时的依赖循环问题，通过这里向realm中注入userservice实现)-->
+    <bean id="userRealm" class="com.eu.front.shiro.CustomRealm">
+    </bean>
+
+    <!--4 凭证匹配器 -->
+    <bean id="credentialsMatcher"
+          class="org.apache.shiro.authc.credential.HashedCredentialsMatcher">
+        <property name="hashAlgorithmName" value="md5" />
+        <property name="hashIterations" value="1" />
+    </bean>
+    <!--==============================================rememberMeManager管理器========================================-->
+    <!-- rememberMeManager管理器 -->
+    <bean id="rememberMeManager" class="org.apache.shiro.web.mgt.CookieRememberMeManager">
+        <property name="cookie" ref="rememberMeCookie" />
+    </bean>
+    <!-- 记住我cookie -->
+    <bean id="rememberMeCookie" class="org.apache.shiro.web.servlet.SimpleCookie">
+        <constructor-arg value="rememberMe" />
+        <!-- 记住我cookie生效时间30天 -->
+        <property name="maxAge" value="2592000" />
+    </bean>
+
+    <!-- 开启Shiro注解的Spring配置方式的beans。在lifecycleBeanPostProcessor之后运行 -->
+    <!--<bean id="lifecycleBeanPostProcessor"  class="org.apache.shiro.spring.LifecycleBeanPostProcessor" />
+    <bean  class="org.springframework.aop.framework.autoproxy.DefaultAdvisorAutoProxyCreator" depends-on="lifecycleBeanPostProcessor" />
+    <bean class="org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor">
+        <property name="securityManager" ref="securityManager" />
+    </bean>-->
+</beans>
