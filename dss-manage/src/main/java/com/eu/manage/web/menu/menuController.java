@@ -12,22 +12,27 @@ import javax.servlet.http.HttpServlet;
 @RequestMapping("/menu")
 public class menuController extends HttpServlet {
 
+    //创客访问量
     @RequestMapping("/tronClass")
     public String tronClass() {
         return "tronClass/tronClass";
     }
+    //教室利用率
     @RequestMapping("/classUserRate")
     public String classUserRate() {
         return "UserRate/classUserRate/classUserRate";
     }
+    //工作室利用率
     @RequestMapping("/studioClassFront")
     public String studioClassFront() {
         return "UserRate/studioClassFront/studioClassFront";
     }
+    //学籍异动
     @RequestMapping("/leaveReason")
     public String leaveReason() {
         return "schoolChange/leaveReason/leaveReason";
     }
+    //权限菜单
     @RequestMapping("/superUserInfo")
     public String superUserInfo() {
         return "userInfo/superUserInfo";

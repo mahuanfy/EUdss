@@ -37,7 +37,7 @@
                     <li>提供分院、专业教学日常业务数据并可视化展示，为分院业务发展提供数据支撑。</li>
                 </ul>
                 <div>
-                    <a href="http://172.16.0.105:8080/eu" class="btn btn-primary btn-outline">
+                    <a href="${baseurl}/eu" class="btn btn-primary btn-outline">
                         <i class="fa fa-reply" aria-hidden="true"></i>&nbsp;决策中心</a>
                     <a href="#" class="btn btn-primary btn-outline margin-left-5">联系我们</a>
                 </div>
