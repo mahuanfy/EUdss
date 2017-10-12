@@ -16,6 +16,18 @@ public class menuController extends HttpServlet {
     public String tronClass() {
         return "tronClass/tronClass";
     }
+    @RequestMapping("/classUserRate")
+    public String classUserRate() {
+        return "UserRate/classUserRate/classUserRate";
+    }
+    @RequestMapping("/studioClassFront")
+    public String studioClassFront() {
+        return "UserRate/studioClassFront/studioClassFront";
+    }
+    @RequestMapping("/leaveReason")
+    public String leaveReason() {
+        return "schoolChange/leaveReason/leaveReason";
+    }
     @RequestMapping("/superUserInfo")
     public String superUserInfo() {
         return "userInfo/superUserInfo";

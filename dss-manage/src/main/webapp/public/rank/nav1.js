@@ -91,9 +91,13 @@ var navs = [{
     "icon": "fa fa-fax",
     "spread": false,
     "children": [{
-        "title": "前三周教学空间利用率",
+        "title": "教室空间利用率",
         "icon": "fa fa-book",
-        "href": "page/classroomUtilizationRatio.html"
+        "href": "menuFront/classUserRate"
+    }, {
+        "title": "工作室空间利用率",
+        "icon": " fa fa-pencil",
+        "href": "menuFront/studioClassFront"
     }]
 },
     {

@@ -71,7 +71,7 @@ var navs = [{
     }, {
         "title": "退学原因分析",
         "icon": "&#xe63c;",
-        "href": "page/quitSchool_cause.html"
+        "href": "/menu/leaveReason"
     }, {
         "title": "流失学生数据掌握情况",
         "icon": " fa fa-pencil",
@@ -91,9 +91,13 @@ var navs = [{
     "icon": "fa fa-fax",
     "spread": false,
     "children": [{
-        "title": "前三周教学空间利用率",
+        "title": "教学空间利用率",
         "icon": "fa fa-book",
-        "href": "page/classroomUtilizationRatio.html"
+        "href": "/menu/classUserRate"
+    }, {
+        "title": "工作室空间利用率",
+        "icon": " fa fa-pencil",
+        "href": "/menu/studioClassFront"
     }]
 },
     {
