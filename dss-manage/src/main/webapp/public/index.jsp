@@ -40,8 +40,10 @@
                 function (data) {
                     let user = data.user;
                     $("#Name").html(user.nickname);
+                    $("#userNameLocK").html(user.nickname);
                     $("#idName").html(user.username);
                     $("#images").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);
+                    $("#imageslockPwd").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);
                 }
             )
             //权限设置
@@ -94,8 +96,8 @@
             $.post("${pageContext.request.contextPath}/login/userInfo",
                 function (data) {
                     let user = data.user;
-                    console.log(user)
                     $("#imagesToUpdate").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);
+                    imgName = user.img;
                     $("#updateNickname").val(user.nickname);
                     $("#updateUsername").val(user.username);
                     $("#updateSex").val(user.sex);
@@ -169,10 +171,10 @@
                     <dl
                             class="layui-nav-child">
                         <dd>
-                            <a onclick="userInfo()"><i class="fa fa-user-circle" aria-hidden="true"></i> 个人信息</a>
+                            <a style="cursor:pointer" onclick="userInfo()"><i class="fa fa-user-circle" aria-hidden="true"></i> 个人信息</a>
                         </dd>
                         <dd>
-                            <a onclick="updateInfo()"><i class="fa fa-gear" aria-hidden="true"></i> 设置</a>
+                            <a style="cursor:pointer" onclick="updateInfo()"><i class="fa fa-gear" aria-hidden="true"></i> 设置</a>
                         </dd>
                         <dd id="lock">
                             <a href="javascript:;">
@@ -181,7 +183,7 @@
                             </a>
                         </dd>
                         <dd>
-                            <a onclick="out()"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
+                            <a style="cursor:pointer" onclick="out()"><i class="fa fa-sign-out" aria-hidden="true"></i> 注销</a>
                         </dd>
                     </dl>
                 </li>
@@ -220,16 +222,16 @@
     <div class="site-mobile-shade"></div>
 
     <!--锁屏模板 start-->
-    <script type="text/template" id="lock-temp">
+    <div type="text/template" id="lock-temp" style="display: none">
         <div class="admin-header-lock" id="lock-box">
             <div class="admin-header-lock-img">
-                <img src="images/0.jpg"/>
+                <img id="imageslockPwd"/>
             </div>
-            <div class="admin-header-lock-name" id="lockUserName">beginner</div>
+            <div class="admin-header-lock-name" id="userNameLocK"></div>
             <input type="text" class="admin-header-lock-input" value="输入密码解锁.." name="lockPwd" id="lockPwd"/>
             <button class="layui-btn layui-btn-small" id="unlock">解锁</button>
         </div>
-    </script>
+    </div>
 </div>
 </body>
 <div id="userInfo" style="display: none">
@@ -295,7 +297,7 @@
 </div>
 <div id="updateInfo" style="display: none">
     <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
-        <legend>个人信息</legend>
+        <legend>修改信息</legend>
     </fieldset>
     <div style="margin-left: 45%;">
         <div style="width:100px; height: 140px;margin-left: 50px;">
