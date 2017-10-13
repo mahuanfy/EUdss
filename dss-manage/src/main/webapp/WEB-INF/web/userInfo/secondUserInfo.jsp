@@ -119,8 +119,6 @@
             <label class="layui-form-label">账户权限：</label>
             <div class="layui-input-inline">
                 <select name="rank">
-                    <option value="0">超级管理员</option>
-                    <option value="1">一级管理员</option>
                     <option value="2" selected="">二级管理员</option>
                     <option value="3">三级管理员</option>
                 </select>
