@@ -14,6 +14,15 @@ public class User {
     private  int rank;
     private String date;
     private  String rankValue;
+    private String img;
+
+    public String getImg() {
+        return img;
+    }
+
+    public void setImg(String img) {
+        this.img = img;
+    }
 
     public String getRankValue() {
         return rankValue;

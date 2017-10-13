@@ -25,6 +25,7 @@
     <script src="${baseurl}/public/js/index.js"></script>
     <script type="text/javascript">
         var rank = 0;
+        let imgName;
         $(function () {
             //判断session是否存在
             $.post("${pageContext.request.contextPath}/login/session",
@@ -32,6 +33,15 @@
                     if (!data.haveSession) {
                         window.location.href = "${baseurl}";
                     }
+                }
+            )
+            //显示头像及图片
+            $.post("${pageContext.request.contextPath}/login/userInfo",
+                function (data) {
+                    let user = data.user;
+                    $("#Name").html(user.nickname);
+                    $("#idName").html(user.username);
+                    $("#images").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);
                 }
             )
             //权限设置
@@ -61,6 +71,7 @@
             $.post("${pageContext.request.contextPath}/login/userInfo",
                 function (data) {
                     let user = data.user;
+                    $("#imagesInfo").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);
                     $("#nickname").val(user.nickname);
                     $("#username").val(user.username);
                     $("#sex").val(user.sex);
@@ -78,6 +89,62 @@
                 }
             )
         }
+        //用户信息
+        function updateInfo() {
+            $.post("${pageContext.request.contextPath}/login/userInfo",
+                function (data) {
+                    let user = data.user;
+                    console.log(user)
+                    $("#imagesToUpdate").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);
+                    $("#updateNickname").val(user.nickname);
+                    $("#updateUsername").val(user.username);
+                    $("#updateSex").val(user.sex);
+                    $("#updateAge").val(user.age);
+                    $("#updatePhone").val(user.phone);
+                    $("#updateDate").val(user.date);
+                    layer.open({
+                        type: 1,
+                        title: "用户信息",
+                        area: ["100%", "100%"],
+                        closeBtn: 1,
+                        content: $("#updateInfo")
+                    })
+
+                }
+            )
+        }
+        //用户信息
+        function updateInfoAjax() {
+            let updateNickname = $("#updateNickname").val();
+            let updateUsername = $("#updateUsername").val();
+            let updateSex = $("#updateSex").val();
+            let updateAge = $("#updateAge").val();
+            let updatePhone = $("#updatePhone").val();
+            $.post("${pageContext.request.contextPath}/login/updateInfoAjax", {
+                    img: imgName,
+                    nickname:updateNickname,
+                    sex:updateSex,
+                    age:updateAge,
+                    phone:updatePhone,
+                    username:updateUsername,
+                },
+                function (data) {
+                    layer.msg(data.msg);
+                }
+            )
+        }
+        //图片上传
+        layui.use('upload', function () {
+            layui.upload({
+                url: '${baseurl}/login/updateImage' //上传接口
+                , success: function (res) { //上传成功后的回调
+                    if (res.result) {
+                        $("#imagesToUpdate").text("").attr("src", HEAD_IMAGE_PREFIX + res.data);
+                        imgName = res.data;
+                    }
+                }
+            });
+        });
     </script>
 </head>
 
@@ -96,8 +163,8 @@
             <ul class="layui-nav admin-header-item">
                 <li class="layui-nav-item">
                     <a href="javascript:;" class="admin-header-user">
-                        <img src="${baseurl}/public/images/0.jpg"/>
-                        ${sessionScope.user.nickname}
+                        <img id="images"/>
+                       <span id = "Name"></span>
                     </a>
                     <dl
                             class="layui-nav-child">
@@ -105,7 +172,7 @@
                             <a onclick="userInfo()"><i class="fa fa-user-circle" aria-hidden="true"></i> 个人信息</a>
                         </dd>
                         <dd>
-                            <a href="javascript:;"><i class="fa fa-gear" aria-hidden="true"></i> 设置</a>
+                            <a onclick="updateInfo()"><i class="fa fa-gear" aria-hidden="true"></i> 设置</a>
                         </dd>
                         <dd id="lock">
                             <a href="javascript:;">
@@ -170,12 +237,12 @@
         <legend>个人信息</legend>
     </fieldset>
     <div style="margin-left: 45%;">
-
-
-        <div class="site-demo-upload">
-            <img id="LAY_demo_upload" src="./images/0.jpg">
+        <div style="width:100px; height: 140px;margin-left: 50px;">
+            <img id="imagesInfo" class="site-demo-upload"/>
         </div>
+        <div style="margin-top: 100px;">
 
+        </div>
     </div>
     <div style="margin-left: 45%;margin-top: 50px;">
         <form class="layui-form layui-form-pane" action="">
@@ -223,6 +290,71 @@
                 </div>
             </div>
 
+        </form>
+    </div>
+</div>
+<div id="updateInfo" style="display: none">
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>个人信息</legend>
+    </fieldset>
+    <div style="margin-left: 45%;">
+        <div style="width:100px; height: 140px;margin-left: 50px;">
+            <img id="imagesToUpdate" class="site-demo-upload"/>
+        </div>
+        <div style="margin-top: 100px;">
+            <input type="file" name="file" class="layui-upload-file" style="width: auto"
+                   lay-title="头像上传">
+        </div>
+    </div>
+    <div style="margin-left: 45%;margin-top: 50px;">
+        <form class="layui-form layui-form-pane" action="" enctype="multipart/form-data">
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户姓名:</label>
+                <div class="layui-input-inline">
+                    <input  type="text" id="updateNickname" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户ID：</label>
+                <div class="layui-input-inline">
+                    <input readonly="readonly" type="text" id="updateUsername" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">性别：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="updateSex" lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input" readonly="readonly">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">年龄：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="updateAge" lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">手机号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="updatePhone" lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input" >
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">账号创建日期：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="updateDate" lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input" readonly="readonly">
+                </div>
+            </div>
+            <button style="margin-left: 80px; width: 150px;margin-bottom: 50px;" class="layui-btn"
+                    onclick="updateInfoAjax()"><i class="layui-icon">&#xe61f;</i>
+                完成修改
+            </button>
         </form>
     </div>
 </div>

@@ -10,5 +10,11 @@
     <select id="queryUserInfo" parameterType="string" resultType="User">
         SELECT * FROM dssuser WHERE username=#{username}
     </select>
+    <update id="updateUserInfo" parameterType="User">
+         UPDATE dssuser
+        SET dssuser.nickname = #{nickname},dssuser.age=#{age},
+        dssuser.img=#{img},dssuser.sex=#{sex},dssuser.phone=#{phone}
+        WHERE dssuser.username = #{username}
+    </update>
 
 </mapper>

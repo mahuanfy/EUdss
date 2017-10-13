@@ -21,5 +21,11 @@ public interface LoginDao {
      * @return
      */
     User queryUserInfo(String username);
+    /**
+     * 更新用户信息
+     * @param user
+     */
+    void updateUserInfo (User user);
+
 
 }

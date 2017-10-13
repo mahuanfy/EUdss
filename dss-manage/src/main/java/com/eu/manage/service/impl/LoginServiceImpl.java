@@ -36,4 +36,13 @@ public class LoginServiceImpl implements LoginService {
             throw new RuntimeException(e);
         }
     }
+
+    @Override
+    public void updateUserInfo(User user) {
+        try {
+             loginDao.updateUserInfo(user);
+        } catch (Exception e) {
+            throw new RuntimeException(e);
+        }
+    }
 }
