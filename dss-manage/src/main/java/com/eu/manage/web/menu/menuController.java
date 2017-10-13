@@ -47,7 +47,7 @@ public class menuController extends HttpServlet {
     }
     @RequestMapping("/thirdUserInfo")
     public String thirdUserInfo() {
-        return "UserInfo/thirdUserInfo";
+        return "userInfo/thirdUserInfo";
     }
 
 

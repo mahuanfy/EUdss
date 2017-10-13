@@ -18,7 +18,7 @@ import java.util.Map;
  * Created by 马欢欢 on 17-7-11.
  */
 @Controller
-@RequestMapping("UserInfo")
+@RequestMapping("userInfo")
 public class UserInfoController {
     @Autowired
     private UserService userService;

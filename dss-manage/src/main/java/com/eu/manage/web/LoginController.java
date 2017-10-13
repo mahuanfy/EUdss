@@ -59,10 +59,27 @@ public class LoginController extends HttpServlet {
 
         return result;
     }
+
     //登出
     @RequestMapping("/out")
     @ResponseBody
     public Map<String, Object> out(HttpSession session) {
+        Map<String, Object> result = new HashMap<String, Object>();
+        try {
+            session.removeAttribute("user");
+            result.put("msg", Constant.ACCOUNT_OUT);
+
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
+
+    //登出
+    @RequestMapping("/userInfo")
+    @ResponseBody
+    public Map<String, Object> userInfo(HttpSession session) {
         Map<String, Object> result = new HashMap<String, Object>();
         try {
             session.removeAttribute("user");

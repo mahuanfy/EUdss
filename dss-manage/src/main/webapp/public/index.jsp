@@ -38,12 +38,29 @@
         function out() {
             $.post("${pageContext.request.contextPath}/login/out",
                 function (data) {
-
                     layer.msg(data.msg, {
                         time: 1000
                     }, function(){
                         window.location.href="${baseurl}";
                     });
+
+                }
+            )
+        }
+        function userInfo() {
+            $.post("${pageContext.request.contextPath}/login/userInfo",
+                function (data) {
+                    layer.open({
+                        type: 1,
+                        title: "用户信息",
+                        area: ["100%", "100%"],
+                        closeBtn: 1,
+                        content: $("#userInfo"),
+                        cancel: function () {
+                            //点击关闭按钮刷新列表
+//                        location.reload();
+                        }
+                    })
 
                 }
             )
@@ -71,7 +88,7 @@
                     </a>
                     <dl class="layui-nav-child">
                         <dd>
-                            <a href="javascript:;"><i class="fa fa-user-circle" aria-hidden="true"></i> 个人信息</a>
+                            <a onclick="userInfo()"><i class="fa fa-user-circle" aria-hidden="true"></i> 个人信息</a>
                         </dd>
                         <dd>
                             <a href="javascript:;"><i class="fa fa-gear" aria-hidden="true"></i> 设置</a>
@@ -134,5 +151,122 @@
     </script>
 </div>
 </body>
+<div id="userInfo" style="display: none">
+    <form class="layui-form" action="${pageContext.request.contextPath}/TronClassServlet?method=save" method="post">
+        <div class="huan_a"></div>
+        <div class="layui-form-item">
+            <label class="layui-form-label">年份</label>
+            <div class="layui-input-inline">
+                <select name="year" lay-filter="aihao" id="year_ten">
+                </select>
+            </div>
+            <label class="layui-form-label">月份</label>
+            <div class="layui-input-inline">
+                <select name="tron_month" lay-filter="aihao">
+                    <%--<option value=""></option>--%>
+                    <option value="一月份" selected="">一月份</option>
+                    <option value="二月份">二月份</option>
+                    <option value="三月份">三月份</option>
+                    <option value="四月份">四月份</option>
+                    <option value="五月份">五月份</option>
+                    <option value="六月份">六月份</option>
+                    <option value="七月份">七月份</option>
+                    <option value="八月份">八月份</option>
+                    <option value="九月份">九月份</option>
+                    <option value="十月份">十月份</option>
+                    <option value="十一月份">十一月份</option>
+                    <option value="十二月份">十二月份</option>
+                </select>
+            </div>
+        </div>
 
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">人居环境学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_rj" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">信息工程学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_xin" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">人文教育学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_rw" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">通识学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_ts" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">休闲管理学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_xiu" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">高职学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_gz" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">会计学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_kuai" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">爱德艺术学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_ad" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">文化传媒学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_wc" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">物流贸易学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_wu" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+
+            <div class="layui-inline">
+                <label class="layui-form-label">金融学院</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="eu_jr" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="huan_a"></div>
+            <div class="layui-input-block huan_center">
+                <button class="layui-btn" lay-submit="" type="submit">立即提交</button>
+                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+            </div>
+        </div>
+    </form>
+
+</div>
 </html>
