@@ -2,6 +2,7 @@ package com.eu.manage.web;
 
 import com.eu.manage.entity.User;
 import com.eu.manage.service.LoginService;
+import com.eu.manage.service.UserService;
 import com.eu.manage.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -60,6 +61,24 @@ public class LoginController extends HttpServlet {
         return result;
     }
 
+    //判断是否有session
+    @RequestMapping("/session")
+    @ResponseBody
+    public Map<String, Object> session(HttpSession session) {
+        Map<String, Object> result = new HashMap<String, Object>();
+        Boolean haveSession=true;
+        try {
+            User user = (User) session.getAttribute("user");
+            if(user == null){
+                haveSession = false;
+            }
+            result.put("haveSession",haveSession);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+
+        return result;
+    }
     //登出
     @RequestMapping("/out")
     @ResponseBody
@@ -76,15 +95,16 @@ public class LoginController extends HttpServlet {
         return result;
     }
 
-    //登出
+    //用户信息
     @RequestMapping("/userInfo")
     @ResponseBody
     public Map<String, Object> userInfo(HttpSession session) {
         Map<String, Object> result = new HashMap<String, Object>();
         try {
-            session.removeAttribute("user");
+            String username = ((User)session.getAttribute("user")).getUsername();
+           User user = loginService.queryUserInfo(username);
             result.put("msg", Constant.ACCOUNT_OUT);
-
+            result.put("user", user);
         } catch (Exception e) {
             e.printStackTrace();
         }

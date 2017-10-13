@@ -24,9 +24,17 @@
     <script class="nav_script" type="text/javascript"></script>
     <script src="${baseurl}/public/js/index.js"></script>
     <script type="text/javascript">
-        //---------------------权限设置----------------------------------------
         var rank = 0;
         $(function () {
+            //判断session是否存在
+            $.post("${pageContext.request.contextPath}/login/session",
+                function (data) {
+                    if (!data.haveSession) {
+                        window.location.href = "${baseurl}";
+                    }
+                }
+            )
+            //权限设置
             $.post("${pageContext.request.contextPath}/login/rank",
                 function (data) {
                     rank = data.rank;
@@ -35,31 +43,36 @@
                 }
             )
         });
+        //退出登录
         function out() {
             $.post("${pageContext.request.contextPath}/login/out",
                 function (data) {
                     layer.msg(data.msg, {
                         time: 1000
-                    }, function(){
-                        window.location.href="${baseurl}";
+                    }, function () {
+                        window.location.href = "${baseurl}";
                     });
 
                 }
             )
         }
+        //用户信息
         function userInfo() {
             $.post("${pageContext.request.contextPath}/login/userInfo",
                 function (data) {
+                    let user = data.user;
+                    $("#nickname").val(user.nickname);
+                    $("#username").val(user.username);
+                    $("#sex").val(user.sex);
+                    $("#age").val(user.age);
+                    $("#phone").val(user.phone);
+                    $("#date").val(user.date);
                     layer.open({
                         type: 1,
                         title: "用户信息",
                         area: ["100%", "100%"],
                         closeBtn: 1,
-                        content: $("#userInfo"),
-                        cancel: function () {
-                            //点击关闭按钮刷新列表
-//                        location.reload();
-                        }
+                        content: $("#userInfo")
                     })
 
                 }
@@ -86,7 +99,8 @@
                         <img src="${baseurl}/public/images/0.jpg"/>
                         ${sessionScope.user.nickname}
                     </a>
-                    <dl class="layui-nav-child">
+                    <dl
+                            class="layui-nav-child">
                         <dd>
                             <a onclick="userInfo()"><i class="fa fa-user-circle" aria-hidden="true"></i> 个人信息</a>
                         </dd>
@@ -152,121 +166,64 @@
 </div>
 </body>
 <div id="userInfo" style="display: none">
-    <form class="layui-form" action="${pageContext.request.contextPath}/TronClassServlet?method=save" method="post">
-        <div class="huan_a"></div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">年份</label>
-            <div class="layui-input-inline">
-                <select name="year" lay-filter="aihao" id="year_ten">
-                </select>
-            </div>
-            <label class="layui-form-label">月份</label>
-            <div class="layui-input-inline">
-                <select name="tron_month" lay-filter="aihao">
-                    <%--<option value=""></option>--%>
-                    <option value="一月份" selected="">一月份</option>
-                    <option value="二月份">二月份</option>
-                    <option value="三月份">三月份</option>
-                    <option value="四月份">四月份</option>
-                    <option value="五月份">五月份</option>
-                    <option value="六月份">六月份</option>
-                    <option value="七月份">七月份</option>
-                    <option value="八月份">八月份</option>
-                    <option value="九月份">九月份</option>
-                    <option value="十月份">十月份</option>
-                    <option value="十一月份">十一月份</option>
-                    <option value="十二月份">十二月份</option>
-                </select>
-            </div>
+    <fieldset class="layui-elem-field layui-field-title" style="margin-top: 50px;">
+        <legend>个人信息</legend>
+    </fieldset>
+    <div style="margin-left: 45%;">
+
+
+        <div class="site-demo-upload">
+            <img id="LAY_demo_upload" src="./images/0.jpg">
         </div>
 
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">人居环境学院</label>
+    </div>
+    <div style="margin-left: 45%;margin-top: 50px;">
+        <form class="layui-form layui-form-pane" action="">
+
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户姓名:</label>
                 <div class="layui-input-inline">
-                    <input type="number" name="eu_rj" lay-verify="number" autocomplete="off" class="layui-input">
+                    <input readonly="readonly" type="text" id="nickname" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">用户ID：</label>
+                <div class="layui-input-inline">
+                    <input readonly="readonly" type="text" id="username" lay-verify="required"
+                           autocomplete="off" class="layui-input">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">性别：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="sex" lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input" readonly="readonly">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">年龄：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="age" lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input" readonly="readonly">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">手机号：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="phone" lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input" readonly="readonly">
+                </div>
+            </div>
+            <div class="layui-form-item">
+                <label class="layui-form-label">账号创建日期：</label>
+                <div class="layui-input-inline">
+                    <input type="text" id="date" lay-verify="required" placeholder="请输入" autocomplete="off"
+                           class="layui-input" readonly="readonly">
                 </div>
             </div>
 
-            <div class="layui-inline">
-                <label class="layui-form-label">信息工程学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_xin" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">人文教育学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_rw" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">通识学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_ts" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">休闲管理学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_xiu" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">高职学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_gz" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">会计学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_kuai" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">爱德艺术学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_ad" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">文化传媒学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_wc" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">物流贸易学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_wu" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">金融学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_jr" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-            <div class="huan_a"></div>
-            <div class="layui-input-block huan_center">
-                <button class="layui-btn" lay-submit="" type="submit">立即提交</button>
-                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-            </div>
-        </div>
-    </form>
-
+        </form>
+    </div>
 </div>
 </html>
