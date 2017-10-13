@@ -7,11 +7,11 @@
 <head>
     <meta charset="UTF-8">
     <title>Table</title>
-    <link rel="stylesheet" href="../../../public/plugins/layui/css/layui.css" media="all"/>
-    <link rel="stylesheet" href="../../../public/css/global.css" media="all">
-    <link rel="stylesheet" href="../../../public/plugins/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../../../public/css/table.css"/>
-    <script type="text/javascript" src="../../../public/js/jquery.min.js"></script>
+    <link rel="stylesheet" href="${baseurl}/public/plugins/layui/css/layui.css" media="all"/>
+    <link rel="stylesheet" href="${baseurl}/public/css/global.css" media="all">
+    <link rel="stylesheet" href="${baseurl}/public/plugins/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="${baseurl}/public/css/table.css"/>
+    <script type="text/javascript" src="${baseurl}/public/js/jquery.min.js"></script>
 
 </head>
 
@@ -186,7 +186,7 @@
     </div>
 </div>
 
-<script type="text/javascript" src="../../../public/plugins/layui/layui.js"></script>
+<script type="text/javascript" src="${baseurl}/public/plugins/layui/layui.js"></script>
 <script>
     var cl;
     var pageCurrent = 0;//当前页数

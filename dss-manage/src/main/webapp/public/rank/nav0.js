@@ -2,7 +2,7 @@
 var navs = [{
     "title": "欧亚创客访问量",
     "icon": "fa fa-bar-chart-o",
-    "href": "/menu/tronClass",
+    "href": "/dss/menu/tronClass",
     "spread": false
 },{
     "title": "专业与学科情况分析",
@@ -71,7 +71,7 @@ var navs = [{
     }, {
         "title": "退学原因分析",
         "icon": "&#xe63c;",
-        "href": "/menu/leaveReason"
+        "href": "/dss/menu/leaveReason"
     }, {
         "title": "流失学生数据掌握情况",
         "icon": " fa fa-pencil",
@@ -93,11 +93,11 @@ var navs = [{
     "children": [{
         "title": "教学空间利用率",
         "icon": "fa fa-book",
-        "href": "/menu/classUserRate"
+        "href": "/dss/menu/classUserRate"
     }, {
         "title": "工作室空间利用率",
         "icon": " fa fa-pencil",
-        "href": "/menu/studioClassFront"
+        "href": "/dss/menu/studioClassFront"
     }]
 },
     {
@@ -107,19 +107,19 @@ var navs = [{
         "children": [{
             "title": "超级管理员",
             "icon": " fa fa-user-circle",
-            "href": "/menu/superUserInfo"
+            "href": "/dss/menu/superUserInfo"
         },{
             "title": "一级管理员",
             "icon": " fa fa-user-circle",
-            "href": "/menu/firstUserInfo"
+            "href": "/dss/menu/firstUserInfo"
         },{
             "title": "二级管理员",
             "icon": " fa fa-user-circle",
-            "href": "/menu/secondUserInfo"
+            "href": "/dss/menu/secondUserInfo"
         },{
             "title": "三级管理员",
             "icon": " fa fa-user-circle",
-            "href": "/menu/thirdUserInfo"
+            "href": "/dss/menu/thirdUserInfo"
         }]
     }, {
         "title": "开发按钮样式统一",

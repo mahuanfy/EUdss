@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page isELIgnored="false" %>
-<%@ include file="../public/tag.jsp" %>
+<%@ include file="tag.jsp" %>
 
 <!DOCTYPE html>
 
@@ -50,7 +50,7 @@
             $.post("${pageContext.request.contextPath}/login/rank",
                 function (data) {
                     rank = data.rank;
-                    var src = "/public/rank/nav" + rank + ".js"
+                    var src = "${baseurl}/public/rank/nav" + rank + ".js";
                     $(".nav_script").attr({src: src});
                 }
             )

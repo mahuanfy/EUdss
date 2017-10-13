@@ -77,7 +77,7 @@
                             </button>
                         </div>
                         <div class="col-sm-5">
-                            <a href="${baseurl}/eu" id="echarts" type="button"
+                            <a href="${baseurl1}/eu" id="echarts" type="button"
                                class="btn btn-outline btn-success btn-block margin-top-10">
                                 <i class="fa fa-reply" aria-hidden="true"></i>&nbsp;决策中心</a>
                         </div>
