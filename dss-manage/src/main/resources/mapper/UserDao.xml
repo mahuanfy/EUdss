@@ -14,10 +14,10 @@
         SELECT count(*) FROM dssuser WHERE rank=#{pageBean.rank} AND nickname LIKE #{username}
     </select>
 
-    <select id="insertUser"  parameterType="User">
+    <update id="insertUser"  parameterType="User">
       INSERT INTO dssuser(nickname,username,password,rank,rankValue,date,sex)
       VALUES (#{nickname},#{username},#{password},#{rank},#{rankValue},#{date},#{sex})
-    </select>
+    </update>
     <select id="findById" parameterType="int" resultType="User">
       SELECT * from dssuser where id=#{id}
     </select>

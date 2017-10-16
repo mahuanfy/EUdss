@@ -93,7 +93,7 @@
         }
         //用户信息
         function updateInfo() {
-            $.post("${pageContext.request.contextPath}/login/userInfo",
+            $.post("${pageContext.request.contextPath}/userInfo",
                 function (data) {
                     let user = data.user;
                     $("#imagesToUpdate").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);
@@ -155,7 +155,7 @@
     <div class="layui-header header header-demo">
         <div class="layui-main">
             <div class="admin-login-box">
-                <a class="logo" style="left: 0;" href="http://beginner.zhengjinfan.cn/demo/beginner_admin/">
+                <a class="logo" style="left: 0;">
                     <span style="font-size: 22px;">欧亚决策系统后台</span>
                 </a>
                 <div class="admin-side-toggle">

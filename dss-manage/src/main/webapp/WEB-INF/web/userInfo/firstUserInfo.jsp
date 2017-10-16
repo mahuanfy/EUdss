@@ -332,7 +332,6 @@
                     if (data.result) {
                         setTimeout("location.reload()", 500);
                     }
-
                 })
             },
             delete: function (id) {
