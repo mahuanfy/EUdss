@@ -1,6 +1,6 @@
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <%@page isELIgnored="false" %>
-<%@ include file="tag.jsp" %>
+<%@ include file="../../public/tag.jsp" %>
 
 <!DOCTYPE html>
 
@@ -28,7 +28,7 @@
         let imgName;
         $(function () {
             //判断session是否存在
-            $.post("${pageContext.request.contextPath}/login/session",
+            $.post("${pageContext.request.contextPath}/session",
                 function (data) {
                     if (!data.haveSession) {
                         window.location.href = "${baseurl}";
@@ -36,7 +36,7 @@
                 }
             )
             //显示头像及图片
-            $.post("${pageContext.request.contextPath}/login/userInfo",
+            $.post("${pageContext.request.contextPath}/userInfo",
                 function (data) {
                     let user = data.user;
                     $("#Name").html(user.nickname);
@@ -47,7 +47,7 @@
                 }
             )
             //权限设置
-            $.post("${pageContext.request.contextPath}/login/rank",
+            $.post("${pageContext.request.contextPath}/rank",
                 function (data) {
                     rank = data.rank;
                     var src = "${baseurl}/public/rank/nav" + rank + ".js";
@@ -57,7 +57,7 @@
         });
         //退出登录
         function out() {
-            $.post("${pageContext.request.contextPath}/login/out",
+            $.post("${pageContext.request.contextPath}/out",
                 function (data) {
                     layer.msg(data.msg, {
                         time: 1000
@@ -70,7 +70,7 @@
         }
         //用户信息
         function userInfo() {
-            $.post("${pageContext.request.contextPath}/login/userInfo",
+            $.post("${pageContext.request.contextPath}/userInfo",
                 function (data) {
                     let user = data.user;
                     $("#imagesInfo").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);
@@ -122,7 +122,7 @@
             let updateSex = $("#updateSex").val();
             let updateAge = $("#updateAge").val();
             let updatePhone = $("#updatePhone").val();
-            $.post("${pageContext.request.contextPath}/login/updateInfoAjax", {
+            $.post("${pageContext.request.contextPath}/updateInfoAjax", {
                     img: imgName,
                     nickname:updateNickname,
                     sex:updateSex,
@@ -138,7 +138,7 @@
         //图片上传
         layui.use('upload', function () {
             layui.upload({
-                url: '${baseurl}/login/updateImage' //上传接口
+                url: '${baseurl}/updateImage' //上传接口
                 , success: function (res) { //上传成功后的回调
                     if (res.result) {
                         $("#imagesToUpdate").text("").attr("src", HEAD_IMAGE_PREFIX + res.data);
@@ -176,7 +176,7 @@
                         <dd>
                             <a style="cursor:pointer" onclick="updateInfo()"><i class="fa fa-gear" aria-hidden="true"></i> 设置</a>
                         </dd>
-                        <dd id="lock">
+                        <dd id="lock" style="display:none">
                             <a href="javascript:;">
                                 <i class="fa fa-lock" aria-hidden="true"
                                    style="padding-right: 3px;padding-left: 1px;"></i> 锁屏 (Alt+L)
