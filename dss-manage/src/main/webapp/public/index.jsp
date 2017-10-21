@@ -93,7 +93,7 @@
         }
         //用户信息
         function updateInfo() {
-            $.post("${pageContext.request.contextPath}/userInfo",
+            $.post("${pageContext.request.contextPath}/login/userInfo",
                 function (data) {
                     let user = data.user;
                     $("#imagesToUpdate").text("").attr("src", HEAD_IMAGE_PREFIX + user.img);

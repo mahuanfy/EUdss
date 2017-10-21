@@ -23,21 +23,11 @@ public class TronClassController {
     @Autowired
     private TronClassService tronClassService;
 
-    @RequestMapping("/tronClass")
-    @ResponseBody
-    public Map<String, Object> tronClass(){
-        Map<String, Object> result = new HashMap<String, Object>();
-        List<TronClass> TronClass = tronClassService.tronClass();
-        result.put("TronClass",TronClass);
-
-        return result;
-    }
-
     @RequestMapping("/insertProfession")
     @ResponseBody
-    public Map<String, Object> insertProfession(PageUtil page){
+    public Map<String, Object> insertProfession(PageUtil page) {
         Map<String, Object> data = new HashMap<String, Object>();
-        List<Map<String,String>> TronClass;
+        List<Map<String, String>> TronClass;
         try {
             TronClass = tronClassService.insertProfession(page);
             data.put("TronClass", TronClass);
@@ -52,4 +42,72 @@ public class TronClassController {
         return data;
     }
 
+    @RequestMapping("/addTronClass")
+    @ResponseBody
+    private Map<String, Object> addTronClass(TronClass tronClass) {
+        Map<String, Object> data = new HashMap<String, Object>();
+
+        try {
+            tronClassService.addTronClass(tronClass);
+            data.put("msg", Constant.ADD_SUCCESS);
+            data.put("result",true);
+        } catch (Exception e) {
+            data.put("msg", Constant.ADD_FAILURE);
+            e.printStackTrace();
+        }
+
+        return data;
+    }
+
+    @RequestMapping("/queryTronClass")
+    @ResponseBody
+    private Map<String, Object> queryTronClass(int id) {
+        Map<String, Object> data = new HashMap<String, Object>();
+
+        try {
+            List<Map<String, Object>> info = tronClassService.queryTronClass(id);
+            data.put("info", info);
+            data.put("result", true);
+            data.put("msg", Constant.SEARCH_SUCCESS);
+        } catch (Exception e) {
+            data.put("msg", Constant.SEARCH_FAILURE);
+            e.printStackTrace();
+        }
+
+        return data;
+    }
+
+    @RequestMapping("/updateTronClass")
+    @ResponseBody
+    private Map<String, Object> updateTronClass(TronClass tronClass) {
+        Map<String, Object> data = new HashMap<String, Object>();
+
+        try {
+            tronClassService.updateTronClass(tronClass);
+            data.put("msg", Constant.UPDATE_SUCCESS);
+            data.put("result",true);
+        } catch (Exception e) {
+            data.put("msg", Constant.UPDATE_FAILURE);
+            e.printStackTrace();
+        }
+
+        return data;
+    }
+
+    @RequestMapping("/deleteTronClass")
+    @ResponseBody
+    private Map<String ,Object> deleteTronClass(int id){
+        Map<String ,Object> data = new HashMap<String, Object>();
+
+        try{
+            tronClassService.deleteTronClass(id);
+            data.put("msg",Constant.DELETE_SUCCESS);
+            data.put("result",true);
+        }catch(Exception e){
+            data.put("msg",Constant.DELETE_FAILURE);
+            e.printStackTrace();
+        }
+
+        return data;
+    }
 }

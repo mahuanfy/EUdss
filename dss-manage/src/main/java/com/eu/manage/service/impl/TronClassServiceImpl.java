@@ -17,15 +17,9 @@ import java.util.Map;
  */
 @Service
 public class TronClassServiceImpl implements TronClassService{
+
     @Autowired
     private TronClassDao tronClassDao;
-
-    @Override
-    public List<TronClass> tronClass() {
-        return tronClassDao.tronClass();
-    }
-
-
 
     @Override
     public List<Map<String,String>>  insertProfession(PageUtil page) throws Exception {
@@ -36,5 +30,25 @@ public class TronClassServiceImpl implements TronClassService{
         page.setTotalSize(tronClassDao.queryProfessionCount());
 
         return tronClassDao.queryProfession(data);
+    }
+
+    @Override
+    public void addTronClass(TronClass tronClass) throws Exception {
+        tronClassDao.addTronClass(tronClass);
+    }
+
+    @Override
+    public List<Map<String, Object>> queryTronClass(int id) {
+        return tronClassDao.queryTronClass(id);
+    }
+
+    @Override
+    public void updateTronClass(TronClass tronClass) {
+        tronClassDao.updateTronClass(tronClass);
+    }
+
+    @Override
+    public void deleteTronClass(int id) {
+        tronClassDao.deleteTronClass(id);
     }
 }

@@ -4,17 +4,41 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.eu.manage.dao.TronClassDao">
 
-    <select id="tronClass"  resultType="TronClass">
-        SELECT * FROM eu_tronclass
-    </select>
-
-    <select id="queryProfession"   resultType="map">
+    <select id="queryProfession" resultType="map">
         SELECT * FROM eu_tronclass order by year desc,tron_month DESC LIMIT #{start}, #{end}
     </select>
-
- <select id="queryProfessionCount"   resultType="long">
+    <select id="queryProfessionCount" resultType="long">
         SELECT count(1)
         FROM eu_tronclass
     </select>
+    <insert id="addTronClass" parameterType="TronClass">
+        insert into eu_tronclass (year,tron_month,eu_rj,eu_xin,eu_rw,eu_ts,eu_xiu,
+        eu_gz,eu_kuai,eu_ad,eu_wc,eu_wu,eu_jr)
+         VALUES (#{year},#{tron_month},#{eu_rj},#{eu_xin},#{eu_rw},#{eu_ts},#{eu_xiu},
+        #{eu_gz},#{eu_kuai},#{eu_ad},#{eu_wc},#{eu_wu},#{eu_jr})
+    </insert>
+    <select id="queryTronClass" resultType="map" parameterType="int">
+        SELECT * FROM eu_tronclass where id = #{id}
+    </select>
+    <update id="updateTronClass" parameterType="TronClass">
+        update eu_tronclass set year =#{year}
+            ,tron_month =#{tron_month}
+            ,eu_rj =#{eu_rj}
+            ,eu_xin =#{eu_xin}
+            ,eu_rw =#{eu_rw}
+            ,eu_ts =#{eu_ts}
+            ,eu_xiu =#{eu_xiu}
+            ,eu_gz =#{eu_gz}
+            ,eu_kuai =#{eu_kuai}
+            ,eu_ad =#{eu_ad}
+            ,eu_wc =#{eu_wc}
+            ,eu_wu =#{eu_wu}
+            ,eu_jr =#{eu_jr}
+         where id =#{id}
+    </update>
+    <delete id="deleteTronClass" parameterType="int">
+        DELETE FROM eu_tronclass where id = #{id}
+    </delete>
+
 
 </mapper>

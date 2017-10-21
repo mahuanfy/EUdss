@@ -13,7 +13,6 @@
         <link rel="stylesheet" href="${baseurl}/public/plugins/font-awesome/css/font-awesome.min.css">
         <script type="text/javascript" src="${baseurl}/public/js/jquery.min.js"></script>
         <script type="text/javascript" src="${baseurl}/public/js/layui.js" charset="utf-8"></script>
-        <script type="text/javascript" src="${baseurl}/public/js/button_js.js" charset="utf-8"></script>
     </head>
 </head>
 <body>

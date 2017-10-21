@@ -12,15 +12,32 @@ import java.util.Map;
 public interface TronClassService {
 
     /**
-     * 查询创课点击次数
-     *
-     */
-    List<TronClass> tronClass();
-
-
-    /**
      * 分页查询数据
      */
     List<Map<String,String>>  insertProfession(PageUtil pageUtil) throws Exception;
 
+    /**
+     * 添加数据
+     * @param tronClass
+     * @throws Exception
+     */
+    void addTronClass(TronClass tronClass) throws Exception;
+    /**
+     * 通过id查询
+     * @param id
+     * @return
+     */
+    List<Map<String,Object>> queryTronClass(int id);
+
+    /**
+     * 更新数据
+     * @param tronClass
+     */
+    void updateTronClass(TronClass tronClass);
+
+    /**
+     * 通过id删除
+     * @param id
+     */
+    void deleteTronClass(int id);
 }
