@@ -25,14 +25,14 @@ import java.util.UUID;
  * Created 马欢欢 pc on 2017/5/23.
  */
 @Controller
-@RequestMapping("")
+@RequestMapping("/login")
 public class LoginController extends HttpServlet {
     @Autowired
     private LoginService loginService;
 
     @RequestMapping("/index")
     public String index() {
-        return "/index";
+        return "redirect:/public/index.jsp";
     }
 
     @RequestMapping("/login")

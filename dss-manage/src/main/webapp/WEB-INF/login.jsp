@@ -101,12 +101,12 @@
     function login() {
         let username = $("#username").val();
         let password = $("#password").val();
-        $.post("${pageContext.request.contextPath}/login",
+        $.post("${pageContext.request.contextPath}/login/login",
             {username: username, password: password},
             function (data) {
 
                 if (data.success) {
-                    location.href = "${baseurl}/index"
+                    location.href = "${baseurl}/login/index"
                 } else {
                     layui.use('layer', function () {
                         var layer = layui.layer;
