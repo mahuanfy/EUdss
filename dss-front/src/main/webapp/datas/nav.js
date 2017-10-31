@@ -94,4 +94,9 @@ var navs = [{
         "icon": "fa fa-book",
         "href": "page/classroomUtilizationRatio.html"
     }]
-}];
+},{
+        "title": "年级学生人数",
+        "icon": "fa fa-bar-chart-o",
+        "href": "page/student.html",
+        "spread": false
+    }];
