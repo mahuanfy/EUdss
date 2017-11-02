@@ -17,7 +17,6 @@
 
 <body>
 <div class="admin-main">
-
     <blockquote class="layui-elem-quote">
         <div class="layui-inline">
             <div class="layui-input-inline">

@@ -26,7 +26,7 @@ public interface TronClassDao {
      * @return
      * @throws Exception
      */
-    Long queryProfessionCount() throws Exception;
+    Long queryProfessionCount(Map<String, Object> data) throws Exception;
 
     /**
      * 添加数据

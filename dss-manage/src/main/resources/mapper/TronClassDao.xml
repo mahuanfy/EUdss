@@ -5,11 +5,28 @@
 <mapper namespace="com.eu.manage.dao.TronClassDao">
 
     <select id="queryProfession" resultType="map">
-        SELECT * FROM eu_tronclass order by year desc,tron_month DESC LIMIT #{start}, #{end}
+        SELECT * FROM eu_tronclass
+        <where>
+        <if test="year!=''">
+            AND  year= #{year}
+        </if>
+        <if test="month!=''">
+            AND tron_month = #{month}
+        </if>
+        </where>
+         order by year desc,tron_month DESC LIMIT #{start}, #{end}
     </select>
     <select id="queryProfessionCount" resultType="long">
         SELECT count(1)
         FROM eu_tronclass
+        <where>
+        <if test="year!=''">
+            AND year = #{year}
+        </if>
+        <if test="month!=''">
+            AND tron_month = #{month}
+        </if>
+        </where>
     </select>
     <insert id="addTronClass" parameterType="TronClass">
         insert into eu_tronclass (year,tron_month,eu_rj,eu_xin,eu_rw,eu_ts,eu_xiu,

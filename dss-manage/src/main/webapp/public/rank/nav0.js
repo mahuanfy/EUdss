@@ -1,4 +1,3 @@
-
 var navs = [{
     "title": "欧亚创客访问量",
     "icon": "fa fa-bar-chart-o",
@@ -121,16 +120,16 @@ var navs = [{
             "icon": " fa fa-user-circle",
             "href": "/dss/menu/thirdUserInfo"
         }]
+    },{
+        "title": "年级学生人数",
+        "icon": "fa fa-bar-chart-o",
+        "href": "/dss/menu/studentNumber",
+        "spread": false
     }, {
         "title": "开发按钮样式统一",
         "icon": "fa-stop-circle",
         "href": "button.html",
         "spread": false
     }
-    ,{
-        "title": "年级学生人数",
-        "icon": "fa fa-bar-chart-o",
-        "href": "page/student.html",
-        "spread": false
-    }
+
 ];
