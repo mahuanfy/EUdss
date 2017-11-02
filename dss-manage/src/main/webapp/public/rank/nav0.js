@@ -92,11 +92,7 @@ var navs = [{
     "children": [{
         "title": "教学空间利用率",
         "icon": "fa fa-book",
-        "href": "/dss/menu/classUserRate"
-    }, {
-        "title": "工作室空间利用率",
-        "icon": " fa fa-pencil",
-        "href": "/dss/menu/studioClassFront"
+        "href": "/dss/menu/roomutilization"
     }]
 },
     {
