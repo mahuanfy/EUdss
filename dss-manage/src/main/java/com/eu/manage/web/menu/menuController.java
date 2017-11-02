@@ -18,9 +18,9 @@ public class menuController extends HttpServlet {
         return "tronClass/tronClass";
     }
     //教室利用率
-    @RequestMapping("/classUserRate")
+    @RequestMapping("/roomutilization")
     public String classUserRate() {
-        return "UserRate/classUserRate/classUserRate";
+        return "roomutilization/roomutilization";
     }
     //工作室利用率
     @RequestMapping("/studioClassFront")
