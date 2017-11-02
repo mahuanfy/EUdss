@@ -25,11 +25,11 @@ public class TronClassController {
 
     @RequestMapping("/insertProfession")
     @ResponseBody
-    public Map<String, Object> insertProfession(PageUtil page) {
+    public Map<String, Object> insertProfession(PageUtil page,String year,String month) {
         Map<String, Object> data = new HashMap<String, Object>();
         List<Map<String, String>> TronClass;
         try {
-            TronClass = tronClassService.insertProfession(page);
+            TronClass = tronClassService.insertProfession(page,year,month);
             data.put("TronClass", TronClass);
             data.put("page", page);
             data.put("result", true);

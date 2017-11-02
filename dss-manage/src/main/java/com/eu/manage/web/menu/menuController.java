@@ -17,39 +17,50 @@ public class menuController extends HttpServlet {
     public String tronClass() {
         return "tronClass/tronClass";
     }
+
     //教室利用率
     @RequestMapping("/roomutilization")
     public String classUserRate() {
         return "roomutilization/roomutilization";
     }
+
     //工作室利用率
     @RequestMapping("/studioClassFront")
     public String studioClassFront() {
         return "UserRate/studioClassFront/studioClassFront";
     }
+
     //学籍异动
     @RequestMapping("/leaveReason")
     public String leaveReason() {
         return "schoolChange/leaveReason/leaveReason";
     }
+
     //权限菜单
     @RequestMapping("/superUserInfo")
     public String superUserInfo() {
         return "userInfo/superUserInfo";
     }
+
     @RequestMapping("/firstUserInfo")
     public String firstUserInfo() {
         return "userInfo/firstUserInfo";
     }
+
     @RequestMapping("/secondUserInfo")
     public String secondUserInfo() {
         return "userInfo/secondUserInfo";
     }
+
     @RequestMapping("/thirdUserInfo")
     public String thirdUserInfo() {
         return "userInfo/thirdUserInfo";
     }
 
+    @RequestMapping("/studentNumber")
+    public String studentNumber() {
+        return "studentNumber/studentNumber";
+    }
 
 
 }
