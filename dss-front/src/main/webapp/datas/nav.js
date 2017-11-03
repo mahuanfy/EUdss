@@ -97,6 +97,6 @@ var navs = [{
 },{
         "title": "年级学生人数",
         "icon": "fa fa-bar-chart-o",
-        "href": "page/student.html",
+        "href": "menuFront/studentNumber",
         "spread": false
     }];

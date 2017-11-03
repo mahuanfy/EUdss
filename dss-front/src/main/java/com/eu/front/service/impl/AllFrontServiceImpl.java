@@ -20,4 +20,8 @@ public class AllFrontServiceImpl implements AllFrontService {
         return allFrontDao.tronClass();
     }
 
+    public List<Map<String, String>> queryStudentInfo() {
+        return allFrontDao.queryStudentInfo();
+    }
+
 }

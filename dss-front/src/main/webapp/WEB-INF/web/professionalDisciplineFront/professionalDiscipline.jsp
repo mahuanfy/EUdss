@@ -12,12 +12,12 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="../plugins/layui/css/layui.css" media="all" />
-	<link rel="stylesheet" href="../css/global.css" media="all">
+	<link rel="stylesheet" href="${baseurl}/plugins/layui/css/layui.css" media="all" />
+	<link rel="stylesheet" href="${baseurl}/css/global.css" media="all">
 
-	<link href="../css/mycss/eurisia_echar.css" rel="stylesheet" type="text/css"/>
-	<script src="../js/myjs/jquery.min.js"></script>
-	<script src="../js/myjs/echarts.min.js"></script>
+	<link href="${baseurl}/css/mycss/eurisia_echar.css" rel="stylesheet" type="text/css"/>
+	<script src="${baseurl}/js/myjs/jquery.min.js"></script>
+	<script src="${baseurl}/js/myjs/echarts.min.js"></script>
 </head>
 
 <body>

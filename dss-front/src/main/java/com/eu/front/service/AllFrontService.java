@@ -3,9 +3,6 @@ package com.eu.front.service;
 import java.util.List;
 import java.util.Map;
 
-/**
- * Created by 马欢欢 on 17-7-11.
- */
 public interface AllFrontService {
 
     /**
@@ -15,4 +12,5 @@ public interface AllFrontService {
     List<Map<String,String>> tronClass();
 
 
+    List<Map<String,String>> queryStudentInfo();
 }

@@ -4,8 +4,12 @@
         "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.eu.front.dao.AllFrontDao">
 
-    <select id="tronClass"  resultType="map">
+    <select id="tronClass" resultType="map">
         SELECT * FROM eu_tronclass order by year desc,tron_month DESC limit 2
+    </select>
+
+    <select id="queryStudentInfo" resultType="map">
+        SELECT * FROM students_number order by grade desc limit 10
     </select>
 
 </mapper>
