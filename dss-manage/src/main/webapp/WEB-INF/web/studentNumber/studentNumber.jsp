@@ -40,10 +40,10 @@
         <table class="layui-table">
             <colgroup>
                 <col width="100">
-                <col width="400">
-                <col width="400">
-                <col width="400">
-                <col width="">
+                <col width="350">
+                <col width="350">
+                <col width="350">
+                <col width="160">
             </colgroup>
             <thead>
             <tr style="text-align: center;">

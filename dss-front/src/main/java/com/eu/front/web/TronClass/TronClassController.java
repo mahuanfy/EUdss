@@ -1,6 +1,6 @@
 package com.eu.front.web.TronClass;
 
-import com.eu.front.service.TronClassService;
+import com.eu.front.service.AllFrontService;
 import com.eu.front.utils.Constant;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -19,7 +19,7 @@ import java.util.Map;
 public class TronClassController {
 
     @Autowired
-    private TronClassService tronClassService;
+    private AllFrontService allFrontService;
 
     @RequestMapping("/tronClass")
     @ResponseBody
@@ -27,7 +27,7 @@ public class TronClassController {
         Map<String, Object> data = new HashMap<String, Object>();
         List<Map<String,String>> TronClass;
         try {
-            TronClass = tronClassService.tronClass();
+            TronClass = allFrontService.tronClass();
             data.put("TronClass", TronClass);
             data.put("result", true);
             data.put("msg", Constant.SEARCH_SUCCESS);
@@ -35,8 +35,6 @@ public class TronClassController {
             data.put("msg", Constant.SEARCH_FAILURE);
             e.printStackTrace();
         }
-
         return data;
     }
-
 }

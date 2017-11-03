@@ -6,7 +6,7 @@ import java.util.Map;
 /**
  * Created by 马欢欢 on 17-7-11.
  */
-public interface TronClassService {
+public interface AllFrontService {
 
     /**
      * 查询创课点击次数

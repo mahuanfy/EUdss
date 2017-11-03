@@ -9,7 +9,7 @@ import java.util.Map;
  * 马欢欢
  * Created by 马欢欢 on 2017/5/13.
  */
-public interface TronClassDao {
+public interface AllFrontDao {
     /**
      * 查询创课点击次数
      *
