@@ -14,7 +14,7 @@ public interface TronClassService {
     /**
      * 分页查询数据
      */
-    List<Map<String,String>>  insertProfession(PageUtil pageUtil,String year,String month) throws Exception;
+    List<Map<String,Object>>  insertProfession(PageUtil pageUtil,String year,String month) throws Exception;
 
     /**
      * 添加数据

@@ -258,8 +258,8 @@
                 var now = new Date();
                 var year = now.getFullYear();
                 $("#addYear").html("");
-                $("#searchYear").html("<option value=''>请选择年份</option>");
                 $("#updateYear").html("");
+                $("#searchYear").html("<option value=''>请选择年份</option>");
                 for (var i = 1; i < 10; i++) {
                     $("#updateYear").append("<option value='" + year + "'>" + (year) + "年</option>");
                     $("#addYear").append("<option value='" + year + "'>" + (year) + "年</option>");

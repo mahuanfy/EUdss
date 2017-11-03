@@ -19,7 +19,7 @@ public interface TronClassDao {
      * @return
      * @throws Exception
      */
-    List<Map<String,String>> queryProfession(Map<String, Object> data) throws Exception;
+    List<Map<String,Object>> queryProfession(Map<String, Object> data) throws Exception;
 
     /**
      * 查询总数

@@ -20,9 +20,9 @@ public class menuController extends HttpServlet {
     public String superUserInfo() {
         return "professionalDisciplineFront/professionalDiscipline";
     }
-    @RequestMapping("/firstUserInfo")
+    @RequestMapping("/studentNumber")
     public String firstUserInfo() {
-        return "userInfo/firstUserInfo";
+        return "studentNumber/studentNumber";
     }
     @RequestMapping("/secondUserInfo")
     public String secondUserInfo() {

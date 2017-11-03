@@ -1,4 +1,4 @@
-package com.eu.front.web.TronClass;
+package com.eu.front.web.studentNumber;
 
 import com.eu.front.service.AllFrontService;
 import com.eu.front.utils.Constant;
@@ -15,20 +15,20 @@ import java.util.Map;
  * Created by 马欢欢 on 17-7-11.
  */
 @Controller
-@RequestMapping("/TronClassFront")
-public class TronClassController {
+@RequestMapping("/studentNumberFront")
+public class studentNumberController {
 
     @Autowired
     private AllFrontService allFrontService;
 
-    @RequestMapping("/tronClass")
+    @RequestMapping("/queryStudentInfo")
     @ResponseBody
-    public Map<String, Object> tronClass(){
+    public Map<String, Object> queryStudentInfo(){
         Map<String, Object> data = new HashMap<String, Object>();
-        List<Map<String,String>> TronClass;
+        List<Map<String,String>> studentInfo;
         try {
-            TronClass = allFrontService.tronClass();
-            data.put("TronClass", TronClass);
+            studentInfo = allFrontService.queryStudentInfo();
+            data.put("studentInfo", studentInfo);
             data.put("result", true);
             data.put("msg", Constant.SEARCH_SUCCESS);
         } catch (Exception e) {

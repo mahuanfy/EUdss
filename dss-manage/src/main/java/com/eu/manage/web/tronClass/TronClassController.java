@@ -27,7 +27,7 @@ public class TronClassController {
     @ResponseBody
     public Map<String, Object> insertProfession(PageUtil page,String year,String month) {
         Map<String, Object> data = new HashMap<String, Object>();
-        List<Map<String, String>> TronClass;
+        List<Map<String, Object>> TronClass;
         try {
             TronClass = tronClassService.insertProfession(page,year,month);
             data.put("TronClass", TronClass);

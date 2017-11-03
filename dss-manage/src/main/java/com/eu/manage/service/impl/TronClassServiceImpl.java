@@ -22,7 +22,7 @@ public class TronClassServiceImpl implements TronClassService{
     private TronClassDao tronClassDao;
 
     @Override
-    public List<Map<String,String>>  insertProfession(PageUtil page,String year,String month) throws Exception {
+    public List<Map<String,Object>>  insertProfession(PageUtil page,String year,String month) throws Exception {
 
         Map<String, Object> data = new HashMap<String, Object>();
         data.put("start", (page.getCurrentIndex() - 1) * page.getPageSize());
