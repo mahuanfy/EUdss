@@ -6,11 +6,14 @@ import java.util.Map;
 public interface AllFrontService {
 
     /**
-     * 查询创课点击次数
-     *
+     * 创客数据查询
+     * @return
      */
     List<Map<String,String>> tronClass();
 
-
+    /**
+     * 查询年级学生人数
+     * @return
+     */
     List<Map<String,String>> queryStudentInfo();
 }
