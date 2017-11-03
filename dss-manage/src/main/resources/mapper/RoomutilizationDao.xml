@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.eu.manage.dao.RoomutilizationDao">
+
+    <select id="showRoomutilization" resultType="map" parameterType="map">
+        select * from roomutilization
+        <where>
+            <if test="year != ''">
+                year = #{year}
+            </if>
+            <if test="month != ''">
+                and month = #{month}
+            </if>
+            <if test="type != ''">
+                and type = #{type}
+            </if>
+            <if test="utilizationRate != ''">
+                and utilizationRate = #{utilizationRate}
+            </if>
+        </where>
+        LIMIT #{start},#{size}
+    </select>
+
+    <select id="selectTotalSize" parameterType="com.eu.manage.entity.Roomutilization" resultType="long">
+        select COUNT(*) from roomutilization
+        <where>
+            <if test="roomutilization.year != ''">
+                roomutilization.year = #{roomutilization.year}
+            </if>
+            <if test="roomutilization.month != ''">
+                and roomutilization.month = #{roomutilization.month}
+            </if>
+            <if test="roomutilization.type != ''">
+                and roomutilization.type = #{roomutilization.type}
+            </if>
+            <if test="roomutilization.utilizationRate != ''">
+                and roomutilization.utilizationRate = #{roomutilization.utilizationRate}
+            </if>
+        </where>
+    </select>
+</mapper>
