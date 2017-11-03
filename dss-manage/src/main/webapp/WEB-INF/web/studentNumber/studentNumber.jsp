@@ -4,7 +4,6 @@
 <!doctype html>
 <head>
     <meta charset="utf-8">
-    <title>创课各分院每月点击次数数据统计</title>
     <meta name="renderer" content="webkit">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
@@ -16,7 +15,7 @@
     <script type="text/javascript" src="${baseurl}/public/js/layui.js" charset="utf-8"></script>
 </head>
 <style>
-    .layui-table td {
+    .layui-table td , .layui-table th{
         padding: 4px 5px;
         text-align: center;
     }
@@ -37,17 +36,17 @@
                 </span>
     </blockquote>
     <fieldset class="layui-elem-field site-demo-button">
-        <legend>创课各分院每月点击次数数据统计</legend>
+        <legend>年级学生人数统计</legend>
         <table class="layui-table">
             <colgroup>
-                <col width="60">
+                <col width="100">
+                <col width="400">
+                <col width="400">
+                <col width="400">
                 <col width="">
-                <col width="">
-                <col width="">
-                <col width="160">
             </colgroup>
             <thead>
-            <tr>
+            <tr style="text-align: center;">
                 <th>编号</th>
                 <th>年级</th>
                 <th>本科生人数</th>
@@ -62,22 +61,12 @@
     </fieldset>
 </div>
 <script id="list-tpl" type="text/html">
-    {{# layui.each(d.TronClass, function(index, item){ }}
+    {{# layui.each(d.studentInfo, function(index, item){ }}
     <tr>
         <td>{{ index+1}}</td>
-        <td>{{item.year+"年"}}</td>
-        <td>{{item.tron_month+"月"}}</td>
-        <td>{{item.eu_rj}}</td>
-        <td>{{item.eu_xin}}</td>
-        <td>{{item.eu_rw}}</td>
-        <td>{{item.eu_ts}}</td>
-        <td>{{item.eu_xiu}}</td>
-        <td>{{item.eu_gz}}</td>
-        <td>{{item.eu_kuai}}</td>
-        <td>{{item.eu_ad}}</td>
-        <td>{{item.eu_wc}}</td>
-        <td>{{item.eu_wu}}</td>
-        <td>{{item.eu_jr}}</td>
+        <td>{{item.grade+"级"}}</td>
+        <td>{{item.ndergraduate+"人"}}</td>
+        <td>{{item.specialty+"人"}}</td>
         <td>
             <button onclick="cl.update('{{ item.id }}')" class='layui-btn layui-btn-small layui-icon'>&#xe642;编辑
             </button>
@@ -121,11 +110,13 @@
                 });
             },
             list: function () {
-                $.post("${pageContext.request.contextPath}/tronClass/insertProfession", {
+                $.post("${pageContext.request.contextPath}/studentNumber/list", {
                         currentIndex: currentIndex,
-                        pageSize: pageSize
+                        pageSize: pageSize,
+                        grade: $("#searchYear").val()
                     },
                     function (data) {
+                        console.log(data)
                         if (data.result) {
                             currentIndex = data.page.currentIndex;
                             totalSize = data.page.totalSize;
@@ -142,15 +133,15 @@
             add: function () {
                 layer.open({
                     type: 1,
-                    title: '创客各分院数据填入',
-                    area: ['1050px', '500px'],
+                    title: '添加年级学生人数',
+                    area: ['400px', '350px'],
                     skin: 'yourclass',
                     content: $('#refer_div')
                 });
             },
             addAjax: function () {
-                let tronClass = $("#beanInfo").serialize();
-                $.post("${baseurl}/tronClass/addTronClass", tronClass, function (data) {
+                let studentNumber = $("#beanInfo").serialize();
+                $.post("${baseurl}/studentNumber/add", studentNumber, function (data) {
                     if (data.result) {
                         layer.msg(data.msg);
                         if (data.result) {
@@ -162,7 +153,7 @@
             delete: function (id) {
                 layer.confirm('确定删除？', {icon: 3, title: '提示'}, function (index) {
                     layer.close(index);
-                    $.post("${baseurl}/tronClass/deleteTronClass", {id: id}, function (data) {
+                    $.post("${baseurl}/studentNumber/delete", {id: id}, function (data) {
                         layer.msg(data.msg);
                         if (data.result) {
                             setTimeout("location.reload()", 500);
@@ -172,31 +163,21 @@
                 });
             },
             update: function (id) {
-                $.post("${baseurl}/tronClass/queryTronClass", {id: id}, function (data) {
-                    $("#updateId").val(data.info[0].id)
-                    $("#eu_ts").val(data.info[0].eu_ts)
-                    $("#eu_rw").val(data.info[0].eu_rw)
-                    $("#eu_rj").val(data.info[0].eu_rj)
-                    $("#eu_xin").val(data.info[0].eu_xin)
-                    $("#eu_xiu").val(data.info[0].eu_xiu)
-                    $("#eu_gz").val(data.info[0].eu_gz)
-                    $("#eu_kuai").val(data.info[0].eu_kuai)
-                    $("#eu_ad").val(data.info[0].eu_ad)
-                    $("#eu_wc").val(data.info[0].eu_wc)
-                    $("#eu_wu").val(data.info[0].eu_wu)
-                    $("#eu_jr").val(data.info[0].eu_jr)
+                $.post("${baseurl}/studentNumber/queryById", {id: id}, function (data) {
+                    $("#updateId").val(data.studentInfo[0].id);
+                    $("#ndergraduate").val(data.studentInfo[0].ndergraduate);
+                    $("#specialty").val(data.studentInfo[0].specialty);
                     layer.open({
                         type: 1,
-                        title: '创客各分院数据修改',
-                        area: ['1050px', '500px'],
+                        title: '修改年级学生人数',
+                        area: ['400px', '350px'],
                         content: $('#update')
                     });
                 });
             },
             updateAjax: function () {
-                alert(11)
-                let tronClass = $("#beanInfoUpdate").serialize();
-                $.post("${baseurl}/tronClass/updateTronClass", tronClass, function (data) {
+                let studentNumber = $("#beanInfoUpdate").serialize();
+                $.post("${baseurl}/studentNumber/update", studentNumber, function (data) {
                     if (data.result) {
                         console.log(data)
                         layer.msg(data.msg);
@@ -205,8 +186,7 @@
                         }
                     }
                 });
-            }
-            ,
+            },
             year: function () {
                 //年份显示
                 var now = new Date();
@@ -257,239 +237,66 @@
     <form class="layui-form" id="beanInfo">
         <div class="huan_a"></div>
         <div class="layui-form-item">
-            <label class="layui-form-label">年份</label>
+            <label class="layui-form-label">年级</label>
             <div class="layui-input-inline">
-                <select name="year" id="addYear" lay-filter="aihao">
+                <select name="grade" id="addYear" lay-filter="aihao">
                     <option value="">请选择</option>
                 </select>
             </div>
-            <label class="layui-form-label">月份</label>
-            <div class="layui-input-inline">
-                <select name="tron_month" lay-filter="aihao">
-                    <option value="1" selected="">1月</option>
-                    <option value="2">2月</option>
-                    <option value="3">3月</option>
-                    <option value="4">4月</option>
-                    <option value="5">5月</option>
-                    <option value="6">6月</option>
-                    <option value="7">7月</option>
-                    <option value="8">8月</option>
-                    <option value="9">9月</option>
-                    <option value="10">10月</option>
-                    <option value="11">11月</option>
-                    <option value="12">12月</option>
-                </select>
-            </div>
         </div>
 
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">人居环境学院</label>
+                <label class="layui-form-label">本科生人数</label>
                 <div class="layui-input-inline">
-                    <input type="number" name="eu_rj" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">信息工程学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_xin" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">人文教育学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_rw" lay-verify="number" autocomplete="off" class="layui-input">
+                    <input type="number" name="ndergraduate" lay-verify="number" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">通识学院</label>
+                <label class="layui-form-label">专科生人数</label>
                 <div class="layui-input-inline">
-                    <input type="number" name="eu_ts" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">休闲管理学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_xiu" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">高职学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_gz" lay-verify="number" autocomplete="off" class="layui-input">
+                    <input type="number" name="specialty" lay-verify="number" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">会计学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_kuai" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">爱德艺术学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_ad" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">文化传媒学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_wc" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">物流贸易学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_wu" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">金融学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_jr" lay-verify="number" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-            <div class="huan_a"></div>
-            <div class="layui-input-block huan_center">
-                <button class="layui-btn" onclick="cl.addAjax()">立即提交</button>
-                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-            </div>
+        <div class="huan_a"></div>
+        <div class="layui-input-block huan_center">
+            <button class="layui-btn" onclick="cl.addAjax()">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
     </form>
 </div>
 <div id="update" style="display: none">
     <form class="layui-form" id="beanInfoUpdate">
         <input id="updateId" name="id" style="display: none"/>
+        <div class="huan_a"></div>
         <div class="layui-form-item">
-            <label class="layui-form-label">年份</label>
+            <label class="layui-form-label">年级</label>
             <div class="layui-input-inline">
-                <select name="year" lay-filter="aihao" id="updateYear">
+                <select name="grade" id="updateYear" lay-filter="aihao">
                     <option value="">请选择</option>
                 </select>
             </div>
-            <label class="layui-form-label">月份</label>
-            <div class="layui-input-inline">
-                <select name="tron_month" lay-filter="aihao">
-                    <option value="1" selected="">1月</option>
-                    <option value="2">2月</option>
-                    <option value="3">3月</option>
-                    <option value="4">4月</option>
-                    <option value="5">5月</option>
-                    <option value="6">6月</option>
-                    <option value="7">7月</option>
-                    <option value="8">8月</option>
-                    <option value="9">9月</option>
-                    <option value="10">10月</option>
-                    <option value="11">11月</option>
-                    <option value="12">12月</option>
-                </select>
-            </div>
         </div>
-
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">人居环境学院</label>
+                <label class="layui-form-label">本科生人数</label>
                 <div class="layui-input-inline">
-                    <input type="number" name="eu_rj" id="eu_rj" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">信息工程学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_xin" id="eu_xin" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">人文教育学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_rw" id="eu_rw" lay-verify="number" autocomplete="off"
-                           class="layui-input">
+                    <input type="number" name="ndergraduate" id="ndergraduate" lay-verify="number" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">通识学院</label>
+                <label class="layui-form-label">专科生人数</label>
                 <div class="layui-input-inline">
-                    <input type="number" name="eu_ts" id="eu_ts" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">休闲管理学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_xiu" id="eu_xiu" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">高职学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_gz" id="eu_gz" lay-verify="number" autocomplete="off"
-                           class="layui-input">
+                    <input type="number" name="specialty" id="specialty" lay-verify="number" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">会计学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_kuai" id="eu_kuai" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">爱德艺术学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_ad" id="eu_ad" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">文化传媒学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_wc" id="eu_wc" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <div class="layui-inline">
-                <label class="layui-form-label">物流贸易学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_wu" id="eu_wu" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
-
-            <div class="layui-inline">
-                <label class="layui-form-label">金融学院</label>
-                <div class="layui-input-inline">
-                    <input type="number" name="eu_jr" id="eu_jr" lay-verify="number" autocomplete="off"
-                           class="layui-input">
-                </div>
-            </div>
+        <div class="huan_a"></div>
             <div class="layui-input-block huan_center">
                 <button class="layui-btn" onclick="cl.updateAjax()">立即提交</button>
                 <button type="reset" class="layui-btn layui-btn-primary">重置</button>

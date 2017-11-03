@@ -6,11 +6,9 @@ import com.eu.manage.utils.PageUtil;
 import java.util.List;
 import java.util.Map;
 
-public interface studentNumberService {
+public interface StudentNumberService {
 
-    List<Map<String,Object>> queryStudentNumberInfo(PageUtil pageUtil);
-
-    Long queryStudentNumberInfoCount(Map<String,Object> data);
+    List<Map<String,Object>> queryStudentNumberInfo(PageUtil pageUtil,String grade);
 
     void addStudentNumberInfo(StudentNumber studentNumber);
 

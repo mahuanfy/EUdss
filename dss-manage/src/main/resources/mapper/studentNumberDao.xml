@@ -7,7 +7,7 @@
         SELECT * FROM students_number
         <where>
         <if test="grade!=''">
-            AND  grade= #{grade}
+             grade= #{grade}
         </if>
         </where>
          order by grade desc LIMIT #{start}, #{end}
@@ -17,7 +17,7 @@
         FROM students_number
         <where>
         <if test="grade!=''">
-            AND grade = #{grade}
+             grade = #{grade}
         </if>
         </where>
     </select>
@@ -29,12 +29,10 @@
         SELECT * FROM students_number where id = #{id}
     </select>
     <update id="updateStudentNumberInfo" parameterType="StudentNumber">
-        update students_number SET grade = #{year},
-        ndergraduate = #{ndergraduate},specialty = #{specialty}
+        update students_number SET grade = #{grade},
+        ndergraduate = #{ndergraduate},specialty = #{specialty} where id = #{id}
     </update>
     <delete id="deleteStudentNumberInfoById" parameterType="int">
         DELETE FROM students_number where id = #{id}
     </delete>
-
-
 </mapper>
