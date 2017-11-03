@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="${baseurl}/public/css/global.css" media="all">
     <link rel="stylesheet" href="${baseurl}/public/plugins/font-awesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="${baseurl}/public/css/table.css"/>
+    <%--<link rel="stylesheet" href="${baseurl}/public/utils/showTimePlugin.js">--%>
     <script type="text/javascript" src="${baseurl}/public/js/jquery.min.js"></script>
 
 </head>
@@ -34,7 +35,16 @@
             <div class="layui-inline">
                 <label class="layui-form-label" style="width: auto">统计时间</label>
                 <div class="layui-input-inline">
-                    <select name="modules" lay-verify="required" lay-search="">
+                    <select name="modules" lay-verify="required" lay-search="" id="showTheLastFiveYear">
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="1">2015年上学期</option>
+                        <option value="2">2015年下学期</option>
+                        <option value="3">2016年上学期</option>
+                        <option value="4">2016年下学期</option>
+                    </select>
+                </div>
+                <div class="layui-input-inline">
+                    <select name="modules" lay-verify="required" lay-search="" id="showTheLastFiveMonth">
                         <option value="">直接选择或搜索选择</option>
                         <option value="1">2015年上学期</option>
                         <option value="2">2015年下学期</option>
@@ -84,7 +94,8 @@
         <th>{{item.nickname}}</th>
         <th>{{item.username}}</th>
         <td>
-            <button class='layui-btn layui-btn-small layui-icon' onclick="cl.updateUser('{{item.id}}')">&#xe642;编辑</button>
+            <button class='layui-btn layui-btn-small layui-icon' onclick="cl.updateUser('{{item.id}}')">&#xe642;编辑
+            </button>
             <button data-id='1' data-opt='del' class='layui-btn layui-btn-danger layui-btn-small layui-icon'
                     onclick="cl.delete('{{item.id}}')">
                 &#xe640;删除
@@ -184,18 +195,18 @@
 </script>
 
 <div id="update_div" style="display: none">
-    <form class="layui-form layui-form-pane"  style="padding-left: 30%;padding-top: 40px;">
+    <form class="layui-form layui-form-pane" style="padding-left: 30%;padding-top: 40px;">
         <div class="layui-form-item">
             <div class="layui-inline">
                 <label class="layui-form-label">用户姓名：</label>
                 <div class="layui-input-inline">
-                    <input type="text" id="update_nickname" name="nickname" autocomplete="off" class="layui-input" >
+                    <input type="text" id="update_nickname" name="nickname" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label">用户ID：</label>
                 <div class="layui-input-inline">
-                    <input type="text" id="update_username" name="username" autocomplete="off" class="layui-input" >
+                    <input type="text" id="update_username" name="username" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -203,13 +214,13 @@
             <div class="layui-inline">
                 <label class="layui-form-label">密码：</label>
                 <div class="layui-input-inline">
-                    <input type="password" id="update_password"  name="password" autocomplete="off" class="layui-input" >
+                    <input type="password" id="update_password" name="password" autocomplete="off" class="layui-input">
                 </div>
             </div>
             <div class="layui-inline">
                 <label class="layui-form-label">手机号码：</label>
                 <div class="layui-input-inline">
-                    <input type="text" id="update_phone" name="phone" autocomplete="off" class="layui-input" >
+                    <input type="text" id="update_phone" name="phone" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>
@@ -265,10 +276,9 @@
                 });
             },
             list: function () {
-                let username = $("#name_search").val();
-                $.post(baseUrl + "/userInfo/findFirstUser", {pageCurrent: pageCurrent, rank: 1, username: username},
+                $.post(baseUrl + "/roomutilization/list", {currentIndex: pageCurrent},
                     function (data) {
-                        layer.msg('查询成功',{time:500});
+                        layer.msg('查询成功', {time: 500});
                         totalPage = data.totalPage;//总页数
 
                         cl.page();
@@ -291,7 +301,7 @@
                         layer.open({
                             type: 1,
                             title: '编辑管理员信息'
-                            ,content: $("#update_div"),
+                            , content: $("#update_div"),
                             area: ['100%', '100%']
                         });
                     }
@@ -333,8 +343,46 @@
                 });
             }
         }
+
+        function showTime() {
+            let currentTime = new Date();
+            let currentYear = currentTime.getFullYear();
+            let currentMonth = currentTime.getMonth() + 1;
+            let currentDay = currentTime.getDate();  //获取当前天数
+            let detailedsDate = currentYear + "年" + currentMonth + "月" + currentDay + "日";
+
+            let time = {
+                currentYear: currentYear,
+                currentMonth: currentMonth,
+                currentDay: currentDay,
+                detailedsDate: detailedsDate
+            }
+
+            return time;
+        }
+
+        function initializeThePage() {
+            let currentYear = showTime().currentYear;
+            let currentMonth = showTime().currentMonth;
+            $("#showTheLastFiveYear").html(`<option value="">年份</option>`);
+            for (let i = 0; i < 5; i++) {
+                $("#showTheLastFiveYear").append(`
+                <option value="` + currentYear + `"> ` + currentYear + "年" + ` </option>
+                `)
+                currentYear -= 1;
+            }
+            $("#showTheLastFiveMonth").html(`<option value="">月份</option>`);
+            for (let i = 12; i >= 1; i--) {
+                $("#showTheLastFiveMonth").append(`
+                <option value="` + i + `"> ` + i + "月" + ` </option>
+                `)
+            }
+        }
+
         $(function () {
+            initializeThePage();
             cl.list();
+
         });
 
 
