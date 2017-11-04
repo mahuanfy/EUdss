@@ -24,10 +24,10 @@
             <div class="layui-inline">
                 <label class="layui-form-label" style="width: auto">教学空间类型</label>
                 <div class="layui-input-inline">
-                    <select name="modules" lay-verify="required" lay-search="">
+                    <select name="modules" lay-verify="required" lay-search="" id="roomType">
                         <option value="">直接选择或搜索选择</option>
-                        <option value="1">教室利用率</option>
-                        <option value="2">工作室利用率</option>
+                        <option value="教室利用率">教室利用率</option>
+                        <option value="工作室利用率">工作室利用率</option>
                     </select>
                 </div>
             </div>
@@ -37,19 +37,11 @@
                 <div class="layui-input-inline">
                     <select name="modules" lay-verify="required" lay-search="" id="showTheLastFiveYear">
                         <option value="">直接选择或搜索选择</option>
-                        <option value="1">2015年上学期</option>
-                        <option value="2">2015年下学期</option>
-                        <option value="3">2016年上学期</option>
-                        <option value="4">2016年下学期</option>
                     </select>
                 </div>
                 <div class="layui-input-inline">
                     <select name="modules" lay-verify="required" lay-search="" id="showTheLastFiveMonth">
                         <option value="">直接选择或搜索选择</option>
-                        <option value="1">2015年上学期</option>
-                        <option value="2">2015年下学期</option>
-                        <option value="3">2016年上学期</option>
-                        <option value="4">2016年下学期</option>
                     </select>
                 </div>
             </div>
@@ -89,10 +81,10 @@
 <script id="list-tpl" type="text/html">
     {{# layui.each(d, function(index, item){ }}
     <tr>
-        <td>{{ index+1}}</td>
-        <td>{{ item.rankValue}}</td>
-        <th>{{item.nickname}}</th>
-        <th>{{item.username}}</th>
+        <td>{{ index+1 }}</td>
+        <td>{{ item.type }}</td>
+        <th>{{ item.year + "年" + item.month + "月" }}</th>
+        <th>{{ item.utilizationRate }}</th>
         <td>
             <button class='layui-btn layui-btn-small layui-icon' onclick="cl.updateUser('{{item.id}}')">&#xe642;编辑
             </button>
@@ -253,6 +245,7 @@
     var cl;
     var pageCurrent = 0;//当前页数
     var totalPage = 0;//总页数
+    let pageSize = 10;
     layui.use(['laypage', 'layer', 'laytpl', 'form'], function () {
         var laypage = layui.laypage
             , layer = layui.layer,
@@ -276,15 +269,28 @@
                 });
             },
             list: function () {
-                $.post(baseUrl + "/roomutilization/list", {currentIndex: pageCurrent},
+                let type = $("#roomType").val();
+                let year = $("#showTheLastFiveYear").val();
+                let month = $("#showTheLastFiveMonth").val();
+
+                alert(pageCurrent)
+
+                $.post(baseUrl + "/roomutilization/list", {
+                        type: type,
+                        year: year,
+                        month: month,
+                        currentIndex: pageCurrent
+                    },
                     function (data) {
+                    console.log(data.data.data)
                         layer.msg('查询成功', {time: 500});
-                        totalPage = data.totalPage;//总页数
+                        totalPage = data.data.totalSize;//总页数
 
                         cl.page();
-                        laytpl($("#list-tpl").text()).render(data.UserInfo, function (html) {
+                        laytpl($("#list-tpl").text()).render(data.data.data, function (html) {
                             $(".tr_1").html(html);
                         });
+
                         form.render();
                     }
                 );

@@ -8,16 +8,13 @@
         select * from roomutilization
         <where>
             <if test="year != ''">
-                year = #{year}
+                roomutilization.year = #{year}
             </if>
             <if test="month != ''">
-                and month = #{month}
+                and roomutilization.month = #{month}
             </if>
             <if test="type != ''">
-                and type = #{type}
-            </if>
-            <if test="utilizationRate != ''">
-                and utilizationRate = #{utilizationRate}
+                and roomutilization.type = #{type}
             </if>
         </where>
         LIMIT #{start},#{size}
@@ -34,9 +31,6 @@
             </if>
             <if test="roomutilization.type != ''">
                 and roomutilization.type = #{roomutilization.type}
-            </if>
-            <if test="roomutilization.utilizationRate != ''">
-                and roomutilization.utilizationRate = #{roomutilization.utilizationRate}
             </if>
         </where>
     </select>

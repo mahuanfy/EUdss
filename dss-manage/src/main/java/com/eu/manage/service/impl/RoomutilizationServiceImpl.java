@@ -23,15 +23,13 @@ public class RoomutilizationServiceImpl implements RoomutilizationService {
 
         pageUtil.setPageSize(10);
 
-        data.put("start", pageUtil.getCurrentIndex());
+        data.put("start", pageUtil.getCurrentIndex()*pageUtil.getPageSize());
         data.put("size", pageUtil.getPageSize());
 
         data.put("month", roomutilization.getMonth());
         data.put("year", roomutilization.getYear());
-        data.put("utilizationRate", roomutilization.getUtilizationRate());
         data.put("type", roomutilization.getType());
 
-        System.out.println("查询的页数：" + roomutilizationDao.selectTotalSize(roomutilization));
         pageUtil.setTotalSize(roomutilizationDao.selectTotalSize(roomutilization));
         return roomutilizationDao.showRoomutilization(data);
     }
