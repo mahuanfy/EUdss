@@ -77,15 +77,6 @@ var navs = [{
         "href": "page/quitSchool_grasp.html"
     }]
 },{
-    "title": "分院专业及学生分布",
-    "icon": "fa fa-fax",
-    "spread": false,
-    "children": [{
-        "title": "物流贸易学院分布情况",
-        "icon": "fa fa-book",
-        "href": "page/majorStudent_Distribute.html"
-    }]
-},{
     "title": "教学空间利用率",
     "icon": "fa fa-fax",
     "spread": false,
