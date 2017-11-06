@@ -25,16 +25,56 @@ public class RoomutilizationController {
     @ResponseBody
     public Result list(PageUtil pageUtil, Roomutilization roomutilization) {
         try{
-            System.out.println("传进来的数据："+roomutilization);
-            System.out.println("传进来的数据："+pageUtil);
             Map<String, Object> roomutilizationInfo = new HashMap<>();
             List<Map<String, Object>> data = roomutilizationService.showRoomutilization(pageUtil,roomutilization);
-            System.out.println("查询出来的数据：" + data);
 
             roomutilizationInfo.put("data", data);
             roomutilizationInfo.put("totalSize", pageUtil.getTotalSize());
             return Result.success(roomutilizationInfo, Constant.SEARCH_SUCCESS);
 
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return Result.failure(null,Constant.SEARCH_FAILURE);
+    }
+
+
+    @RequestMapping("addRoomutilization")
+    @ResponseBody
+    public Result addRoomutilization(Roomutilization roomutilization) {
+        try{
+            roomutilizationService.addRoomutilization(roomutilization);
+
+            return Result.success(null, Constant.SEARCH_SUCCESS);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return Result.failure(null,Constant.SEARCH_FAILURE);
+    }
+    @RequestMapping("findRoomutilizationById")
+    @ResponseBody
+    public Result findRoomutilizationById(String id) {
+        try{
+            List<Map<String,Object>> data = roomutilizationService.findRoomutilizationById(id);
+
+            return Result.success(data, Constant.SEARCH_SUCCESS);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return Result.failure(null,Constant.SEARCH_FAILURE);
+    }
+
+    @RequestMapping("updateRoomutilization")
+    @ResponseBody
+    public Result updateRoomutilization(Roomutilization roomutilization) {
+        try{
+            System.out.println(roomutilization);
+            roomutilizationService.updateRoomutilization(roomutilization);
+
+            return Result.success(null, Constant.SEARCH_SUCCESS);
         }catch (Exception e){
             e.printStackTrace();
         }

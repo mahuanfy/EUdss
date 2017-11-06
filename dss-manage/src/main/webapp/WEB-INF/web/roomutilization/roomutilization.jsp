@@ -47,7 +47,7 @@
             </div>
         </div>
 
-        <a class="layui-btn" onclick="cl.list()"><i class="layui-icon">&#xe615;</i>搜索</a>
+        <a class="layui-btn" onclick="pageCurrent = 1;cl.list()"><i class="layui-icon">&#xe615;</i>搜索</a>
 
         <a class="refer layui-btn " id="add">
             <i class="layui-icon">&#xe61f;</i>添加
@@ -103,47 +103,36 @@
 
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">用户姓名：</label>
+                <label class="layui-form-label">教学空间类型：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="nickname" autocomplete="off" class="layui-input" placeholder="用户姓名">
+                    <select name="modules" lay-verify="required" lay-search="" id="typeByAdd">
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="教室利用率">教室</option>
+                        <option value="工作室利用率">工作室</option>
+                    </select>
                 </div>
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">用户ID：</label>
+                <label class="layui-form-label">录入时间：</label>
                 <div class="layui-input-inline">
-                    <input type="text" name="username" autocomplete="off" class="layui-input" placeholder="登录账号">
+                    <input class="layui-input" name="dateByAdd" placeholder="选择录入时间"
+                           onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM-DD'})">
                 </div>
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">密码：</label>
+                <label class="layui-form-label">利用率：</label>
                 <div class="layui-input-inline">
-                    <input type="password" name="password" autocomplete="off" class="layui-input" placeholder="登录密码">
+                    <input type="text" name="utilizationRateByAdd" autocomplete="off" class="layui-input"
+                           placeholder="利用率">
                 </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">性别：</label>
-            <div class="layui-input-block">
-                <input type="radio" name="sex" value="男" title="男" checked>
-                <input type="radio" name="sex" value="女" title="女">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">账户权限：</label>
-            <div class="layui-input-inline">
-                <select name="rank">
-                    <option value="1" selected="">一级管理员</option>
-                    <option value="2">二级管理员</option>
-                    <option value="3">三级管理员</option>
-                </select>
             </div>
         </div>
         <div class="layui-input-block huan_center">
-            <button class="layui-btn" lay-submit="" type="submit" onclick="cl.updateAjax()">立即提交</button>
+            <button class="layui-btn" lay-submit="" type="submit" onclick="cl.addAjax()">立即提交</button>
             <button type="reset" class="layui-btn layui-btn-primary">重置</button>
         </div>
 
@@ -187,50 +176,33 @@
 </script>
 
 <div id="update_div" style="display: none">
-    <form class="layui-form layui-form-pane" style="padding-left: 30%;padding-top: 40px;">
+    <form class="layui-form layui-form-pane">
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">用户姓名：</label>
+                <label class="layui-form-label">教学空间类型：</label>
                 <div class="layui-input-inline">
-                    <input type="text" id="update_nickname" name="nickname" autocomplete="off" class="layui-input">
+                    <select name="modules" lay-verify="required" lay-search="" id="typeByUpdate">
+                        <option value="">直接选择或搜索选择</option>
+                        <option value="教室利用率">教室</option>
+                        <option value="工作室利用率">工作室</option>
+                    </select>
                 </div>
             </div>
+        </div>
+        <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">用户ID：</label>
+                <label class="layui-form-label">录入时间：</label>
                 <div class="layui-input-inline">
-                    <input type="text" id="update_username" name="username" autocomplete="off" class="layui-input">
+                    <input class="layui-input" id="dataByUpdate" placeholder="" onclick="layui.laydate({elem: this, istime: true, format: 'YYYY-MM'})">
                 </div>
             </div>
         </div>
         <div class="layui-form-item">
             <div class="layui-inline">
-                <label class="layui-form-label">密码：</label>
+                <label class="layui-form-label">利用率：</label>
                 <div class="layui-input-inline">
-                    <input type="password" id="update_password" name="password" autocomplete="off" class="layui-input">
+                    <input type="text" id="utilizationRateByUpdate" autocomplete="off" class="layui-input">
                 </div>
-            </div>
-            <div class="layui-inline">
-                <label class="layui-form-label">手机号码：</label>
-                <div class="layui-input-inline">
-                    <input type="text" id="update_phone" name="phone" autocomplete="off" class="layui-input">
-                </div>
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">性别：</label>
-            <div class="layui-input-block">
-                <input type="radio" name="sex" value="男" title="男" checked>
-                <input type="radio" name="sex" value="女" title="女">
-            </div>
-        </div>
-        <div class="layui-form-item">
-            <label class="layui-form-label">账户权限：</label>
-            <div class="layui-input-inline">
-                <select name="rank">
-                    <option value="1" selected="">一级管理员</option>
-                    <option value="2">二级管理员</option>
-                    <option value="3">三级管理员</option>
-                </select>
             </div>
         </div>
         <div class="layui-input-block huan_center">
@@ -242,11 +214,12 @@
 </div>
 <script type="text/javascript" src="${baseurl}/public/plugins/layui/layui.js"></script>
 <script>
-    var cl;
-    var pageCurrent = 0;//当前页数
+    var pageCurrent = 1;//当前页数
     var totalPage = 0;//总页数
     let pageSize = 10;
-    layui.use(['laypage', 'layer', 'laytpl', 'form'], function () {
+    let cl;
+    let getUpdateId;
+    layui.use(['jquery', 'layer', 'element', 'laypage', 'form', 'laytpl', 'tree', 'layedit', 'laydate'], function () {
         var laypage = layui.laypage
             , layer = layui.layer,
             form = layui.form(),
@@ -273,16 +246,15 @@
                 let year = $("#showTheLastFiveYear").val();
                 let month = $("#showTheLastFiveMonth").val();
 
-                alert(pageCurrent)
-
                 $.post(baseUrl + "/roomutilization/list", {
                         type: type,
                         year: year,
                         month: month,
-                        currentIndex: pageCurrent
+                        currentIndex: pageCurrent,
+                        pageSize: pageSize
                     },
                     function (data) {
-                    console.log(data.data.data)
+                        console.log(data.data.data)
                         layer.msg('查询成功', {time: 500});
                         totalPage = data.data.totalSize;//总页数
 
@@ -297,39 +269,63 @@
             },
 
             updateUser: function (id) {
-                $.post(baseUrl + "/userInfo/findById", {id: id},
+                $.post(baseUrl + "/roomutilization/findRoomutilizationById", {id: id},
                     function (data) {
-                        console.log(data.user)
-                        $("#update_nickname").val(data.user[0].nickname);
-                        $("#update_username").val(data.user[0].username);
-                        $("#update_password").val(data.user[0].password);
-                        $("#update_phone").val(data.user[0].phone);
+                        getUpdateId = id;
+                        let dataInfo = data.data[0];
+                        if (dataInfo.type == "教室利用率") {
+                            $("#typeByUpdate").find("option[value='教室利用率']").attr("selected", true);
+                        }else if (dataInfo.type == "工作室利用率"){
+                            $("#typeByUpdate").find("option[value='工作室利用率']").attr("selected", true);
+                        }
+                        form.render();
+                        $("#dataByUpdate").val(dataInfo.year + "-" + dataInfo.month);
+                        $("#utilizationRateByUpdate").val(dataInfo.utilizationRate);
                         layer.open({
                             type: 1,
-                            title: '编辑管理员信息'
+                            title: '编辑教学空间利用率'
                             , content: $("#update_div"),
-                            area: ['100%', '100%']
+                            area: ['60%', '70%']
                         });
                     }
                 );
 
 
             },
-            findById: function (id) {
-                $.post(baseUrl + "/userInfo/findById", {id: id},
-                    function (data) {
-                        laytpl($("#list-userInfo").text()).render(data.user, function (html) {
-                            $("#userInfo").html(html);
-                        });
-                        form.render();
-                        layer.msg(data.msg, {time: 500});
+            addAjax: function () {
+//                let data = $("#update-form").serialize();
+                let type = $("#typeByAdd").val();
+                let year = $("#dateByAdd").val().split("-")[0];
+                let month = $("#dateByAdd").val().split("-")[1];
+                let utilizationRate = $("input[name='utilizationRateByAdd']").val();
+                let data = {
+                    type: type,
+                    year: year,
+                    month: month,
+                    utilizationRate: utilizationRate,
+                }
+                $.post(baseUrl + "/roomutilization/addRoomutilization", data, function (data) {
+                    layer.msg(data.msg, {time: 500});
+                    if (data.result) {
+                        setTimeout("location.reload()", 500);
                     }
-                );
-
+                })
             },
             updateAjax: function () {
-                let data = $("#update-form").serialize();
-                $.post(baseUrl + "/userInfo/insertUser", data, function (data) {
+//                let data = $("#update-form").serialize();
+                let id = getUpdateId;
+                let type = $("#typeByUpdate").val();
+                let year = $("#dataByUpdate").val().split("-")[0];
+                let month = $("#dataByUpdate").val().split("-")[1];
+                let utilizationRate = $("input[name='utilizationRateByUpdate']").val();
+                let data = {
+                    id: id,
+                    type: type,
+                    year: year,
+                    month: month,
+                    utilizationRate: utilizationRate,
+                };
+                $.post(baseUrl + "/roomutilization/updateRoomutilization", data, function (data) {
                     layer.msg(data.msg, {time: 500});
                     if (data.result) {
                         setTimeout("location.reload()", 500);
@@ -347,7 +343,7 @@
                             }
                         });
                 });
-            }
+            },
         }
 
         function showTime() {
@@ -395,9 +391,9 @@
         $("#add").click(function () {
             layer.open({
                 type: 1,
-                title: '添加用户'
+                title: '新增教学空间利用率'
                 , content: $("#refer_div"),
-                area: ['40%', '70%']
+                area: ['60%', '70%']
             });
         });
 

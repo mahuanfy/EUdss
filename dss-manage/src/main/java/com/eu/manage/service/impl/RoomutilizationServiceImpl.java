@@ -21,9 +21,7 @@ public class RoomutilizationServiceImpl implements RoomutilizationService {
     public List<Map<String, Object>> showRoomutilization(PageUtil pageUtil, Roomutilization roomutilization) {
         Map<String, Object> data = new HashMap<>();
 
-        pageUtil.setPageSize(10);
-
-        data.put("start", pageUtil.getCurrentIndex()*pageUtil.getPageSize());
+        data.put("start", (pageUtil.getCurrentIndex() - 1) * pageUtil.getPageSize());
         data.put("size", pageUtil.getPageSize());
 
         data.put("month", roomutilization.getMonth());
@@ -32,5 +30,20 @@ public class RoomutilizationServiceImpl implements RoomutilizationService {
 
         pageUtil.setTotalSize(roomutilizationDao.selectTotalSize(roomutilization));
         return roomutilizationDao.showRoomutilization(data);
+    }
+
+    @Override
+    public void addRoomutilization(Roomutilization roomutilization) {
+        roomutilizationDao.addRoomutilization(roomutilization);
+    }
+
+    @Override
+    public List<Map<String, Object>> findRoomutilizationById(String id) {
+        return roomutilizationDao.findRoomutilizationById(id);
+    }
+
+    @Override
+    public void updateRoomutilization(Roomutilization roomutilization) {
+        roomutilizationDao.updateRoomutilization(roomutilization);
     }
 }

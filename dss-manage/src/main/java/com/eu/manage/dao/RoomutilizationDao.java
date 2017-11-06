@@ -10,4 +10,10 @@ public interface RoomutilizationDao {
     List<Map<String,Object>> showRoomutilization(Map<String,Object> data);
 
     Long selectTotalSize(@Param("roomutilization") Roomutilization roomutilization);
+
+    void addRoomutilization(Roomutilization roomutilization);
+
+    List<Map<String,Object>> findRoomutilizationById(@Param("id") String id);
+
+    void updateRoomutilization(@Param("roomutilization") Roomutilization roomutilization);
 }

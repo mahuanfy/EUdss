@@ -34,4 +34,34 @@
             </if>
         </where>
     </select>
+
+    <insert id="addRoomutilization" parameterType="com.eu.manage.entity.Roomutilization">
+        insert into
+        roomutilization (type,year,month,utilizationRate)
+        values (#{type},#{year},#{month},#{utilizationRate});
+    </insert>
+
+    <select id="findRoomutilizationById" parameterType="string" resultType="map">
+        SELECT * from roomutilization
+        WHERE id = #{id};
+    </select>
+
+    <update id="updateRoomutilization" parameterType="com.eu.manage.entity.Roomutilization">
+        UPDATE roomutilization
+        <set>
+            <if test="roomutilization.type != ''">
+                roomutilization.type = #{roomutilization.type},
+            </if>
+            <if test="roomutilization.month != ''">
+                roomutilization.month = #{roomutilization.month},
+            </if>
+            <if test="roomutilization.year != ''">
+                roomutilization.year = #{roomutilization.year},
+            </if>
+            <if test="roomutilization.utilizationRate != ''">
+                roomutilization.utilizationRate = #{roomutilization.utilizationRate},
+            </if>
+        </set>
+        WHERE roomutilization.id = #{roomutilization.id}
+    </update>
 </mapper>

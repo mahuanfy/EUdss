@@ -9,4 +9,10 @@ import java.util.Map;
 public interface RoomutilizationService {
 
     List<Map<String, Object>> showRoomutilization(PageUtil pageUtil, Roomutilization roomutilization);
+
+    void addRoomutilization(Roomutilization roomutilization);
+
+    List<Map<String,Object>> findRoomutilizationById(String id);
+
+    void updateRoomutilization(Roomutilization roomutilization);
 }
