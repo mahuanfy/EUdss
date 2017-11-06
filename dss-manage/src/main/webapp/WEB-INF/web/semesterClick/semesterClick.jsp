@@ -297,10 +297,10 @@
             </div>
         </div>
         <div class="huan_a"></div>
-            <div class="layui-input-block huan_center">
-                <button class="layui-btn" onclick="cl.updateAjax()">立即提交</button>
-                <button type="reset" class="layui-btn layui-btn-primary">重置</button>
-            </div>
+        <div class="layui-input-block huan_center">
+            <button class="layui-btn" onclick="cl.updateAjax()">立即提交</button>
+            <button type="reset" class="layui-btn layui-btn-primary">重置</button>
+        </div>
     </form>
 </div>
 </html>

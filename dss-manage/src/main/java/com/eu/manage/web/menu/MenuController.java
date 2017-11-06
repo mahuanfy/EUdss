@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
  */
 @Controller
 @RequestMapping("/menu")
-public class menuController extends HttpServlet {
+public class MenuController extends HttpServlet {
 
     //创客访问量
     @RequestMapping("/tronClass")
@@ -60,6 +60,11 @@ public class menuController extends HttpServlet {
     @RequestMapping("/studentNumber")
     public String studentNumber() {
         return "studentNumber/studentNumber";
+    }
+
+    @RequestMapping("/semesterClick")
+    public String semesterClick() {
+        return "semesterClick/semesterClick";
     }
 
 

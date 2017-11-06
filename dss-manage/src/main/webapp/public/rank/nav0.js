@@ -6,7 +6,7 @@ var navs = [{
 },{
     "title": "专业与学科情况分析",
     "icon": "fa fa-newspaper-o",
-    "href": "page/index_ouya.html",
+    "href": "/dss/menu/teacherAndStudent",
     "spread": false
 },{
     "title": "教学情况分析",
@@ -57,7 +57,7 @@ var navs = [{
 },{
     "title": "近四学期课程访问量",
     "icon": "fa fa-area-chart",
-    "href": "page/courseTraffic.html",
+    "href": "/dss/menu/semesterClick",
     "spread": false
 },{
     "title": "学籍异动情况",
