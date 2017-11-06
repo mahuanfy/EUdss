@@ -6,7 +6,7 @@ var navs = [{
 },{
     "title": "专业与学科情况分析",
     "icon": "fa fa-newspaper-o",
-    "href": "page/index_ouya.html",
+    "href": "/dss/menu/teacherAndStudent",
     "spread": false
 },{
     "title": "教学情况分析",
