@@ -62,9 +62,9 @@ public class MenuController extends HttpServlet {
         return "studentNumber/studentNumber";
     }
 
-    @RequestMapping("/teacherAndStudent")
-    public String teacherAndStudent() {
-        return "teacherAndStudent/teacherAndStudent";
+    @RequestMapping("/semesterClick")
+    public String semesterClick() {
+        return "semesterClick/semesterClick";
     }
 
 

@@ -57,7 +57,7 @@ var navs = [{
 },{
     "title": "近四学期课程访问量",
     "icon": "fa fa-area-chart",
-    "href": "page/courseTraffic.html",
+    "href": "/dss/menu/semesterClick",
     "spread": false
 },{
     "title": "学籍异动情况",
