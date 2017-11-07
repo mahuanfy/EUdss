@@ -71,14 +71,26 @@ public class RoomutilizationController {
     @ResponseBody
     public Result updateRoomutilization(Roomutilization roomutilization) {
         try{
-            System.out.println(roomutilization);
             roomutilizationService.updateRoomutilization(roomutilization);
 
-            return Result.success(null, Constant.SEARCH_SUCCESS);
+            return Result.success(null, Constant.UPDATE_SUCCESS);
         }catch (Exception e){
             e.printStackTrace();
         }
 
-        return Result.failure(null,Constant.SEARCH_FAILURE);
+        return Result.failure(null,Constant.UPDATE_FAILURE);
+    }
+    @RequestMapping("deleteRoomutilizationById")
+    @ResponseBody
+    public Result deleteRoomutilizationById(String id) {
+        try{
+            roomutilizationService.deleteRoomutilizationById(id);
+
+            return Result.success(null, Constant.DELETE_SUCCESS);
+        }catch (Exception e){
+            e.printStackTrace();
+        }
+
+        return Result.failure(null,Constant.DELETE_FAILURE);
     }
 }

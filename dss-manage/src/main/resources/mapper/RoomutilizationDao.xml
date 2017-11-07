@@ -64,4 +64,9 @@
         </set>
         WHERE roomutilization.id = #{roomutilization.id}
     </update>
+
+    <delete id="deleteRoomutilizationById" parameterType="string">
+        DELETE FROM roomutilization
+        WHERE id = #{id}
+    </delete>
 </mapper>

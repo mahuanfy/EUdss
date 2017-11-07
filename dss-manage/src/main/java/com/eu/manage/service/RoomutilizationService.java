@@ -15,4 +15,6 @@ public interface RoomutilizationService {
     List<Map<String,Object>> findRoomutilizationById(String id);
 
     void updateRoomutilization(Roomutilization roomutilization);
+
+    void deleteRoomutilizationById(String id);
 }

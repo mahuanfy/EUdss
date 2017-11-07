@@ -16,4 +16,6 @@ public interface RoomutilizationDao {
     List<Map<String,Object>> findRoomutilizationById(@Param("id") String id);
 
     void updateRoomutilization(@Param("roomutilization") Roomutilization roomutilization);
+
+    void deleteRoomutilizationById(@Param("id") String id);
 }

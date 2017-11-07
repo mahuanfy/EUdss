@@ -317,7 +317,7 @@
                 let type = $("#typeByUpdate").val();
                 let year = $("#dataByUpdate").val().split("-")[0];
                 let month = $("#dataByUpdate").val().split("-")[1];
-                let utilizationRate = $("input[name='utilizationRateByUpdate']").val();
+                let utilizationRate = $("#utilizationRateByUpdate").val();
                 let data = {
                     id: id,
                     type: type,
@@ -326,7 +326,7 @@
                     utilizationRate: utilizationRate,
                 };
                 $.post(baseUrl + "/roomutilization/updateRoomutilization", data, function (data) {
-                    layer.msg(data.msg, {time: 500});
+                    layer.msg("更新成功", {time: 500});
                     if (data.result) {
                         setTimeout("location.reload()", 500);
                     }
@@ -335,7 +335,7 @@
             delete: function (id) {
                 layer.confirm('确定删除？', {icon: 3, title: '提示'}, function (index) {
                     layer.close(index);
-                    $.post(baseUrl + "/userInfo/deleteById", {id: id},
+                    $.post(baseUrl + "/roomutilization/deleteRoomutilizationById", {id: id},
                         function (data) {
                             layer.msg(data.msg, {time: 500});
                             if (data.result) {

@@ -46,4 +46,9 @@ public class RoomutilizationServiceImpl implements RoomutilizationService {
     public void updateRoomutilization(Roomutilization roomutilization) {
         roomutilizationDao.updateRoomutilization(roomutilization);
     }
+
+    @Override
+    public void deleteRoomutilizationById(String id) {
+        roomutilizationDao.deleteRoomutilizationById(id);
+    }
 }

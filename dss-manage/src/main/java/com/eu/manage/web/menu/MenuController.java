@@ -18,16 +18,10 @@ public class MenuController extends HttpServlet {
         return "tronClass/tronClass";
     }
 
-    //教室利用率
+    //教学空间利用率
     @RequestMapping("/roomutilization")
     public String classUserRate() {
         return "roomutilization/roomutilization";
-    }
-
-    //工作室利用率
-    @RequestMapping("/studioClassFront")
-    public String studioClassFront() {
-        return "UserRate/studioClassFront/studioClassFront";
     }
 
     //学籍异动
@@ -66,6 +60,4 @@ public class MenuController extends HttpServlet {
     public String semesterClick() {
         return "semesterClick/semesterClick";
     }
-
-
 }

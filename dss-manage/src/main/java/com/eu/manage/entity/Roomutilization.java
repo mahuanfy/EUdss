@@ -5,6 +5,7 @@ public class Roomutilization {
     private String year;
     private String utilizationRate;
     private String type;
+    private int id;
 
     public Roomutilization() {
     }
@@ -14,6 +15,22 @@ public class Roomutilization {
         this.year = year;
         this.utilizationRate = utilizationRate;
         this.type = type;
+    }
+
+    public Roomutilization(String month, String year, String utilizationRate, String type, int id) {
+        this.month = month;
+        this.year = year;
+        this.utilizationRate = utilizationRate;
+        this.type = type;
+        this.id = id;
+    }
+
+    public int getId() {
+        return this.id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public String getMonth() {
@@ -55,6 +72,7 @@ public class Roomutilization {
                 ", year='" + year + '\'' +
                 ", utilizationRate='" + utilizationRate + '\'' +
                 ", type='" + type + '\'' +
+                ", id=" + id +
                 '}';
     }
 }
