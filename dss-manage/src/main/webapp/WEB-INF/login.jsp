@@ -37,7 +37,7 @@
                     <li>提供分院、专业教学日常业务数据并可视化展示，为分院业务发展提供数据支撑。</li>
                 </ul>
                 <div>
-                    <a href="${baseurl1}/eu" class="btn btn-primary btn-outline">
+                    <a href="${baseurl1}/eu" target="_blank"  target="_blank" class="btn btn-primary btn-outline">
                         <i class="fa fa-reply" aria-hidden="true"></i>&nbsp;决策中心</a>
                     <a href="#" class="btn btn-primary btn-outline margin-left-5">联系我们</a>
                 </div>
@@ -77,7 +77,7 @@
                             </button>
                         </div>
                         <div class="col-sm-5">
-                            <a href="${baseurl1}/eu" id="echarts" type="button"
+                            <a href="${baseurl1}/eu" target="_blank"  id="echarts" type="button"
                                class="btn btn-outline btn-success btn-block margin-top-10">
                                 <i class="fa fa-reply" aria-hidden="true"></i>&nbsp;决策中心</a>
                         </div>
