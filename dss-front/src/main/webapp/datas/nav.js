@@ -63,7 +63,11 @@ var navs = [{
     "title": "学籍异动情况",
     "icon": "fa fa-fax",
     "spread": false,
-    "children": [{
+    "children": [ {
+        "title": "本年度退学人数",
+        "icon": " fa fa-pencil",
+        "href": "page/leaveSchool.jsp"
+    },{
         "title": "近四年退学人数总览",
         "icon": "fa fa-book",
         "href": "page/quitSchool_Pandect.html"
