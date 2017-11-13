@@ -23,7 +23,7 @@ var navs = [{
 	}, {
 		"title": "教学评价",
 		"icon": " fa fa-pencil",
-		"href": "page/index_ouya1.html"
+		"href": "page/idex_pageView.html"
 	}, {
 		"title": "教学项目",
 		"icon": " fa fa-map-o",
@@ -37,7 +37,7 @@ var navs = [{
 }, {
     "title": "招生情况分析",
     "icon": "fa fa-user-plus",
-    "href": "page/index_ouya1.html",
+    "href": "page/idex_pageView.html",
     "spread": false
 },{
     "title": "学生情况分析",
@@ -52,7 +52,7 @@ var navs = [{
 },{
     "title": "一卡通情况分析",
     "icon": "fa fa-credit-card-alt",
-    "href": "page/index_ouya1.html",
+    "href": "page/idex_pageView.html",
     "spread": false
 },{
     "title": "近四学期课程访问量",
