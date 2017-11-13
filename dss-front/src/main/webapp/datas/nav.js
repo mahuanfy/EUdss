@@ -15,11 +15,11 @@ var navs = [{
 	"children": [{
 		"title": "课程建设",
 		"icon": "fa fa-book",
-		"href": "page/index_TronClass.html"
+		"href": "page/Class1.html"
 	}, {
 		"title": "课程历年情况",
 		"icon": "&#xe63c;",
-		"href": "page/idex_pageView.html"
+		"href": "page/Class1.html"
 	}, {
 		"title": "教学评价",
 		"icon": " fa fa-pencil",

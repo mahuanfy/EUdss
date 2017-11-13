@@ -43,6 +43,7 @@
                 <col width="350">
                 <col width="350">
                 <col width="350">
+                <col width="350">
                 <col width="160">
             </colgroup>
             <thead>
@@ -51,6 +52,7 @@
                 <th>年级</th>
                 <th>本科生人数</th>
                 <th>专科生人数</th>
+                <th>专升本人数</th>
                 <th>操作</th>
             </tr>
             </thead>
@@ -67,6 +69,7 @@
         <td>{{item.grade+"级"}}</td>
         <td>{{item.ndergraduate+"人"}}</td>
         <td>{{item.specialty+"人"}}</td>
+        <td>{{item.upgraded+"人"}}</td>
         <td>
             <button onclick="cl.update('{{ item.id }}')" class='layui-btn layui-btn-small layui-icon'>&#xe642;编辑
             </button>
@@ -134,7 +137,7 @@
                 layer.open({
                     type: 1,
                     title: '添加年级学生人数',
-                    area: ['400px', '350px'],
+                    area: ['400px', '400px'],
                     skin: 'yourclass',
                     content: $('#refer_div')
                 });
@@ -167,10 +170,11 @@
                     $("#updateId").val(data.studentInfo[0].id);
                     $("#ndergraduate").val(data.studentInfo[0].ndergraduate);
                     $("#specialty").val(data.studentInfo[0].specialty);
+                    $("#upgraded").val(data.studentInfo[0].upgraded);
                     layer.open({
                         type: 1,
                         title: '修改年级学生人数',
-                        area: ['400px', '350px'],
+                        area: ['400px', '400px'],
                         content: $('#update')
                     });
                 });
@@ -261,6 +265,14 @@
                 </div>
             </div>
         </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">专升本人数</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="upgraded" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
         <div class="huan_a"></div>
         <div class="layui-input-block huan_center">
             <button class="layui-btn" onclick="cl.addAjax()">立即提交</button>
@@ -293,6 +305,14 @@
                 <label class="layui-form-label">专科生人数</label>
                 <div class="layui-input-inline">
                     <input type="number" name="specialty" id="specialty" lay-verify="number" autocomplete="off" class="layui-input">
+                </div>
+            </div>
+        </div>
+        <div class="layui-form-item">
+            <div class="layui-inline">
+                <label class="layui-form-label">专升本人数</label>
+                <div class="layui-input-inline">
+                    <input type="number" name="upgraded" id="upgraded" lay-verify="number" autocomplete="off" class="layui-input">
                 </div>
             </div>
         </div>

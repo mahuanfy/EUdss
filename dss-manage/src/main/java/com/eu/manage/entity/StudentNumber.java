@@ -5,6 +5,15 @@ public class StudentNumber {
     private String grade;
     private int ndergraduate;
     private int specialty;
+    private int upgraded;
+
+    public int getUpgraded() {
+        return upgraded;
+    }
+
+    public void setUpgraded(int upgraded) {
+        this.upgraded = upgraded;
+    }
 
     public int getId() {
         return id;

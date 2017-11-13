@@ -9,7 +9,7 @@
     </select>
 
     <select id="queryStudentInfo" resultType="map">
-        SELECT * FROM students_number order by grade desc limit 10
+        SELECT * FROM students_number order by grade desc limit 1
     </select>
 
 </mapper>

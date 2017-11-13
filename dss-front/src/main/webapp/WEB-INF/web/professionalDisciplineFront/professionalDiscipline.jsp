@@ -31,7 +31,7 @@
                     var myChart = echarts.init(document.getElementById("main_Histogram"));
                     var option = {
                         title: {
-                            text: '西安欧亚学院创课师生点击量统计',
+                            text: '专业与学科情况分析',
                             subtext: '每月统计量(单位/次)',
                             x: 'center'
                         },

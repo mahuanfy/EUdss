@@ -22,15 +22,15 @@
         </where>
     </select>
     <insert id="addStudentNumberInfo" parameterType="StudentNumber">
-        insert into students_number (grade, ndergraduate, specialty)
-        VALUES (#{grade},#{ndergraduate},#{specialty})
+        insert into students_number (grade, ndergraduate, specialty,upgraded)
+        VALUES (#{grade},#{ndergraduate},#{specialty},#{upgraded})
     </insert>
     <select id="queryStudentNumberInfoById" resultType="map" parameterType="int">
         SELECT * FROM students_number where id = #{id}
     </select>
     <update id="updateStudentNumberInfo" parameterType="StudentNumber">
         update students_number SET grade = #{grade},
-        ndergraduate = #{ndergraduate},specialty = #{specialty} where id = #{id}
+        ndergraduate = #{ndergraduate},specialty = #{specialty}, upgraded = #{upgraded} where id = #{id}
     </update>
     <delete id="deleteStudentNumberInfoById" parameterType="int">
         DELETE FROM students_number where id = #{id}

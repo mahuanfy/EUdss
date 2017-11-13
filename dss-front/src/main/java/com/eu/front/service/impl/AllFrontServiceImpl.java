@@ -16,10 +16,12 @@ public class AllFrontServiceImpl implements AllFrontService {
     @Autowired
     private AllFrontDao allFrontDao;
 
+    @Override
     public List<Map<String,String>> tronClass() {
         return allFrontDao.tronClass();
     }
 
+    @Override
     public List<Map<String, String>> queryStudentInfo() {
         return allFrontDao.queryStudentInfo();
     }
