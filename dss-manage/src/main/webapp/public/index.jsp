@@ -15,7 +15,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="format-detection" content="telephone=no">
-
+    <link rel="shortcut icon" href="${baseurl}/public/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="${baseurl}/public/plugins/layui/css/layui.css" media="all"/>
     <link rel="stylesheet" href="${baseurl}/public/css/global.css" media="all">
     <link rel="stylesheet" href="${baseurl}/public/plugins/font-awesome/css/font-awesome.min.css">

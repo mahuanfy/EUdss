@@ -6,7 +6,7 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>Eurasia DSS后台管理系统</title>
-
+    <link rel="shortcut icon" href="${baseurl}/public/images/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="${baseurl}/public/css/site.css" id="siteStyle">
     <link rel="stylesheet" href="${baseurl}/public/css/login.css">
     <link rel="stylesheet" href="${baseurl}/public/css/web-icons.css">

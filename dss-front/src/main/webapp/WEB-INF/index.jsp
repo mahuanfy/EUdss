@@ -15,7 +15,7 @@
 		<meta name="apple-mobile-com.eu.dss.web-app-status-bar-style" content="black">
 		<meta name="apple-mobile-com.eu.dss.web-app-capable" content="yes">
 		<meta name="format-detection" content="telephone=no">
-
+		<link rel="shortcut icon" href="${baseurl}/img/favicon.ico" type="image/x-icon" />
 		<link rel="stylesheet" href="${baseurl}/css/mycss/layui1.css" media="all" />
 		<link rel="stylesheet" href="${baseurl}/css/global.css" media="all">
 		<link rel="stylesheet" href="${baseurl}/plugins/font-awesome/css/font-awesome.min.css">
