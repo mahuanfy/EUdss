@@ -24,13 +24,18 @@ public class menuController extends HttpServlet {
     public String firstUserInfo() {
         return "studentNumber/studentNumber";
     }
-    @RequestMapping("/secondUserInfo")
+    @RequestMapping("/commonSense")
     public String secondUserInfo() {
-        return "userInfo/secondUserInfo";
+        return "commonSense/commonSense";
     }
-    @RequestMapping("/thirdUserInfo")
-    public String thirdUserInfo() {
-        return "UserInfo/thirdUserInfo";
+    @RequestMapping("/elective")
+    public String elective() {
+        return "commonSense/elective";
+    }
+
+    @RequestMapping("/DNA")
+    public String DNA() {
+        return "commonSense/DNA";
     }
 
 

@@ -94,4 +94,21 @@ var navs = [{
         "icon": "fa fa-bar-chart-o",
         "href": "menuFront/studentNumber",
         "spread": false
-    }];
+    },{
+    "title": "通识课程分析",
+    "icon": "fa fa-fax",
+    "spread": false,
+    "children": [{
+        "title": "通识课平均成绩",
+        "icon": "fa fa-book",
+        "href": "menuFront/commonSense"
+    },{
+        "title": "选修课平均成绩",
+        "icon": "fa fa-book",
+        "href": "menuFront/elective"
+    },{
+        "title": "DNA课程成绩",
+        "icon": "fa fa-book",
+        "href": "menuFront/DNA"
+    }]
+}];
