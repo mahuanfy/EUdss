@@ -1,5 +1,5 @@
 var navs = [{
-    "title": "欧亚创客访问量",
+    "title": "欧亚创课访问量",
     "icon": "fa fa-bar-chart-o",
     "href": "menuFront/tronClass",
     "spread": false
